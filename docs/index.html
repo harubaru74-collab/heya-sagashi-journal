@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>はるかちゃんのお部屋探しジャーナル</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <h1>🏠 はるかちゃんのお部屋探しジャーナル</h1>
+    <p class="sub">LINEで送った物件を自動で比較・スコアリングするよ✨</p>
+  </header>
+
+  <div class="criteria-box" id="criteria-box">条件を読み込み中…</div>
+
+  <div class="card-list" id="property-list"></div>
+
+  <p style="text-align:center; margin-top:24px;">
+    <a href="articles/higashi-shinagawa-tennouzu.html">📖 街紹介記事: 東品川・天王洲アイルエリア</a>
+  </p>
+
+  <footer class="site">heya-sagashi-journal ・ このページはURLを知っている人だけが見られる非公開運用だよ</footer>
+</div>
+
+<script src="app.js"></script>
+<script>
+(async function () {
+  try {
+    const c = await loadCriteria();
+    document.getElementById("criteria-box").innerHTML =
+      "家賃上限 <b>" + formatYen(c.rent.maxTotal) + "</b>(理想 " + formatYen(c.rent.idealTotal) + ") ・ " +
+      "通勤先: <b>" + c.commute.destinationStationName + "</b>まで理想" + c.commute.idealMinutes + "分以内 ・ " +
+      "対象エリア: " + c.targetTowns.join("・");
+  } catch (e) {
+    document.getElementById("criteria-box").textContent = "条件の読み込みに失敗したよ";
+  }
+  renderPropertyList(document.getElementById("property-list"));
+})();
+</script>
+</body>
+</html>

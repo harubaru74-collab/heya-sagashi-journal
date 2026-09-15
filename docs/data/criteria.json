@@ -1,0 +1,49 @@
+{
+  "updatedAt": "2026-09-15",
+  "lifestyleTheme": "巨大ターミナル駅に住むのではなく、大駅にすぐ出られる静かで便利な街に住み、日常のすぐそばにトキメキがある暮らし",
+  "rent": {
+    "maxTotal": 80000,
+    "idealTotal": 70000,
+    "note": "管理費・共益費込みの総額"
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "idealMinutes": 20,
+    "maxMinutes": 20,
+    "maxTransfers": 1,
+    "allowedModes": ["徒歩", "電車"],
+    "note": "自転車は想定しない"
+  },
+  "targetTowns": [
+    "東品川3丁目", "東品川4丁目", "南品川2丁目", "南品川3丁目", "東大井1丁目", "北品川", "勝島"
+  ],
+  "candidateStations": [
+    "品川シーサイド", "青物横丁", "新馬場", "鮫洲", "平和島", "大森", "大井町", "天王洲アイル"
+  ],
+  "walkToStationMinutes": { "idealMax": 5, "acceptableMax": 10, "hardMax": 15 },
+  "roomConditions": [
+    { "key": "size", "label": "広さ", "type": "scale", "unit": "㎡", "higherIsBetter": true },
+    { "key": "bathToiletSeparate", "label": "バストイレ別", "type": "boolean" },
+    { "key": "loft", "label": "ロフト付き", "type": "boolean" },
+    { "key": "storage", "label": "収納付き", "type": "boolean" },
+    { "key": "indoorWasher", "label": "洗濯機室内", "type": "boolean" },
+    { "key": "freeInternet", "label": "ネット無料", "type": "boolean", "note": "実質家賃を-5,000円換算してよい" },
+    { "key": "cityGas", "label": "都市ガス", "type": "boolean" }
+  ],
+  "sizeScoring": {
+    "note": "広さレーダー軸のスコア換算(㎡→0-100点の目安)",
+    "minSqm": 15,
+    "fullScoreSqm": 30
+  },
+  "surroundingWants": ["カラオケ", "ジム", "図書館"],
+  "dailyLife": {
+    "groceries": "イオンスタイル品川シーサイド(職場直結・平日利用)",
+    "workSpaces": ["BIZcomfort品川シーサイド", "BIZcomfort青物横丁", "品川区立品川図書館"],
+    "leisure": "天王洲アイル(水辺のボードウォーク・テラスカフェ)まで徒歩10〜15分程度",
+    "terrain": "坂のない平坦なエリア"
+  },
+  "searchTips": [
+    "ポータルサイトは駅名検索だと漏れる物件があるので「品川区の町名指定」で探す",
+    "このエリアは坂がなく平坦なので、検索条件の徒歩分数を12〜15分まで少し広げると8.5万円以下の掘り出し物件が見つかりやすい"
+  ]
+}

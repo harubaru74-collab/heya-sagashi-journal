@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>物件詳細 | お部屋探しジャーナル</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <a class="back-link" href="index.html">← 一覧に戻る</a>
+  <div id="content"><p class="empty-note">読み込み中だよ…</p></div>
+  <footer class="site">heya-sagashi-journal</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+<script src="app.js"></script>
+<script>
+(async function () {
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+  const content = document.getElementById("content");
+  if (!id) { content.innerHTML = '<p class="empty-note">物件IDが指定されてないよ</p>'; return; }
+
+  let p;
+  try {
+    p = await loadProperty(id);
+  } catch (e) {
+    content.innerHTML = '<p class="empty-note">物件が見つからなかったよ: ' + e.message + "</p>";
+    return;
+  }
+
+  const sample = p.isSample ? '<span class="sample-tag">サンプルデータ</span>' : "";
+  content.innerHTML =
+    "<h1>" + p.name + sample + "</h1>" +
+    '<p class="meta" style="color:#7a6d72;">' + p.address + " ・ " + p.nearestStation + "駅 徒歩" + p.walkMinutesToStation + "分</p>" +
+
+    '<div class="summary-box">' +
+      '<div class="match">マッチ度 ' + p.score.matchPercent + "%(" + p.score.grade + ")</div>" +
+      "<p>" + p.score.summary + "</p>" +
+      '<ul class="point-list good">' + (p.score.goodPoints || []).map((t) => "<li>" + t + "</li>").join("") + "</ul>" +
+      '<ul class="point-list concern">' + (p.score.concernPoints || []).map((t) => "<li>" + t + "</li>").join("") + "</ul>" +
+    "</div>" +
+
+    '<div class="charts-grid">' +
+      '<div class="chart-box"><canvas id="roomChart"></canvas><h3>お部屋の中身</h3></div>' +
+      '<div class="chart-box"><canvas id="lifeChart"></canvas><h3>お部屋+周辺環境</h3></div>' +
+    "</div>" +
+
+    "<table class=\"detail-table\">" +
+      "<tr><th>間取り・広さ</th><td>" + p.layout + " / " + p.sizeSqm + "㎡</td></tr>" +
+      "<tr><th>家賃総額</th><td>" + formatYen(p.rent.total) + (p.rent.freeInternet ? "(ネット込み実質 " + formatYen(p.rent.effectiveTotal) + ")" : "") + "</td></tr>" +
+      "<tr><th>初期費用目安</th><td>" + formatYen(p.initialCostEstimate) + "</td></tr>" +
+      "<tr><th>通勤</th><td>" + p.commute.destinationStationName + "まで" + p.commute.minutes + "分(乗り換え" + p.commute.transfers + "回) / " + p.commute.route + "</td></tr>" +
+      "<tr><th>周辺</th><td>" + (p.surroundings.note || "-") + "</td></tr>" +
+      "<tr><th>ステータス</th><td>" + p.status + "</td></tr>" +
+      "<tr><th>元の物件URL</th><td><a href=\"" + p.sourceUrl + "\" target=\"_blank\" rel=\"noopener\">ポータルサイトで見る</a></td></tr>" +
+    "</table>";
+
+  drawRadarChart(document.getElementById("roomChart"), ROOM_AXIS_LABELS, p.radar.roomAxes, "#ff6fa5");
+  drawRadarChart(document.getElementById("lifeChart"), LIFE_AXIS_LABELS, p.radar.lifeAxes, "#7a6dff");
+})();
+</script>
+</body>
+</html>

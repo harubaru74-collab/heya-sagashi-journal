@@ -1,0 +1,72 @@
+{
+  "id": "sample-001",
+  "isSample": true,
+  "registeredAt": "2026-09-15T09:00:00+09:00",
+  "sourceUrl": "https://example.com/sample-property",
+  "name": "(サンプル)〇〇マンション 3階",
+  "address": "東京都品川区東品川3丁目",
+  "town": "東品川3丁目",
+  "nearestStation": "青物横丁",
+  "walkMinutesToStation": 7,
+  "rent": {
+    "base": 68000,
+    "management": 3000,
+    "total": 71000,
+    "freeInternet": true,
+    "effectiveTotal": 66000
+  },
+  "initialCostEstimate": 210000,
+  "layout": "1K",
+  "sizeSqm": 22.5,
+  "room": {
+    "bathToiletSeparate": true,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": true,
+    "cityGas": true
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 13,
+    "transfers": 0,
+    "route": "青物横丁→(京急本線)→品川シーサイド 徒歩連絡"
+  },
+  "surroundings": {
+    "groceriesNearby": ["イオンスタイル品川シーサイド"],
+    "workSpacesNearby": ["BIZcomfort青物横丁"],
+    "gymNearby": [],
+    "karaokeNearby": [],
+    "libraryNearby": [],
+    "safetyNote": "サンプルデータのため未検証",
+    "note": "これはサイトの表示イメージを確認するためのサンプル物件データだよ"
+  },
+  "radar": {
+    "roomAxes": {
+      "size": 47,
+      "bathToiletSeparate": 100,
+      "loft": 0,
+      "storage": 100,
+      "indoorWasher": 100,
+      "freeInternet": 100,
+      "cityGas": 100
+    },
+    "lifeAxes": {
+      "roomQuality": 78,
+      "rentValue": 82,
+      "commuteAccess": 90,
+      "stationCloseness": 80,
+      "dailyConvenience": 70,
+      "safety": 60
+    }
+  },
+  "score": {
+    "total": 81,
+    "grade": "◎",
+    "matchPercent": 81,
+    "summary": "(サンプル)職場まで電車13分・乗り換えなしで理想の通勤圏内。ロフトなしが唯一の惜しいポイントだよ。",
+    "goodPoints": ["品川シーサイドまで乗り換えなし13分", "ネット無料で実質家賃6.6万円", "バストイレ別・収納あり"],
+    "concernPoints": ["ロフトなし"]
+  },
+  "status": "気になる"
+}

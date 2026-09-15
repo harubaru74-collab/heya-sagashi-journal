@@ -1,0 +1,20 @@
+{
+  "updatedAt": "2026-09-15T09:00:00+09:00",
+  "properties": [
+    {
+      "id": "sample-001",
+      "isSample": true,
+      "name": "(サンプル)〇〇マンション 3階",
+      "town": "東品川3丁目",
+      "nearestStation": "青物横丁",
+      "rentTotal": 71000,
+      "effectiveRentTotal": 66000,
+      "layout": "1K",
+      "sizeSqm": 22.5,
+      "scoreTotal": 81,
+      "matchPercent": 81,
+      "status": "気になる",
+      "registeredAt": "2026-09-15T09:00:00+09:00"
+    }
+  ]
+}

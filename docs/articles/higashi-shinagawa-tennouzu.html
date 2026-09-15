@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>東品川・天王洲アイルエリア | お部屋探しジャーナル</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="page">
+  <a class="back-link" href="../index.html">← 一覧に戻る</a>
+
+  <header class="top">
+    <h1>📖 東品川・天王洲アイルエリアガイド</h1>
+    <p class="sub">品川区 東品川3・4丁目/南品川2・3丁目/東大井1丁目/北品川/勝島</p>
+  </header>
+
+  <div class="article-body">
+    <h2>街の雰囲気</h2>
+    <p>
+      巨大ターミナル駅そのものではなく、そこに「すぐ出られる」静かな住宅エリア。
+      坂のない平坦な道が多く、自転車がなくても歩いて生活しやすいのが特徴。
+      日常のすぐそばに水辺の景色があり、頑張って出かけなくても自然と外に出たくなる立地。
+    </p>
+
+    <h2>天王洲アイルへのお散歩</h2>
+    <p>
+      水辺のボードウォークやテラスカフェがある天王洲アイルまで、徒歩10〜15分程度で行けるロケーション。
+      ちょっとした気分転換や休日のお散歩に、日常づかいできる距離感。
+    </p>
+
+    <h2>買い物・生活動線</h2>
+    <p>
+      平日は職場直結の「イオンスタイル品川シーサイド」が使える立地が理想。
+      勉強・作業スペースは「BIZcomfort」(品川シーサイド／青物横丁)や、品川区立品川図書館など、
+      集中できる拠点が身近にあると◎。周辺にカラオケ・ジム・図書館があるとさらに嬉しいポイント。
+    </p>
+
+    <h2>アクセスの強み</h2>
+    <p>
+      候補駅は品川シーサイド・青物横丁・新馬場・鮫洲・平和島・大森・大井町・天王洲アイルなど。
+      りんかい線(恵比寿・渋谷・新宿へ直通)や京急本線(品川・横浜方面)が使えるエリアなので、
+      将来どこへ転職しても引っ越し不要な「マルチアクセス」が魅力。
+    </p>
+
+    <h2>お部屋探しのコツ</h2>
+    <p>
+      ポータルサイトは駅名検索だと漏れる物件があるので、「品川区の町名指定」で探すのがコツ。
+      このエリアは坂がなく平坦な道ばかりなので、検索条件の徒歩分数を12〜15分以内まで少し広げると、
+      家賃8.5万円以下の掘り出し物件が見つかりやすい。
+    </p>
+
+    <h2>この街の条件に合う物件一覧</h2>
+    <div class="card-list" id="property-list"></div>
+  </div>
+
+  <footer class="site">heya-sagashi-journal</footer>
+</div>
+
+<script>window.DATA_BASE = "../data/"; window.SITE_BASE = "../";</script>
+<script src="../app.js"></script>
+<script>
+(async function () {
+  const targetTowns = ["東品川3丁目", "東品川4丁目", "南品川2丁目", "南品川3丁目", "東大井1丁目", "北品川", "勝島"];
+  await renderPropertyList(
+    document.getElementById("property-list"),
+    (p) => targetTowns.includes(p.town)
+  );
+})();
+</script>
+</body>
+</html>
