@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T08:32:39+09:00",
+  "updatedAt": "2026-09-16T08:43:08+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -346,6 +346,38 @@
       "matchPercent": 72,
       "status": "気になる",
       "registeredAt": "2026-09-16T08:32:39+09:00"
+    },
+    {
+      "id": "20260916-ggnt",
+      "isSample": false,
+      "name": "コムデ・ビュー 3階",
+      "town": "北品川2丁目",
+      "nearestStation": "新馬場",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "ワンルーム",
+      "sizeSqm": 15.6,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 6,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F2%2F2%2F4vob.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F1%2F1%2Fahzr.jpg&width=640&height=480",
+      "scoreTotal": 82,
+      "matchPercent": 82,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T08:43:08+09:00"
     }
   ]
 }
