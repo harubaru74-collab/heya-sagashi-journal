@@ -89,7 +89,7 @@
       "<tr><th>元の物件URL</th><td><a href=\"" + p.sourceUrl + "\" target=\"_blank\" rel=\"noopener\">ポータルサイトで見る</a></td></tr>" +
     "</table>";
 
-  renderPhotoGallery(document.getElementById("gallery"), p.images);
+  renderPhotoGallery(document.getElementById("gallery"), p.images, p.imageUrl);
   renderRoomChecklist(document.getElementById("checklist"), criteria, p);
   renderFacilityList(document.getElementById("facilities"), p.surroundings && p.surroundings.facilities);
   renderStatusControl(document.getElementById("status-cell"), p, criteria);

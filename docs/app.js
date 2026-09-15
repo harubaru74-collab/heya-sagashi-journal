@@ -143,8 +143,9 @@ function renderFacilityList(container, facilities) {
 }
 
 // 元サイトと同じように、取得できた写真を横スクロールで全部見られるようにする
-function renderPhotoGallery(container, images) {
-  const list = (images && images.length) ? images : [];
+// (imageUrlしか無い旧データとの互換のため、imagesが空ならimageUrl単体にフォールバックする)
+function renderPhotoGallery(container, images, legacyImageUrl) {
+  const list = (images && images.length) ? images : (legacyImageUrl ? [legacyImageUrl] : []);
   if (list.length === 0) {
     container.innerHTML = '<div class="hero-photo-placeholder">写真はまだ取得できてないよ</div>';
     return;
