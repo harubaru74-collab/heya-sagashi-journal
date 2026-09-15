@@ -1,0 +1,157 @@
+{
+  "id": "20260916-qrzg",
+  "isSample": false,
+  "registeredAt": "2026-09-16T08:19:37+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/46b29daaa20ca98586445d0d11934cba1f403bde/",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1c6236d0%2F49811_489598_1_132000_132000.jpg%3Ft%3D20260804142117&width=1200&height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1c6236d0%2F49811_489598_1_132000_132000.jpg%3Ft%3D20260804142117&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1c6236d0%2F49811_489598_1_132000_132000.jpg%3Ft%3D20260804142117&width=1200&height=630",
+  "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fe91a91db%2F49811_489598_3_132000_132000.jpg%3Ft%3D20260804142543&width=640&height=480",
+  "name": "メゾン・ド・イザール",
+  "address": "東京都品川区西品川2丁目21-10",
+  "town": "西品川2丁目",
+  "nearestStation": "下神明",
+  "walkMinutesToStation": 5,
+  "rent": {
+    "base": 55000,
+    "management": 5000,
+    "total": 60000,
+    "freeInternet": false,
+    "effectiveTotal": 60000
+  },
+  "initialCostEstimate": 111970,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 0
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 60500
+    },
+    {
+      "label": "前家賃",
+      "amount": 60000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 29700
+    },
+    {
+      "label": "消火剤代",
+      "amount": 7480
+    },
+    {
+      "label": "害虫防除施工費",
+      "amount": 22000
+    },
+    {
+      "label": "初回保証料(概算)",
+      "amount": 32000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 14.17,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": false,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 1,
+    "route": "下神明(東急大井町線 2分)→大井町(JR京浜東北線・りんかい線等 12分)→品川シーサイド",
+    "leisure": "大井町からJR京浜東北線で東京駅まで約13分、品川駅からJR上野東京ラインや東海道線で各方面へスムーズにアクセスできます。"
+  },
+  "nearbyStations": [
+    {
+      "line": "東急大井町線",
+      "station": "下神明",
+      "walkMinutes": 5,
+      "note": "大井町まで2分・自由が丘や二子玉川方面へのアクセスが良い各駅停車の駅"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大井町",
+      "walkMinutes": 13,
+      "note": "品川まで3分・東京まで13分でマルチに使える大型駅"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "戸越",
+      "walkMinutes": 12,
+      "note": "新橋や日本橋方面へ一本でアクセス可能"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 1200
+      },
+      {
+        "name": "セブンイレブン 西品川２丁目店",
+        "minutes": 250
+      },
+      {
+        "name": "ローソン 西品川三ツ木通店",
+        "minutes": 300
+      },
+      {
+        "name": "まいばすけっと戸越４丁目店",
+        "minutes": 450
+      },
+      {
+        "name": "スーパー文化堂 戸越銀座店",
+        "minutes": 650
+      }
+    ],
+    "areaGuide": "下神明駅周辺は、都心に近いながらも落ち着いた住宅街が広がる治安の比較的良好なエリアです。大きな坂は少なく平坦な道が多いため歩きやすい環境ですが、駅周辺には大型の商業施設は少なく、昔ながらの商店街やスーパー（戸越銀座商店街など）が生活の中心となります。下町情緒が残る温かい雰囲気で、夜間も極端に人通りが途絶えるわけではありませんが、木造アパートや入り組んだ住宅街もあるため、夜間の女性のひとり歩きは一定の注意が必要です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 25,
+      "rentValue": 100,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 75,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 76,
+    "grade": "◎◎",
+    "matchPercent": 76,
+    "summary": "家賃総額6万円で品川シーサイドまで14分・乗り換え1回と好条件ですが、1階・バストイレ一体・洗濯機置き場なしが難点です。",
+    "goodPoints": [
+      "家賃総額が60,000円と非常に安く、予算を大きく下回る",
+      "下神明駅から徒歩5分、品川シーサイドまで乗り換え1回・約14分で通勤しやすい",
+      "周辺にコンビニやスーパー、商店街があり日々の買い物に便利"
+    ],
+    "concernPoints": [
+      "1階の物件で、バストイレ一体および洗濯機置き場がない",
+      "専有面積が14.17㎡と狭く、築年数が40年を超えている"
+    ]
+  },
+  "status": "気になる"
+}
