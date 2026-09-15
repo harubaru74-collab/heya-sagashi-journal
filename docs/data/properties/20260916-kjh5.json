@@ -1,0 +1,157 @@
+{
+  "id": "20260916-kjh5",
+  "isSample": false,
+  "registeredAt": "2026-09-16T08:16:56+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/25e8c151aeb1bb9df1fcdf0156a6305b8b507409/",
+  "images": [
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148023%2Frent%2F24493%2F2%2F1%2Fdsn3.jpg&width=1200&height=630"
+  ],
+  "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148023%2Frent%2F24493%2F2%2F1%2Fdsn3.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148023%2Frent%2F24493%2F2%2F1%2Fdsn3.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148023%2Frent%2F24493%2F1%2F2%2Filsm.jpg&width=640&height=480",
+  "name": "スカイコート品川第二",
+  "address": "東京都品川区南品川4丁目",
+  "town": "南品川4丁目",
+  "nearestStation": "大井町",
+  "walkMinutesToStation": 10,
+  "rent": {
+    "base": 55000,
+    "management": 10000,
+    "total": 65000,
+    "freeInternet": false,
+    "effectiveTotal": 65000
+  },
+  "initialCostEstimate": 361000,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 55000
+    },
+    {
+      "label": "礼金",
+      "amount": 55000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 60500
+    },
+    {
+      "label": "前家賃",
+      "amount": 65000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 35000
+    },
+    {
+      "label": "トラブルサポート24",
+      "amount": 1100
+    },
+    {
+      "label": "保証会社(概算)",
+      "amount": 65000
+    },
+    {
+      "label": "室内清掃費(概算)",
+      "amount": 14400
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 16.08,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": false,
+    "freeInternet": false,
+    "cityGas": false,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 22,
+    "transfers": 1,
+    "route": "大井町(JR京浜東北線 3分)→大崎(東京臨海高速鉄道りんかい線 5分)→品川シーサイド、または大井町駅から徒歩約22分",
+    "leisure": "大井町駅からJR京浜東北線で東京駅まで約13分・乗換なし、または品川駅まで約3分・乗換なし"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大井町",
+      "walkMinutes": 10,
+      "note": "品川まで3分・東京まで13分・横浜まで15分。複数路線が使えて非常に便利"
+    },
+    {
+      "line": "京急本線",
+      "station": "新馬場",
+      "walkMinutes": 11,
+      "note": "品川まで3分・羽田空港へもアクセスしやすい落ち着いた路線"
+    },
+    {
+      "line": "東京臨海高速鉄道りんかい線",
+      "station": "品川シーサイド",
+      "walkMinutes": 22,
+      "note": "お台場方面や大崎・新木場方面へ直通運転でアクセス良好"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 12
+      },
+      {
+        "name": "まいばすけっと大井町駅北店",
+        "minutes": 6
+      },
+      {
+        "name": "ローソン南品川六丁目店",
+        "minutes": 4
+      },
+      {
+        "name": "東京品川病院",
+        "minutes": 17
+      },
+      {
+        "name": "しながわ中央公園",
+        "minutes": 18
+      }
+    ],
+    "areaGuide": "品川区南品川4丁目は、歴史ある神社仏閣や商店街が点在しつつ、近年はマンションなども増えている落ち着いた住宅エリアです。大きな坂は少なく平坦な道が多いため、徒歩や自転車での移動がしやすくなっています。治安面では、地域住民の口コミでも「5年住んでいても危険な目に遭ったことがない」「昼間は静かで子供が多く活気がある」といった声が多く、犯罪発生率も比較的低めで女性の一人暮らしでも安心して暮らせる住環境です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 26,
+      "rentValue": 100,
+      "commuteAccess": 80,
+      "stationCloseness": 75,
+      "dailyConvenience": 75,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 71,
+    "grade": "◎◎",
+    "matchPercent": 71,
+    "summary": "家賃総額6.5万円で予算内ですが、品川シーサイド駅まで徒歩22分とやや遠く、バストイレ一緒・洗濯機置き場なし等の懸念があります。",
+    "goodPoints": [
+      "家賃総額が65,000円で、はるかちゃんの理想予算（7.2万円以内）をクリアしており経済的",
+      "大井町駅が徒歩10分で利用でき、京浜東北線や複数路線へのアクセスが良い",
+      "周辺にスーパーやコンビニ、品川区立品川図書館があり勉強・生活しやすい環境"
+    ],
+    "concernPoints": [
+      "最寄りの品川シーサイド駅まで徒歩約22分と、理想の通勤時間（20日前後）の限界に近い",
+      "バストイレが一体型で、洗濯機置き場や都市ガスなどの設備面で妥協が必要"
+    ]
+  },
+  "status": "気になる"
+}
