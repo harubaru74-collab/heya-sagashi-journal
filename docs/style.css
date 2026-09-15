@@ -150,6 +150,33 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
 }
 .room-filter-checks input[type="checkbox"] { accent-color: var(--pink); width: 15px; height: 15px; }
 
+.room-filter-mode {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 2px;
+}
+.room-filter-mode label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  color: var(--sub);
+}
+.room-filter-mode input[type="radio"] { accent-color: var(--pink); width: 14px; height: 14px; }
+
+.filter-reset-btn {
+  align-self: flex-start;
+  font-family: inherit;
+  font-size: 0.78rem;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  background: #fff;
+  color: var(--sub);
+  cursor: pointer;
+}
+.filter-reset-btn:hover { color: var(--pink); border-color: var(--pink); }
+
 .card-list { display: flex; flex-direction: column; gap: 12px; }
 
 .property-card {

@@ -212,7 +212,26 @@ function renderNearbyStations(container, stations) {
   ).join("") + "</ul>";
 }
 
-// opts: { includeHiddenStatuses(bool、既定false), sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc") }
+// 一覧ページのフィルター設定(徒歩分数・部屋条件・AND/OR)は次に開いたときも
+// 同じ条件で見られるようlocalStorageに保存しておく(端末をまたいだ同期はしない)
+const FILTER_STORAGE_KEY = "heyaSagashiListFilters";
+
+function loadSavedListFilters() {
+  try {
+    return JSON.parse(localStorage.getItem(FILTER_STORAGE_KEY) || "{}");
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveListFilters(state) {
+  try {
+    localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(state));
+  } catch (e) { /* ストレージが使えない環境では諦める */ }
+}
+
+// opts: { includeHiddenStatuses(bool、既定false), sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc"),
+//         roomFilters(配列), roomFilterMode("and"|"or"、既定"and"), maxWalkMinutes(数値) }
 // 「見送り」「掲載終了」は、はるかちゃんが積極的に見送った/もう存在しない物件なので、
 // 明示的にoptsで指定しない限り一覧から隠す(criteria.jsonのhiddenByDefaultStatuses)。
 async function renderPropertyList(container, filterFn, opts) {
@@ -227,7 +246,9 @@ async function renderPropertyList(container, filterFn, opts) {
     }
     if (filterFn) list = list.filter(filterFn);
     if (opts.roomFilters && opts.roomFilters.length) {
-      list = list.filter((p) => opts.roomFilters.every((key) => p.room && p.room[key]));
+      list = opts.roomFilterMode === "or"
+        ? list.filter((p) => p.room && opts.roomFilters.some((key) => p.room[key]))
+        : list.filter((p) => opts.roomFilters.every((key) => p.room && p.room[key]));
     }
     if (opts.maxWalkMinutes != null) {
       list = list.filter((p) => p.walkMinutesToStation != null && p.walkMinutesToStation <= opts.maxWalkMinutes);

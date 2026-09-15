@@ -44,8 +44,13 @@
       </div>
       <div class="filter-group">
         <span class="filter-group-label">お部屋の条件</span>
+        <div class="room-filter-mode" id="room-filter-mode">
+          <label><input type="radio" name="room-filter-mode" value="and" checked>すべて満たす(AND)</label>
+          <label><input type="radio" name="room-filter-mode" value="or">いずれか満たす(OR)</label>
+        </div>
         <div id="room-filter-checks" class="room-filter-checks"></div>
       </div>
+      <button type="button" id="filter-reset-btn" class="filter-reset-btn">フィルターをリセット</button>
     </div>
   </details>
 
@@ -78,24 +83,62 @@
   const hiddenCheckbox = document.getElementById("show-hidden-checkbox");
   const walkSelect = document.getElementById("walk-select");
   const roomChecksEl = document.getElementById("room-filter-checks");
+  const modeEl = document.getElementById("room-filter-mode");
+  const filterPanel = document.querySelector(".filter-panel");
+  const resetBtn = document.getElementById("filter-reset-btn");
 
   const boolConditions = (criteria.roomConditions || []).filter((c) => c.type !== "scale");
   roomChecksEl.innerHTML = boolConditions.map((c) =>
     '<label><input type="checkbox" class="room-filter-checkbox" value="' + c.key + '">' + c.label + "のみ</label>"
   ).join("");
 
+  // 前回開いたときのフィルター条件を復元(端末内のみ・localStorage)
+  const saved = loadSavedListFilters();
+  if (saved.sort) sortSelect.value = saved.sort;
+  if (saved.includeHidden) hiddenCheckbox.checked = true;
+  if (saved.maxWalkMinutes) walkSelect.value = String(saved.maxWalkMinutes);
+  if (saved.roomFilterMode === "or") {
+    const orRadio = modeEl.querySelector('input[value="or"]');
+    if (orRadio) orRadio.checked = true;
+  }
+  if (saved.roomFilters && saved.roomFilters.length) {
+    document.querySelectorAll(".room-filter-checkbox").forEach((cb) => {
+      cb.checked = saved.roomFilters.indexOf(cb.value) !== -1;
+    });
+  }
+  if (filterPanel && (saved.maxWalkMinutes || (saved.roomFilters && saved.roomFilters.length))) {
+    filterPanel.open = true;
+  }
+
+  function currentRoomFilterMode() {
+    const checked = modeEl.querySelector('input[name="room-filter-mode"]:checked');
+    return checked ? checked.value : "and";
+  }
+
   function refresh() {
     const [sortKey, sortDir] = sortSelect.value.split(":");
     const roomFilters = Array.from(document.querySelectorAll(".room-filter-checkbox:checked")).map((cb) => cb.value);
     const maxWalkMinutes = walkSelect.value ? Number(walkSelect.value) : null;
+    const roomFilterMode = currentRoomFilterMode();
+    saveListFilters({
+      sort: sortSelect.value, includeHidden: hiddenCheckbox.checked,
+      maxWalkMinutes, roomFilters, roomFilterMode
+    });
     renderPropertyList(listEl, null, {
-      sortKey, sortDir, includeHiddenStatuses: hiddenCheckbox.checked, roomFilters, maxWalkMinutes
+      sortKey, sortDir, includeHiddenStatuses: hiddenCheckbox.checked, roomFilters, roomFilterMode, maxWalkMinutes
     });
   }
   sortSelect.addEventListener("change", refresh);
   hiddenCheckbox.addEventListener("change", refresh);
   walkSelect.addEventListener("change", refresh);
   roomChecksEl.addEventListener("change", refresh);
+  modeEl.addEventListener("change", refresh);
+  resetBtn.addEventListener("click", () => {
+    walkSelect.value = "";
+    document.querySelectorAll(".room-filter-checkbox").forEach((cb) => { cb.checked = false; });
+    modeEl.querySelector('input[value="and"]').checked = true;
+    refresh();
+  });
   refresh();
 })();
 </script>
