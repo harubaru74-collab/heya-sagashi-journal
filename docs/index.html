@@ -29,6 +29,26 @@
     </label>
   </div>
 
+  <details class="filter-panel">
+    <summary>🔍 フィルターで絞り込む</summary>
+    <div class="filter-body">
+      <div class="filter-group">
+        <span class="filter-group-label">駅までの徒歩</span>
+        <select id="walk-select">
+          <option value="">指定なし</option>
+          <option value="5">5分以内</option>
+          <option value="10">10分以内</option>
+          <option value="15">15分以内</option>
+          <option value="20">20分以内</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-group-label">お部屋の条件</span>
+        <div id="room-filter-checks" class="room-filter-checks"></div>
+      </div>
+    </div>
+  </details>
+
   <div class="card-list" id="property-list"></div>
 
   <p style="text-align:center; margin-top:24px;">
@@ -41,26 +61,41 @@
 <script src="app.js"></script>
 <script>
 (async function () {
+  let criteria;
   try {
-    const c = await loadCriteria();
+    criteria = await loadCriteria();
     document.getElementById("criteria-box").innerHTML =
-      "家賃上限 <b>" + formatYen(c.rent.maxTotal) + "</b>(理想 " + formatYen(c.rent.idealTotal) + ") ・ " +
-      "通勤先: <b>" + c.commute.destinationStationName + "</b>まで" + c.commute.idealMinutes + "分前後(最長" + c.commute.maxMinutes + "分) ・ " +
-      "対象エリア: " + c.targetTowns.join("・");
+      "家賃上限 <b>" + formatYen(criteria.rent.maxTotal) + "</b>(理想 " + formatYen(criteria.rent.idealTotal) + ") ・ " +
+      "通勤先: <b>" + criteria.commute.destinationStationName + "</b>まで" + criteria.commute.idealMinutes + "分前後(最長" + criteria.commute.maxMinutes + "分) ・ " +
+      "対象エリア: " + criteria.targetTowns.join("・");
   } catch (e) {
     document.getElementById("criteria-box").textContent = "条件の読み込みに失敗したよ";
+    criteria = { roomConditions: [] };
   }
 
   const listEl = document.getElementById("property-list");
   const sortSelect = document.getElementById("sort-select");
   const hiddenCheckbox = document.getElementById("show-hidden-checkbox");
+  const walkSelect = document.getElementById("walk-select");
+  const roomChecksEl = document.getElementById("room-filter-checks");
+
+  const boolConditions = (criteria.roomConditions || []).filter((c) => c.type !== "scale");
+  roomChecksEl.innerHTML = boolConditions.map((c) =>
+    '<label><input type="checkbox" class="room-filter-checkbox" value="' + c.key + '">' + c.label + "のみ</label>"
+  ).join("");
 
   function refresh() {
     const [sortKey, sortDir] = sortSelect.value.split(":");
-    renderPropertyList(listEl, null, { sortKey, sortDir, includeHiddenStatuses: hiddenCheckbox.checked });
+    const roomFilters = Array.from(document.querySelectorAll(".room-filter-checkbox:checked")).map((cb) => cb.value);
+    const maxWalkMinutes = walkSelect.value ? Number(walkSelect.value) : null;
+    renderPropertyList(listEl, null, {
+      sortKey, sortDir, includeHiddenStatuses: hiddenCheckbox.checked, roomFilters, maxWalkMinutes
+    });
   }
   sortSelect.addEventListener("change", refresh);
   hiddenCheckbox.addEventListener("change", refresh);
+  walkSelect.addEventListener("change", refresh);
+  roomChecksEl.addEventListener("change", refresh);
   refresh();
 })();
 </script>

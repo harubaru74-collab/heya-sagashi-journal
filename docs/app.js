@@ -226,6 +226,12 @@ async function renderPropertyList(container, filterFn, opts) {
       list = list.filter((p) => hidden.indexOf(p.status) === -1);
     }
     if (filterFn) list = list.filter(filterFn);
+    if (opts.roomFilters && opts.roomFilters.length) {
+      list = list.filter((p) => opts.roomFilters.every((key) => p.room && p.room[key]));
+    }
+    if (opts.maxWalkMinutes != null) {
+      list = list.filter((p) => p.walkMinutesToStation != null && p.walkMinutesToStation <= opts.maxWalkMinutes);
+    }
     const sortKey = opts.sortKey || "scoreTotal";
     const sortDir = opts.sortDir || "desc";
     list.sort((a, b) => {
@@ -236,10 +242,13 @@ async function renderPropertyList(container, filterFn, opts) {
       return sortDir === "asc" ? av - bv : bv - av;
     });
     if (list.length === 0) {
+      const hasActiveFilter = (opts.roomFilters && opts.roomFilters.length) || opts.maxWalkMinutes != null;
       container.innerHTML = '<p class="empty-note">' +
-        (opts.includeHiddenStatuses || hidden.length === 0
-          ? "まだ物件が登録されてないよ。LINEで「いえさがし (URL)」と送ると、ここに追加されるよ📮"
-          : "表示できる物件がないよ(「見送り」「掲載終了」は隠れてるよ)") +
+        (hasActiveFilter
+          ? "条件に合う物件が無いよ。フィルターを見直してみてね"
+          : (opts.includeHiddenStatuses || hidden.length === 0
+            ? "まだ物件が登録されてないよ。LINEで「いえさがし (URL)」と送ると、ここに追加されるよ📮"
+            : "表示できる物件がないよ(「見送り」「掲載終了」は隠れてるよ)")) +
         "</p>";
       return;
     }

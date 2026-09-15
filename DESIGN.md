@@ -227,3 +227,20 @@ base = roomQuality*0.25 + rentValue*0.25 + commuteAccess*0.20
   広さ順のプルダウンと、「見送り・掲載終了も表示」チェックボックスをindex.htmlに追加
 - ✅ **ステータスに「掲載終了」を追加**し、「見送り」と合わせて`hiddenByDefaultStatuses`
   (criteria.json)で一覧からデフォルト非表示に変更(明示的にチェックを入れれば表示される)
+
+## 13. 2026-09-16(5回目)の改修で対応した内容
+
+- ✅ **一覧ページのフィルター機能を拡充**: 並び替えプルダウンの下に折りたたみ式の
+  「🔍 フィルターで絞り込む」パネル(`<details class="filter-panel">`)を新設
+  - 「駅までの徒歩」プルダウン(5/10/15/20分以内)で`walkMinutesToStation`による絞り込み
+  - 「お部屋の条件」チェックボックス群(`criteria.roomConditions`のうち`type!=="scale"`の
+    項目を自動列挙)で、チェックした条件を**すべて満たす**物件だけに絞り込み
+    (例: 「バストイレ別」にチェック→バストイレ別の物件のみ表示)
+  - `renderPropertyList(container, filterFn, opts)`に`opts.roomFilters`(配列・AND条件)と
+    `opts.maxWalkMinutes`(数値・以下)を追加。フィルター該当0件の場合は「条件に合う物件が
+    無いよ。フィルターを見直してみてね」という専用の空状態メッセージを表示
+  - `ai-concierge`側の`updateRoomIndexOnGithub_`で、`docs/data/index.json`の各物件サマリーに
+    `walkMinutesToStation`と`room`(部屋条件オブジェクト)を追加書き込みするように変更。
+    旧データ(この変更前に登録された物件)には無かったため、既存の`index.json`は物件ごとの
+    個別JSON(`properties/{id}.json`)から値を補完して手動バックフィル済み。今後新規登録
+    される物件は自動的にこれらのフィールドを持つ

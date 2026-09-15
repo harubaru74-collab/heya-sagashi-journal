@@ -15,7 +15,21 @@
       "scoreTotal": 81,
       "matchPercent": 81,
       "status": "見送り",
-      "registeredAt": "2026-09-15T09:00:00+09:00"
+      "registeredAt": "2026-09-15T09:00:00+09:00",
+      "walkMinutesToStation": 7,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      }
     },
     {
       "id": "20260916-tjfk",
@@ -31,7 +45,16 @@
       "scoreTotal": 82,
       "matchPercent": 82,
       "status": "気になる",
-      "registeredAt": "2026-09-16T03:57:19+09:00"
+      "registeredAt": "2026-09-16T03:57:19+09:00",
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": true,
+        "storage": true,
+        "indoorWasher": false,
+        "freeInternet": true,
+        "cityGas": true
+      }
     },
     {
       "id": "20260916-e2x4",
@@ -47,7 +70,21 @@
       "scoreTotal": 59,
       "matchPercent": 59,
       "status": "気になる",
-      "registeredAt": "2026-09-16T05:04:29+09:00"
+      "registeredAt": "2026-09-16T05:04:29+09:00",
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      }
     },
     {
       "id": "20260916-0xyb",
@@ -62,7 +99,21 @@
       "scoreTotal": 71,
       "matchPercent": 71,
       "status": "気になる",
-      "registeredAt": "2026-09-16T05:35:03+09:00"
+      "registeredAt": "2026-09-16T05:35:03+09:00",
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      }
     },
     {
       "id": "20260916-hxtq",
@@ -78,7 +129,21 @@
       "scoreTotal": 41,
       "matchPercent": 41,
       "status": "気になる",
-      "registeredAt": "2026-09-16T06:02:26+09:00"
+      "registeredAt": "2026-09-16T06:02:26+09:00",
+      "walkMinutesToStation": 4,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": true,
+        "bathroomDryer": false
+      }
     }
   ]
 }
