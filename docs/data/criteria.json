@@ -36,8 +36,9 @@
     { "key": "loft", "label": "ロフト付き", "type": "boolean", "weight": 1 }
   ],
   "sizeScoring": {
-    "note": "広さの達成率換算(㎡→0-100%の目安。チェックリストの重み付き達成率計算にそのまま使う)",
+    "note": "広さの達成率換算(㎡→0-100%の目安。チェックリストの重み付き達成率計算にそのまま使う)。minSqm未満は見やすさ表示上も△(あまり良くない)、minSqm以上goodSqm未満は普通、goodSqm以上は緑のチェックにする",
     "minSqm": 15,
+    "goodSqm": 18,
     "fullScoreSqm": 30
   },
   "surroundingWants": ["カラオケ", "ジム", "図書館"],

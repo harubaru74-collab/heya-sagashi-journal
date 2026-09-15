@@ -137,13 +137,25 @@ function propertyCardHtml(p) {
 
 // 「お部屋の中身」チェックリスト。criteria.roomConditionsの並び順=表示順、
 // weightが1より大きい項目は★マークで目立たせる(全物件共通の重視設定)。
+// 広さ(scale型)は真偽値ではなく3段階(△あまり良くない/普通/✓良い)で見せる。
+// しきい値はcriteria.sizeScoring(minSqm未満=△、goodSqm以上=✓、その間=普通)
+function sizeTier_(val, sizeScoring) {
+  const minSqm = (sizeScoring && sizeScoring.minSqm) || 15;
+  const goodSqm = (sizeScoring && sizeScoring.goodSqm) || 18;
+  if (val == null) return { cls: "no", mark: "?" };
+  if (val < minSqm) return { cls: "warn", mark: "!" };
+  if (val < goodSqm) return { cls: "mid", mark: "△" };
+  return { cls: "yes", mark: "✓" };
+}
+
 function renderRoomChecklist(container, criteria, property) {
   const room = property.room || {};
   const items = (criteria.roomConditions || []).map((cond) => {
     const important = (cond.weight || 1) > 1;
     if (cond.type === "scale") {
       const val = property.sizeSqm;
-      return '<li class="yes"><span class="mark">' + (val != null ? "㎡" : "?") + '</span>' +
+      const tier = sizeTier_(val, criteria.sizeScoring);
+      return '<li class="' + tier.cls + (important ? " important" : "") + '"><span class="mark">' + tier.mark + '</span>' +
         '<span class="label">' + cond.label + (important ? '<span class="star">★</span>' : "") + '</span>' +
         '<span class="size-value">' + (val != null ? val + cond.unit : "不明") + "</span></li>";
     }
@@ -205,13 +217,33 @@ function renderPhotoGallery(container, images, legacyImageUrl) {
   }
 }
 
+// Geminiが返す経路の説明文には「(※または別ルートの説明)」のような代替ルート注記が
+// 本文と地続きで入っていることが多く、そのままだと1行にズラズラ繋がって読みにくい。
+// 末尾の「(※またはXXX)」を本文から切り離し、別々の行として返す
+function splitRouteLines_(routeText) {
+  if (!routeText) return [];
+  const bracketMatch = routeText.match(/[(（]\s*※?\s*(または[\s\S]*?)[)）]\s*$/);
+  if (bracketMatch) {
+    const main = routeText.slice(0, bracketMatch.index).trim();
+    return [main, bracketMatch[1].trim()].filter(Boolean);
+  }
+  const idx = routeText.search(/[、。]\s*または/);
+  if (idx !== -1) {
+    return [routeText.slice(0, idx).trim(), routeText.slice(idx).replace(/^[、。]\s*/, "").trim()].filter(Boolean);
+  }
+  return [routeText];
+}
+
 // 「最寄り駅・路線」と同じ見た目で「通勤」を表示する(その上に置く用)
-function renderCommuteCard(container, commute) {
+function renderCommuteCard(container, commute, nearestStation, walkMinutesToStation) {
   const headLine = commute.destinationStationName + "まで" + (commute.minutes != null ? commute.minutes + "分" : "-") +
     (commute.transfers != null ? "(乗り換え" + commute.transfers + "回)" : "");
+  const routeLines = splitRouteLines_(commute.route);
   container.innerHTML =
     '<div class="station-head"><span class="station-line">' + headLine + "</span></div>" +
-    (commute.route ? '<p class="station-note">' + commute.route + "</p>" : "") +
+    (walkMinutesToStation != null ? '<p class="station-note">🚶 ' +
+      (nearestStation ? nearestStation + "駅" : "最寄り駅") + "まで徒歩" + walkMinutesToStation + "分</p>" : "") +
+    routeLines.map((line) => '<p class="station-note">' + line + "</p>").join("") +
     (commute.leisure ? '<p class="station-note">🎡 ' + commute.leisure + "</p>" : "");
 }
 

@@ -333,7 +333,7 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
   aspect-ratio: 16 / 9;
   background: var(--blue-light);
 }
-.gallery-main img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery-main img { width: 100%; height: 100%; object-fit: contain; display: block; background: var(--blue-light); }
 .gallery-thumbs {
   display: flex;
   overflow-x: auto;
@@ -431,6 +431,8 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
 }
 .checklist li.yes .mark { background: var(--good-bg); color: var(--good); font-weight: bold; }
 .checklist li.no .mark { background: var(--no-bg); color: var(--no-fg); }
+.checklist li.warn .mark { background: var(--warn-bg); color: var(--warn); font-weight: bold; }
+.checklist li.mid .mark { background: var(--no-bg); color: var(--sub); font-weight: bold; }
 .checklist li.important .mark { background: var(--star); color: #fff; font-weight: bold; }
 .checklist .label { flex: 1; }
 .checklist .star { color: var(--star); font-size: 0.8rem; margin-left: 2px; }

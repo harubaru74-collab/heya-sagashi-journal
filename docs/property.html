@@ -98,7 +98,7 @@
 
   renderPhotoGallery(document.getElementById("gallery"), p.images, p.imageUrl);
   renderRoomChecklist(document.getElementById("checklist"), criteria, p);
-  renderCommuteCard(document.getElementById("commute"), p.commute);
+  renderCommuteCard(document.getElementById("commute"), p.commute, p.nearestStation, p.walkMinutesToStation);
   renderNearbyStations(document.getElementById("stations"), p.nearbyStations);
   renderFacilityList(document.getElementById("facilities"), p.surroundings && p.surroundings.facilities);
   renderStatusControl(document.getElementById("status-cell"), p, criteria);
