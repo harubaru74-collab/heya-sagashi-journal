@@ -51,6 +51,14 @@
         <div id="room-filter-checks" class="room-filter-checks"></div>
       </div>
       <button type="button" id="filter-reset-btn" class="filter-reset-btn">フィルターをリセット</button>
+      <div class="filter-group preset-group">
+        <span class="filter-group-label">保存した条件(<span id="preset-count">0</span>/10)</span>
+        <div class="preset-save-row">
+          <input type="text" id="preset-name-input" placeholder="条件の名前(例: 駅近・バストイレ別)" maxlength="20">
+          <button type="button" id="preset-save-btn">💾 保存</button>
+        </div>
+        <div id="preset-list" class="preset-list"></div>
+      </div>
     </div>
   </details>
 
@@ -86,6 +94,10 @@
   const modeEl = document.getElementById("room-filter-mode");
   const filterPanel = document.querySelector(".filter-panel");
   const resetBtn = document.getElementById("filter-reset-btn");
+  const presetNameInput = document.getElementById("preset-name-input");
+  const presetSaveBtn = document.getElementById("preset-save-btn");
+  const presetListEl = document.getElementById("preset-list");
+  const presetCountEl = document.getElementById("preset-count");
 
   const boolConditions = (criteria.roomConditions || []).filter((c) => c.type !== "scale");
   roomChecksEl.innerHTML = boolConditions.map((c) =>
@@ -115,19 +127,77 @@
     return checked ? checked.value : "and";
   }
 
+  function currentFilterState() {
+    return {
+      sort: sortSelect.value,
+      includeHidden: hiddenCheckbox.checked,
+      maxWalkMinutes: walkSelect.value ? Number(walkSelect.value) : null,
+      roomFilters: Array.from(document.querySelectorAll(".room-filter-checkbox:checked")).map((cb) => cb.value),
+      roomFilterMode: currentRoomFilterMode()
+    };
+  }
+
   function refresh() {
-    const [sortKey, sortDir] = sortSelect.value.split(":");
-    const roomFilters = Array.from(document.querySelectorAll(".room-filter-checkbox:checked")).map((cb) => cb.value);
-    const maxWalkMinutes = walkSelect.value ? Number(walkSelect.value) : null;
-    const roomFilterMode = currentRoomFilterMode();
-    saveListFilters({
-      sort: sortSelect.value, includeHidden: hiddenCheckbox.checked,
-      maxWalkMinutes, roomFilters, roomFilterMode
-    });
+    const state = currentFilterState();
+    const [sortKey, sortDir] = state.sort.split(":");
+    saveListFilters(state);
     renderPropertyList(listEl, null, {
-      sortKey, sortDir, includeHiddenStatuses: hiddenCheckbox.checked, roomFilters, roomFilterMode, maxWalkMinutes
+      sortKey, sortDir, includeHiddenStatuses: state.includeHidden,
+      roomFilters: state.roomFilters, roomFilterMode: state.roomFilterMode, maxWalkMinutes: state.maxWalkMinutes
     });
   }
+
+  function applyFilterState(state) {
+    if (state.sort) sortSelect.value = state.sort;
+    hiddenCheckbox.checked = !!state.includeHidden;
+    walkSelect.value = state.maxWalkMinutes ? String(state.maxWalkMinutes) : "";
+    document.querySelectorAll(".room-filter-checkbox").forEach((cb) => {
+      cb.checked = (state.roomFilters || []).indexOf(cb.value) !== -1;
+    });
+    const modeRadio = modeEl.querySelector('input[value="' + (state.roomFilterMode === "or" ? "or" : "and") + '"]');
+    if (modeRadio) modeRadio.checked = true;
+    refresh();
+  }
+
+  function renderPresetList() {
+    const presets = loadFilterPresets();
+    presetCountEl.textContent = String(presets.length);
+    presetSaveBtn.disabled = presets.length >= 10;
+    if (presets.length === 0) {
+      presetListEl.innerHTML = '<p class="empty-note preset-empty">まだ保存した条件はないよ</p>';
+      return;
+    }
+    presetListEl.innerHTML = presets.map((p) =>
+      '<span class="preset-chip">' +
+        '<button type="button" class="preset-apply-btn" data-id="' + p.id + '">' + p.name + "</button>" +
+        '<button type="button" class="preset-del-btn" data-id="' + p.id + '" aria-label="削除">×</button>' +
+      "</span>"
+    ).join("");
+  }
+
+  presetListEl.addEventListener("click", (ev) => {
+    const applyBtn = ev.target.closest(".preset-apply-btn");
+    const delBtn = ev.target.closest(".preset-del-btn");
+    if (applyBtn) {
+      const preset = loadFilterPresets().find((p) => p.id === applyBtn.dataset.id);
+      if (preset) applyFilterState(preset);
+    } else if (delBtn) {
+      removeFilterPreset(delBtn.dataset.id);
+      renderPresetList();
+    }
+  });
+
+  presetSaveBtn.addEventListener("click", () => {
+    const name = presetNameInput.value.trim() || "名前なしの条件";
+    const result = addFilterPreset(name, currentFilterState());
+    if (!result.ok && result.reason === "limit") {
+      alert("保存できる条件は10個までだよ。使わなくなった条件を削除してから保存してね");
+      return;
+    }
+    presetNameInput.value = "";
+    renderPresetList();
+  });
+
   sortSelect.addEventListener("change", refresh);
   hiddenCheckbox.addEventListener("change", refresh);
   walkSelect.addEventListener("change", refresh);
@@ -139,6 +209,7 @@
     modeEl.querySelector('input[value="and"]').checked = true;
     refresh();
   });
+  renderPresetList();
   refresh();
 })();
 </script>

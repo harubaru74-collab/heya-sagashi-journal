@@ -254,3 +254,11 @@ base = roomQuality*0.25 + rentValue*0.25 + commuteAccess*0.20
   `roomFilters.some(...)`、ANDのときは従来どおり`roomFilters.every(...)`で判定する
 - ✅ **フィルターをリセットするボタンを追加**: 徒歩分数・部屋条件チェック・AND/OR設定を
   まとめて初期状態(条件なし)に戻せるように
+- ✅ **名前を付けてフィルター条件を保存(最大10件)**: 「保存した条件」欄を新設。
+  名前を入力して💾保存すると、そのときの並び替え・徒歩分数・部屋条件・AND/OR設定が
+  1セットとして`localStorage`(`heyaSagashiFilterPresets`)にチップ形式で追加される。
+  チップをタップすると一発でその条件を適用、×で削除。10件保存済みの状態で
+  さらに保存しようとすると「削除してから保存してね」と案内する
+  (`app.js`の`addFilterPreset`/`removeFilterPreset`/`loadFilterPresets`、
+  上限は`FILTER_PRESET_MAX`)。前回の状態を自動で覚えておく既存の
+  `heyaSagashiListFilters`とは別物として共存させている(自動復元 vs 明示的に名前を付けて残す、の役割分担)

@@ -230,6 +230,43 @@ function saveListFilters(state) {
   } catch (e) { /* ストレージが使えない環境では諦める */ }
 }
 
+// 名前を付けて保存できるフィルタープリセット(最大10件、localStorage)
+const FILTER_PRESET_STORAGE_KEY = "heyaSagashiFilterPresets";
+const FILTER_PRESET_MAX = 10;
+
+function loadFilterPresets() {
+  try {
+    return JSON.parse(localStorage.getItem(FILTER_PRESET_STORAGE_KEY) || "[]");
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveFilterPresets(presets) {
+  try {
+    localStorage.setItem(FILTER_PRESET_STORAGE_KEY, JSON.stringify(presets));
+  } catch (e) { /* ストレージが使えない環境では諦める */ }
+}
+
+// 保存できるのはFILTER_PRESET_MAX件まで。上限に達している場合は
+// { ok: false, reason: "limit" }を返し、呼び出し側で案内メッセージを出す
+function addFilterPreset(name, state) {
+  const presets = loadFilterPresets();
+  if (presets.length >= FILTER_PRESET_MAX) {
+    return { ok: false, reason: "limit", presets };
+  }
+  const preset = Object.assign({ id: "p" + Date.now() + Math.floor(Math.random() * 1000), name: name }, state);
+  presets.push(preset);
+  saveFilterPresets(presets);
+  return { ok: true, presets };
+}
+
+function removeFilterPreset(id) {
+  const presets = loadFilterPresets().filter((p) => p.id !== id);
+  saveFilterPresets(presets);
+  return presets;
+}
+
 // opts: { includeHiddenStatuses(bool、既定false), sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc"),
 //         roomFilters(配列), roomFilterMode("and"|"or"、既定"and"), maxWalkMinutes(数値) }
 // 「見送り」「掲載終了」は、はるかちゃんが積極的に見送った/もう存在しない物件なので、

@@ -177,6 +177,77 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
 }
 .filter-reset-btn:hover { color: var(--pink); border-color: var(--pink); }
 
+.preset-group {
+  padding-top: 10px;
+  border-top: 2px dashed var(--border);
+}
+.preset-save-row {
+  display: flex;
+  gap: 6px;
+}
+.preset-save-row input[type="text"] {
+  flex: 1;
+  min-width: 0;
+  font-family: inherit;
+  font-size: 0.82rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+}
+.preset-save-row button {
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 2px solid var(--pink);
+  background: var(--pink-light);
+  color: var(--ink);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.preset-save-row button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.preset-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.preset-empty { font-size: 0.78rem; color: var(--sub); margin: 8px 0 0; }
+.preset-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  background: #fff;
+}
+.preset-apply-btn {
+  font-family: inherit;
+  font-size: 0.78rem;
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+.preset-apply-btn:hover { color: var(--pink); }
+.preset-del-btn {
+  font-family: inherit;
+  font-size: 0.78rem;
+  padding: 5px 9px;
+  border: none;
+  border-left: 2px solid var(--border);
+  background: var(--no-bg);
+  color: var(--no-fg);
+  cursor: pointer;
+}
+.preset-del-btn:hover { color: #fff; background: var(--pink); }
+
 .card-list { display: flex; flex-direction: column; gap: 12px; }
 
 .property-card {
