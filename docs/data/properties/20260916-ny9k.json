@@ -1,0 +1,149 @@
+{
+  "id": "20260916-ny9k",
+  "isSample": false,
+  "registeredAt": "2026-09-16T08:26:19+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/e0eeefa28081d4e514ce545c1433c8404e952091/",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F33e33b4b-68fd-40c5-acbe-bd39ddf35e4c_property_picture_10167_large.jpg&width=1200&height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F33e33b4b-68fd-40c5-acbe-bd39ddf35e4c_property_picture_10167_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F33e33b4b-68fd-40c5-acbe-bd39ddf35e4c_property_picture_10167_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F57fdb104-472e-4a76-803a-1819c0d6f5ff_property_picture_10167_large.jpg&width=640&height=480",
+  "name": "クレムレノ大井",
+  "address": "東京都品川区大井5丁目21-9",
+  "town": "大井5丁目",
+  "nearestStation": "大森",
+  "walkMinutesToStation": 11,
+  "rent": {
+    "base": 60000,
+    "management": 30000,
+    "total": 90000,
+    "freeInternet": true,
+    "effectiveTotal": 85000
+  },
+  "initialCostEstimate": 295200,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 60000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 60000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 66000
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 63000
+    },
+    {
+      "label": "火災保険料",
+      "amount": 21500
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 18700
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 6000
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 12.6,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": false,
+    "indoorWasher": true,
+    "freeInternet": true,
+    "cityGas": false,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 15,
+    "transfers": 0,
+    "route": "大森(JR京浜東北・根岸線 4分)→大井町、大井町から徒歩約15分または品川シーサイド駅へアクセス",
+    "leisure": "大井町駅からJR京浜東北線で東京まで13分・品川まで3分、新宿へは大井町駅からJR京浜東北線で品川乗り換えJR山手線で約20分"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大森",
+      "walkMinutes": 11,
+      "note": "品川まで約6分・東京まで約13分、京浜東北線が利用可能"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大井町",
+      "walkMinutes": 13,
+      "note": "品川まで約3分・りんかい線乗換で品川シーサイドへアクセス可能"
+    },
+    {
+      "line": "京急本線",
+      "station": "立会川",
+      "walkMinutes": 13,
+      "note": "品川まで約10分・横浜方面へアクセスしやすい路線"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "トップパルケ鹿島店",
+        "minutes": 1
+      },
+      {
+        "name": "品川区立大井図書館",
+        "minutes": 3
+      },
+      {
+        "name": "ツルハドラッグ大井町店",
+        "minutes": 4
+      },
+      {
+        "name": "セブンイレブン品川大井7丁目店",
+        "minutes": 4
+      },
+      {
+        "name": "茂手木医院",
+        "minutes": 2
+      }
+    ],
+    "areaGuide": "品川区大井エリアは、落ち着いた住宅街が広がり治安が良く、女性の一人暮らしでも比較的安心して暮らせる環境です。駅周辺には大型スーパーや商店街、ドラッグストアが充実しており、日常の買い物に困ることはありません。全体的に平坦な地形が多く歩きやすいですが、物件周辺は閑静な住宅街のため夜道は明るさを確認しておくと安心です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 42,
+      "rentValue": 0,
+      "commuteAccess": 100,
+      "stationCloseness": 70,
+      "dailyConvenience": 75,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 32,
+    "grade": "△",
+    "matchPercent": 32,
+    "summary": "家賃総額6.3万円で予算内ですが、品川シーサイドまで徒歩圏外かつバスや乗り換えが必要でドアツードア20分前後の条件には合致しません。",
+    "goodPoints": [
+      "家賃総額が6.3万円と予算内に収まる",
+      "ネット無料や室内洗濯機置き場など一人暮らしの基本設備が充実",
+      "徒歩1分圏内にスーパーがあり買い物環境が非常に良い"
+    ],
+    "concernPoints": [
+      "品川シーサイド駅まで徒歩35分と遠く、通勤に時間がかかる",
+      "バストイレが一体型で、専有面積が12.6㎡とやや狭い"
+    ]
+  },
+  "status": "気になる"
+}
