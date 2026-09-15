@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T05:35:03+09:00",
+  "updatedAt": "2026-09-16T06:02:26+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -63,6 +63,22 @@
       "matchPercent": 71,
       "status": "気になる",
       "registeredAt": "2026-09-16T05:35:03+09:00"
+    },
+    {
+      "id": "20260916-hxtq",
+      "isSample": false,
+      "name": "カーサソラール中目黒",
+      "town": "上目黒3丁目",
+      "nearestStation": "中目黒",
+      "rentTotal": 77000,
+      "effectiveRentTotal": 77000,
+      "layout": "ワンルーム",
+      "sizeSqm": 15.13,
+      "commuteMinutes": 33,
+      "scoreTotal": 41,
+      "matchPercent": 41,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T06:02:26+09:00"
     }
   ]
 }

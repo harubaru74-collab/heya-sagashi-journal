@@ -1,0 +1,147 @@
+{
+  "id": "20260916-hxtq",
+  "isSample": false,
+  "registeredAt": "2026-09-16T06:02:26+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/9fa6a6eade3be2319d48d20a03d3f71918223c2e/?bid=",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&amp;width=1200&amp;height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&amp;width=1200&amp;height=630",
+  "name": "カーサソラール中目黒",
+  "address": "東京都目黒区上目黒3丁目",
+  "town": "上目黒3丁目",
+  "nearestStation": "中目黒",
+  "walkMinutesToStation": 4,
+  "rent": {
+    "base": 74000,
+    "management": 3000,
+    "total": 77000,
+    "freeInternet": false,
+    "effectiveTotal": 77000
+  },
+  "initialCostEstimate": 386300,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 74000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 81400
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 77000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 43800
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 38500
+    },
+    {
+      "label": "口座振替手数料",
+      "amount": 150
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 15.13,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": true,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 33,
+    "transfers": 2,
+    "route": "中目黒(東京メトロ日比谷線 3分)→恵比寿(JR山手線外回り 16分)→大崎(JRりんかい線 4分)→品川シーサイド(または中目黒から日比谷線で恵比寿乗り換えJR湘南新宿ライン等で大崎経由品川シーサイド)",
+    "leisure": "中目黒から東京メトロ日比谷線で恵比寿まで3分、JR山手線に乗り換えて新宿まで約20分"
+  },
+  "nearbyStations": [
+    {
+      "line": "東京メトロ日比谷線",
+      "station": "中目黒",
+      "walkMinutes": 4,
+      "note": "恵比寿まで3分・六本木まで6分。おしゃれな飲食店が多く人気の路線"
+    },
+    {
+      "line": "東急東横線",
+      "station": "代官山",
+      "walkMinutes": 13,
+      "note": "渋谷まで1分・横浜まで約30分。特急通過だが高級感と利便性が高い路線"
+    },
+    {
+      "line": "東急東横線",
+      "station": "祐天寺",
+      "walkMinutes": 14,
+      "note": "渋谷まで約6分。落ち着いた住宅街が広がる路線"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "目黒区立中目黒駅前図書館",
+        "minutes": 350
+      },
+      {
+        "name": "まいばすけっと目黒青葉台1丁目店",
+        "minutes": 325
+      },
+      {
+        "name": "ファミリーマート小浦目黒青葉台店",
+        "minutes": 154
+      },
+      {
+        "name": "スターバックス中目黒山手通り店",
+        "minutes": 159
+      }
+    ],
+    "areaGuide": "中目黒駅周辺は、スタイリッシュなカフェやセレクトショップ、目黒川の桜並木で知られる非常に人気の高いエリアです。高級住宅街としての側面もあり、駅周辺は人通りが多く明るいため、夜間の女性のひとり歩きも比較的安心で治安は良好です。坂道は比較的少ない平坦な地形ですが、人気エリアのため物価や家賃相場はやや高めです。生活利便施設も一通り揃っており、落ち着いたお洒落なライフスタイルを楽しめる住環境が整っています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 58,
+      "rentValue": 34,
+      "commuteAccess": 6,
+      "stationCloseness": 100,
+      "dailyConvenience": 75,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 41,
+    "grade": "△",
+    "matchPercent": 41,
+    "summary": "通勤時間が約33分かかり理想の20〜25分より長く乗り換えも2回必要なため通勤面で不向き",
+    "goodPoints": [
+      "家賃総額が管理費込みで77000円と予算内におさまる",
+      "最寄りの中目黒駅から徒歩4分と駅近で便利",
+      "室内洗濯機置き場や温水洗浄便座、独立洗面台などの設備がある"
+    ],
+    "concernPoints": [
+      "品川シーサイド駅までの通勤時間が約33分と理想より長い",
+      "バストイレ一緒の物件である"
+    ]
+  },
+  "status": "気になる"
+}
