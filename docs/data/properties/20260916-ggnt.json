@@ -1,0 +1,186 @@
+{
+  "id": "20260916-ggnt",
+  "isSample": false,
+  "registeredAt": "2026-09-16T08:43:08+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/b-1125620081208/",
+  "images": [
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F2%2F2%2F4vob.jpg&width=1200&height=630",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F2%2F2%2F4vob.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F1%2F1%2Fahzr.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F2%2F2%2F4vob.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F11%2F4%2Fu5p7.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F12%2F5%2Fdkg4.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F15%2F6%2F674n.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F17%2F7%2Fkyga.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F18%2F8%2Fgsxb.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F18%2F14%2Fplr9.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F18%2F15%2Fp5t4.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F18%2F16%2Fbsmi.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F18%2F17%2Fqvkd.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F19%2F11%2Fqa4d.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F19%2F13%2Fy1y6.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F10%2F9%2F2vhw.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F10%2Foe7f.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F12%2F17pl.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F18%2Fp3ln.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F19%2F26ac.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F20%2F4o2j.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F21%2Ftxk6.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F22%2Fq1sv.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F23%2Fu8dv.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F9%2F24%2Fasi9.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F1%2F1%2Fahzr.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F11%2F4%2Fu5p7.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F12%2F5%2Fdkg4.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F15%2F6%2F674n.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F17%2F7%2Fkyga.jpg&width=640&height=480"
+  ],
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F2%2F2%2F4vob.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F2%2F2%2F4vob.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F1%2F1%2Fahzr.jpg&width=640&height=480",
+  "name": "コムデ・ビュー 3階",
+  "address": "東京都品川区北品川2丁目",
+  "town": "北品川2丁目",
+  "nearestStation": "新馬場",
+  "walkMinutesToStation": 6,
+  "rent": {
+    "base": 67000,
+    "management": 3000,
+    "total": 70000,
+    "freeInternet": false,
+    "effectiveTotal": 70000
+  },
+  "initialCostEstimate": 368100,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 67000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 67000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 73700
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 70000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 33500
+    },
+    {
+      "label": "入安心サービス料",
+      "amount": 17600
+    },
+    {
+      "label": "消毒料",
+      "amount": 17600
+    },
+    {
+      "label": "鍵交換料",
+      "amount": 26400
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 15.6,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 0,
+    "route": "新馬場(京急本線 エアポート急行 4分)→品川(都営浅草線直通 3分)→品川シーサイド（※または新馬場から京急本線で北品川経由品川乗り換えやりんかい線等、あるいはりんかい線天王洲アイル駅利用も可。京急本線利用で品川駅経由などがスムーズ）",
+    "leisure": "新馬場駅から京急本線で品川に出てJR山手線に乗り換えて新宿まで約25分"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "新馬場",
+      "walkMinutes": 6,
+      "note": "品川まで約4分・横浜まで約25分、各駅停車がメインの落ち着いた路線"
+    },
+    {
+      "line": "東京臨海高速鉄道りんかい線",
+      "station": "天王洲アイル",
+      "walkMinutes": 10,
+      "note": "大崎や新木場方面へアクセスしやすくお台場方面への移動も便利な路線"
+    },
+    {
+      "line": "京急本線",
+      "station": "北品川",
+      "walkMinutes": 11,
+      "note": "品川駅まで徒歩圏内でアクセス可能な便利な駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 13
+      },
+      {
+        "name": "まいばすけっと北品川2丁目店",
+        "minutes": 4
+      },
+      {
+        "name": "どらっぐぱぱす北品川店",
+        "minutes": 5
+      },
+      {
+        "name": "ファミリーマート新馬場サクセス通り店",
+        "minutes": 4
+      },
+      {
+        "name": "第三北品川病院",
+        "minutes": 8
+      }
+    ],
+    "areaGuide": "北品川エリアは、旧東海道の宿場町の面影を残す歴史ある商店街があり、下町情緒と落ち着いた雰囲気が共存する治安の良好な住宅街です。坂道が少なく平坦な地形のため、日常の移動や徒歩・自転車での買い物が非常にしやすい環境です。大通りから一本入ると静かな住環境が広がり、都心へのアクセス利便性と穏やかな暮らしを両立できる人気のエリアです。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 42,
+      "rentValue": 100,
+      "commuteAccess": 100,
+      "stationCloseness": 95,
+      "dailyConvenience": 85,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 82,
+    "grade": "◎◎",
+    "matchPercent": 82,
+    "summary": "家賃7万円台で品川シーサイドまで電車14分・乗り換えなしの好アクセス！",
+    "goodPoints": [
+      "家賃総額が7万円以下（70,000円）で予算内",
+      "新馬場駅から徒歩6分で品川シーサイド駅まで直通約14分の好立地",
+      "周辺に商店街やスーパーがあり日常の買い物や生活が便利"
+    ],
+    "concernPoints": [
+      "バストイレが一緒で専有面積が15.6平米とやや狭い",
+      "初期費用に鍵交換代や各種サービス料が別途かかる"
+    ]
+  },
+  "status": "気になる"
+}
