@@ -1,0 +1,123 @@
+{
+  "id": "20260916-e2x4",
+  "isSample": false,
+  "registeredAt": "2026-09-16T05:04:29+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/56f8191ac5da82bbf7a9aa71f60b07dab7be876e/?bid=1053080008092",
+  "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&amp;width=1200&amp;height=630",
+  "name": "ビアメゾン品川",
+  "address": "東京都品川区二葉1丁目3-37",
+  "town": "二葉1丁目",
+  "nearestStation": "下神明",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 80000,
+    "management": 0,
+    "total": 80000,
+    "freeInternet": false,
+    "effectiveTotal": 80000
+  },
+  "initialCostEstimate": 396000,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 80000
+    },
+    {
+      "label": "礼金",
+      "amount": 80000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 88000
+    },
+    {
+      "label": "前家賃",
+      "amount": 80000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 33000
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 40000
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 21.67,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 1,
+    "route": "下神明→東急大井町線→大井町→りんかい線→品川シーサイド"
+  },
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立二葉図書館",
+        "minutes": 8
+      },
+      {
+        "name": "まいばすけっと二葉2丁目店",
+        "minutes": 5
+      },
+      {
+        "name": "セブンイレブン二葉町店",
+        "minutes": 6
+      },
+      {
+        "name": "ローソン二葉店",
+        "minutes": 350
+      },
+      {
+        "name": "医療法人社団仁生堂大村病院",
+        "minutes": 12
+      }
+    ],
+    "areaGuide": "最寄りの下神明駅周辺や品川区二葉エリアは、落ち着いた住宅街が広がり、下町のような温かみと穏やかな雰囲気が漂う治安の良好な地域です。平坦な地形のため自転車や徒歩での移動も快適で、坂道を気にせず生活できます。近くには活気のある商店街や公園、スーパー、図書館などの生活利便施設がしっかりと揃っており、一人暮らしでも非常に安心して暮らせる住環境が整っています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 54,
+      "rentValue": 0,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 85,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 59,
+    "grade": "◎",
+    "matchPercent": 59,
+    "summary": "品川シーサイド駅まで電車14分・乗り換え1回で、理想の通勤圏内です。",
+    "goodPoints": [
+      "下神明駅から徒歩3分の駅近で便利",
+      "スーパーやコンビニが徒歩圏内に複数あり買い物しやすい",
+      "洗面所独立や室内洗濯機置き場など設備が充実"
+    ],
+    "concernPoints": [
+      "バストイレが一緒の3点ユニットタイプである点",
+      "管理費はないが、家賃が8万円と上限いっぱいの金額である点"
+    ]
+  },
+  "status": "気になる"
+}
