@@ -78,13 +78,18 @@ const COMPARE_COLORS = ["#ff8fb8", "#7fc8e8", "#ffb400", "#8dd9a8", "#b79bff"];
   }
 
   function photoUrl(p) {
-    return (p.images && p.images[0]) || p.imageUrl || "";
+    return p.exteriorImageUrl || (p.images && p.images[0]) || p.imageUrl || "";
   }
 
-  const header = "<tr><th class=\"row-label\">写真</th>" +
+  const header = "<tr><th class=\"row-label\">外観</th>" +
     properties.map((p) => {
       const url = photoUrl(p);
       return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + '" referrerpolicy="no-referrer">' : "-") + "</th>";
+    }).join("") + "</tr>" +
+    "<tr><th class=\"row-label\">間取り図</th>" +
+    properties.map((p) => {
+      const url = p.floorPlanImageUrl || "";
+      return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + 'の間取り図" referrerpolicy="no-referrer">' : "-") + "</th>";
     }).join("") + "</tr>" +
     "<tr><th class=\"row-label\">物件名</th>" +
     properties.map((p) => "<th><a href=\"property.html?id=" + encodeURIComponent(p.id) + "\">" + p.name + "</a></th>").join("") + "</tr>";

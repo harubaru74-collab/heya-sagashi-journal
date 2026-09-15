@@ -4,9 +4,9 @@
   "registeredAt": "2026-09-16T05:35:03+09:00",
   "sourceUrl": "https://www.homes.co.jp/chintai/room/7c42d1c7b1a3c07945daabd56207310c74ef980d/?bid=1053080008105",
   "images": [
-    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&amp;width=1200&amp;height=630"
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630"
   ],
-  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&amp;width=1200&amp;height=630",
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630",
   "name": "中沢ハイツ",
   "address": "東京都品川区戸越4丁目11-20",
   "town": "戸越4丁目",
@@ -122,5 +122,7 @@
       "1階の物件で防犯面や日当たりへの配慮が必要"
     ]
   },
-  "status": "気になる"
+  "status": "気になる",
+  "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630",
+  "floorPlanImageUrl": ""
 }

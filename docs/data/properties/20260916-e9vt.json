@@ -4,9 +4,9 @@
   "registeredAt": "2026-09-16T06:23:47+09:00",
   "sourceUrl": "https://www.homes.co.jp/chintai/room/67016c4974eafb274f1f8f56d6362dc096a391db/?bid=1574480010593",
   "images": [
-    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&amp;width=1200&amp;height=630"
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&width=1200&height=630"
   ],
-  "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&amp;width=1200&amp;height=630",
+  "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&width=1200&height=630",
   "name": "恵比寿の賃貸マンション",
   "address": "東京都渋谷区恵比寿南1丁目",
   "town": "恵比寿南1丁目",
@@ -155,5 +155,7 @@
       "築年数が43年と古い"
     ]
   },
-  "status": "気になる"
+  "status": "気になる",
+  "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&width=1200&height=630",
+  "floorPlanImageUrl": ""
 }

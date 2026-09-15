@@ -3,7 +3,7 @@
   "isSample": false,
   "registeredAt": "2026-09-16T05:04:29+09:00",
   "sourceUrl": "https://www.homes.co.jp/chintai/room/56f8191ac5da82bbf7a9aa71f60b07dab7be876e/?bid=1053080008092",
-  "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&amp;width=1200&amp;height=630",
+  "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
   "name": "ビアメゾン品川",
   "address": "東京都品川区二葉1丁目3-37",
   "town": "二葉1丁目",
@@ -119,5 +119,7 @@
       "管理費はないが、家賃が8万円と上限いっぱいの金額である点"
     ]
   },
-  "status": "気になる"
+  "status": "気になる",
+  "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
+  "floorPlanImageUrl": ""
 }

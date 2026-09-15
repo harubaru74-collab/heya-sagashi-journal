@@ -75,5 +75,7 @@
       "洗濯機置き場の記載がない、または屋外等の可能性がある点"
     ]
   },
-  "status": "気になる"
+  "status": "気になる",
+  "exteriorImageUrl": "",
+  "floorPlanImageUrl": ""
 }

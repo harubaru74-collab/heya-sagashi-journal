@@ -29,7 +29,9 @@
         "separateWashstand": false,
         "washletToilet": false,
         "bathroomDryer": false
-      }
+      },
+      "exteriorImageUrl": "https://picsum.photos/seed/heya-sample-1/800/450",
+      "floorPlanImageUrl": ""
     },
     {
       "id": "20260916-tjfk",
@@ -54,7 +56,9 @@
         "indoorWasher": false,
         "freeInternet": true,
         "cityGas": true
-      }
+      },
+      "exteriorImageUrl": "",
+      "floorPlanImageUrl": ""
     },
     {
       "id": "20260916-e2x4",
@@ -84,7 +88,9 @@
         "separateWashstand": true,
         "washletToilet": false,
         "bathroomDryer": false
-      }
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
+      "floorPlanImageUrl": ""
     },
     {
       "id": "20260916-0xyb",
@@ -113,7 +119,9 @@
         "separateWashstand": true,
         "washletToilet": false,
         "bathroomDryer": false
-      }
+      },
+      "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630",
+      "floorPlanImageUrl": ""
     },
     {
       "id": "20260916-hxtq",
@@ -143,7 +151,9 @@
         "separateWashstand": true,
         "washletToilet": true,
         "bathroomDryer": false
-      }
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&width=1200&height=630",
+      "floorPlanImageUrl": ""
     },
     {
       "id": "20260916-e9vt",
@@ -173,7 +183,9 @@
         "separateWashstand": false,
         "washletToilet": false,
         "bathroomDryer": false
-      }
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&width=1200&height=630",
+      "floorPlanImageUrl": ""
     }
   ]
 }

@@ -4,9 +4,9 @@
   "registeredAt": "2026-09-16T06:02:26+09:00",
   "sourceUrl": "https://www.homes.co.jp/chintai/room/9fa6a6eade3be2319d48d20a03d3f71918223c2e/?bid=",
   "images": [
-    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&amp;width=1200&amp;height=630"
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&width=1200&height=630"
   ],
-  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&amp;width=1200&amp;height=630",
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&width=1200&height=630",
   "name": "カーサソラール中目黒",
   "address": "東京都目黒区上目黒3丁目",
   "town": "上目黒3丁目",
@@ -143,5 +143,7 @@
       "バストイレ一緒の物件である"
     ]
   },
-  "status": "気になる"
+  "status": "気になる",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&width=1200&height=630",
+  "floorPlanImageUrl": ""
 }

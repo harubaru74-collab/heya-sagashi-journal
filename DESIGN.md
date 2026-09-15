@@ -268,3 +268,25 @@ base = roomQuality*0.25 + rentValue*0.25 + commuteAccess*0.20
   `opts.maxCommuteMinutes`/`opts.maxRent`で判定し、値が無い物件(`commuteMinutes`未登録など)は
   他のフィルター同様に除外される。フィルターリセット・保存条件(プリセット)・自動復元
   すべてにこの2つも含めて連動させている
+
+## 14. 2026-09-16(7回目)の改修で対応した内容
+
+- 🐛 **バグ修正: 写真URLのHTML実体参照が二重エスケープされていた**: `extractPropertyImages_`が
+  `<meta property="og:image" content="...">`のcontent属性値をそのまま拾っていたため、
+  本来のHTMLでは`&`が`&amp;`とエスケープされているのに、それをデコードしないまま
+  `images`配列に格納していた(例: `...width=1200&amp;height=630`のような壊れたURL)。
+  `decodeHtmlEntities_()`を新設してJSON-LD・og:image両方の抽出時にデコードするように修正。
+  既存の登録済み物件(中沢ハイツ・恵比寿の賃貸マンション・カーサソラール中目黒の3件)の
+  `images`/`imageUrl`もPythonスクリプトで一括デコードして直接バックフィル済み
+- ✅ **外観・間取り図をそれぞれ独立したフィールドとして持つように**: `extractFloorPlanImageUrl_()`
+  を新設。ページ内の`<img>`タグのalt/title/srcに「間取り」「madori」「floorplan」等の
+  キーワードが含まれるものを間取り図とみなす簡易ヒューリスティック(100%の精度は保証できない)。
+  `buildRoomPropertyRecord_`が`exteriorImageUrl`(=images[0])と`floorPlanImageUrl`を
+  新たに物件レコードに持つようになり、`updateRoomIndexOnGithub_`でindex.jsonのサマリーにも
+  この2つを含めるように。既存の登録済み物件は間取り図を後から取得し直せないため、
+  `exteriorImageUrl`のみ補完し`floorPlanImageUrl`は空文字のまま(今後の新規登録から自動で入る)
+- ✅ **一覧カードに外観・間取りの小さいサムネイルを追加**: `propertyCardHtml`に
+  `.card-thumbs`(2枠並び)を追加。画像が無い場合は点線の空枠に「外観なし」「間取りなし」と
+  表示するので、レイアウトが崩れない
+- ✅ **比較ページに「間取り図」の行を追加**: 既存の「写真」行を「外観」に改名し、
+  その直下に`floorPlanImageUrl`を使った「間取り図」行を新設(データが無ければ"-")

@@ -97,6 +97,19 @@ function drawRadarChart(canvas, axisLabels, axisValues, color, captions) {
   });
 }
 
+// 一覧カード用の小さいサムネイル1枠(外観 or 間取り)。画像が無ければ点線の空枠を出す
+function cardThumbHtml(url, label) {
+  if (url) {
+    return '<div class="card-thumb-box">' +
+      '<img class="card-thumb-img" src="' + url + '" alt="' + label + '" referrerpolicy="no-referrer" loading="lazy">' +
+      '<span class="card-thumb-label">' + label + "</span>" +
+    "</div>";
+  }
+  return '<div class="card-thumb-box placeholder">' +
+    '<span class="card-thumb-empty">' + label + "なし</span>" +
+  "</div>";
+}
+
 function propertyCardHtml(p) {
   const sample = p.isSample ? '<span class="sample-tag">サンプル</span>' : "";
   return (
@@ -113,6 +126,10 @@ function propertyCardHtml(p) {
         p.town + " ・ " + p.nearestStation + "駅" +
         (p.effectiveRentTotal !== p.rentTotal ? "(ネット込み実質 " + formatYen(p.effectiveRentTotal) + ")" : "") +
         ' ・ <span class="sticker-tag">' + (p.status || "-") + "</span>" +
+      "</div>" +
+      '<div class="card-thumbs">' +
+        cardThumbHtml(p.exteriorImageUrl, "外観") +
+        cardThumbHtml(p.floorPlanImageUrl, "間取り") +
       "</div>" +
     "</a>"
   );
