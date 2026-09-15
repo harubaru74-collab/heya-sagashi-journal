@@ -32,6 +32,13 @@ function formatYen(n) {
   return "¥" + Number(n).toLocaleString("ja-JP");
 }
 
+// 「万円」表記(例: 78000 → "7.8万円")
+function formatMan(n) {
+  if (n === null || n === undefined) return "-";
+  const man = Math.round(n / 100) / 100;
+  return man + "万円";
+}
+
 // レーダーの各軸ラベルの下に添える、実際の値ベースの一言(例:「通勤アクセス」の下に「3分」)
 function buildLifeAxisCaptions(property) {
   const facilities = (property.surroundings && property.surroundings.facilities) || [];
@@ -96,9 +103,11 @@ function propertyCardHtml(p) {
         '<span class="name">' + p.name + sample + "</span>" +
         '<span class="score-badge">マッチ度 ' + p.matchPercent + "%</span>" +
       "</div>" +
+      '<div class="card-stats">' +
+        formatMan(p.rentTotal) + " ・ " + p.sizeSqm + "㎡ ・ 通勤" + (p.commuteMinutes != null ? p.commuteMinutes + "分" : "-") +
+      "</div>" +
       '<div class="meta">' +
-        p.town + " ・ " + p.nearestStation + "駅 ・ " + p.layout + " " + p.sizeSqm + "㎡<br>" +
-        "家賃総額 " + formatYen(p.rentTotal) +
+        p.town + " ・ " + p.nearestStation + "駅" +
         (p.effectiveRentTotal !== p.rentTotal ? "(ネット込み実質 " + formatYen(p.effectiveRentTotal) + ")" : "") +
         ' ・ <span class="sticker-tag">' + (p.status || "-") + "</span>" +
       "</div>" +
@@ -142,17 +151,52 @@ function renderFacilityList(container, facilities) {
   ).join("") + "</ul>";
 }
 
-// 元サイトと同じように、取得できた写真を横スクロールで全部見られるようにする
+// 元サイトと同じように、大きい写真+下のサムネイル一覧で全部見られるようにする。
 // (imageUrlしか無い旧データとの互換のため、imagesが空ならimageUrl単体にフォールバックする)
+// LINEアプリ内ブラウザ等では横スワイプがアプリ側に取られてスクロールしにくいことがあるため、
+// メインの切り替えは「サムネイルをタップ」で行い、スワイプは補助手段に留める。
 function renderPhotoGallery(container, images, legacyImageUrl) {
   const list = (images && images.length) ? images : (legacyImageUrl ? [legacyImageUrl] : []);
   if (list.length === 0) {
     container.innerHTML = '<div class="hero-photo-placeholder">写真はまだ取得できてないよ</div>';
     return;
   }
-  container.innerHTML = '<div class="photo-gallery">' + list.map((url) =>
-    '<a href="' + url + '" target="_blank" rel="noopener"><img src="' + url + '" alt="物件の写真" referrerpolicy="no-referrer" loading="lazy"></a>'
-  ).join("") + "</div>";
+  container.innerHTML =
+    '<a class="gallery-main" id="gallery-main-link" href="' + list[0] + '" target="_blank" rel="noopener">' +
+      '<img id="gallery-main-img" src="' + list[0] + '" alt="物件の写真" referrerpolicy="no-referrer">' +
+    "</a>" +
+    (list.length > 1 ? '<div class="gallery-thumbs">' + list.map((url, i) =>
+      '<img class="gallery-thumb' + (i === 0 ? " active" : "") + '" data-index="' + i + '" src="' + url +
+      '" alt="サムネイル' + (i + 1) + '" referrerpolicy="no-referrer" loading="lazy">'
+    ).join("") + "</div>" : "");
+
+  if (list.length > 1) {
+    const mainImg = document.getElementById("gallery-main-img");
+    const mainLink = document.getElementById("gallery-main-link");
+    container.querySelectorAll(".gallery-thumb").forEach((thumb) => {
+      thumb.addEventListener("click", () => {
+        const url = list[Number(thumb.dataset.index)];
+        mainImg.src = url;
+        mainLink.href = url;
+        container.querySelectorAll(".gallery-thumb").forEach((t) => t.classList.remove("active"));
+        thumb.classList.add("active");
+      });
+    });
+  }
+}
+
+function renderNearbyStations(container, stations) {
+  if (!stations || stations.length === 0) {
+    container.innerHTML = '<p class="empty-note" style="padding:10px;">最寄り駅・路線の情報はまだ登録されてないよ</p>';
+    return;
+  }
+  container.innerHTML = '<ul class="station-list">' + stations.map((s) =>
+    '<li><div class="station-head"><span class="station-line">' + s.line + "</span>" +
+      '<span class="station-name">' + s.station + "駅</span>" +
+      '<span class="station-walk">徒歩' + (s.walkMinutes != null ? s.walkMinutes + "分" : "-") + "</span></div>" +
+      (s.note ? '<p class="station-note">' + s.note + "</p>" : "") +
+    "</li>"
+  ).join("") + "</ul>";
 }
 
 async function renderPropertyList(container, filterFn) {

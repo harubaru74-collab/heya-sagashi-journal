@@ -40,11 +40,12 @@
     '<li><span class="point-marker">!</span><span>' + t + "</span></li>").join("");
 
   const costLine = (p.costBreakdown || []).length
-    ? formatYen(p.initialCostEstimate) + "(" + p.costBreakdown.map((c) => c.label + " " + formatYen(c.amount)).join("・") + ")"
+    ? formatYen(p.initialCostEstimate) + '<span class="detail-sub">(' + p.costBreakdown.map((c) => c.label + " " + formatYen(c.amount)).join("・") + ")</span>"
     : formatYen(p.initialCostEstimate);
 
   const commuteLine = p.commute.destinationStationName + "まで" + p.commute.minutes + "分(乗り換え" + p.commute.transfers + "回)" +
-    (p.commute.route ? '<span class="detail-sub">' + p.commute.route + "</span>" : "");
+    (p.commute.route ? '<span class="detail-sub">' + p.commute.route + "</span>" : "") +
+    (p.commute.leisure ? '<span class="detail-sub">🎡 ' + p.commute.leisure + "</span>" : "");
 
   const areaGuideText = (p.surroundings && (p.surroundings.areaGuide || p.surroundings.safetyNote)) ||
     "エリアの解説はまだ登録されてないよ";
@@ -76,6 +77,11 @@
     "</div>" +
 
     '<div class="checklist-box">' +
+      "<h3>🚉 最寄り駅・路線</h3>" +
+      '<div id="stations"></div>' +
+    "</div>" +
+
+    '<div class="checklist-box">' +
       "<h3>🚶 周辺施設</h3>" +
       '<div id="facilities"></div>' +
     "</div>" +
@@ -91,6 +97,7 @@
 
   renderPhotoGallery(document.getElementById("gallery"), p.images, p.imageUrl);
   renderRoomChecklist(document.getElementById("checklist"), criteria, p);
+  renderNearbyStations(document.getElementById("stations"), p.nearbyStations);
   renderFacilityList(document.getElementById("facilities"), p.surroundings && p.surroundings.facilities);
   renderStatusControl(document.getElementById("status-cell"), p, criteria);
   drawRadarChart(document.getElementById("lifeChart"), LIFE_AXIS_LABELS, p.radar.lifeAxes, "#7fc8e8", buildLifeAxisCaptions(p));

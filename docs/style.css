@@ -107,6 +107,7 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
 }
 .score-badge.sub { background: var(--pink-mid); color: var(--pink); }
 
+.property-card .card-stats { font-size: 1rem; font-weight: bold; color: var(--ink); margin-top: 6px; }
 .property-card .meta { color: var(--sub); font-size: 0.82rem; margin-top: 4px; }
 
 .sample-tag {
@@ -130,31 +131,33 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
   box-shadow: 1px 2px 3px rgba(0,0,0,0.08);
 }
 
-/* 写真ギャラリー(横スクロールで元サイトの写真を全部見られるように) */
-.photo-gallery {
+/* 写真ギャラリー(メイン写真+下のサムネイルでタップ切り替え。元サイトのような一覧性) */
+.gallery-main {
+  display: block;
+  width: calc(100% + 36px);
+  margin: 0 -18px 8px;
+  aspect-ratio: 16 / 9;
+  background: var(--blue-light);
+}
+.gallery-main img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery-thumbs {
   display: flex;
   overflow-x: auto;
   gap: 6px;
-  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  background: var(--blue-light);
   margin: 0 -18px 16px;
   padding: 0 18px;
 }
-.photo-gallery a:first-child { scroll-margin-left: 18px; }
-.photo-gallery a {
+.gallery-thumb {
   flex: none;
-  width: 88%;
-  max-width: 480px;
-  aspect-ratio: 16 / 9;
-  scroll-snap-align: start;
-}
-.photo-gallery img {
-  width: 100%;
-  height: 100%;
+  width: 72px;
+  height: 54px;
   object-fit: cover;
-  display: block;
+  border-radius: 8px;
+  opacity: 0.6;
+  border: 2px solid transparent;
 }
+.gallery-thumb.active { opacity: 1; border-color: var(--pink); }
 .hero-photo-placeholder {
   width: calc(100% + 36px);
   margin: 0 -18px 16px;
@@ -248,6 +251,14 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
   font-size: 0.88rem;
 }
 .area-guide h3 { font-size: 1rem; margin-bottom: 8px; }
+
+/* 最寄り駅・路線リスト */
+.station-list { list-style: none; margin: 8px 0 0; padding: 0; font-size: 0.88rem; }
+.station-list li { padding: 8px 0; border-bottom: 1px dashed var(--border); }
+.station-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; }
+.station-line { font-weight: bold; }
+.station-walk { color: var(--sub); font-size: 0.82rem; margin-left: auto; }
+.station-note { margin: 4px 0 0; font-size: 0.8rem; color: var(--sub); }
 
 /* 周辺施設リスト(施設名+分数) */
 .facility-list { list-style: none; margin: 8px 0 0; padding: 0; font-size: 0.88rem; }
