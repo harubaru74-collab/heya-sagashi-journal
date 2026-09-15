@@ -1,0 +1,152 @@
+{
+  "id": "20260916-evq6",
+  "isSample": false,
+  "registeredAt": "2026-09-16T08:22:30+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/6d0d309ebd7ea17e4a0558b8e78179d592817ac5/",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29384%2F2%2F1%2Fp0mq.jpg&width=1200&height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29384%2F2%2F1%2Fp0mq.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29384%2F2%2F1%2Fp0mq.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29384%2F1%2F2%2Fihrg.jpg&width=640&height=480",
+  "name": "スカイコート大森",
+  "address": "東京都品川区南大井3丁目",
+  "town": "南大井3丁目",
+  "nearestStation": "大森海岸",
+  "walkMinutesToStation": 2,
+  "rent": {
+    "base": 60000,
+    "management": 6000,
+    "total": 66000,
+    "freeInternet": false,
+    "effectiveTotal": 66000
+  },
+  "initialCostEstimate": 338400,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 60000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 60000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 66000
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 66000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 26400
+    },
+    {
+      "label": "入居者サポート料",
+      "amount": 22000
+    },
+    {
+      "label": "保証会社利用料(概算)",
+      "amount": 23000
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 13.44,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 1,
+    "route": "大森海岸(京急本線 3分)→京急蒲田(京急本線快特・エアポート快特 6分)→品川(JR京浜東北線 3分)→品川シーサイド(※実際は京急線で青物横丁等から徒歩または大井町乗り換え等、あるいは大森海岸から徒歩約20分圏内。乗換案内上の最速としては、大森海岸(京急本線 3分)→平和島/京急蒲田等経由で約14〜15分)",
+    "leisure": "大森海岸駅から京急本線で品川まで約6分、乗り換えなしでアクセス可能。新宿へはJR大森駅等も利用し約25〜30分。"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "大森海岸",
+      "walkMinutes": 2,
+      "note": "品川まで乗り換えなしで約6分・横浜までアクセスしやすい路線"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大森",
+      "walkMinutes": 7,
+      "note": "品川まで約6分・東京や横浜方面へ一本でいける主要路線"
+    },
+    {
+      "line": "京急本線",
+      "station": "平和島",
+      "walkMinutes": 16,
+      "note": "特急や快特が一部停車する便利な駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立南大井図書館",
+        "minutes": 8
+      },
+      {
+        "name": "イトーヨーカドー 大森店",
+        "minutes": 6
+      },
+      {
+        "name": "セブンイレブン 品川南大井３丁目店",
+        "minutes": 2
+      },
+      {
+        "name": "スギ薬局大森駅前店",
+        "minutes": 7
+      },
+      {
+        "name": "まいばすけっと南大井３丁目店",
+        "minutes": 3
+      }
+    ],
+    "areaGuide": "大森海岸駅周辺は、下町情緒と利便性が共存する落ち着いた住宅街です。平坦な地形のため自転車や徒歩での移動がしやすく、駅近くには大型スーパーのイトーヨーカドーや商店街、コンビニが充実しています。治安面も比較的良好で、夜間も明るい大通りがあり安心して暮らせる住環境です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 42,
+      "rentValue": 100,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 75,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 80,
+    "grade": "◎◎",
+    "matchPercent": 80,
+    "summary": "家賃6.6万円で予算内、品川シーサイドまで電車で約14分と通勤に便利です。",
+    "goodPoints": [
+      "家賃総額が66,000円と予算内にしっかり収まる",
+      "大森海岸駅から徒歩2分と駅近で、スーパーやコンビニが近い",
+      "品川区立南大井図書館が徒歩圏内にある"
+    ],
+    "concernPoints": [
+      "専有面積が13.44㎡とやや狭く、バストイレが一体型"
+    ]
+  },
+  "status": "気になる"
+}
