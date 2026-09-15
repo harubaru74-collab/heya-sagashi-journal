@@ -1,0 +1,79 @@
+{
+  "id": "20260916-tjfk",
+  "isSample": false,
+  "registeredAt": "2026-09-16T03:57:19+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/20b49df3ffac01ef99b223821e2478a8b64aabfd/?referral_content=expired_rich_same_building",
+  "name": "ドエルイン大井町",
+  "address": "東京都品川区大井1丁目54-3",
+  "town": "大井1丁目",
+  "nearestStation": "大井町",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 73000,
+    "management": 6000,
+    "total": 79000,
+    "freeInternet": true,
+    "effectiveTotal": 74000
+  },
+  "initialCostEstimate": 365000,
+  "layout": "ワンルーム",
+  "sizeSqm": 16.8,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": true,
+    "storage": true,
+    "indoorWasher": false,
+    "freeInternet": true,
+    "cityGas": true
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 3,
+    "transfers": 0,
+    "route": "大井町→JR京浜東北線→品川シーサイド（※またはりんかい線直通等、大井町から品川シーサイドは徒歩圏内または電車1駅）"
+  },
+  "surroundings": {
+    "groceriesNearby": [],
+    "workSpacesNearby": [],
+    "gymNearby": [],
+    "karaokeNearby": [],
+    "libraryNearby": [],
+    "safetyNote": "品川区大井エリアは治安が良く落ち着いた住環境と評価されています。",
+    "note": ""
+  },
+  "radar": {
+    "roomAxes": {
+      "size": 12,
+      "bathToiletSeparate": 0,
+      "loft": 100,
+      "storage": 100,
+      "indoorWasher": 0,
+      "freeInternet": 100,
+      "cityGas": 100
+    },
+    "lifeAxes": {
+      "roomQuality": 59,
+      "rentValue": 76,
+      "commuteAccess": 100,
+      "stationCloseness": 100,
+      "dailyConvenience": 95,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 82,
+    "grade": "◎◎",
+    "matchPercent": 82,
+    "summary": "大井町駅徒歩3分・家賃7.9万円で品川シーサイドへも近く、理想の通勤・買い物圏内です。",
+    "goodPoints": [
+      "大井町駅まで徒歩3分と駅近で非常に便利",
+      "家賃と管理費の合計が7.9万円で予算内に収まる",
+      "インターネット無料や宅配ボックスなどの設備が充実"
+    ],
+    "concernPoints": [
+      "バストイレが一緒（ユニットバス）である点",
+      "洗濯機置き場の記載がない、または屋外等の可能性がある点"
+    ]
+  },
+  "status": "気になる"
+}
