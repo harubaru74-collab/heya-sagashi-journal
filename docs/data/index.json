@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T09:00:00+09:00",
+  "updatedAt": "2026-09-16T03:57:19+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -15,6 +15,21 @@
       "matchPercent": 81,
       "status": "気になる",
       "registeredAt": "2026-09-15T09:00:00+09:00"
+    },
+    {
+      "id": "20260916-tjfk",
+      "isSample": false,
+      "name": "ドエルイン大井町",
+      "town": "大井1丁目",
+      "nearestStation": "大井町",
+      "rentTotal": 79000,
+      "effectiveRentTotal": 74000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.8,
+      "scoreTotal": 82,
+      "matchPercent": 82,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T03:57:19+09:00"
     }
   ]
 }
