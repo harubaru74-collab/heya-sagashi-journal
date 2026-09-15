@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T08:22:30+09:00",
+  "updatedAt": "2026-09-16T08:26:19+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -282,6 +282,38 @@
       "matchPercent": 80,
       "status": "気になる",
       "registeredAt": "2026-09-16T08:22:30+09:00"
+    },
+    {
+      "id": "20260916-ny9k",
+      "isSample": false,
+      "name": "クレムレノ大井",
+      "town": "大井5丁目",
+      "nearestStation": "大森",
+      "rentTotal": 90000,
+      "effectiveRentTotal": 85000,
+      "layout": "1K",
+      "sizeSqm": 12.6,
+      "commuteMinutes": 15,
+      "walkMinutesToStation": 11,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": false,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": false,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F33e33b4b-68fd-40c5-acbe-bd39ddf35e4c_property_picture_10167_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F57fdb104-472e-4a76-803a-1819c0d6f5ff_property_picture_10167_large.jpg&width=640&height=480",
+      "scoreTotal": 32,
+      "matchPercent": 32,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T08:26:19+09:00"
     }
   ]
 }
