@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T08:43:08+09:00",
+  "updatedAt": "2026-09-16T08:44:02+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -378,6 +378,38 @@
       "matchPercent": 82,
       "status": "気になる",
       "registeredAt": "2026-09-16T08:43:08+09:00"
+    },
+    {
+      "id": "20260916-8tm7",
+      "isSample": false,
+      "name": "賃貸マンション",
+      "town": "旗の台3丁目",
+      "nearestStation": "旗の台",
+      "rentTotal": 65000,
+      "effectiveRentTotal": 65000,
+      "layout": "ワンルーム",
+      "sizeSqm": 23.17,
+      "commuteMinutes": 17,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F47f7478a%2F4408_70826_1_132000_132000.jpg%3Ft%3D20230906224819&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9bc11c49%2F4408_70826_2_132000_132000.jpg%3Ft%3D20240308145955&width=640&height=480",
+      "scoreTotal": 83,
+      "matchPercent": 83,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T08:44:02+09:00"
     }
   ]
 }
