@@ -17,6 +17,18 @@
 
   <div class="criteria-box" id="criteria-box">条件を読み込み中…</div>
 
+  <div class="list-controls">
+    <select id="sort-select">
+      <option value="scoreTotal:desc">マッチ度が高い順</option>
+      <option value="rentTotal:asc">家賃が安い順</option>
+      <option value="commuteMinutes:asc">通勤が短い順</option>
+      <option value="sizeSqm:desc">広い順</option>
+    </select>
+    <label class="show-hidden-toggle">
+      <input type="checkbox" id="show-hidden-checkbox">「見送り」「掲載終了」も表示
+    </label>
+  </div>
+
   <div class="card-list" id="property-list"></div>
 
   <p style="text-align:center; margin-top:24px;">
@@ -38,7 +50,18 @@
   } catch (e) {
     document.getElementById("criteria-box").textContent = "条件の読み込みに失敗したよ";
   }
-  renderPropertyList(document.getElementById("property-list"));
+
+  const listEl = document.getElementById("property-list");
+  const sortSelect = document.getElementById("sort-select");
+  const hiddenCheckbox = document.getElementById("show-hidden-checkbox");
+
+  function refresh() {
+    const [sortKey, sortDir] = sortSelect.value.split(":");
+    renderPropertyList(listEl, null, { sortKey, sortDir, includeHiddenStatuses: hiddenCheckbox.checked });
+  }
+  sortSelect.addEventListener("change", refresh);
+  hiddenCheckbox.addEventListener("change", refresh);
+  refresh();
 })();
 </script>
 </body>

@@ -49,6 +49,7 @@ h1, h2, h3, p, div, span, a, li, td, th { overflow-wrap: anywhere; }
 
 #content h1 { word-break: break-all; }
 #content h1 .sample-tag { display: inline-block; margin-top: 6px; }
+.title-stats { font-size: 1.15rem; font-weight: bold; color: var(--ink); margin-top: 4px; }
 
 a { color: var(--pink); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -76,6 +77,27 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
   color: var(--sub);
 }
 .criteria-box b { color: var(--ink); }
+
+.list-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  color: var(--sub);
+}
+.list-controls select {
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+}
+.show-hidden-toggle { display: flex; align-items: center; gap: 4px; }
 
 .card-list { display: flex; flex-direction: column; gap: 12px; }
 
@@ -329,6 +351,8 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
 .compare-table td.yes { background: var(--good-bg); color: var(--good); font-weight: bold; }
 .compare-table td.no { background: var(--no-bg); color: var(--no-fg); }
 .compare-table td.best { outline: 2px solid var(--star); outline-offset: -2px; }
+.compare-table td.wrap-cell { white-space: normal; text-align: left; font-size: 0.78rem; max-width: 200px; }
+.compare-thumb { width: 96px; height: 64px; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto; }
 
 .back-link { display: inline-block; margin: 16px 0 4px; }
 

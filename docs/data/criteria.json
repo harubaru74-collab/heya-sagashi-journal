@@ -56,6 +56,7 @@
     "note": "サイト上のステータス変更ボタンが呼び出すAPI(実体はai-concierge側のGAS Webアプリ)。GitHubへの書き込み権限はGAS側だけが持ち、ここのtokenは荒らし防止の簡易チェック用(このサイト自体と同じ『URLを知っていれば使える』信頼レベル)",
     "url": "https://script.google.com/macros/s/AKfycbzzT_tJkqfVFU7eMONYRi90jVj9T3ZmuYs18iIeY5YbPWxlFXtMpy86qd7SiatAZI28/exec",
     "token": "dd1acd88ba76abcf5458d0bdd48d8fde",
-    "statusOptions": ["気になる", "内見予約", "内見済み", "申込済み", "契約済み", "見送り", "保留"]
+    "statusOptions": ["気になる", "内見予約", "内見済み", "申込済み", "契約済み", "見送り", "保留", "掲載終了"],
+    "hiddenByDefaultStatuses": ["見送り", "掲載終了"]
   }
 }

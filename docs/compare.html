@@ -51,19 +51,24 @@ const COMPARE_COLORS = ["#ff8fb8", "#7fc8e8", "#ffb400", "#8dd9a8", "#b79bff"];
     return best;
   }
 
-  function metricRow(label, values, higherIsBetter) {
-    const best = higherIsBetter == null ? -1 : bestIndex(values, higherIsBetter);
+  // values: 比較用の生の値の配列(数値または文字列、nullは比較から除外)。
+  // higherIsBetterがnullなら比較しない。formatFnで表示用の文字列に変換する(省略時はそのまま表示)
+  function metricRow(label, values, higherIsBetter, formatFn) {
+    const fmt = formatFn || ((v) => v);
+    let best = -1;
+    if (higherIsBetter != null) {
+      const forCompare = values.map((v) => v == null ? (higherIsBetter ? -Infinity : Infinity) : v);
+      best = bestIndex(forCompare, higherIsBetter);
+    }
     return "<tr><th class=\"row-label\">" + label + "</th>" +
-      values.map((v, i) => "<td" + (i === best ? ' class="best"' : "") + ">" + v + "</td>").join("") +
+      values.map((v, i) => "<td" + (i === best && v != null ? ' class="best"' : "") + ">" +
+        (v == null ? "-" : fmt(v)) + "</td>").join("") +
       "</tr>";
   }
 
   function checklistRows() {
-    return (criteria.roomConditions || []).map((cond) => {
+    return (criteria.roomConditions || []).filter((cond) => cond.type !== "scale").map((cond) => {
       const cells = properties.map((p) => {
-        if (cond.type === "scale") {
-          return "<td>" + (p.sizeSqm != null ? p.sizeSqm + cond.unit : "-") + "</td>";
-        }
         const has = !!(p.room && p.room[cond.key]);
         return '<td class="' + (has ? "yes" : "no") + '">' + (has ? "✓" : "×") + "</td>";
       }).join("");
@@ -72,26 +77,38 @@ const COMPARE_COLORS = ["#ff8fb8", "#7fc8e8", "#ffb400", "#8dd9a8", "#b79bff"];
     }).join("");
   }
 
-  const header = "<tr><th class=\"row-label\">物件名</th>" +
+  function photoUrl(p) {
+    return (p.images && p.images[0]) || p.imageUrl || "";
+  }
+
+  const header = "<tr><th class=\"row-label\">写真</th>" +
+    properties.map((p) => {
+      const url = photoUrl(p);
+      return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + '" referrerpolicy="no-referrer">' : "-") + "</th>";
+    }).join("") + "</tr>" +
+    "<tr><th class=\"row-label\">物件名</th>" +
     properties.map((p) => "<th><a href=\"property.html?id=" + encodeURIComponent(p.id) + "\">" + p.name + "</a></th>").join("") + "</tr>";
 
   content.innerHTML =
-    '<div class="compare-table-wrap"><table class="compare-table">' +
-      header +
-      metricRow("マッチ度", properties.map((p) => p.score.matchPercent + "%"), true) +
-      metricRow("家賃総額(実質)", properties.map((p) => formatYen(p.rent.effectiveTotal)), false) +
-      metricRow("間取り", properties.map((p) => p.layout), null) +
-      metricRow("通勤(" + properties[0].commute.destinationStationName + ")", properties.map((p) => p.commute.minutes + "分"), false) +
-      metricRow("最寄り駅徒歩", properties.map((p) => (p.walkMinutesToStation != null ? p.walkMinutesToStation + "分" : "-")), false) +
-      metricRow("ステータス", properties.map((p) => p.status), null) +
-      checklistRows() +
-    "</table></div>" +
-
-    '<div class="chart-box" style="margin:20px auto;"><canvas id="compareChart"></canvas><h3>お部屋+周辺環境の比較</h3></div>' +
-    '<ul style="list-style:none;padding:0;text-align:center;font-size:0.82rem;">' +
+    '<div class="chart-box" style="margin:0 auto 20px;"><canvas id="compareChart"></canvas><h3>お部屋+周辺環境の比較</h3></div>' +
+    '<ul style="list-style:none;padding:0;margin:0 0 20px;text-align:center;font-size:0.82rem;">' +
       properties.map((p, i) => '<li style="display:inline-block;margin:0 10px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' +
         COMPARE_COLORS[i % COMPARE_COLORS.length] + ';margin-right:4px;"></span>' + p.name + "</li>").join("") +
-    "</ul>";
+    "</ul>" +
+
+    '<div class="compare-table-wrap"><table class="compare-table">' +
+      header +
+      metricRow("マッチ度", properties.map((p) => p.score.matchPercent), true, (v) => v + "%") +
+      "<tr><th class=\"row-label\">マッチ度の理由</th>" +
+        properties.map((p) => '<td class="wrap-cell">' + (p.score.summary || "-") + "</td>").join("") + "</tr>" +
+      metricRow("家賃総額(実質)", properties.map((p) => p.rent.effectiveTotal), false, formatYen) +
+      metricRow("広さ", properties.map((p) => p.sizeSqm), true, (v) => v + "㎡") +
+      metricRow("間取り", properties.map((p) => p.layout), null) +
+      metricRow("通勤(" + properties[0].commute.destinationStationName + ")", properties.map((p) => p.commute.minutes), false, (v) => v + "分") +
+      metricRow("最寄り駅徒歩", properties.map((p) => p.walkMinutesToStation), false, (v) => v + "分") +
+      metricRow("ステータス", properties.map((p) => p.status), null) +
+      checklistRows() +
+    "</table></div>";
 
   const keys = Object.keys(LIFE_AXIS_LABELS);
   new Chart(document.getElementById("compareChart"), {

@@ -39,6 +39,11 @@ function formatMan(n) {
   return man + "万円";
 }
 
+// 「物件名」とセットで扱う「○万円・○㎡・通勤○分」の行(一覧カード・物件詳細ページ共通)
+function titleStatsHtml(rentTotal, sizeSqm, commuteMinutes) {
+  return formatMan(rentTotal) + " ・ " + sizeSqm + "㎡ ・ 通勤" + (commuteMinutes != null ? commuteMinutes + "分" : "-");
+}
+
 // レーダーの各軸ラベルの下に添える、実際の値ベースの一言(例:「通勤アクセス」の下に「3分」)
 function buildLifeAxisCaptions(property) {
   const facilities = (property.surroundings && property.surroundings.facilities) || [];
@@ -103,9 +108,7 @@ function propertyCardHtml(p) {
         '<span class="name">' + p.name + sample + "</span>" +
         '<span class="score-badge">マッチ度 ' + p.matchPercent + "%</span>" +
       "</div>" +
-      '<div class="card-stats">' +
-        formatMan(p.rentTotal) + " ・ " + p.sizeSqm + "㎡ ・ 通勤" + (p.commuteMinutes != null ? p.commuteMinutes + "分" : "-") +
-      "</div>" +
+      '<div class="card-stats">' + titleStatsHtml(p.rentTotal, p.sizeSqm, p.commuteMinutes) + "</div>" +
       '<div class="meta">' +
         p.town + " ・ " + p.nearestStation + "駅" +
         (p.effectiveRentTotal !== p.rentTotal ? "(ネット込み実質 " + formatYen(p.effectiveRentTotal) + ")" : "") +
@@ -185,6 +188,16 @@ function renderPhotoGallery(container, images, legacyImageUrl) {
   }
 }
 
+// 「最寄り駅・路線」と同じ見た目で「通勤」を表示する(その上に置く用)
+function renderCommuteCard(container, commute) {
+  const headLine = commute.destinationStationName + "まで" + (commute.minutes != null ? commute.minutes + "分" : "-") +
+    (commute.transfers != null ? "(乗り換え" + commute.transfers + "回)" : "");
+  container.innerHTML =
+    '<div class="station-head"><span class="station-line">' + headLine + "</span></div>" +
+    (commute.route ? '<p class="station-note">' + commute.route + "</p>" : "") +
+    (commute.leisure ? '<p class="station-note">🎡 ' + commute.leisure + "</p>" : "");
+}
+
 function renderNearbyStations(container, stations) {
   if (!stations || stations.length === 0) {
     container.innerHTML = '<p class="empty-note" style="padding:10px;">最寄り駅・路線の情報はまだ登録されてないよ</p>';
@@ -199,15 +212,35 @@ function renderNearbyStations(container, stations) {
   ).join("") + "</ul>";
 }
 
-async function renderPropertyList(container, filterFn) {
+// opts: { includeHiddenStatuses(bool、既定false), sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc") }
+// 「見送り」「掲載終了」は、はるかちゃんが積極的に見送った/もう存在しない物件なので、
+// 明示的にoptsで指定しない限り一覧から隠す(criteria.jsonのhiddenByDefaultStatuses)。
+async function renderPropertyList(container, filterFn, opts) {
+  opts = opts || {};
   container.innerHTML = '<p class="empty-note">読み込み中だよ…</p>';
   try {
-    const idx = await loadIndex();
+    const [idx, criteria] = await Promise.all([loadIndex(), loadCriteria()]);
     let list = idx.properties || [];
+    const hidden = (criteria.statusUpdateApi && criteria.statusUpdateApi.hiddenByDefaultStatuses) || [];
+    if (!opts.includeHiddenStatuses) {
+      list = list.filter((p) => hidden.indexOf(p.status) === -1);
+    }
     if (filterFn) list = list.filter(filterFn);
-    list.sort((a, b) => b.scoreTotal - a.scoreTotal);
+    const sortKey = opts.sortKey || "scoreTotal";
+    const sortDir = opts.sortDir || "desc";
+    list.sort((a, b) => {
+      const av = a[sortKey], bv = b[sortKey];
+      if (av == null && bv == null) return 0;
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      return sortDir === "asc" ? av - bv : bv - av;
+    });
     if (list.length === 0) {
-      container.innerHTML = '<p class="empty-note">まだ物件が登録されてないよ。LINEで「いえさがし (URL)」と送ると、ここに追加されるよ📮</p>';
+      container.innerHTML = '<p class="empty-note">' +
+        (opts.includeHiddenStatuses || hidden.length === 0
+          ? "まだ物件が登録されてないよ。LINEで「いえさがし (URL)」と送ると、ここに追加されるよ📮"
+          : "表示できる物件がないよ(「見送り」「掲載終了」は隠れてるよ)") +
+        "</p>";
       return;
     }
     container.innerHTML = list.map(propertyCardHtml).join("");

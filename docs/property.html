@@ -43,16 +43,13 @@
     ? formatYen(p.initialCostEstimate) + '<span class="detail-sub">(' + p.costBreakdown.map((c) => c.label + " " + formatYen(c.amount)).join("・") + ")</span>"
     : formatYen(p.initialCostEstimate);
 
-  const commuteLine = p.commute.destinationStationName + "まで" + p.commute.minutes + "分(乗り換え" + p.commute.transfers + "回)" +
-    (p.commute.route ? '<span class="detail-sub">' + p.commute.route + "</span>" : "") +
-    (p.commute.leisure ? '<span class="detail-sub">🎡 ' + p.commute.leisure + "</span>" : "");
-
   const areaGuideText = (p.surroundings && (p.surroundings.areaGuide || p.surroundings.safetyNote)) ||
     "エリアの解説はまだ登録されてないよ";
 
   content.innerHTML =
     '<div id="gallery"></div>' +
     "<h1>" + p.name + sample + "</h1>" +
+    '<div class="title-stats">' + titleStatsHtml(p.rent.total, p.sizeSqm, p.commute.minutes) + "</div>" +
     '<p class="meta" style="color:#8e879c;">' + p.address + " ・ " + p.nearestStation + "駅 徒歩" + p.walkMinutesToStation + "分</p>" +
 
     '<div class="summary-box">' +
@@ -77,6 +74,11 @@
     "</div>" +
 
     '<div class="checklist-box">' +
+      "<h3>🚃 通勤</h3>" +
+      '<div id="commute"></div>' +
+    "</div>" +
+
+    '<div class="checklist-box">' +
       "<h3>🚉 最寄り駅・路線</h3>" +
       '<div id="stations"></div>' +
     "</div>" +
@@ -90,13 +92,13 @@
       "<tr><th>間取り・広さ</th><td>" + p.layout + " / " + p.sizeSqm + "㎡</td></tr>" +
       "<tr><th>家賃総額</th><td>" + formatYen(p.rent.total) + (p.rent.freeInternet ? "(ネット込み実質 " + formatYen(p.rent.effectiveTotal) + ")" : "") + "</td></tr>" +
       "<tr><th>初期費用目安</th><td>" + costLine + "</td></tr>" +
-      "<tr><th>通勤</th><td>" + commuteLine + "</td></tr>" +
       '<tr><th>ステータス</th><td id="status-cell"></td></tr>' +
       "<tr><th>元の物件URL</th><td><a href=\"" + p.sourceUrl + "\" target=\"_blank\" rel=\"noopener\">ポータルサイトで見る</a></td></tr>" +
     "</table>";
 
   renderPhotoGallery(document.getElementById("gallery"), p.images, p.imageUrl);
   renderRoomChecklist(document.getElementById("checklist"), criteria, p);
+  renderCommuteCard(document.getElementById("commute"), p.commute);
   renderNearbyStations(document.getElementById("stations"), p.nearbyStations);
   renderFacilityList(document.getElementById("facilities"), p.surroundings && p.surroundings.facilities);
   renderStatusControl(document.getElementById("status-cell"), p, criteria);
