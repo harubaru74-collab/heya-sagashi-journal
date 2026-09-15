@@ -1,31 +1,36 @@
 :root {
-  --pink: #ff6fa5;
-  --pink-light: #fdf0f5;
-  --pink-mid: #fbe4ec;
-  --ink: #3a2e33;
-  --sub: #7a6d72;
-  --bg: #fffaf9;
+  --pink: #ff8fb8;
+  --pink-light: #fff0f6;
+  --pink-mid: #ffe1ee;
+  --blue: #7fc8e8;
+  --blue-light: #e8f4ff;
+  --yellow: #fff1a8;
+  --mint: #c8f0d8;
+  --ink: #4a4458;
+  --sub: #8e879c;
+  --bg: #fffdf7;
   --card: #ffffff;
-  --border: #f1dbe4;
-  --good: #4caf7d;
-  --warn: #e0a53d;
-  --shadow: 0 2px 10px rgba(255, 111, 165, 0.12);
+  --border: #eee6f7;
+  --good: #2f8f5c;
+  --good-bg: #c8f0d8;
+  --warn: #c07a1f;
+  --warn-bg: #ffe3b0;
+  --star: #ffb400;
+  --shadow: 2px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
 * { box-sizing: border-box; }
 
-html {
-  overflow-x: hidden;
-}
+html { overflow-x: hidden; }
 
 body {
   margin: 0;
-  padding: 16px;
-  padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-  padding-top: calc(16px + env(safe-area-inset-top, 0px));
+  padding: 0 0 40px;
+  padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
   background: var(--bg);
   color: var(--ink);
-  font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-family: "Zen Kaku Gothic New", -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
   line-height: 1.7;
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -33,106 +38,74 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, p, div, span, a, li, td, th {
-  overflow-wrap: anywhere;
+h1, h2, h3 {
+  font-family: "Yomogi", "Zen Kaku Gothic New", cursive, sans-serif;
+  margin: 0;
 }
 
-#content h1 {
-  word-break: break-all;
-}
+h1, h2, h3, p, div, span, a, li, td, th { overflow-wrap: anywhere; }
 
-#content h1 .sample-tag {
-  display: inline-block;
-  margin-top: 6px;
-}
+#content h1 { word-break: break-all; }
+#content h1 .sample-tag { display: inline-block; margin-top: 6px; }
 
 a { color: var(--pink); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.page {
-  max-width: 720px;
-  margin: 0 auto;
-}
+.page { max-width: 720px; margin: 0 auto; padding: 0 18px; }
+.page.has-hero { padding-top: 0; }
 
 header.top {
-  margin-bottom: 20px;
+  margin: 0 -18px 20px;
+  padding: 24px 18px 18px;
+  padding-top: calc(24px + env(safe-area-inset-top, 0px));
+  background: var(--blue-light);
 }
 
-header.top h1 {
-  font-size: 1.4rem;
-  margin: 0 0 4px;
-}
-
-header.top p.sub {
-  color: var(--sub);
-  font-size: 0.85rem;
-  margin: 0;
-}
+header.top h1 { font-size: 1.4rem; margin: 0 0 4px; color: var(--ink); }
+header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family: "Zen Kaku Gothic New", sans-serif; }
 
 .criteria-box {
   background: var(--pink-light);
-  border: 1px solid var(--border);
-  border-radius: 14px;
+  border: 2px dashed var(--pink);
+  border-radius: 18px;
   padding: 14px 16px;
   margin-bottom: 20px;
   font-size: 0.85rem;
   color: var(--sub);
 }
-
 .criteria-box b { color: var(--ink); }
 
-.card-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+.card-list { display: flex; flex-direction: column; gap: 12px; }
 
 .property-card {
   display: block;
   background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
+  border: 2px solid var(--border);
+  border-radius: 22px;
   padding: 14px 16px;
   box-shadow: var(--shadow);
   color: var(--ink);
 }
-
 .property-card:hover { text-decoration: none; border-color: var(--pink); }
 
-.property-card .row-top {
-  display: block;
-}
-
-.property-card .name {
-  display: block;
-  font-weight: bold;
-  font-size: 1.02rem;
-  word-break: break-all;
-}
-
-.property-card .score-badge {
-  display: inline-block;
-  margin-top: 6px;
-}
+.property-card .row-top { display: block; }
+.property-card .name { display: block; font-weight: bold; font-size: 1.02rem; word-break: break-all; font-family: "Zen Kaku Gothic New", sans-serif; }
+.property-card .score-badge { display: inline-block; margin-top: 6px; }
 
 .score-badge {
   display: inline-block;
   background: var(--pink);
   color: #fff;
   border-radius: 999px;
-  padding: 2px 12px;
+  padding: 3px 14px;
   font-size: 0.85rem;
   font-weight: bold;
   white-space: nowrap;
+  box-shadow: 1px 2px 0 rgba(0,0,0,0.06);
 }
-
 .score-badge.sub { background: var(--pink-mid); color: var(--pink); }
 
-.property-card .meta {
-  color: var(--sub);
-  font-size: 0.82rem;
-  margin-top: 4px;
-}
+.property-card .meta { color: var(--sub); font-size: 0.82rem; margin-top: 4px; }
 
 .sample-tag {
   display: inline-block;
@@ -144,81 +117,133 @@ header.top p.sub {
   margin-left: 6px;
 }
 
-.charts-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin: 20px 0;
+/* 付箋(ステッカー)風のステータスタグ */
+.sticker-tag {
+  display: inline-block;
+  background: var(--yellow);
+  padding: 3px 12px;
+  border-radius: 3px;
+  transform: rotate(3deg);
+  font-size: 0.75rem;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.08);
 }
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  background: var(--blue-light);
+}
+.hero-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(135deg, var(--blue-light), var(--blue-light) 12px, #dcedf9 12px, #dcedf9 24px);
+  color: var(--sub);
+  font-size: 0.8rem;
+}
+
+.charts-grid { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; justify-content: center; }
 
 .chart-box {
   width: min(320px, 100%);
   background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 12px;
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  padding: 14px;
   box-shadow: var(--shadow);
 }
-
-.chart-box h3 {
-  text-align: center;
-  font-size: 0.95rem;
-  margin: 4px 0 0;
-}
+.chart-box h3 { text-align: center; font-size: 1rem; margin: 4px 0 8px; }
 
 .summary-box {
   background: var(--pink-light);
-  border-radius: 16px;
-  padding: 16px;
+  border: 2px dashed var(--pink);
+  border-radius: 22px;
+  padding: 18px 20px;
   margin: 16px 0;
 }
+.summary-box .match { font-size: 1.7rem; font-weight: bold; color: var(--pink); font-family: "Yomogi", cursive; }
 
-.summary-box .match {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: var(--pink);
+.point-list { margin: 8px 0; padding-left: 0; list-style: none; font-size: 0.9rem; }
+.point-list li { display: flex; gap: 8px; align-items: flex-start; margin: 0 0 8px; }
+.point-marker {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.06);
 }
+.point-list.good .point-marker { background: var(--good-bg); color: var(--good); }
+.point-list.concern .point-marker { background: var(--warn-bg); color: var(--warn); }
 
-.point-list { margin: 8px 0; padding-left: 0; list-style: none; }
-.point-list li { padding: 2px 0 2px 1.4em; position: relative; }
-.point-list.good li::before { content: "◎"; position: absolute; left: 0; color: var(--good); }
-.point-list.concern li::before { content: "△"; position: absolute; left: 0; color: var(--warn); }
+/* お部屋の中身:チェックリスト形式(レーダーチャートをやめてリストに) */
+.checklist-box {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+  margin: 16px 0;
+}
+.checklist { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px; }
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  padding: 6px 4px;
+  border-bottom: 1px dashed var(--border);
+}
+.checklist .mark {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checklist li.yes .mark { background: var(--good-bg); color: var(--good); }
+.checklist li.no .mark { background: #f1eef7; color: #bbb; }
+.checklist li.important .mark { background: var(--star); color: #fff; }
+.checklist .label { flex: 1; }
+.checklist .star { color: var(--star); font-size: 0.8rem; margin-left: 2px; }
+.checklist .size-value { font-size: 0.78rem; color: var(--sub); }
 
-.detail-table {
-  width: 100%;
-  border-collapse: collapse;
+/* 街・治安ガイド(周辺の上に置く解説文) */
+.area-guide {
+  background: var(--mint);
+  border-radius: 22px;
+  padding: 16px 18px;
+  margin: 16px 0;
   font-size: 0.88rem;
-  margin: 12px 0;
 }
+.area-guide h3 { font-size: 1rem; margin-bottom: 8px; }
 
-.detail-table th, .detail-table td {
-  border: 1px solid var(--border);
-  padding: 8px 10px;
-  text-align: left;
-}
+/* 周辺施設リスト(施設名+分数) */
+.facility-list { list-style: none; margin: 8px 0 0; padding: 0; font-size: 0.88rem; }
+.facility-list li { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dashed var(--border); }
+.facility-list li .fname { flex: 1; }
+.facility-list li .fmin { color: var(--sub); white-space: nowrap; margin-left: 8px; }
 
-.detail-table th {
-  background: var(--pink-mid);
-  width: 40%;
-  font-weight: bold;
-}
+.detail-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin: 12px 0; }
+.detail-table th, .detail-table td { border: 1px solid var(--border); padding: 9px 11px; text-align: left; }
+.detail-table th { background: var(--blue-light); width: 40%; font-weight: bold; }
+.detail-table tr.sub-row th, .detail-table tr.sub-row td { font-size: 0.8rem; color: var(--sub); background: #fffdf9; padding-left: 20px; }
 
-.back-link { display: inline-block; margin-bottom: 16px; }
+.back-link { display: inline-block; margin: 16px 0 4px; }
 
 .article-body { font-size: 0.95rem; }
-.article-body h2 { border-left: 4px solid var(--pink); padding-left: 10px; margin-top: 28px; }
+.article-body h2 { border-left: 5px solid var(--pink); padding-left: 10px; margin-top: 28px; font-family: "Yomogi", cursive; }
 
-.empty-note {
-  text-align: center;
-  color: var(--sub);
-  padding: 30px 10px;
-  font-size: 0.9rem;
-}
+.empty-note { text-align: center; color: var(--sub); padding: 30px 10px; font-size: 0.9rem; }
 
-footer.site {
-  text-align: center;
-  color: var(--sub);
-  font-size: 0.75rem;
-  margin-top: 40px;
-}
+footer.site { text-align: center; color: var(--sub); font-size: 0.75rem; margin-top: 40px; }

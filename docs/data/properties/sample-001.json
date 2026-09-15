@@ -3,6 +3,7 @@
   "isSample": true,
   "registeredAt": "2026-09-15T09:00:00+09:00",
   "sourceUrl": "https://example.com/sample-property",
+  "imageUrl": "",
   "name": "(サンプル)〇〇マンション 3階",
   "address": "東京都品川区東品川3丁目",
   "town": "東品川3丁目",
@@ -16,6 +17,14 @@
     "effectiveTotal": 66000
   },
   "initialCostEstimate": 210000,
+  "costBreakdown": [
+    { "label": "敷金", "amount": 68000 },
+    { "label": "礼金", "amount": 68000 },
+    { "label": "仲介手数料", "amount": 37400 },
+    { "label": "前家賃", "amount": 68000 },
+    { "label": "火災保険料", "amount": 15000 },
+    { "label": "鍵交換代", "amount": 16500 }
+  ],
   "layout": "1K",
   "sizeSqm": 22.5,
   "room": {
@@ -24,7 +33,12 @@
     "storage": true,
     "indoorWasher": true,
     "freeInternet": true,
-    "cityGas": true
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
   },
   "commute": {
     "destinationStationName": "品川シーサイド駅",
@@ -33,24 +47,17 @@
     "route": "青物横丁→(京急本線)→品川シーサイド 徒歩連絡"
   },
   "surroundings": {
-    "groceriesNearby": ["イオンスタイル品川シーサイド"],
-    "workSpacesNearby": ["BIZcomfort青物横丁"],
-    "gymNearby": [],
-    "karaokeNearby": [],
-    "libraryNearby": [],
+    "areaGuide": "(サンプル)青物横丁駅周辺は坂のない平坦な住宅地で、駅前に商店街があり夜も人通りがあって安心。品川区立品川図書館まで自転車で使う人が多いエリアだけど、徒歩でも15分程度。天王洲アイルの水辺エリアへも徒歩圏内で、休日にお散歩がてら足を延ばせる立地だよ。これはサンプルデータなので実在の情報とは限らないよ。",
     "safetyNote": "サンプルデータのため未検証",
+    "facilities": [
+      { "name": "イオンスタイル品川シーサイド", "minutes": 12 },
+      { "name": "BIZcomfort青物横丁", "minutes": 5 },
+      { "name": "品川区立品川図書館", "minutes": 15 },
+      { "name": "(サンプル)24時間ジム", "minutes": 8 }
+    ],
     "note": "これはサイトの表示イメージを確認するためのサンプル物件データだよ"
   },
   "radar": {
-    "roomAxes": {
-      "size": 47,
-      "bathToiletSeparate": 100,
-      "loft": 0,
-      "storage": 100,
-      "indoorWasher": 100,
-      "freeInternet": 100,
-      "cityGas": 100
-    },
     "lifeAxes": {
       "roomQuality": 78,
       "rentValue": 82,

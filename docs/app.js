@@ -3,16 +3,6 @@
 // GAS側がLINE経由で docs/data/properties/{id}.json と docs/data/index.json を
 // GitHub Contents API で直接コミットすると、ここが自動でその内容を表示する。
 
-const ROOM_AXIS_LABELS = {
-  size: "広さ",
-  bathToiletSeparate: "バストイレ別",
-  loft: "ロフト付き",
-  storage: "収納付き",
-  indoorWasher: "洗濯機室内",
-  freeInternet: "ネット無料",
-  cityGas: "都市ガス"
-};
-
 const LIFE_AXIS_LABELS = {
   roomQuality: "部屋の設備充実度",
   rentValue: "家賃コスパ",
@@ -92,10 +82,41 @@ function propertyCardHtml(p) {
         p.town + " ・ " + p.nearestStation + "駅 ・ " + p.layout + " " + p.sizeSqm + "㎡<br>" +
         "家賃総額 " + formatYen(p.rentTotal) +
         (p.effectiveRentTotal !== p.rentTotal ? "(ネット込み実質 " + formatYen(p.effectiveRentTotal) + ")" : "") +
-        " ・ ステータス: " + (p.status || "-") +
+        ' ・ <span class="sticker-tag">' + (p.status || "-") + "</span>" +
       "</div>" +
     "</a>"
   );
+}
+
+// 「お部屋の中身」チェックリスト。criteria.roomConditionsの並び順=表示順、
+// weightが1より大きい項目は★マークで目立たせる(全物件共通の重視設定)。
+function renderRoomChecklist(container, criteria, property) {
+  const room = property.room || {};
+  const items = (criteria.roomConditions || []).map((cond) => {
+    const important = (cond.weight || 1) > 1;
+    if (cond.type === "scale") {
+      const val = property.sizeSqm;
+      return '<li class="yes"><span class="mark">' + (val != null ? "㎡" : "?") + '</span>' +
+        '<span class="label">' + cond.label + (important ? '<span class="star">★</span>' : "") + '</span>' +
+        '<span class="size-value">' + (val != null ? val + cond.unit : "不明") + "</span></li>";
+    }
+    const has = !!room[cond.key];
+    return '<li class="' + (has ? "yes" : "no") + (important ? " important" : "") + '">' +
+      '<span class="mark">' + (has ? "✓" : "×") + '</span>' +
+      '<span class="label">' + cond.label + (important ? '<span class="star">★</span>' : "") + "</span></li>";
+  });
+  container.innerHTML = '<ul class="checklist">' + items.join("") + "</ul>";
+}
+
+function renderFacilityList(container, facilities) {
+  if (!facilities || facilities.length === 0) {
+    container.innerHTML = '<p class="empty-note" style="padding:10px;">周辺施設の情報はまだ登録されてないよ</p>';
+    return;
+  }
+  container.innerHTML = '<ul class="facility-list">' + facilities.map((f) =>
+    '<li><span class="fname">' + f.name + '</span><span class="fmin">' +
+    (f.minutes != null ? "徒歩" + f.minutes + "分" : "-") + "</span></li>"
+  ).join("") + "</ul>";
 }
 
 async function renderPropertyList(container, filterFn) {

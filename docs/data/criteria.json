@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "lifestyleTheme": "巨大ターミナル駅に住むのではなく、大駅にすぐ出られる静かで便利な街に住み、日常のすぐそばにトキメキがある暮らし",
   "rent": {
     "maxTotal": 80000,
@@ -9,10 +9,10 @@
   "commute": {
     "destinationStationName": "品川シーサイド駅",
     "idealMinutes": 20,
-    "maxMinutes": 20,
-    "maxTransfers": 1,
+    "maxMinutes": 25,
+    "note": "徒歩・電車いずれも20分前後、最長25分以内であればOK。住所や最寄り駅までの徒歩時間そのものはフィルタ条件にしない(ドアツードアの合計時間だけで判定する)",
     "allowedModes": ["徒歩", "電車"],
-    "note": "自転車は想定しない"
+    "bikeNote": "自転車は想定しない"
   },
   "targetTowns": [
     "東品川3丁目", "東品川4丁目", "南品川2丁目", "南品川3丁目", "東大井1丁目", "北品川", "勝島"
@@ -20,18 +20,23 @@
   "candidateStations": [
     "品川シーサイド", "青物横丁", "新馬場", "鮫洲", "平和島", "大森", "大井町", "天王洲アイル"
   ],
-  "walkToStationMinutes": { "idealMax": 5, "acceptableMax": 10, "hardMax": 15 },
+  "roomConditionsNote": "この配列の並び順が、そのままサイトのチェックリスト表示順になる。順番を入れ替えれば表示順が変わる。weightは重み(初期値1)。値を上げるほど『重視する項目』としてマッチ度計算での加点が大きくなる、かつサイト上で目立つ表示(★マーク)になる。値は物件ごとではなく、この設定ファイル1箇所で全物件共通。",
   "roomConditions": [
-    { "key": "size", "label": "広さ", "type": "scale", "unit": "㎡", "higherIsBetter": true },
-    { "key": "bathToiletSeparate", "label": "バストイレ別", "type": "boolean" },
-    { "key": "loft", "label": "ロフト付き", "type": "boolean" },
-    { "key": "storage", "label": "収納付き", "type": "boolean" },
-    { "key": "indoorWasher", "label": "洗濯機室内", "type": "boolean" },
-    { "key": "freeInternet", "label": "ネット無料", "type": "boolean", "note": "実質家賃を-5,000円換算してよい" },
-    { "key": "cityGas", "label": "都市ガス", "type": "boolean" }
+    { "key": "size", "label": "広さ", "type": "scale", "unit": "㎡", "higherIsBetter": true, "weight": 1 },
+    { "key": "bathToiletSeparate", "label": "バストイレ別", "type": "boolean", "weight": 1 },
+    { "key": "loft", "label": "ロフト付き", "type": "boolean", "weight": 1 },
+    { "key": "storage", "label": "収納付き", "type": "boolean", "weight": 1 },
+    { "key": "indoorWasher", "label": "洗濯機室内", "type": "boolean", "weight": 1 },
+    { "key": "freeInternet", "label": "ネット無料", "type": "boolean", "weight": 1, "note": "実質家賃を-5,000円換算してよい" },
+    { "key": "cityGas", "label": "都市ガス", "type": "boolean", "weight": 1 },
+    { "key": "secondFloorOrAbove", "label": "2階以上", "type": "boolean", "weight": 1 },
+    { "key": "aircon", "label": "エアコン", "type": "boolean", "weight": 1 },
+    { "key": "separateWashstand", "label": "洗面所独立", "type": "boolean", "weight": 1 },
+    { "key": "washletToilet", "label": "温水洗浄便座", "type": "boolean", "weight": 1 },
+    { "key": "bathroomDryer", "label": "浴室乾燥機", "type": "boolean", "weight": 1 }
   ],
   "sizeScoring": {
-    "note": "広さレーダー軸のスコア換算(㎡→0-100点の目安)",
+    "note": "広さの達成率換算(㎡→0-100%の目安。チェックリストの重み付き達成率計算にそのまま使う)",
     "minSqm": 15,
     "fullScoreSqm": 30
   },
@@ -39,6 +44,7 @@
   "dailyLife": {
     "groceries": "イオンスタイル品川シーサイド(職場直結・平日利用)",
     "workSpaces": ["BIZcomfort品川シーサイド", "BIZcomfort青物横丁", "品川区立品川図書館"],
+    "defaultFacilityChecks": ["品川区立品川図書館"],
     "leisure": "天王洲アイル(水辺のボードウォーク・テラスカフェ)まで徒歩10〜15分程度",
     "terrain": "坂のない平坦なエリア"
   },
