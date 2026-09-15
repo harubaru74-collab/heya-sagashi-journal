@@ -1,0 +1,145 @@
+{
+  "id": "20260916-8tm7",
+  "isSample": false,
+  "registeredAt": "2026-09-16T08:44:02+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/c3d6f786fc5e3cea0b46944928006d0ac671d9f1/",
+  "images": [
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F47f7478a%2F4408_70826_1_132000_132000.jpg%3Ft%3D20230906224819&width=1200&height=630"
+  ],
+  "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F47f7478a%2F4408_70826_1_132000_132000.jpg%3Ft%3D20230906224819&width=1200&height=630",
+  "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F47f7478a%2F4408_70826_1_132000_132000.jpg%3Ft%3D20230906224819&width=1200&height=630",
+  "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9bc11c49%2F4408_70826_2_132000_132000.jpg%3Ft%3D20240308145955&width=640&height=480",
+  "name": "賃貸マンション",
+  "address": "東京都品川区旗の台3丁目",
+  "town": "旗の台3丁目",
+  "nearestStation": "旗の台",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 65000,
+    "management": 0,
+    "total": 65000,
+    "freeInternet": false,
+    "effectiveTotal": 65000
+  },
+  "initialCostEstimate": 325000,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 65000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 65000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 65000
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 65000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代(概算)",
+      "amount": 16500
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 23.17,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 17,
+    "transfers": 1,
+    "route": "旗の台(東急大井町線 3分)→大井町(JR京浜東北線 4分)→品川シーサイド",
+    "leisure": "大井町からJR京浜東北線で品川まで出てJR上野東京ラインや山手線等に乗り換え、または大井町からりんかい線で新宿まで直通約23分"
+  },
+  "nearbyStations": [
+    {
+      "line": "東急池上線",
+      "station": "旗の台",
+      "walkMinutes": 3,
+      "note": "五反田まで約7分・蒲田まで約14分、閑静な住宅街を通る路線"
+    },
+    {
+      "line": "東急大井町線",
+      "station": "荏原町",
+      "walkMinutes": 5,
+      "note": "自由が丘まで約6分・大井町まで約9分、利便性の高い路線"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "中延",
+      "walkMinutes": 10,
+      "note": "新橋や日本橋方面へ直通アクセス可能"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立源氏前図書館",
+        "minutes": 7
+      },
+      {
+        "name": "スーパーオオゼキ旗の台店",
+        "minutes": 5
+      },
+      {
+        "name": "まいばすけっと旗の台店",
+        "minutes": 4
+      },
+      {
+        "name": "セブンイレブン品川中延５丁目店",
+        "minutes": 3
+      },
+      {
+        "name": "昭和大学病院",
+        "minutes": 7
+      }
+    ],
+    "areaGuide": "品川区旗の台は、歴史ある活気ある商店街が広がり、人通りが多く地域の目が届きやすいため治安が非常に良いエリアです。駅周辺にはスーパーやコンビニ、昭和大学病院などの医療機関が充実しており生活利便性が高いです。地形は比較的平坦で歩きやすく、落ち着いた下町の温かみが残る住環境が広がっています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 46,
+      "rentValue": 100,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 85,
+      "safety": 90
+    }
+  },
+  "score": {
+    "total": 83,
+    "grade": "◎◎",
+    "matchPercent": 83,
+    "summary": "家賃6.5万円で品川シーサイドまで電車17分・乗り換え1回、図書館やスーパーも徒歩圏内",
+    "goodPoints": [
+      "家賃が管理費込み65000円と予算内でリーズナブル",
+      "品川シーサイド駅まで電車で約17分と通勤しやすい",
+      "徒歩5分圏内にスーパーやコンビニ、徒歩7分圏内に図書館があり理想の生活環境"
+    ],
+    "concernPoints": [
+      "バストイレが一緒の3点ユニットバスである点",
+      "北向きの部屋でフローリングではなく、都市ガスの記載はあるがコンロが1口のIH仕様"
+    ]
+  },
+  "status": "気になる"
+}
