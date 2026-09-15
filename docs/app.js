@@ -268,7 +268,8 @@ function removeFilterPreset(id) {
 }
 
 // opts: { includeHiddenStatuses(bool、既定false), sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc"),
-//         roomFilters(配列), roomFilterMode("and"|"or"、既定"and"), maxWalkMinutes(数値) }
+//         roomFilters(配列), roomFilterMode("and"|"or"、既定"and"), maxWalkMinutes(数値),
+//         maxCommuteMinutes(数値、p.commuteMinutes以下), maxRent(数値、p.effectiveRentTotal以下) }
 // 「見送り」「掲載終了」は、はるかちゃんが積極的に見送った/もう存在しない物件なので、
 // 明示的にoptsで指定しない限り一覧から隠す(criteria.jsonのhiddenByDefaultStatuses)。
 async function renderPropertyList(container, filterFn, opts) {
@@ -290,6 +291,12 @@ async function renderPropertyList(container, filterFn, opts) {
     if (opts.maxWalkMinutes != null) {
       list = list.filter((p) => p.walkMinutesToStation != null && p.walkMinutesToStation <= opts.maxWalkMinutes);
     }
+    if (opts.maxCommuteMinutes != null) {
+      list = list.filter((p) => p.commuteMinutes != null && p.commuteMinutes <= opts.maxCommuteMinutes);
+    }
+    if (opts.maxRent != null) {
+      list = list.filter((p) => p.effectiveRentTotal != null && p.effectiveRentTotal <= opts.maxRent);
+    }
     const sortKey = opts.sortKey || "scoreTotal";
     const sortDir = opts.sortDir || "desc";
     list.sort((a, b) => {
@@ -300,7 +307,8 @@ async function renderPropertyList(container, filterFn, opts) {
       return sortDir === "asc" ? av - bv : bv - av;
     });
     if (list.length === 0) {
-      const hasActiveFilter = (opts.roomFilters && opts.roomFilters.length) || opts.maxWalkMinutes != null;
+      const hasActiveFilter = (opts.roomFilters && opts.roomFilters.length) ||
+        opts.maxWalkMinutes != null || opts.maxCommuteMinutes != null || opts.maxRent != null;
       container.innerHTML = '<p class="empty-note">' +
         (hasActiveFilter
           ? "条件に合う物件が無いよ。フィルターを見直してみてね"

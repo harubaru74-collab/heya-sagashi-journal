@@ -262,3 +262,9 @@ base = roomQuality*0.25 + rentValue*0.25 + commuteAccess*0.20
   (`app.js`の`addFilterPreset`/`removeFilterPreset`/`loadFilterPresets`、
   上限は`FILTER_PRESET_MAX`)。前回の状態を自動で覚えておく既存の
   `heyaSagashiListFilters`とは別物として共存させている(自動復元 vs 明示的に名前を付けて残す、の役割分担)
+- ✅ **フィルターに「通勤時間」「家賃(実質)」を追加**: 「駅までの徒歩」と同じプルダウン形式で、
+  通勤時間(15/20/25/30分以内、`p.commuteMinutes`基準)と家賃(7万/7.2万/7.5万/8万円以内、
+  `p.effectiveRentTotal`=実質家賃基準)を絞り込めるように。`renderPropertyList`の
+  `opts.maxCommuteMinutes`/`opts.maxRent`で判定し、値が無い物件(`commuteMinutes`未登録など)は
+  他のフィルター同様に除外される。フィルターリセット・保存条件(プリセット)・自動復元
+  すべてにこの2つも含めて連動させている
