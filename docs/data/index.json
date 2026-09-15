@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T03:57:19+09:00",
+  "updatedAt": "2026-09-16T05:04:29+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -30,6 +30,21 @@
       "matchPercent": 82,
       "status": "気になる",
       "registeredAt": "2026-09-16T03:57:19+09:00"
+    },
+    {
+      "id": "20260916-e2x4",
+      "isSample": false,
+      "name": "ビアメゾン品川",
+      "town": "二葉1丁目",
+      "nearestStation": "下神明",
+      "rentTotal": 80000,
+      "effectiveRentTotal": 80000,
+      "layout": "1K",
+      "sizeSqm": 21.67,
+      "scoreTotal": 59,
+      "matchPercent": 59,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T05:04:29+09:00"
     }
   ]
 }
