@@ -32,14 +32,23 @@ function formatYen(n) {
   return "¥" + Number(n).toLocaleString("ja-JP");
 }
 
-function radarDataset(axisLabels, axisValues, color) {
-  const labels = Object.keys(axisLabels).map((k) => axisLabels[k]);
-  const data = Object.keys(axisLabels).map((k) => (axisValues && axisValues[k] != null) ? axisValues[k] : 0);
-  return { labels, data, color };
+// レーダーの各軸ラベルの下に添える、実際の値ベースの一言(例:「通勤アクセス」の下に「3分」)
+function buildLifeAxisCaptions(property) {
+  const facilities = (property.surroundings && property.surroundings.facilities) || [];
+  return {
+    roomQuality: property.radar.lifeAxes.roomQuality + "%達成",
+    rentValue: formatYen(property.rent.effectiveTotal),
+    commuteAccess: (property.commute.minutes != null ? property.commute.minutes + "分" : "-"),
+    stationCloseness: (property.walkMinutesToStation != null ? property.walkMinutesToStation + "分" : "-"),
+    dailyConvenience: facilities.length ? facilities.length + "件" : property.radar.lifeAxes.dailyConvenience + "点",
+    safety: property.radar.lifeAxes.safety + "点"
+  };
 }
 
-function drawRadarChart(canvas, axisLabels, axisValues, color) {
-  const { labels, data } = radarDataset(axisLabels, axisValues, color);
+function drawRadarChart(canvas, axisLabels, axisValues, color, captions) {
+  const keys = Object.keys(axisLabels);
+  const labels = keys.map((k) => axisLabels[k]);
+  const data = keys.map((k) => (axisValues && axisValues[k] != null) ? axisValues[k] : 0);
   return new Chart(canvas, {
     type: "radar",
     data: {
@@ -60,7 +69,13 @@ function drawRadarChart(canvas, axisLabels, axisValues, color) {
           min: 0,
           max: 100,
           ticks: { stepSize: 25, showLabelBackdrop: false, color: "#999" },
-          pointLabels: { font: { size: 11 } },
+          pointLabels: {
+            font: { size: 11 },
+            callback: function (label, index) {
+              const caption = captions && captions[keys[index]];
+              return caption ? [label, caption] : label;
+            }
+          },
           grid: { color: "#f1dbe4" },
           angleLines: { color: "#f1dbe4" }
         }
@@ -74,6 +89,9 @@ function propertyCardHtml(p) {
   const sample = p.isSample ? '<span class="sample-tag">サンプル</span>' : "";
   return (
     '<a class="property-card" href="' + SITE_BASE + 'property.html?id=' + encodeURIComponent(p.id) + '">' +
+      '<label class="compare-check" onclick="event.stopPropagation()">' +
+        '<input type="checkbox" class="compare-checkbox" value="' + p.id + '" onchange="onCompareCheckboxChange()">比較' +
+      "</label>" +
       '<div class="row-top">' +
         '<span class="name">' + p.name + sample + "</span>" +
         '<span class="score-badge">マッチ度 ' + p.matchPercent + "%</span>" +
@@ -108,6 +126,11 @@ function renderRoomChecklist(container, criteria, property) {
   container.innerHTML = '<ul class="checklist">' + items.join("") + "</ul>";
 }
 
+// 徒歩1分=80m(不動産表示の慣例)換算で「○m 徒歩○分」の形式にする
+function minutesToMeters(minutes) {
+  return Math.round((minutes * 80) / 10) * 10;
+}
+
 function renderFacilityList(container, facilities) {
   if (!facilities || facilities.length === 0) {
     container.innerHTML = '<p class="empty-note" style="padding:10px;">周辺施設の情報はまだ登録されてないよ</p>';
@@ -115,8 +138,20 @@ function renderFacilityList(container, facilities) {
   }
   container.innerHTML = '<ul class="facility-list">' + facilities.map((f) =>
     '<li><span class="fname">' + f.name + '</span><span class="fmin">' +
-    (f.minutes != null ? "徒歩" + f.minutes + "分" : "-") + "</span></li>"
+    (f.minutes != null ? minutesToMeters(f.minutes) + "m 徒歩" + f.minutes + "分" : "-") + "</span></li>"
   ).join("") + "</ul>";
+}
+
+// 元サイトと同じように、取得できた写真を横スクロールで全部見られるようにする
+function renderPhotoGallery(container, images) {
+  const list = (images && images.length) ? images : [];
+  if (list.length === 0) {
+    container.innerHTML = '<div class="hero-photo-placeholder">写真はまだ取得できてないよ</div>';
+    return;
+  }
+  container.innerHTML = '<div class="photo-gallery">' + list.map((url) =>
+    '<a href="' + url + '" target="_blank" rel="noopener"><img src="' + url + '" alt="物件の写真" referrerpolicy="no-referrer" loading="lazy"></a>'
+  ).join("") + "</div>";
 }
 
 async function renderPropertyList(container, filterFn) {
@@ -131,7 +166,97 @@ async function renderPropertyList(container, filterFn) {
       return;
     }
     container.innerHTML = list.map(propertyCardHtml).join("");
+    restoreCompareCheckboxes();
   } catch (e) {
     container.innerHTML = '<p class="empty-note">読み込みエラー: ' + e.message + "</p>";
   }
+}
+
+// -------------------------------------------------------------
+// 物件比較(チェックボックスで選んで比較ページへ)
+// -------------------------------------------------------------
+// 選択状態はこのブラウザだけのものでOKと割り切り、sessionStorageに保存する
+// (複数端末をまたいだ同期はしない。個人利用の一覧選択なのでこれで十分)
+const COMPARE_STORAGE_KEY = "heyaSagashiCompareIds";
+
+function getCompareIds() {
+  try {
+    return JSON.parse(sessionStorage.getItem(COMPARE_STORAGE_KEY) || "[]");
+  } catch (e) {
+    return [];
+  }
+}
+
+function setCompareIds(ids) {
+  try {
+    sessionStorage.setItem(COMPARE_STORAGE_KEY, JSON.stringify(ids));
+  } catch (e) { /* ストレージが使えない環境では諦める */ }
+}
+
+function restoreCompareCheckboxes() {
+  const ids = getCompareIds();
+  document.querySelectorAll(".compare-checkbox").forEach((cb) => {
+    cb.checked = ids.indexOf(cb.value) !== -1;
+  });
+  updateCompareBar();
+}
+
+function onCompareCheckboxChange() {
+  const ids = Array.from(document.querySelectorAll(".compare-checkbox:checked")).map((cb) => cb.value);
+  setCompareIds(ids);
+  updateCompareBar();
+}
+
+function updateCompareBar() {
+  const ids = getCompareIds();
+  let bar = document.getElementById("compare-bar");
+  if (ids.length < 2) {
+    if (bar) bar.remove();
+    return;
+  }
+  if (!bar) {
+    bar = document.createElement("div");
+    bar.id = "compare-bar";
+    bar.className = "compare-bar";
+    document.body.appendChild(bar);
+  }
+  bar.innerHTML = "<span>" + ids.length + "件選択中</span>" +
+    '<a href="' + SITE_BASE + "compare.html?ids=" + ids.map(encodeURIComponent).join(",") + '">比較する →</a>';
+}
+
+// -------------------------------------------------------------
+// ステータス変更(サイト上のボタンから、GASのWebアプリ経由でGitHubに反映)
+// -------------------------------------------------------------
+function renderStatusControl(container, property, criteria) {
+  const api = criteria.statusUpdateApi;
+  if (!api || !api.url) {
+    container.textContent = property.status;
+    return;
+  }
+  const options = (api.statusOptions || [property.status]).map((s) =>
+    '<option value="' + s + '"' + (s === property.status ? " selected" : "") + ">" + s + "</option>"
+  ).join("");
+  container.innerHTML =
+    '<select class="status-select" id="status-select">' + options + "</select>" +
+    '<span class="status-save-note" id="status-save-note"></span>';
+  document.getElementById("status-select").addEventListener("change", function () {
+    saveStatus_(api, property.id, this.value);
+  });
+}
+
+function saveStatus_(api, id, newStatus) {
+  const note = document.getElementById("status-save-note");
+  if (note) note.textContent = "保存中…";
+  const url = api.url + "?action=updateRoomStatus&id=" + encodeURIComponent(id) +
+    "&status=" + encodeURIComponent(newStatus) + "&token=" + encodeURIComponent(api.token);
+  // GASのdoGetはCORSでレスポンスを読めないため no-cors で送りっぱなしにする
+  // (リクエスト自体はサーバーに届いて処理されるので、結果はサイトの再読み込みで確認する)
+  fetch(url, { mode: "no-cors" }).then(function () {
+    if (note) note.textContent = "保存したよ(反映まで数秒待ってね)";
+    setTimeout(function () {
+      if (note) note.textContent = "";
+    }, 4000);
+  }).catch(function () {
+    if (note) note.textContent = "保存に失敗したかも…もう一度試してみてね";
+  });
 }

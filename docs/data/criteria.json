@@ -23,17 +23,17 @@
   "roomConditionsNote": "この配列の並び順が、そのままサイトのチェックリスト表示順になる。順番を入れ替えれば表示順が変わる。weightは重み(初期値1)。値を上げるほど『重視する項目』としてマッチ度計算での加点が大きくなる、かつサイト上で目立つ表示(★マーク)になる。値は物件ごとではなく、この設定ファイル1箇所で全物件共通。",
   "roomConditions": [
     { "key": "size", "label": "広さ", "type": "scale", "unit": "㎡", "higherIsBetter": true, "weight": 1 },
-    { "key": "bathToiletSeparate", "label": "バストイレ別", "type": "boolean", "weight": 1 },
-    { "key": "loft", "label": "ロフト付き", "type": "boolean", "weight": 1 },
-    { "key": "storage", "label": "収納付き", "type": "boolean", "weight": 1 },
-    { "key": "indoorWasher", "label": "洗濯機室内", "type": "boolean", "weight": 1 },
-    { "key": "freeInternet", "label": "ネット無料", "type": "boolean", "weight": 1, "note": "実質家賃を-5,000円換算してよい" },
     { "key": "cityGas", "label": "都市ガス", "type": "boolean", "weight": 1 },
-    { "key": "secondFloorOrAbove", "label": "2階以上", "type": "boolean", "weight": 1 },
     { "key": "aircon", "label": "エアコン", "type": "boolean", "weight": 1 },
+    { "key": "secondFloorOrAbove", "label": "2階以上", "type": "boolean", "weight": 1 },
+    { "key": "bathToiletSeparate", "label": "バストイレ別", "type": "boolean", "weight": 1 },
     { "key": "separateWashstand", "label": "洗面所独立", "type": "boolean", "weight": 1 },
+    { "key": "indoorWasher", "label": "洗濯機室内", "type": "boolean", "weight": 1 },
     { "key": "washletToilet", "label": "温水洗浄便座", "type": "boolean", "weight": 1 },
-    { "key": "bathroomDryer", "label": "浴室乾燥機", "type": "boolean", "weight": 1 }
+    { "key": "storage", "label": "収納付き", "type": "boolean", "weight": 1 },
+    { "key": "bathroomDryer", "label": "浴室乾燥機", "type": "boolean", "weight": 1 },
+    { "key": "freeInternet", "label": "ネット無料", "type": "boolean", "weight": 1, "note": "実質家賃を-5,000円換算してよい" },
+    { "key": "loft", "label": "ロフト付き", "type": "boolean", "weight": 1 }
   ],
   "sizeScoring": {
     "note": "広さの達成率換算(㎡→0-100%の目安。チェックリストの重み付き達成率計算にそのまま使う)",
@@ -51,5 +51,11 @@
   "searchTips": [
     "ポータルサイトは駅名検索だと漏れる物件があるので「品川区の町名指定」で探す",
     "このエリアは坂がなく平坦なので、検索条件の徒歩分数を12〜15分まで少し広げると8.5万円以下の掘り出し物件が見つかりやすい"
-  ]
+  ],
+  "statusUpdateApi": {
+    "note": "サイト上のステータス変更ボタンが呼び出すAPI(実体はai-concierge側のGAS Webアプリ)。GitHubへの書き込み権限はGAS側だけが持ち、ここのtokenは荒らし防止の簡易チェック用(このサイト自体と同じ『URLを知っていれば使える』信頼レベル)",
+    "url": "https://script.google.com/macros/s/AKfycbzzT_tJkqfVFU7eMONYRi90jVj9T3ZmuYs18iIeY5YbPWxlFXtMpy86qd7SiatAZI28/exec",
+    "token": "dd1acd88ba76abcf5458d0bdd48d8fde",
+    "statusOptions": ["気になる", "内見予約", "内見済み", "申込済み", "契約済み", "見送り", "保留"]
+  }
 }

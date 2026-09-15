@@ -33,23 +33,24 @@
   }
 
   const sample = p.isSample ? '<span class="sample-tag">サンプルデータ</span>' : "";
-  const heroHtml = p.imageUrl
-    ? '<img class="hero-photo" src="' + p.imageUrl + '" alt="' + p.name + 'の写真" referrerpolicy="no-referrer">'
-    : '<div class="hero-photo-placeholder">写真・間取り図は未取得だよ</div>';
 
   const goodHtml = (p.score.goodPoints || []).map((t) =>
     '<li><span class="point-marker">✓</span><span>' + t + "</span></li>").join("");
   const concernHtml = (p.score.concernPoints || []).map((t) =>
     '<li><span class="point-marker">!</span><span>' + t + "</span></li>").join("");
 
-  const costBreakdownRows = (p.costBreakdown || []).map((c) =>
-    '<tr class="sub-row"><th>└ ' + c.label + '</th><td>' + formatYen(c.amount) + "</td></tr>").join("");
+  const costLine = (p.costBreakdown || []).length
+    ? formatYen(p.initialCostEstimate) + "(" + p.costBreakdown.map((c) => c.label + " " + formatYen(c.amount)).join("・") + ")"
+    : formatYen(p.initialCostEstimate);
+
+  const commuteLine = p.commute.destinationStationName + "まで" + p.commute.minutes + "分(乗り換え" + p.commute.transfers + "回)" +
+    (p.commute.route ? '<span class="detail-sub">' + p.commute.route + "</span>" : "");
 
   const areaGuideText = (p.surroundings && (p.surroundings.areaGuide || p.surroundings.safetyNote)) ||
     "エリアの解説はまだ登録されてないよ";
 
   content.innerHTML =
-    heroHtml +
+    '<div id="gallery"></div>' +
     "<h1>" + p.name + sample + "</h1>" +
     '<p class="meta" style="color:#8e879c;">' + p.address + " ・ " + p.nearestStation + "駅 徒歩" + p.walkMinutesToStation + "分</p>" +
 
@@ -82,17 +83,17 @@
     "<table class=\"detail-table\">" +
       "<tr><th>間取り・広さ</th><td>" + p.layout + " / " + p.sizeSqm + "㎡</td></tr>" +
       "<tr><th>家賃総額</th><td>" + formatYen(p.rent.total) + (p.rent.freeInternet ? "(ネット込み実質 " + formatYen(p.rent.effectiveTotal) + ")" : "") + "</td></tr>" +
-      "<tr><th>初期費用目安</th><td>" + formatYen(p.initialCostEstimate) + "</td></tr>" +
-      costBreakdownRows +
-      "<tr><th>通勤</th><td>" + p.commute.destinationStationName + "まで" + p.commute.minutes + "分(乗り換え" + p.commute.transfers + "回)</td></tr>" +
-      '<tr class="sub-row"><th>└ 経路</th><td>' + (p.commute.route || "-") + "</td></tr>" +
-      "<tr><th>ステータス</th><td>" + p.status + "</td></tr>" +
+      "<tr><th>初期費用目安</th><td>" + costLine + "</td></tr>" +
+      "<tr><th>通勤</th><td>" + commuteLine + "</td></tr>" +
+      '<tr><th>ステータス</th><td id="status-cell"></td></tr>' +
       "<tr><th>元の物件URL</th><td><a href=\"" + p.sourceUrl + "\" target=\"_blank\" rel=\"noopener\">ポータルサイトで見る</a></td></tr>" +
     "</table>";
 
+  renderPhotoGallery(document.getElementById("gallery"), p.images);
   renderRoomChecklist(document.getElementById("checklist"), criteria, p);
   renderFacilityList(document.getElementById("facilities"), p.surroundings && p.surroundings.facilities);
-  drawRadarChart(document.getElementById("lifeChart"), LIFE_AXIS_LABELS, p.radar.lifeAxes, "#7fc8e8");
+  renderStatusControl(document.getElementById("status-cell"), p, criteria);
+  drawRadarChart(document.getElementById("lifeChart"), LIFE_AXIS_LABELS, p.radar.lifeAxes, "#7fc8e8", buildLifeAxisCaptions(p));
 })();
 </script>
 </body>

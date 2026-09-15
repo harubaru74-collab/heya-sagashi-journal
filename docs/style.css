@@ -11,10 +11,12 @@
   --bg: #fffdf7;
   --card: #ffffff;
   --border: #eee6f7;
-  --good: #2f8f5c;
-  --good-bg: #c8f0d8;
-  --warn: #c07a1f;
-  --warn-bg: #ffe3b0;
+  --good: #ffffff;
+  --good-bg: #2fa06a;
+  --warn: #ffffff;
+  --warn-bg: #d98a1f;
+  --no-fg: #9992a8;
+  --no-bg: #e8e3f0;
   --star: #ffb400;
   --shadow: 2px 3px 0 rgba(0, 0, 0, 0.05);
 }
@@ -88,7 +90,7 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
 }
 .property-card:hover { text-decoration: none; border-color: var(--pink); }
 
-.property-card .row-top { display: block; }
+.property-card .row-top { display: block; padding-right: 62px; }
 .property-card .name { display: block; font-weight: bold; font-size: 1.02rem; word-break: break-all; font-family: "Zen Kaku Gothic New", sans-serif; }
 .property-card .score-badge { display: inline-block; margin-top: 6px; }
 
@@ -128,16 +130,35 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
   box-shadow: 1px 2px 3px rgba(0,0,0,0.08);
 }
 
-.hero-photo {
-  width: 100%;
+/* 写真ギャラリー(横スクロールで元サイトの写真を全部見られるように) */
+.photo-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  background: var(--blue-light);
+  margin: 0 -18px 16px;
+  padding: 0 18px;
+}
+.photo-gallery a:first-child { scroll-margin-left: 18px; }
+.photo-gallery a {
+  flex: none;
+  width: 88%;
+  max-width: 480px;
   aspect-ratio: 16 / 9;
+  scroll-snap-align: start;
+}
+.photo-gallery img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  background: var(--blue-light);
 }
 .hero-photo-placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 9;
+  width: calc(100% + 36px);
+  margin: 0 -18px 16px;
+  aspect-ratio: 21 / 9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,9 +232,9 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
   align-items: center;
   justify-content: center;
 }
-.checklist li.yes .mark { background: var(--good-bg); color: var(--good); }
-.checklist li.no .mark { background: #f1eef7; color: #bbb; }
-.checklist li.important .mark { background: var(--star); color: #fff; }
+.checklist li.yes .mark { background: var(--good-bg); color: var(--good); font-weight: bold; }
+.checklist li.no .mark { background: var(--no-bg); color: var(--no-fg); }
+.checklist li.important .mark { background: var(--star); color: #fff; font-weight: bold; }
 .checklist .label { flex: 1; }
 .checklist .star { color: var(--star); font-size: 0.8rem; margin-left: 2px; }
 .checklist .size-value { font-size: 0.78rem; color: var(--sub); }
@@ -237,7 +258,66 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
 .detail-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin: 12px 0; }
 .detail-table th, .detail-table td { border: 1px solid var(--border); padding: 9px 11px; text-align: left; }
 .detail-table th { background: var(--blue-light); width: 40%; font-weight: bold; }
-.detail-table tr.sub-row th, .detail-table tr.sub-row td { font-size: 0.8rem; color: var(--sub); background: #fffdf9; padding-left: 20px; }
+.detail-table .detail-sub { display: block; font-size: 0.82rem; color: var(--sub); margin-top: 2px; }
+
+.status-select {
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 2px solid var(--pink);
+  background: #fff;
+  color: var(--ink);
+}
+.status-save-note { font-size: 0.75rem; color: var(--sub); margin-left: 8px; }
+
+/* 物件一覧の「比較する」チェックボックス・フローティングバー */
+.property-card { position: relative; }
+.compare-check {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  color: var(--sub);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 10px 3px 6px;
+}
+.compare-bar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  background: var(--ink);
+  color: #fff;
+  padding: 12px 18px;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.88rem;
+  z-index: 10;
+}
+.compare-bar a {
+  background: var(--pink);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* 比較ページ */
+.compare-table-wrap { overflow-x: auto; margin: 16px 0; }
+.compare-table { border-collapse: collapse; font-size: 0.82rem; width: 100%; }
+.compare-table th, .compare-table td { border: 1px solid var(--border); padding: 8px 10px; text-align: center; white-space: nowrap; }
+.compare-table th.row-label { text-align: left; background: var(--blue-light); position: sticky; left: 0; }
+.compare-table td.yes { background: var(--good-bg); color: var(--good); font-weight: bold; }
+.compare-table td.no { background: var(--no-bg); color: var(--no-fg); }
+.compare-table td.best { outline: 2px solid var(--star); outline-offset: -2px; }
 
 .back-link { display: inline-block; margin: 16px 0 4px; }
 

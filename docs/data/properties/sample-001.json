@@ -3,7 +3,12 @@
   "isSample": true,
   "registeredAt": "2026-09-15T09:00:00+09:00",
   "sourceUrl": "https://example.com/sample-property",
-  "imageUrl": "",
+  "images": [
+    "https://picsum.photos/seed/heya-sample-1/800/450",
+    "https://picsum.photos/seed/heya-sample-2/800/450",
+    "https://picsum.photos/seed/heya-sample-3/800/450"
+  ],
+  "imageUrl": "https://picsum.photos/seed/heya-sample-1/800/450",
   "name": "(サンプル)〇〇マンション 3階",
   "address": "東京都品川区東品川3丁目",
   "town": "東品川3丁目",

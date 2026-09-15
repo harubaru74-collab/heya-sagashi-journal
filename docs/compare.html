@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>物件比較 | お部屋探しジャーナル</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yomogi&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <a class="back-link" href="index.html">← 一覧に戻る</a>
+  <header class="top" style="margin-left:-18px;margin-right:-18px;">
+    <h1>⚖️ 物件比較</h1>
+    <p class="sub">選んだ物件を並べて見比べられるよ</p>
+  </header>
+  <div id="content"><p class="empty-note">読み込み中だよ…</p></div>
+  <footer class="site">heya-sagashi-journal</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+<script src="app.js"></script>
+<script>
+const COMPARE_COLORS = ["#ff8fb8", "#7fc8e8", "#ffb400", "#8dd9a8", "#b79bff"];
+
+(async function () {
+  const params = new URLSearchParams(location.search);
+  const ids = (params.get("ids") || "").split(",").map((s) => s.trim()).filter(Boolean);
+  const content = document.getElementById("content");
+
+  if (ids.length < 2) {
+    content.innerHTML = '<p class="empty-note">一覧ページで2件以上「比較」にチェックを入れてから、もう一度開いてね</p>';
+    return;
+  }
+
+  let criteria, properties;
+  try {
+    criteria = await loadCriteria();
+    properties = await Promise.all(ids.map((id) => loadProperty(id)));
+  } catch (e) {
+    content.innerHTML = '<p class="empty-note">読み込みに失敗したよ: ' + e.message + "</p>";
+    return;
+  }
+
+  function bestIndex(values, higherIsBetter) {
+    let best = 0;
+    for (let i = 1; i < values.length; i++) {
+      if (higherIsBetter ? values[i] > values[best] : values[i] < values[best]) best = i;
+    }
+    return best;
+  }
+
+  function metricRow(label, values, higherIsBetter) {
+    const best = higherIsBetter == null ? -1 : bestIndex(values, higherIsBetter);
+    return "<tr><th class=\"row-label\">" + label + "</th>" +
+      values.map((v, i) => "<td" + (i === best ? ' class="best"' : "") + ">" + v + "</td>").join("") +
+      "</tr>";
+  }
+
+  function checklistRows() {
+    return (criteria.roomConditions || []).map((cond) => {
+      const cells = properties.map((p) => {
+        if (cond.type === "scale") {
+          return "<td>" + (p.sizeSqm != null ? p.sizeSqm + cond.unit : "-") + "</td>";
+        }
+        const has = !!(p.room && p.room[cond.key]);
+        return '<td class="' + (has ? "yes" : "no") + '">' + (has ? "✓" : "×") + "</td>";
+      }).join("");
+      const important = (cond.weight || 1) > 1;
+      return "<tr><th class=\"row-label\">" + cond.label + (important ? " ★" : "") + "</th>" + cells + "</tr>";
+    }).join("");
+  }
+
+  const header = "<tr><th class=\"row-label\">物件名</th>" +
+    properties.map((p) => "<th><a href=\"property.html?id=" + encodeURIComponent(p.id) + "\">" + p.name + "</a></th>").join("") + "</tr>";
+
+  content.innerHTML =
+    '<div class="compare-table-wrap"><table class="compare-table">' +
+      header +
+      metricRow("マッチ度", properties.map((p) => p.score.matchPercent + "%"), true) +
+      metricRow("家賃総額(実質)", properties.map((p) => formatYen(p.rent.effectiveTotal)), false) +
+      metricRow("間取り", properties.map((p) => p.layout), null) +
+      metricRow("通勤(" + properties[0].commute.destinationStationName + ")", properties.map((p) => p.commute.minutes + "分"), false) +
+      metricRow("最寄り駅徒歩", properties.map((p) => (p.walkMinutesToStation != null ? p.walkMinutesToStation + "分" : "-")), false) +
+      metricRow("ステータス", properties.map((p) => p.status), null) +
+      checklistRows() +
+    "</table></div>" +
+
+    '<div class="chart-box" style="margin:20px auto;"><canvas id="compareChart"></canvas><h3>お部屋+周辺環境の比較</h3></div>' +
+    '<ul style="list-style:none;padding:0;text-align:center;font-size:0.82rem;">' +
+      properties.map((p, i) => '<li style="display:inline-block;margin:0 10px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' +
+        COMPARE_COLORS[i % COMPARE_COLORS.length] + ';margin-right:4px;"></span>' + p.name + "</li>").join("") +
+    "</ul>";
+
+  const keys = Object.keys(LIFE_AXIS_LABELS);
+  new Chart(document.getElementById("compareChart"), {
+    type: "radar",
+    data: {
+      labels: keys.map((k) => LIFE_AXIS_LABELS[k]),
+      datasets: properties.map((p, i) => ({
+        label: p.name,
+        data: keys.map((k) => p.radar.lifeAxes[k] || 0),
+        backgroundColor: COMPARE_COLORS[i % COMPARE_COLORS.length] + "22",
+        borderColor: COMPARE_COLORS[i % COMPARE_COLORS.length],
+        borderWidth: 2,
+        pointBackgroundColor: COMPARE_COLORS[i % COMPARE_COLORS.length]
+      }))
+    },
+    options: {
+      responsive: true,
+      scales: { r: { min: 0, max: 100, ticks: { stepSize: 25, showLabelBackdrop: false, color: "#999" },
+        pointLabels: { font: { size: 11 } }, grid: { color: "#f1dbe4" }, angleLines: { color: "#f1dbe4" } } },
+      plugins: { legend: { display: false } }
+    }
+  });
+})();
+</script>
+</body>
+</html>
