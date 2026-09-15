@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T06:02:26+09:00",
+  "updatedAt": "2026-09-16T06:23:47+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -79,6 +79,22 @@
       "matchPercent": 41,
       "status": "気になる",
       "registeredAt": "2026-09-16T06:02:26+09:00"
+    },
+    {
+      "id": "20260916-e9vt",
+      "isSample": false,
+      "name": "恵比寿の賃貸マンション",
+      "town": "恵比寿南1丁目",
+      "nearestStation": "恵比寿",
+      "rentTotal": 76000,
+      "effectiveRentTotal": 76000,
+      "layout": "ワンルーム",
+      "sizeSqm": 14.34,
+      "commuteMinutes": 21,
+      "scoreTotal": 66,
+      "matchPercent": 66,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T06:23:47+09:00"
     }
   ]
 }
