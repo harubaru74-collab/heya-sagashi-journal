@@ -1,0 +1,126 @@
+{
+  "id": "20260916-0xyb",
+  "isSample": false,
+  "registeredAt": "2026-09-16T05:35:03+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/7c42d1c7b1a3c07945daabd56207310c74ef980d/?bid=1053080008105",
+  "images": [
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&amp;width=1200&amp;height=630"
+  ],
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&amp;width=1200&amp;height=630",
+  "name": "中沢ハイツ",
+  "address": "東京都品川区戸越4丁目11-20",
+  "town": "戸越4丁目",
+  "nearestStation": "戸越公園",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 78000,
+    "management": 0,
+    "total": 78000,
+    "freeInternet": false,
+    "effectiveTotal": 78000
+  },
+  "initialCostEstimate": 312000,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 78000
+    },
+    {
+      "label": "礼金",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 78000
+    },
+    {
+      "label": "前家賃",
+      "amount": 78000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 33000
+    },
+    {
+      "label": "保証会社利用料(概算)",
+      "amount": 39000
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 22.41,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 1,
+    "route": "戸越公園→東急大井町線→大井町→JR京浜東北線→品川シーサイド(または大井町から徒歩)"
+  },
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 18
+      },
+      {
+        "name": "オオゼキ",
+        "minutes": 2
+      },
+      {
+        "name": "オーケー戸越店",
+        "minutes": 7
+      },
+      {
+        "name": "ローソン",
+        "minutes": 4
+      },
+      {
+        "name": "戸越銀座商店街",
+        "minutes": 9
+      }
+    ],
+    "areaGuide": "戸越エリアは、日本一長い「戸越銀座商店街」をはじめ複数の活気ある商店街があり、日常の買い物や外食に非常に便利な下町情緒あふれる街です。犯罪発生率が低く治安が良好で、落ち着いた住宅街が広がっているため女性の一人暮らしでも安心感があります。坂道が少なく平坦な地形のため、歩きや自転車での移動も快適です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 46,
+      "rentValue": 52,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 90,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 71,
+    "grade": "◎◎",
+    "matchPercent": 71,
+    "summary": "品川シーサイド駅まで電車14分・乗り換え1回、家賃7.8万円で理想の通勤・生活圏内です。",
+    "goodPoints": [
+      "戸越公園駅から徒歩3分と駅近で複数路線が利用可能",
+      "家賃が管理費込7.8万円で予算内",
+      "周辺にオオゼキや戸越銀座商店街があり買い物環境が抜群"
+    ],
+    "concernPoints": [
+      "バストイレが一緒の3点ユニットバスである点",
+      "1階の物件で防犯面や日当たりへの配慮が必要"
+    ]
+  },
+  "status": "気になる"
+}

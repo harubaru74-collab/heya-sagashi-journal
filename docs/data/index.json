@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T05:04:29+09:00",
+  "updatedAt": "2026-09-16T05:35:03+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -14,7 +14,7 @@
       "commuteMinutes": 13,
       "scoreTotal": 81,
       "matchPercent": 81,
-      "status": "気になる",
+      "status": "見送り",
       "registeredAt": "2026-09-15T09:00:00+09:00"
     },
     {
@@ -48,6 +48,21 @@
       "matchPercent": 59,
       "status": "気になる",
       "registeredAt": "2026-09-16T05:04:29+09:00"
+    },
+    {
+      "id": "20260916-0xyb",
+      "isSample": false,
+      "name": "中沢ハイツ",
+      "town": "戸越4丁目",
+      "nearestStation": "戸越公園",
+      "rentTotal": 78000,
+      "effectiveRentTotal": 78000,
+      "layout": "1K",
+      "sizeSqm": 22.41,
+      "scoreTotal": 71,
+      "matchPercent": 71,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T05:35:03+09:00"
     }
   ]
 }
