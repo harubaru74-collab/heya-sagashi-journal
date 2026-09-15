@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T08:26:19+09:00",
+  "updatedAt": "2026-09-16T08:32:39+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -314,6 +314,38 @@
       "matchPercent": 32,
       "status": "気になる",
       "registeredAt": "2026-09-16T08:26:19+09:00"
+    },
+    {
+      "id": "20260916-69bp",
+      "isSample": false,
+      "name": "カームコート鳴島",
+      "town": "大森東5丁目",
+      "nearestStation": "昭和島",
+      "rentTotal": 64000,
+      "effectiveRentTotal": 64000,
+      "layout": "1K",
+      "sizeSqm": 20,
+      "commuteMinutes": 19,
+      "walkMinutesToStation": 10,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107948%2Frent%2F67366%2F2%2F2%2Flci2.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107948%2Frent%2F67366%2F1%2F1%2Foby0.jpg&width=640&height=480",
+      "scoreTotal": 72,
+      "matchPercent": 72,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T08:32:39+09:00"
     }
   ]
 }
