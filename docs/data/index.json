@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T09:17:32+09:00",
+  "updatedAt": "2026-09-16T09:19:44+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -474,6 +474,38 @@
       "matchPercent": 73,
       "status": "気になる",
       "registeredAt": "2026-09-16T09:17:32+09:00"
+    },
+    {
+      "id": "20260916-cblv",
+      "isSample": false,
+      "name": "グレイスコート",
+      "town": "東中延2丁目",
+      "nearestStation": "中延",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "ワンルーム",
+      "sizeSqm": 15,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1dbcdef9%2F1513_439193_2_132000_132000.jpg%3Ft%3D20260727133039&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1dbcdef9%2F1513_439193_1_132000_132000.jpg%3Ft%3D20260727133039&width=640&height=480",
+      "scoreTotal": 81,
+      "matchPercent": 81,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T09:19:44+09:00"
     }
   ]
 }
