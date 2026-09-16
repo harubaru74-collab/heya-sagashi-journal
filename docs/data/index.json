@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T06:25:53+09:00",
+  "updatedAt": "2026-09-17T06:27:58+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -918,6 +918,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-09-17T06:25:53+09:00"
+    },
+    {
+      "id": "20260917-g6qj",
+      "isSample": false,
+      "name": "パークシティ戸越",
+      "town": "戸越6丁目",
+      "nearestStation": "戸越公園",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 75000,
+      "layout": "ワンルーム",
+      "sizeSqm": 17.26,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 1,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116144%2Frent%2F20102%2F2%2F1%2F40sm.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116144%2Frent%2F20102%2F1%2F2%2Flxd0.jpg&width=640&height=480",
+      "scoreTotal": 77,
+      "matchPercent": 77,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-09-17T06:27:58+09:00"
     }
   ]
 }
