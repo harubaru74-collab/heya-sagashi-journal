@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T20:18:01+09:00",
+  "updatedAt": "2026-09-16T20:19:31+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -570,6 +570,38 @@
       "matchPercent": 81,
       "status": "気になる",
       "registeredAt": "2026-09-16T20:18:01+09:00"
+    },
+    {
+      "id": "20260916-ngdc",
+      "isSample": false,
+      "name": "賃貸マンション",
+      "town": "豊町6丁目",
+      "nearestStation": "中延",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 75000,
+      "layout": "ワンルーム",
+      "sizeSqm": 19,
+      "commuteMinutes": 15,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fe293be6a-0656-4a02-84c9-c1cf27cefbb3_property_picture_2348_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F241f01c9-80b6-44d4-bb12-451ab2b5d080_property_picture_2348_large.jpg&width=640&height=480",
+      "scoreTotal": 77,
+      "matchPercent": 77,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T20:19:31+09:00"
     }
   ]
 }
