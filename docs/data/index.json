@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T06:27:58+09:00",
+  "updatedAt": "2026-09-17T06:29:14+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -951,6 +951,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-09-17T06:27:58+09:00"
+    },
+    {
+      "id": "20260917-jvu5",
+      "isSample": false,
+      "name": "水野ビル",
+      "town": "西中延2丁目",
+      "nearestStation": "荏原中延",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "ワンルーム",
+      "sizeSqm": 19.96,
+      "commuteMinutes": 17,
+      "walkMinutesToStation": 4,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F0f6bf3b5-bd3a-4038-8fb0-0a20999f14d4_property_picture_2944_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F447370dc-858d-4203-b060-b0c2bcf49bb2_property_picture_2944_large.jpg&width=640&height=480",
+      "scoreTotal": 84,
+      "matchPercent": 84,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-09-17T06:29:14+09:00"
     }
   ]
 }
