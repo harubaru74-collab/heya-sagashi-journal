@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T08:44:02+09:00",
+  "updatedAt": "2026-09-16T09:10:45+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -410,6 +410,38 @@
       "matchPercent": 83,
       "status": "気になる",
       "registeredAt": "2026-09-16T08:44:02+09:00"
+    },
+    {
+      "id": "20260916-s9zv",
+      "isSample": false,
+      "name": "ルーブル大井町",
+      "town": "二葉1丁目",
+      "nearestStation": "下神明",
+      "rentTotal": 74000,
+      "effectiveRentTotal": 74000,
+      "layout": "1K",
+      "sizeSqm": 18,
+      "commuteMinutes": 15,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194049%2F2%2F2%2F32yt.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194049%2F1%2F1%2Fbg9o.jpg&width=640&height=480",
+      "scoreTotal": 79,
+      "matchPercent": 79,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T09:10:45+09:00"
     }
   ]
 }
