@@ -1,0 +1,157 @@
+{
+  "id": "20260916-5za4",
+  "isSample": false,
+  "registeredAt": "2026-09-16T21:17:38+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/72acbc6ae82c9ce036d1d47e376df603865f2871/",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F3d5089bb-8ce7-40e8-8a93-0779be1337d0_property_picture_9855_large.jpg&width=1200&height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F3d5089bb-8ce7-40e8-8a93-0779be1337d0_property_picture_9855_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F3d5089bb-8ce7-40e8-8a93-0779be1337d0_property_picture_9855_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ffa016c6b-c854-416f-9910-dddbaed7359e_property_picture_9855_large.jpg&width=640&height=480",
+  "name": "グレイス高輪",
+  "address": "東京都港区高輪2丁目14-18",
+  "town": "高輪2丁目",
+  "nearestStation": "高輪ゲートウェイ",
+  "walkMinutesToStation": 1,
+  "rent": {
+    "base": 70000,
+    "management": 0,
+    "total": 70000,
+    "freeInternet": false,
+    "effectiveTotal": 70000
+  },
+  "initialCostEstimate": 396500,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 70000
+    },
+    {
+      "label": "礼金",
+      "amount": 70000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 77000
+    },
+    {
+      "label": "前家賃",
+      "amount": 70000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 27500
+    },
+    {
+      "label": "室内清掃費用",
+      "amount": 55000
+    },
+    {
+      "label": "24hあんしんサポート",
+      "amount": 16500
+    },
+    {
+      "label": "エアコン清掃費用",
+      "amount": 13200
+    },
+    {
+      "label": "保証会社利用料(概算)",
+      "amount": 70000
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 22.68,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 13,
+    "transfers": 1,
+    "route": "高輪ゲートウェイ(JR山手線 3分)→品川(JR京浜東北線 10分)→品川シーサイド",
+    "leisure": "高輪ゲートウェイ駅からJR山手線で新宿まで20分"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR山手線",
+      "station": "高輪ゲートウェイ",
+      "walkMinutes": 1,
+      "note": "新宿まで約20分・渋谷まで約15分の主要ターミナルへ直通する路線"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "泉岳寺",
+      "walkMinutes": 5,
+      "note": "新橋や日本橋など都心主要部へアクセスしやすく京急線直通で羽田空港へも一本"
+    },
+    {
+      "line": "常磐線",
+      "station": "品川",
+      "walkMinutes": 11,
+      "note": "上野や茨城方面へダイレクトアクセス可能なターミナル駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "港区立高輪図書館",
+        "minutes": 700
+      },
+      {
+        "name": "リンコス 高輪店",
+        "minutes": 655
+      },
+      {
+        "name": "ローソン 高輪店",
+        "minutes": 177
+      },
+      {
+        "name": "ツルハドラッグ高輪台店",
+        "minutes": 1107
+      },
+      {
+        "name": "JCHO 東京高輪病院",
+        "minutes": 1125
+      }
+    ],
+    "areaGuide": "高輪エリアは、歴史ある神社仏閣や高級住宅街が広がる非常に落ち着いた雰囲気の街です。全体的に治安が良く、犯罪発生率も低いため女性の一人暮らしでも安心して暮らせます。起伏（坂）はやや多いエリアですが、駅周辺にはコンビニやスーパー（リンコスなど）が揃っており、品川駅や高輪ゲートウェイ駅も徒歩圏内のため、利便性と静かな住環境が調和した上質なエリアです。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 46,
+      "rentValue": 100,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 65,
+      "safety": 90
+    }
+  },
+  "score": {
+    "total": 81,
+    "grade": "◎◎",
+    "matchPercent": 81,
+    "summary": "品川シーサイド駅まで電車13分・乗り換え1回で、予算内の家賃7万円です。",
+    "goodPoints": [
+      "家賃7万円と予算内で、高輪ゲートウェイ駅徒歩1分という圧倒的な駅近の好立地",
+      "品川シーサイド駅まで約13分と通勤しやすく、周辺の治安が非常に良い",
+      "室内洗濯機置き場や都市ガスなど、一人暮らしに嬉しい基本設備が整っている"
+    ],
+    "concernPoints": [
+      "バストイレが一体型で、洗面所や温水洗浄便座がない点",
+      "2028年3月までの定期借家契約で、原則として更新ができない点"
+    ]
+  },
+  "interestStars": 0
+}
