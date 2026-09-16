@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T20:16:24+09:00",
+  "updatedAt": "2026-09-16T20:18:01+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -538,6 +538,38 @@
       "matchPercent": 86,
       "status": "気になる",
       "registeredAt": "2026-09-16T20:16:24+09:00"
+    },
+    {
+      "id": "20260916-0541",
+      "isSample": false,
+      "name": "アリビオ中延",
+      "town": "中延4丁目",
+      "nearestStation": "中延",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 75000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.24,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 1,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": true,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29479%2F2%2F1%2Fc79m.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29479%2F1%2F2%2Fo3y8.jpg&width=640&height=480",
+      "scoreTotal": 81,
+      "matchPercent": 81,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T20:18:01+09:00"
     }
   ]
 }
