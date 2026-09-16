@@ -382,3 +382,37 @@ base = roomQuality*0.25 + rentValue*0.25 + commuteAccess*0.20
     ONにしている間は🗑が♻️に変わり、カードは半透明+「(削除済み)」表示になる。
     物件詳細ページには`renderArchiveButton`で🗑/♻️の切り替えボタンを設置
   - 既存の登録済み物件はすべて`archived: false`にバックフィル済み
+
+## 19. 2026-09-16 家賃コスパの100点ラインの引き下げ・通勤時間をGoogle Maps実測に変更
+
+- ✅ **家賃コスパスコアの100点ライン(`rentGoodMax`)を¥72,000→¥65,000に変更**:
+  実質家賃¥70,000の物件がレーダーチャートで100点表示されていたのに対し、
+  はるかちゃんの体感(¥65,000以内なら文句なし、¥70,000は80点くらいの感覚)と
+  ズレていたための調整。`ai-concierge`側`ROOM_CRITERIA_.rentGoodMax`のみ変更
+  (`rentOkMax: 75000`・`rentMaxTotal: 80000`は変更なし)。既存の登録済み物件の
+  スコアは自動では再計算されない(サイト側は登録時に計算済みの値をそのまま表示する
+  設計のため)ので、正確な点数で見たい場合は同じURLで「いえさがし」を送り直す必要がある
+- ✅ **通勤時間をGoogle Maps Directions APIで実測するように変更**: これまでは
+  GeminiのWeb検索グラウンディングによる推定だったが、実際の物件(水野ビル→
+  品川シーサイド駅)で「17分・乗り換え1回」という推定に対し、実際にGoogleマップで
+  調べると「28〜32分」という大きな乖離が見つかった。相互直通運転の扱いミスに続く
+  2件目の実例だったため、Web検索ベースの推定には構造的な限界があると判断し、
+  実際のGoogle Maps Directions API(`mode=transit`、平日朝9時到着想定)で
+  通勤先(`ROOM_CRITERIA_.commuteDestination`)と新宿駅までの所要時間・乗り換え回数・
+  経路を実測するように変更した
+  - `ai-concierge`側: `Config.gs`に任意プロパティ`GOOGLE_MAPS_API_KEY`を追加。
+    `RoomSearch.gs`に`fetchTransitRoute_(originAddress, destinationName)`
+    (Directions APIを呼んで所要時間・乗り換え回数・経路文字列・運賃を返す)、
+    `nextWeekdayMorningEpoch_()`(次の平日朝9時のUNIX時刻を計算)、
+    `applyGoogleMapsCommute_(meta)`(Geminiが抽出した`meta`の
+    `COMMUTE_MIN`/`COMMUTE_TRANSFERS`/`COMMUTE_ROUTE`/`COMMUTE_LEISURE`を
+    実測値で上書き)を新設し、`handleRoomSearchSubmission_`内で
+    `parseRoomMeta_`の直後に呼ぶように変更
+  - `GOOGLE_MAPS_API_KEY`が未設定、または住所が読み取れない・API呼び出しが
+    失敗した場合は、これまで通りGeminiの推定値にフォールバックする
+    (Geminiのプロンプト側の通勤時間抽出指示はフォールバック用としてそのまま残してある)
+  - Google Maps Directions APIの利用には、はるかちゃん自身によるGoogle Cloudの
+    プロジェクト作成・Directions APIの有効化・請求先アカウント設定が必要
+    (`ai-concierge`の`SETUP.md`に手順を記載)。設定するまでは従来通りGemini推定のまま
+  - 既存の登録済み物件(水野ビル含む)の通勤時間は自動では直らないため、
+    正確な値で見たい場合は`GOOGLE_MAPS_API_KEY`設定後に同じURLを送り直す必要がある
