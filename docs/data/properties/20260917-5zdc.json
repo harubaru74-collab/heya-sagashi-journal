@@ -1,0 +1,189 @@
+{
+  "id": "20260917-5zdc",
+  "isSample": false,
+  "registeredAt": "2026-09-17T06:05:25+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/330c36e14a988228f14fab821bd7ede7dda9dc58/?bid=1060590081060",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F93639220-fd44-44ba-9f2e-ea3cece08a62_property_picture_2348_large.jpg&width=1200&height=630",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F93639220-fd44-44ba-9f2e-ea3cece08a62_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9cbab3ff-162d-4312-9df5-9b289137c06f_property_picture_2348_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F93639220-fd44-44ba-9f2e-ea3cece08a62_property_picture_2348_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F924645b3-a70e-4d8a-b23e-664aa99d5ac7_property_picture_2348_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F5853ba77-705d-4d73-8fb3-08947e895b71_property_picture_2348_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7da00a44-37d9-4da1-b406-bf7f9c444a93_property_picture_2348_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd267528f-d0b3-4224-8159-b0ddb787f80a_property_picture_2348_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F3c7ebcf0-fc33-48a9-b1c1-2d1b9e44aa72_property_picture_2348_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd7975f24-b62a-43ad-93c0-965fac937030_property_picture_2348_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7fca77fe-7730-4bcb-ba52-fb521e371adb_property_picture_2348_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F00292d87-86bf-47aa-9507-1b5c0e40b413_property_picture_2348_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8548e447-1186-4618-b80d-c175bfd2e838_property_picture_2348_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F689ec92d-10f7-48ac-bc01-35395313d7b7_property_picture_2348_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F10bfefbe-7936-4b47-ac32-15bf75bffe48_property_picture_2348_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F3553b980-d2f5-4c93-ae62-532686979160_property_picture_2348_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7f777acf-26b0-40f6-8bb8-72e7962ae848_property_picture_2348_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7be960f9-830e-4df1-b801-c49c2bf3c875_property_picture_2348_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2bfe93ac-e881-4770-8615-f4f71fead605_property_picture_2348_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ffa7b2a6d-325f-4648-a5e3-3af53aa5a0ff_property_picture_2348_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9cbab3ff-162d-4312-9df5-9b289137c06f_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F924645b3-a70e-4d8a-b23e-664aa99d5ac7_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F5853ba77-705d-4d73-8fb3-08947e895b71_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7da00a44-37d9-4da1-b406-bf7f9c444a93_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd267528f-d0b3-4224-8159-b0ddb787f80a_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F3c7ebcf0-fc33-48a9-b1c1-2d1b9e44aa72_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd7975f24-b62a-43ad-93c0-965fac937030_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7fca77fe-7730-4bcb-ba52-fb521e371adb_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F00292d87-86bf-47aa-9507-1b5c0e40b413_property_picture_2348_large.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8548e447-1186-4618-b80d-c175bfd2e838_property_picture_2348_large.jpg&width=640&height=480"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F93639220-fd44-44ba-9f2e-ea3cece08a62_property_picture_2348_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F93639220-fd44-44ba-9f2e-ea3cece08a62_property_picture_2348_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9cbab3ff-162d-4312-9df5-9b289137c06f_property_picture_2348_large.jpg&width=640&height=480",
+  "name": "賃貸マンション",
+  "address": "東京都品川区旗の台3丁目",
+  "town": "旗の台3丁目",
+  "nearestStation": "中延",
+  "walkMinutesToStation": 8,
+  "rent": {
+    "base": 75000,
+    "management": 5000,
+    "total": 80000,
+    "freeInternet": false,
+    "effectiveTotal": 80000
+  },
+  "initialCostEstimate": 432430,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 75000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 82500
+    },
+    {
+      "label": "前家賃",
+      "amount": 80000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 22000
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 40000
+    },
+    {
+      "label": "24時間サポート",
+      "amount": 1430
+    },
+    {
+      "label": "保証会社月額(概算)",
+      "amount": 800
+    },
+    {
+      "label": "その他費用(概算)",
+      "amount": 114700
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 20.37,
+  "room": {
+    "bathToiletSeparate": true,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 0,
+    "route": "中延(都営浅草線 14分)→品川シーサイド",
+    "leisure": "中延から都営浅草線で五反田乗り換えJR山手線で新宿まで約25分"
+  },
+  "nearbyStations": [
+    {
+      "line": "東急大井町線",
+      "station": "荏原町",
+      "walkMinutes": 2,
+      "note": "自由が丘や大井町方面へのアクセスが良好な各駅停車駅"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "中延",
+      "walkMinutes": 8,
+      "note": "品川シーサイドや新橋・浅草方面へ直通アクセス可能な地下鉄路線"
+    },
+    {
+      "line": "東急池上線",
+      "station": "旗の台",
+      "walkMinutes": 5,
+      "note": "五反田や蒲田方面へアクセスしやすい路線"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "ココカラファイン荏原町店",
+        "minutes": 2
+      },
+      {
+        "name": "まいばすけっと旗の台店",
+        "minutes": 232
+      },
+      {
+        "name": "スーパーオオゼキ旗の台店",
+        "minutes": 350
+      },
+      {
+        "name": "品川区立源氏前図書館",
+        "minutes": 450
+      },
+      {
+        "name": "昭和大学病院",
+        "minutes": 400
+      }
+    ],
+    "areaGuide": "東京都品川区旗の台エリアは、落ち着いた住宅街が広がり、治安が非常に良く子育て世帯や一人暮らしにも人気のある地域です。駅周辺には活気のある商店街（荏原町商店街など）があり、日常の買い物や飲食店利用に大変便利です。大きな坂は少なく平坦な道が多いため歩きやすい環境です。昭和大学病院などの大型医療施設も近くにあり、いざという時の安心感もあります。犯罪発生率も低く、夜間も比較的静かで落ち着いて暮らせる住環境が整っています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 61,
+      "rentValue": 0,
+      "commuteAccess": 100,
+      "stationCloseness": 85,
+      "dailyConvenience": 85,
+      "safety": 90
+    }
+  },
+  "score": {
+    "total": 61,
+    "grade": "◎",
+    "matchPercent": 61,
+    "summary": "品川シーサイドまで電車14分・乗り換えなしで理想の通勤圏内です",
+    "goodPoints": [
+      "都営浅草線で品川シーサイドまで乗り換えなし約14分と通勤が非常に便利",
+      "家賃総額8万円の予算内で、バス・トイレ別やオートロックなどの設備が充実",
+      "徒歩圏内にスーパーやドラッグストア、図書館があり生活環境が整っている"
+    ],
+    "concernPoints": [
+      "初期費用が想定より高くなる可能性がある"
+    ]
+  },
+  "interestStars": 0
+}
