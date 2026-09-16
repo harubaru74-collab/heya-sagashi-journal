@@ -1,0 +1,151 @@
+{
+  "id": "20260916-cblv",
+  "isSample": false,
+  "registeredAt": "2026-09-16T09:19:44+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/8bbe4db4609fc2270b54dea7f322b958a1c53db0/",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1dbcdef9%2F1513_439193_2_132000_132000.jpg%3Ft%3D20260727133039&width=1200&height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1dbcdef9%2F1513_439193_2_132000_132000.jpg%3Ft%3D20260727133039&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1dbcdef9%2F1513_439193_2_132000_132000.jpg%3Ft%3D20260727133039&width=1200&height=630",
+  "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1dbcdef9%2F1513_439193_1_132000_132000.jpg%3Ft%3D20260727133039&width=640&height=480",
+  "name": "グレイスコート",
+  "address": "東京都品川区東中延2丁目",
+  "town": "東中延2丁目",
+  "nearestStation": "中延",
+  "walkMinutesToStation": 2,
+  "rent": {
+    "base": 68000,
+    "management": 2000,
+    "total": 70000,
+    "freeInternet": false,
+    "effectiveTotal": 70000
+  },
+  "initialCostEstimate": 359000,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 68000
+    },
+    {
+      "label": "礼金",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 74800
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 70000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 22000
+    },
+    {
+      "label": "おうちアシスト",
+      "amount": 22000
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 47600
+    },
+    {
+      "label": "集送金手数料",
+      "amount": 550
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 15,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 1,
+    "route": "中延(都営浅草線 6分)→五反田(JR山手線 6分)→大崎(りんかい線 2分)→品川シーサイド",
+    "leisure": "中延駅から都営浅草線で五反田に出てJR山手線に乗り換え、新宿まで約25分です。"
+  },
+  "nearbyStations": [
+    {
+      "line": "東急大井町線",
+      "station": "中延",
+      "walkMinutes": 2,
+      "note": "自由が丘や二子玉川方面へのアクセスが良い、落ち着いた雰囲気の路線です。"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "中延",
+      "walkMinutes": 2,
+      "note": "日本橋や新橋などの都心部や、京急線直通で羽田空港へ一本でアクセスできる便利な路線です。"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 16
+      },
+      {
+        "name": "まいばすけっと東中延店",
+        "minutes": 3
+      },
+      {
+        "name": "トモズ中延店",
+        "minutes": 3
+      },
+      {
+        "name": "ファミリーマート中延駅前店",
+        "minutes": 2
+      },
+      {
+        "name": "中延スキップロード商店街",
+        "minutes": 1
+      }
+    ],
+    "areaGuide": "中延エリアは、全長約300mのアーケード付き商店街「中延スキップロード」が中心にあり、天候を気にせず日常の買い物や外食を楽しめます。平坦な地形のため自転車や徒歩での移動がしやすく、下町情緒と温かみが残る治安の良好な住宅街です。夜間も商店街周辺は明るく、女性の一人暮らしでも比較的安心して過ごしやすい住環境が整っています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 42,
+      "rentValue": 100,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 85,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 81,
+    "grade": "◎◎",
+    "matchPercent": 81,
+    "summary": "家賃総額70000円で品川シーサイドまで電車14分と理想的な通勤・予算圏内です。",
+    "goodPoints": [
+      "家賃総額が70000円と予算内におさまる",
+      "最寄り駅から徒歩2分と駅近で便利",
+      "活気ある中延スキップロード商店街がすぐ近く"
+    ],
+    "concernPoints": [
+      "バストイレ一緒で洗面所や浴室乾燥機がない",
+      "専有面積が15㎡とややコンパクト"
+    ]
+  },
+  "status": "気になる"
+}
