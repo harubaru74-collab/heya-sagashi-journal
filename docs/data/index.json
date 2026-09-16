@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T05:48:15+09:00",
+  "updatedAt": "2026-09-17T05:59:07+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -762,6 +762,38 @@
       "matchPercent": 78,
       "interestStars": 0,
       "registeredAt": "2026-09-17T05:48:15+09:00"
+    },
+    {
+      "id": "20260917-74pm",
+      "isSample": false,
+      "name": "スカイコート大森",
+      "town": "南大井3丁目",
+      "nearestStation": "大森海岸",
+      "rentTotal": 120000,
+      "effectiveRentTotal": 120000,
+      "layout": "ワンルーム",
+      "sizeSqm": 13.44,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29384%2F2%2F1%2Fp0mq.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29384%2F1%2F2%2Fihrg.jpg&width=640&height=480",
+      "scoreTotal": 34,
+      "matchPercent": 34,
+      "interestStars": 0,
+      "registeredAt": "2026-09-17T05:59:07+09:00"
     }
   ]
 }
