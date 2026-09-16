@@ -359,3 +359,26 @@ base = roomQuality*0.25 + rentValue*0.25 + commuteAccess*0.20
   可能性がある。既にこの不具合の影響を受けて登録済みの物件(外観1枚のみ)は、
   再取得できないので、気になる場合は同じURLで「いえさがし」をもう一度送って
   登録し直すしかない
+
+## 18. 2026-09-17(10回目)の改修で対応した内容
+
+- ✅ **フリーワード検索を追加**: 一覧ページ上部に検索ボックスを新設。物件名・町名・
+  最寄り駅名のいずれかに部分一致(大文字小文字を無視)すれば表示する(`matchesKeyword_`)。
+  `renderPropertyList`の`opts.keyword`として実装し、フィルターリセット・保存条件
+  (プリセット)・前回状態の自動復元にも連動させた
+- ✅ **物件の削除(実体は残したまま一覧から隠す)機能を追加**: 一覧カードの「比較」
+  チェックボックスの隣に🗑ボタン、物件詳細ページにも🗑/♻️ボタンを追加。
+  押すと`archived`(true/false)をGAS経由でGitHubに反映し、一覧からは
+  デフォルトで隠す(「削除済みも表示」チェックボックスで見返せる)。
+  9回目のラウンドで「ステータス→気になる度」に切り替えた際に無くなった
+  「見送り・掲載終了を隠す」機能を、削除操作として復活させた形になる。
+  - `ai-concierge`側: `buildRoomPropertyRecord_`が`archived: false`をセットするように
+    変更。`updateRoomArchivedById_`/`handleArchivedUpdateWebRequest_`を新設し、
+    `action=updateArchived&id=...&archived=true|false`で更新できるように
+    (`action=updateInterestStars`と同じ認証・実装パターン)
+  - サイト側: `renderPropertyList`に`opts.includeArchived`を追加(既定で
+    `archived:true`の物件を除外)。一覧カードの🗑ボタンは押すとその場で
+    カードを消す(楽観的UI更新、`wireCardArchiveButtons_`)。「削除済みも表示」を
+    ONにしている間は🗑が♻️に変わり、カードは半透明+「(削除済み)」表示になる。
+    物件詳細ページには`renderArchiveButton`で🗑/♻️の切り替えボタンを設置
+  - 既存の登録済み物件はすべて`archived: false`にバックフィル済み

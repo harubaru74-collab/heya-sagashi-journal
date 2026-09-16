@@ -124,5 +124,6 @@
   },
   "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630",
   "floorPlanImageUrl": "",
-  "interestStars": 0
+  "interestStars": 0,
+  "archived": false
 }

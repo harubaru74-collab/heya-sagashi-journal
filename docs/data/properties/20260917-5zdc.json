@@ -185,5 +185,6 @@
       "初期費用が想定より高くなる可能性がある"
     ]
   },
-  "interestStars": 0
+  "interestStars": 0,
+  "archived": false
 }

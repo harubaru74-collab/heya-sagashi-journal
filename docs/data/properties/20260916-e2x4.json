@@ -121,5 +121,6 @@
   },
   "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
   "floorPlanImageUrl": "",
-  "interestStars": 0
+  "interestStars": 0,
+  "archived": false
 }

@@ -31,7 +31,8 @@
       },
       "exteriorImageUrl": "https://picsum.photos/seed/heya-sample-1/800/450",
       "floorPlanImageUrl": "",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-tjfk",
@@ -58,7 +59,8 @@
       },
       "exteriorImageUrl": "",
       "floorPlanImageUrl": "",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-e2x4",
@@ -90,7 +92,8 @@
       },
       "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
       "floorPlanImageUrl": "",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-0xyb",
@@ -121,7 +124,8 @@
       },
       "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630",
       "floorPlanImageUrl": "",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-hxtq",
@@ -153,7 +157,8 @@
       },
       "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&width=1200&height=630",
       "floorPlanImageUrl": "",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-e9vt",
@@ -185,7 +190,8 @@
       },
       "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&width=1200&height=630",
       "floorPlanImageUrl": "",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-kjh5",
@@ -217,7 +223,8 @@
       "scoreTotal": 71,
       "matchPercent": 71,
       "registeredAt": "2026-09-16T08:16:56+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-qrzg",
@@ -249,7 +256,8 @@
       "scoreTotal": 76,
       "matchPercent": 76,
       "registeredAt": "2026-09-16T08:19:37+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-evq6",
@@ -281,7 +289,8 @@
       "scoreTotal": 80,
       "matchPercent": 80,
       "registeredAt": "2026-09-16T08:22:30+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-ny9k",
@@ -313,7 +322,8 @@
       "scoreTotal": 32,
       "matchPercent": 32,
       "registeredAt": "2026-09-16T08:26:19+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-69bp",
@@ -345,7 +355,8 @@
       "scoreTotal": 72,
       "matchPercent": 72,
       "registeredAt": "2026-09-16T08:32:39+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-ggnt",
@@ -377,7 +388,8 @@
       "scoreTotal": 82,
       "matchPercent": 82,
       "registeredAt": "2026-09-16T08:43:08+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-8tm7",
@@ -409,7 +421,8 @@
       "scoreTotal": 83,
       "matchPercent": 83,
       "registeredAt": "2026-09-16T08:44:02+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-s9zv",
@@ -441,7 +454,8 @@
       "scoreTotal": 79,
       "matchPercent": 79,
       "registeredAt": "2026-09-16T09:10:45+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-gger",
@@ -473,7 +487,8 @@
       "scoreTotal": 73,
       "matchPercent": 73,
       "registeredAt": "2026-09-16T09:17:32+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-cblv",
@@ -505,7 +520,8 @@
       "scoreTotal": 81,
       "matchPercent": 81,
       "registeredAt": "2026-09-16T09:19:44+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-34dp",
@@ -537,7 +553,8 @@
       "scoreTotal": 86,
       "matchPercent": 86,
       "registeredAt": "2026-09-16T20:16:24+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-0541",
@@ -569,7 +586,8 @@
       "scoreTotal": 81,
       "matchPercent": 81,
       "registeredAt": "2026-09-16T20:18:01+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-ngdc",
@@ -601,7 +619,8 @@
       "scoreTotal": 77,
       "matchPercent": 77,
       "registeredAt": "2026-09-16T20:19:31+09:00",
-      "interestStars": 0
+      "interestStars": 0,
+      "archived": false
     },
     {
       "id": "20260916-cy7c",
@@ -633,7 +652,8 @@
       "scoreTotal": 75,
       "matchPercent": 75,
       "interestStars": 0,
-      "registeredAt": "2026-09-16T20:32:13+09:00"
+      "registeredAt": "2026-09-16T20:32:13+09:00",
+      "archived": false
     },
     {
       "id": "20260916-5za4",
@@ -665,7 +685,8 @@
       "scoreTotal": 81,
       "matchPercent": 81,
       "interestStars": 0,
-      "registeredAt": "2026-09-16T21:17:38+09:00"
+      "registeredAt": "2026-09-16T21:17:38+09:00",
+      "archived": false
     },
     {
       "id": "20260917-wn3b",
@@ -697,7 +718,8 @@
       "scoreTotal": 73,
       "matchPercent": 73,
       "interestStars": 0,
-      "registeredAt": "2026-09-17T04:52:30+09:00"
+      "registeredAt": "2026-09-17T04:52:30+09:00",
+      "archived": false
     },
     {
       "id": "20260917-zhsm",
@@ -729,7 +751,8 @@
       "scoreTotal": 76,
       "matchPercent": 76,
       "interestStars": 0,
-      "registeredAt": "2026-09-17T05:32:26+09:00"
+      "registeredAt": "2026-09-17T05:32:26+09:00",
+      "archived": false
     },
     {
       "id": "20260917-jmfx",
@@ -761,7 +784,8 @@
       "scoreTotal": 78,
       "matchPercent": 78,
       "interestStars": 0,
-      "registeredAt": "2026-09-17T05:48:15+09:00"
+      "registeredAt": "2026-09-17T05:48:15+09:00",
+      "archived": false
     },
     {
       "id": "20260917-74pm",
@@ -793,7 +817,8 @@
       "scoreTotal": 34,
       "matchPercent": 34,
       "interestStars": 0,
-      "registeredAt": "2026-09-17T05:59:07+09:00"
+      "registeredAt": "2026-09-17T05:59:07+09:00",
+      "archived": false
     },
     {
       "id": "20260917-vs74",
@@ -825,7 +850,8 @@
       "scoreTotal": 78,
       "matchPercent": 78,
       "interestStars": 0,
-      "registeredAt": "2026-09-17T05:59:31+09:00"
+      "registeredAt": "2026-09-17T05:59:31+09:00",
+      "archived": false
     },
     {
       "id": "20260917-5zdc",
@@ -857,7 +883,8 @@
       "scoreTotal": 61,
       "matchPercent": 61,
       "interestStars": 0,
-      "registeredAt": "2026-09-17T06:05:25+09:00"
+      "registeredAt": "2026-09-17T06:05:25+09:00",
+      "archived": false
     }
   ]
 }

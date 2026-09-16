@@ -77,5 +77,6 @@
   },
   "exteriorImageUrl": "",
   "floorPlanImageUrl": "",
-  "interestStars": 0
+  "interestStars": 0,
+  "archived": false
 }

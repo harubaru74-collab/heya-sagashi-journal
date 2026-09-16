@@ -127,11 +127,16 @@ function starRatingHtml(stars, max) {
 
 function propertyCardHtml(p) {
   const sample = p.isSample ? '<span class="sample-tag">サンプル</span>' : "";
+  const archiveLabel = p.archived ? "♻️" : "🗑";
+  const archiveTitle = p.archived ? "一覧に戻す" : "一覧から削除(あとで見返せるよ)";
   return (
-    '<a class="property-card" href="' + SITE_BASE + 'property.html?id=' + encodeURIComponent(p.id) + '">' +
-      '<label class="compare-check" onclick="event.stopPropagation()">' +
-        '<input type="checkbox" class="compare-checkbox" value="' + p.id + '" onchange="onCompareCheckboxChange()">比較' +
-      "</label>" +
+    '<a class="property-card' + (p.archived ? " is-archived" : "") + '" href="' + SITE_BASE + 'property.html?id=' + encodeURIComponent(p.id) + '">' +
+      '<div class="card-top-actions">' +
+        '<button type="button" class="card-archive-btn" title="' + archiveTitle + '" data-id="' + p.id + '" data-archived="' + (p.archived ? "true" : "false") + '">' + archiveLabel + "</button>" +
+        '<label class="compare-check" onclick="event.stopPropagation()">' +
+          '<input type="checkbox" class="compare-checkbox" value="' + p.id + '" onchange="onCompareCheckboxChange()">比較' +
+        "</label>" +
+      "</div>" +
       '<div class="row-top">' +
         '<span class="name">' + p.name + sample + "</span>" +
         '<span class="score-badge">マッチ度 ' + p.matchPercent + "%</span>" +
@@ -331,16 +336,32 @@ function removeFilterPreset(id) {
   return presets;
 }
 
+// キーワードが物件名・町名・最寄り駅名のいずれかに部分一致するか(大文字小文字を無視)
+function matchesKeyword_(p, keyword) {
+  const k = keyword.trim().toLowerCase();
+  if (!k) return true;
+  return [p.name, p.town, p.nearestStation].some((s) => (s || "").toLowerCase().indexOf(k) !== -1);
+}
+
 // opts: { sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc"),
 //         roomFilters(配列), roomFilterMode("and"|"or"、既定"and"), maxWalkMinutes(数値),
-//         maxCommuteMinutes(数値、p.commuteMinutes以下), maxRent(数値、p.effectiveRentTotal以下) }
+//         maxCommuteMinutes(数値、p.commuteMinutes以下), maxRent(数値、p.effectiveRentTotal以下),
+//         keyword(文字列、物件名/町名/最寄り駅で部分一致), includeArchived(bool、既定false) }
+// 「削除」した(archived:true)物件は、はるかちゃんが積極的に消した/もう不要な物件なので、
+// 明示的にincludeArchivedを指定しない限り一覧から隠す(あとで見返せるように実体は消さない)。
 async function renderPropertyList(container, filterFn, opts) {
   opts = opts || {};
   container.innerHTML = '<p class="empty-note">読み込み中だよ…</p>';
   try {
     const idx = await loadIndex();
     let list = idx.properties || [];
+    if (!opts.includeArchived) {
+      list = list.filter((p) => !p.archived);
+    }
     if (filterFn) list = list.filter(filterFn);
+    if (opts.keyword) {
+      list = list.filter((p) => matchesKeyword_(p, opts.keyword));
+    }
     if (opts.roomFilters && opts.roomFilters.length) {
       list = opts.roomFilterMode === "or"
         ? list.filter((p) => p.room && opts.roomFilters.some((key) => p.room[key]))
@@ -365,7 +386,7 @@ async function renderPropertyList(container, filterFn, opts) {
       return sortDir === "asc" ? av - bv : bv - av;
     });
     if (list.length === 0) {
-      const hasActiveFilter = (opts.roomFilters && opts.roomFilters.length) ||
+      const hasActiveFilter = (opts.roomFilters && opts.roomFilters.length) || !!opts.keyword ||
         opts.maxWalkMinutes != null || opts.maxCommuteMinutes != null || opts.maxRent != null;
       container.innerHTML = '<p class="empty-note">' +
         (hasActiveFilter
@@ -376,9 +397,49 @@ async function renderPropertyList(container, filterFn, opts) {
     }
     container.innerHTML = list.map(propertyCardHtml).join("");
     restoreCompareCheckboxes();
+    wireCardArchiveButtons_(container, opts);
   } catch (e) {
     container.innerHTML = '<p class="empty-note">読み込みエラー: ' + e.message + "</p>";
   }
+}
+
+// 一覧カードの🗑/♻️ボタン(押すたびにarchivedをトグルしてGAS経由でGitHubに反映)。
+// includeArchivedで表示中ならボタンの見た目だけ切り替え、そうでなければカードごと消す
+// (楽観的UI更新。no-corsで結果は読めないため、送信できたら反映されたものとして扱う)
+function wireCardArchiveButtons_(container, opts) {
+  container.querySelectorAll(".card-archive-btn").forEach((btn) => {
+    btn.addEventListener("click", async (ev) => {
+      ev.preventDefault();
+      ev.stopPropagation();
+      const id = btn.dataset.id;
+      const nextArchived = btn.dataset.archived !== "true";
+      const confirmMsg = nextArchived
+        ? "この物件を一覧から削除(非表示)する?「削除済みも表示」から後で見返せるよ"
+        : "この物件を一覧に戻す?";
+      if (!confirm(confirmMsg)) return;
+      let criteria;
+      try {
+        criteria = await loadCriteria();
+      } catch (e) {
+        return;
+      }
+      const api = criteria.starUpdateApi;
+      if (!api || !api.url) return;
+      const url = api.url + "?action=updateArchived&id=" + encodeURIComponent(id) +
+        "&archived=" + (nextArchived ? "true" : "false") + "&token=" + encodeURIComponent(api.token);
+      fetch(url, { mode: "no-cors" }).catch(() => {});
+
+      const card = btn.closest(".property-card");
+      if (opts.includeArchived) {
+        btn.dataset.archived = nextArchived ? "true" : "false";
+        btn.textContent = nextArchived ? "♻️" : "🗑";
+        btn.title = nextArchived ? "一覧に戻す" : "一覧から削除(あとで見返せるよ)";
+        if (card) card.classList.toggle("is-archived", nextArchived);
+      } else if (card) {
+        card.remove();
+      }
+    });
+  });
 }
 
 // -------------------------------------------------------------
@@ -470,6 +531,41 @@ function saveInterestStars_(api, id, stars) {
     "&stars=" + encodeURIComponent(stars) + "&token=" + encodeURIComponent(api.token);
   // GASのdoGetはCORSでレスポンスを読めないため no-cors で送りっぱなしにする
   // (リクエスト自体はサーバーに届いて処理されるので、結果はサイトの再読み込みで確認する)
+  fetch(url, { mode: "no-cors" }).then(function () {
+    if (note) note.textContent = "保存したよ(反映まで数秒待ってね)";
+    setTimeout(function () {
+      if (note) note.textContent = "";
+    }, 4000);
+  }).catch(function () {
+    if (note) note.textContent = "保存に失敗したかも…もう一度試してみてね";
+  });
+}
+
+// -------------------------------------------------------------
+// 削除(アーカイブ)ボタン。実体は消さず一覧から隠すだけ(サイト上でいつでも戻せる)
+// -------------------------------------------------------------
+function renderArchiveButton(container, property, criteria) {
+  const api = criteria.starUpdateApi;
+  let archived = !!property.archived;
+  function label() { return archived ? "♻️ 一覧に戻す" : "🗑 一覧から削除する"; }
+  container.innerHTML =
+    '<button type="button" class="archive-toggle-btn" id="archive-toggle-btn">' + label() + "</button>" +
+    '<span class="status-save-note" id="archive-save-note"></span>';
+  if (!api || !api.url) return;
+  document.getElementById("archive-toggle-btn").addEventListener("click", function () {
+    const confirmMsg = archived ? "この物件を一覧に戻す?" : "この物件を一覧から削除(非表示)する?「削除済みも表示」から後で見返せるよ";
+    if (!confirm(confirmMsg)) return;
+    archived = !archived;
+    this.textContent = label();
+    saveArchived_(api, property.id, archived);
+  });
+}
+
+function saveArchived_(api, id, archived) {
+  const note = document.getElementById("archive-save-note");
+  if (note) note.textContent = "保存中…";
+  const url = api.url + "?action=updateArchived&id=" + encodeURIComponent(id) +
+    "&archived=" + (archived ? "true" : "false") + "&token=" + encodeURIComponent(api.token);
   fetch(url, { mode: "no-cors" }).then(function () {
     if (note) note.textContent = "保存したよ(反映まで数秒待ってね)";
     setTimeout(function () {
