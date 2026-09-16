@@ -1,0 +1,153 @@
+{
+  "id": "20260916-ngdc",
+  "isSample": false,
+  "registeredAt": "2026-09-16T20:19:31+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/b79c74d633af78483a844fe9bd2331a014cf4d5f/",
+  "images": [
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fe293be6a-0656-4a02-84c9-c1cf27cefbb3_property_picture_2348_large.jpg&width=1200&height=630"
+  ],
+  "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fe293be6a-0656-4a02-84c9-c1cf27cefbb3_property_picture_2348_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fe293be6a-0656-4a02-84c9-c1cf27cefbb3_property_picture_2348_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F241f01c9-80b6-44d4-bb12-451ab2b5d080_property_picture_2348_large.jpg&width=640&height=480",
+  "name": "賃貸マンション",
+  "address": "東京都品川区豊町6丁目",
+  "town": "豊町6丁目",
+  "nearestStation": "中延",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 70000,
+    "management": 5000,
+    "total": 75000,
+    "freeInternet": false,
+    "effectiveTotal": 75000
+  },
+  "initialCostEstimate": 111500,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 0
+    },
+    {
+      "label": "礼金",
+      "amount": 70000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 77000
+    },
+    {
+      "label": "前家賃",
+      "amount": 75000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 24200
+    },
+    {
+      "label": "室内清掃費用",
+      "amount": 41800
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "初回保証料",
+      "amount": 37500
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 19,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 15,
+    "transfers": 1,
+    "route": "中延(都営浅草線 3分)→五反田(JR山手線 6分)→大崎(りんかい線 4分)→品川シーサイド",
+    "leisure": "中延から都営浅草線で五反田に出て、JR山手線に乗り換えて新宿まで約25分。"
+  },
+  "nearbyStations": [
+    {
+      "line": "都営浅草線",
+      "station": "中延",
+      "walkMinutes": 3,
+      "note": "五反田まで約6分・浅草線直通で新橋や日本橋方面へアクセス可能"
+    },
+    {
+      "line": "東急大井町線",
+      "station": "荏原町",
+      "walkMinutes": 9,
+      "note": "大井町まで約4分・自由が丘や二子玉川方面へアクセス可能"
+    },
+    {
+      "line": "東急大井町線",
+      "station": "戸越公園",
+      "walkMinutes": 11,
+      "note": "商店街が充実し大井町まで約5分"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立源氏前図書館",
+        "minutes": 7
+      },
+      {
+        "name": "東急ストアフードステーション中延店",
+        "minutes": 5
+      },
+      {
+        "name": "セブンイレブン品川二葉4丁目店",
+        "minutes": 2
+      },
+      {
+        "name": "トモズ中延店",
+        "minutes": 8
+      },
+      {
+        "name": "BIZcomfort品川シーサイド(品川シーサイド駅周辺)",
+        "minutes": 15
+      }
+    ],
+    "areaGuide": "品川区豊町エリアは、下町情緒が残る温かい雰囲気が特徴で、活気のある商店街や大小さまざまな公園が点在しており、非常に暮らしやすい環境です。坂道も比較的少なく平坦な地形が多いため歩きやすいです。治安面においても犯罪発生率が低く、落ち着いた住宅街が広がっているため、女性の一人暮らしでも安心して暮らすことができます。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 44,
+      "rentValue": 80,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 85,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 77,
+    "grade": "◎◎",
+    "matchPercent": 77,
+    "summary": "通勤まで15分・乗り換え1回で理想の通勤圏内、家賃も予算内で安心！",
+    "goodPoints": [
+      "家賃総額が7.5万円以内で予算内",
+      "最寄り駅から徒歩3分と非常に駅近",
+      "周辺に図書館やスーパーが揃っており便利"
+    ],
+    "concernPoints": [
+      "バストイレが一緒で洗面台がない",
+      "浴室乾燥機や温水洗浄便座などの設備がない"
+    ]
+  },
+  "status": "気になる"
+}
