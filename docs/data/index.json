@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T05:59:31+09:00",
+  "updatedAt": "2026-09-17T06:05:25+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -826,6 +826,38 @@
       "matchPercent": 78,
       "interestStars": 0,
       "registeredAt": "2026-09-17T05:59:31+09:00"
+    },
+    {
+      "id": "20260917-5zdc",
+      "isSample": false,
+      "name": "賃貸マンション",
+      "town": "旗の台3丁目",
+      "nearestStation": "中延",
+      "rentTotal": 80000,
+      "effectiveRentTotal": 80000,
+      "layout": "ワンルーム",
+      "sizeSqm": 20.37,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 8,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F93639220-fd44-44ba-9f2e-ea3cece08a62_property_picture_2348_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9cbab3ff-162d-4312-9df5-9b289137c06f_property_picture_2348_large.jpg&width=640&height=480",
+      "scoreTotal": 61,
+      "matchPercent": 61,
+      "interestStars": 0,
+      "registeredAt": "2026-09-17T06:05:25+09:00"
     }
   ]
 }
