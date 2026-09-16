@@ -135,7 +135,7 @@ function propertyCardHtml(p) {
       '<div class="card-stats">' + titleStatsHtml(p.rentTotal, p.sizeSqm, p.commuteMinutes) + "</div>" +
       '<div class="meta">' +
         p.town + " ・ " + p.nearestStation + "駅" +
-        (p.effectiveRentTotal !== p.rentTotal ? "(ネット込み実質 " + formatYen(p.effectiveRentTotal) + ")" : "") +
+        (p.effectiveRentTotal !== p.rentTotal ? "(ネット無料のため実質-5,000円 " + formatYen(p.effectiveRentTotal) + ")" : "") +
         ' ・ <span class="star-tag">' + starRatingHtml(p.interestStars) + "</span>" +
       "</div>" +
       '<div class="card-thumbs">' +
