@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T04:52:30+09:00",
+  "updatedAt": "2026-09-17T05:32:26+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -698,6 +698,38 @@
       "matchPercent": 73,
       "interestStars": 0,
       "registeredAt": "2026-09-17T04:52:30+09:00"
+    },
+    {
+      "id": "20260917-zhsm",
+      "isSample": false,
+      "name": "テラスハウス山王",
+      "town": "山王3丁目",
+      "nearestStation": "大森",
+      "rentTotal": 80000,
+      "effectiveRentTotal": 75000,
+      "layout": "ワンルーム",
+      "sizeSqm": 19.17,
+      "commuteMinutes": 15,
+      "walkMinutesToStation": 11,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": true,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": true,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fbbaade03-402b-4d01-89f0-c35e7ea46a29_property_picture_10244_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F1f9661ed-e541-49cf-bd7d-18267c6b3d5d_property_picture_10244_large.jpg&width=640&height=480",
+      "scoreTotal": 76,
+      "matchPercent": 76,
+      "interestStars": 0,
+      "registeredAt": "2026-09-17T05:32:26+09:00"
     }
   ]
 }
