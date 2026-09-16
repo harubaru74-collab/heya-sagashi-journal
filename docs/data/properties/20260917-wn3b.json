@@ -1,0 +1,165 @@
+{
+  "id": "20260917-wn3b",
+  "isSample": false,
+  "registeredAt": "2026-09-17T04:52:30+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/228fa935d46426e8ba27272f37eda7f584582902/?bid=1060590081077",
+  "images": [
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F484b3e6a-648f-44b7-87bf-9b1a04b515a4_property_picture_2348_large.jpg&width=1200&height=630"
+  ],
+  "imageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F484b3e6a-648f-44b7-87bf-9b1a04b515a4_property_picture_2348_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F484b3e6a-648f-44b7-87bf-9b1a04b515a4_property_picture_2348_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F19df054c-3bae-4777-a4ab-ac43f0ca1920_property_picture_2348_large.jpg&width=640&height=480",
+  "name": "賃貸マンション",
+  "address": "東京都大田区中央2丁目",
+  "town": "中央2丁目",
+  "nearestStation": "大森",
+  "walkMinutesToStation": 11,
+  "rent": {
+    "base": 62000,
+    "management": 3000,
+    "total": 65000,
+    "freeInternet": false,
+    "effectiveTotal": 65000
+  },
+  "initialCostEstimate": 356500,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 62000
+    },
+    {
+      "label": "礼金",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 68200
+    },
+    {
+      "label": "前家賃",
+      "amount": 65000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 33000
+    },
+    {
+      "label": "室内清掃費(概算)",
+      "amount": 33000
+    },
+    {
+      "label": "保証会社初回保証料",
+      "amount": 32500
+    },
+    {
+      "label": "入前コーティング",
+      "amount": 11000
+    },
+    {
+      "label": "保証会社月額保証料(概算)",
+      "amount": 3900
+    },
+    {
+      "label": "月額管理費等(概算)",
+      "amount": 3000
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 16.12,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 22,
+    "transfers": 1,
+    "route": "大森(JR京浜東北・根岸線 4分)→品川(JR横須賀線 3分)→品川シーサイド(徒歩約10分、または大井町乗り換え等)",
+    "leisure": "大森駅からJR京浜東北線で品川まで約6分、東京まで約13分"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大森",
+      "walkMinutes": 11,
+      "note": "品川まで約6分・東京まで約13分、京浜東北線が利用可能"
+    },
+    {
+      "line": "京急本線",
+      "station": "平和島",
+      "walkMinutes": 15,
+      "note": "品川まで約10分・横浜まで約20分、特急・快特等が利用可能"
+    },
+    {
+      "line": "京急本線",
+      "station": "大森海岸",
+      "walkMinutes": 21,
+      "note": "品川まで約8分、比較的静かなエリア"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "ニトリドン・キホーテ大森店",
+        "minutes": 5
+      },
+      {
+        "name": "サミットストア大田中央店",
+        "minutes": 7
+      },
+      {
+        "name": "スーパーオオゼキ大森北店",
+        "minutes": 10
+      },
+      {
+        "name": "ファミリーマート大森北店",
+        "minutes": 7
+      },
+      {
+        "name": "大田区立入新井図書館",
+        "minutes": 15
+      }
+    ],
+    "areaGuide": "大田区中央2丁目は、平坦な地形のため自転車移動がしやすく、周辺にはメガドンキや複数のスーパー（サミット、オオゼキ）が揃っており日々の買い物環境が非常に充実しています。治安面は概ね落ち着いた住宅街ですが、駅周辺には賑やかな飲食店街もあります。物件自体は1階に位置するため防犯面の確認が必要です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 42,
+      "rentValue": 100,
+      "commuteAccess": 80,
+      "stationCloseness": 70,
+      "dailyConvenience": 75,
+      "safety": 70
+    }
+  },
+  "score": {
+    "total": 73,
+    "grade": "◎◎",
+    "matchPercent": 73,
+    "summary": "家賃6.5万円で品川シーサイドまで電車と徒歩で約22分、理想的な通勤圏内です。",
+    "goodPoints": [
+      "家賃総額が6.5万円で予算内",
+      "メガドンキやスーパーが近くて便利",
+      "室内洗濯機置き場や洗面所独立などの設備あり"
+    ],
+    "concernPoints": [
+      "1階の物件で防犯面や日当たりに注意が必要",
+      "バストイレ一緒のタイプであること"
+    ]
+  },
+  "interestStars": 0
+}
