@@ -1,0 +1,148 @@
+{
+  "id": "20260916-34dp",
+  "isSample": false,
+  "registeredAt": "2026-09-16T20:16:24+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/ca62ae76b2ec343afab144c590e884ae215ddc98/",
+  "images": [
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fae5eb0d3-c385-4c9b-a4c2-4380412adddf_property_picture_3034_large.jpg&width=1200&height=630"
+  ],
+  "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fae5eb0d3-c385-4c9b-a4c2-4380412adddf_property_picture_3034_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fae5eb0d3-c385-4c9b-a4c2-4380412adddf_property_picture_3034_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F0b79beee-9c6a-4785-a8e2-07e15eb18876_property_picture_3034_large.jpg&width=640&height=480",
+  "name": "VILLA YUTAKACHO",
+  "address": "東京都品川区豊町6丁目19-18",
+  "town": "豊町6丁目",
+  "nearestStation": "中延",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 68000,
+    "management": 2000,
+    "total": 70000,
+    "freeInternet": false,
+    "effectiveTotal": 70000
+  },
+  "initialCostEstimate": 307686,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 68000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 68000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 74800
+    },
+    {
+      "label": "前家賃",
+      "amount": 70000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 37686
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "保証会社(概算)",
+      "amount": 33000
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 13.21,
+  "room": {
+    "bathToiletSeparate": true,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 15,
+    "transfers": 1,
+    "route": "中延(都営浅草線 3分)→五反田(JR山手線 6分)→大崎(りんかい線 3分)→品川シーサイド または中延(都営浅草線 3分)→戸越(徒歩)等より中延から浅草線・山手線/りんかい線経由、または大井町線乗換など最速ルート",
+    "leisure": "中延から都営浅草線で西馬込方面、または五反田乗り換えでJR山手線を利用し新宿まで約25〜30分"
+  },
+  "nearbyStations": [
+    {
+      "line": "都営浅草線",
+      "station": "中延",
+      "walkMinutes": 3,
+      "note": "五反田まで約6分・浅草線直通で都心アクセス良好"
+    },
+    {
+      "line": "東急大井町線",
+      "station": "戸越公園",
+      "walkMinutes": 9,
+      "note": "大井町まで約3分・自由が丘方面へアクセスしやすい"
+    },
+    {
+      "line": "東急池上線",
+      "station": "荏原中延",
+      "walkMinutes": 12,
+      "note": "五反田や蒲田方面へアクセスしやすいローカルな路線"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立源氏前図書館",
+        "minutes": 631
+      },
+      {
+        "name": "東急ストアフードステーション中延店",
+        "minutes": 379
+      },
+      {
+        "name": "ファミリーマート戸越六丁目店",
+        "minutes": 196
+      },
+      {
+        "name": "スギドラッグ中延店",
+        "minutes": 425
+      },
+      {
+        "name": "木内医院",
+        "minutes": 292
+      }
+    ],
+    "areaGuide": "品川区豊町エリアは、下町の人情味と温かい雰囲気が残る落ち着いた住宅街です。周辺には「中延スキップロード」などの活気ある商店街があり、日常の買い物や食事に非常に便利です。坂道が少なく平坦な地形のため、徒歩や自転車での移動も快適です。治安面においても犯罪発生率が低く、街灯や人通りもあるため、女性の一人暮らしでも比較的安心して暮らすことができます。生活利便性と住環境のバランスが非常に優れたエリアです。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 58,
+      "rentValue": 100,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 85,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 86,
+    "grade": "◎◎◎",
+    "matchPercent": 86,
+    "summary": "家賃総額70000円で品川シーサイドまで電車15分・理想の通勤圏内",
+    "goodPoints": [
+      "家賃総額が7万円と予算内でお得",
+      "最寄り駅の中延駅から徒歩3分と非常に近い",
+      "バス・トイレ別で独立洗面台やオートロックも完備"
+    ],
+    "concernPoints": [
+      "専有面積が13.21㎡とかなり狭め"
+    ]
+  },
+  "status": "気になる"
+}
