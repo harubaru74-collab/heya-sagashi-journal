@@ -92,7 +92,7 @@
       "<tr><th>間取り・広さ</th><td>" + p.layout + " / " + p.sizeSqm + "㎡</td></tr>" +
       "<tr><th>家賃総額</th><td>" + formatYen(p.rent.total) + (p.rent.freeInternet ? "(ネット込み実質 " + formatYen(p.rent.effectiveTotal) + ")" : "") + "</td></tr>" +
       "<tr><th>初期費用目安</th><td>" + costLine + "</td></tr>" +
-      '<tr><th>ステータス</th><td id="status-cell"></td></tr>' +
+      '<tr><th>気になる度</th><td id="star-cell"></td></tr>' +
       "<tr><th>元の物件URL</th><td><a href=\"" + p.sourceUrl + "\" target=\"_blank\" rel=\"noopener\">ポータルサイトで見る</a></td></tr>" +
     "</table>";
 
@@ -101,7 +101,7 @@
   renderCommuteCard(document.getElementById("commute"), p.commute, p.nearestStation, p.walkMinutesToStation);
   renderNearbyStations(document.getElementById("stations"), p.nearbyStations);
   renderFacilityList(document.getElementById("facilities"), p.surroundings && p.surroundings.facilities);
-  renderStatusControl(document.getElementById("status-cell"), p, criteria);
+  renderStarRating(document.getElementById("star-cell"), p, criteria);
   drawRadarChart(document.getElementById("lifeChart"), LIFE_AXIS_LABELS, p.radar.lifeAxes, "#7fc8e8", buildLifeAxisCaptions(p));
 })();
 </script>

@@ -111,7 +111,7 @@ const COMPARE_COLORS = ["#ff8fb8", "#7fc8e8", "#ffb400", "#8dd9a8", "#b79bff"];
       metricRow("間取り", properties.map((p) => p.layout), null) +
       metricRow("通勤(" + properties[0].commute.destinationStationName + ")", properties.map((p) => p.commute.minutes), false, (v) => v + "分") +
       metricRow("最寄り駅徒歩", properties.map((p) => p.walkMinutesToStation), false, (v) => v + "分") +
-      metricRow("ステータス", properties.map((p) => p.status), null) +
+      metricRow("気になる度", properties.map((p) => p.interestStars || 0), true, (v) => starRatingHtml(v)) +
       checklistRows() +
     "</table></div>";
 

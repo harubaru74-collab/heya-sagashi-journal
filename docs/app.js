@@ -49,7 +49,7 @@ function buildLifeAxisCaptions(property) {
   const facilities = (property.surroundings && property.surroundings.facilities) || [];
   return {
     roomQuality: property.radar.lifeAxes.roomQuality + "%達成",
-    rentValue: formatYen(property.rent.effectiveTotal),
+    rentValue: formatYen(property.rent.effectiveTotal) + "(" + property.radar.lifeAxes.rentValue + "点)",
     commuteAccess: (property.commute.minutes != null ? property.commute.minutes + "分" : "-"),
     stationCloseness: (property.walkMinutesToStation != null ? property.walkMinutesToStation + "分" : "-"),
     dailyConvenience: facilities.length ? facilities.length + "件" : property.radar.lifeAxes.dailyConvenience + "点",
@@ -110,6 +110,17 @@ function cardThumbHtml(url, label) {
   "</div>";
 }
 
+// 「気になる度」を★(塗り)/☆(空)の並びで表示する非インタラクティブ版
+// (クリックして変更できるバージョンはrenderStarRating参照)
+const MAX_INTEREST_STARS = 3;
+function starRatingHtml(stars, max) {
+  const n = stars || 0;
+  const m = max || MAX_INTEREST_STARS;
+  let out = "";
+  for (let i = 1; i <= m; i++) out += i <= n ? "★" : "☆";
+  return out;
+}
+
 function propertyCardHtml(p) {
   const sample = p.isSample ? '<span class="sample-tag">サンプル</span>' : "";
   return (
@@ -125,7 +136,7 @@ function propertyCardHtml(p) {
       '<div class="meta">' +
         p.town + " ・ " + p.nearestStation + "駅" +
         (p.effectiveRentTotal !== p.rentTotal ? "(ネット込み実質 " + formatYen(p.effectiveRentTotal) + ")" : "") +
-        ' ・ <span class="sticker-tag">' + (p.status || "-") + "</span>" +
+        ' ・ <span class="star-tag">' + starRatingHtml(p.interestStars) + "</span>" +
       "</div>" +
       '<div class="card-thumbs">' +
         cardThumbHtml(p.exteriorImageUrl, "外観") +
@@ -316,21 +327,15 @@ function removeFilterPreset(id) {
   return presets;
 }
 
-// opts: { includeHiddenStatuses(bool、既定false), sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc"),
+// opts: { sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc"),
 //         roomFilters(配列), roomFilterMode("and"|"or"、既定"and"), maxWalkMinutes(数値),
 //         maxCommuteMinutes(数値、p.commuteMinutes以下), maxRent(数値、p.effectiveRentTotal以下) }
-// 「見送り」「掲載終了」は、はるかちゃんが積極的に見送った/もう存在しない物件なので、
-// 明示的にoptsで指定しない限り一覧から隠す(criteria.jsonのhiddenByDefaultStatuses)。
 async function renderPropertyList(container, filterFn, opts) {
   opts = opts || {};
   container.innerHTML = '<p class="empty-note">読み込み中だよ…</p>';
   try {
-    const [idx, criteria] = await Promise.all([loadIndex(), loadCriteria()]);
+    const idx = await loadIndex();
     let list = idx.properties || [];
-    const hidden = (criteria.statusUpdateApi && criteria.statusUpdateApi.hiddenByDefaultStatuses) || [];
-    if (!opts.includeHiddenStatuses) {
-      list = list.filter((p) => hidden.indexOf(p.status) === -1);
-    }
     if (filterFn) list = list.filter(filterFn);
     if (opts.roomFilters && opts.roomFilters.length) {
       list = opts.roomFilterMode === "or"
@@ -361,9 +366,7 @@ async function renderPropertyList(container, filterFn, opts) {
       container.innerHTML = '<p class="empty-note">' +
         (hasActiveFilter
           ? "条件に合う物件が無いよ。フィルターを見直してみてね"
-          : (opts.includeHiddenStatuses || hidden.length === 0
-            ? "まだ物件が登録されてないよ。LINEで「いえさがし (URL)」と送ると、ここに追加されるよ📮"
-            : "表示できる物件がないよ(「見送り」「掲載終了」は隠れてるよ)")) +
+          : "まだ物件が登録されてないよ。LINEで「いえさがし (URL)」と送ると、ここに追加されるよ📮") +
         "</p>";
       return;
     }
@@ -427,30 +430,40 @@ function updateCompareBar() {
 }
 
 // -------------------------------------------------------------
-// ステータス変更(サイト上のボタンから、GASのWebアプリ経由でGitHubに反映)
+// 気になる度(星0〜3。サイト上でタップして、GASのWebアプリ経由でGitHubに反映)
 // -------------------------------------------------------------
-function renderStatusControl(container, property, criteria) {
-  const api = criteria.statusUpdateApi;
+function renderStarRating(container, property, criteria) {
+  const api = criteria.starUpdateApi;
+  const max = (api && api.maxStars) || MAX_INTEREST_STARS;
   if (!api || !api.url) {
-    container.textContent = property.status;
+    container.textContent = starRatingHtml(property.interestStars, max);
     return;
   }
-  const options = (api.statusOptions || [property.status]).map((s) =>
-    '<option value="' + s + '"' + (s === property.status ? " selected" : "") + ">" + s + "</option>"
+  let current = property.interestStars || 0;
+  const starsHtml = Array.from({ length: max }, (_, i) => i + 1).map((n) =>
+    '<button type="button" class="star-btn" data-n="' + n + '">' + (n <= current ? "★" : "☆") + "</button>"
   ).join("");
   container.innerHTML =
-    '<select class="status-select" id="status-select">' + options + "</select>" +
-    '<span class="status-save-note" id="status-save-note"></span>';
-  document.getElementById("status-select").addEventListener("change", function () {
-    saveStatus_(api, property.id, this.value);
+    '<span class="star-picker" id="star-picker">' + starsHtml + "</span>" +
+    '<span class="status-save-note" id="star-save-note"></span>';
+  container.querySelectorAll(".star-btn").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const n = Number(this.dataset.n);
+      // 同じ星をもう一度タップしたら0(なし)に戻せるようにする
+      current = (n === current) ? 0 : n;
+      container.querySelectorAll(".star-btn").forEach((b) => {
+        b.textContent = Number(b.dataset.n) <= current ? "★" : "☆";
+      });
+      saveInterestStars_(api, property.id, current);
+    });
   });
 }
 
-function saveStatus_(api, id, newStatus) {
-  const note = document.getElementById("status-save-note");
+function saveInterestStars_(api, id, stars) {
+  const note = document.getElementById("star-save-note");
   if (note) note.textContent = "保存中…";
-  const url = api.url + "?action=updateRoomStatus&id=" + encodeURIComponent(id) +
-    "&status=" + encodeURIComponent(newStatus) + "&token=" + encodeURIComponent(api.token);
+  const url = api.url + "?action=updateInterestStars&id=" + encodeURIComponent(id) +
+    "&stars=" + encodeURIComponent(stars) + "&token=" + encodeURIComponent(api.token);
   // GASのdoGetはCORSでレスポンスを読めないため no-cors で送りっぱなしにする
   // (リクエスト自体はサーバーに届いて処理されるので、結果はサイトの再読み込みで確認する)
   fetch(url, { mode: "no-cors" }).then(function () {

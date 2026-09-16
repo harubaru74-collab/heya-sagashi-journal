@@ -14,7 +14,6 @@
       "commuteMinutes": 13,
       "scoreTotal": 81,
       "matchPercent": 81,
-      "status": "見送り",
       "registeredAt": "2026-09-15T09:00:00+09:00",
       "walkMinutesToStation": 7,
       "room": {
@@ -31,7 +30,8 @@
         "bathroomDryer": false
       },
       "exteriorImageUrl": "https://picsum.photos/seed/heya-sample-1/800/450",
-      "floorPlanImageUrl": ""
+      "floorPlanImageUrl": "",
+      "interestStars": 0
     },
     {
       "id": "20260916-tjfk",
@@ -46,7 +46,6 @@
       "commuteMinutes": 3,
       "scoreTotal": 82,
       "matchPercent": 82,
-      "status": "気になる",
       "registeredAt": "2026-09-16T03:57:19+09:00",
       "walkMinutesToStation": 3,
       "room": {
@@ -58,7 +57,8 @@
         "cityGas": true
       },
       "exteriorImageUrl": "",
-      "floorPlanImageUrl": ""
+      "floorPlanImageUrl": "",
+      "interestStars": 0
     },
     {
       "id": "20260916-e2x4",
@@ -73,7 +73,6 @@
       "commuteMinutes": 14,
       "scoreTotal": 59,
       "matchPercent": 59,
-      "status": "気になる",
       "registeredAt": "2026-09-16T05:04:29+09:00",
       "walkMinutesToStation": 3,
       "room": {
@@ -90,7 +89,8 @@
         "bathroomDryer": false
       },
       "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
-      "floorPlanImageUrl": ""
+      "floorPlanImageUrl": "",
+      "interestStars": 0
     },
     {
       "id": "20260916-0xyb",
@@ -104,7 +104,6 @@
       "sizeSqm": 22.41,
       "scoreTotal": 71,
       "matchPercent": 71,
-      "status": "気になる",
       "registeredAt": "2026-09-16T05:35:03+09:00",
       "walkMinutesToStation": 3,
       "room": {
@@ -121,7 +120,8 @@
         "bathroomDryer": false
       },
       "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630",
-      "floorPlanImageUrl": ""
+      "floorPlanImageUrl": "",
+      "interestStars": 0
     },
     {
       "id": "20260916-hxtq",
@@ -136,7 +136,6 @@
       "commuteMinutes": 33,
       "scoreTotal": 41,
       "matchPercent": 41,
-      "status": "気になる",
       "registeredAt": "2026-09-16T06:02:26+09:00",
       "walkMinutesToStation": 4,
       "room": {
@@ -153,7 +152,8 @@
         "bathroomDryer": false
       },
       "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&width=1200&height=630",
-      "floorPlanImageUrl": ""
+      "floorPlanImageUrl": "",
+      "interestStars": 0
     },
     {
       "id": "20260916-e9vt",
@@ -168,7 +168,6 @@
       "commuteMinutes": 21,
       "scoreTotal": 66,
       "matchPercent": 66,
-      "status": "気になる",
       "registeredAt": "2026-09-16T06:23:47+09:00",
       "walkMinutesToStation": 5,
       "room": {
@@ -185,7 +184,8 @@
         "bathroomDryer": false
       },
       "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&width=1200&height=630",
-      "floorPlanImageUrl": ""
+      "floorPlanImageUrl": "",
+      "interestStars": 0
     },
     {
       "id": "20260916-kjh5",
@@ -216,8 +216,8 @@
       "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148023%2Frent%2F24493%2F1%2F2%2Filsm.jpg&width=640&height=480",
       "scoreTotal": 71,
       "matchPercent": 71,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T08:16:56+09:00"
+      "registeredAt": "2026-09-16T08:16:56+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-qrzg",
@@ -248,8 +248,8 @@
       "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fe91a91db%2F49811_489598_3_132000_132000.jpg%3Ft%3D20260804142543&width=640&height=480",
       "scoreTotal": 76,
       "matchPercent": 76,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T08:19:37+09:00"
+      "registeredAt": "2026-09-16T08:19:37+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-evq6",
@@ -280,8 +280,8 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29384%2F1%2F2%2Fihrg.jpg&width=640&height=480",
       "scoreTotal": 80,
       "matchPercent": 80,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T08:22:30+09:00"
+      "registeredAt": "2026-09-16T08:22:30+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-ny9k",
@@ -312,8 +312,8 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F57fdb104-472e-4a76-803a-1819c0d6f5ff_property_picture_10167_large.jpg&width=640&height=480",
       "scoreTotal": 32,
       "matchPercent": 32,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T08:26:19+09:00"
+      "registeredAt": "2026-09-16T08:26:19+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-69bp",
@@ -344,8 +344,8 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107948%2Frent%2F67366%2F1%2F1%2Foby0.jpg&width=640&height=480",
       "scoreTotal": 72,
       "matchPercent": 72,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T08:32:39+09:00"
+      "registeredAt": "2026-09-16T08:32:39+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-ggnt",
@@ -376,8 +376,8 @@
       "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F81208%2F1%2F1%2Fahzr.jpg&width=640&height=480",
       "scoreTotal": 82,
       "matchPercent": 82,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T08:43:08+09:00"
+      "registeredAt": "2026-09-16T08:43:08+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-8tm7",
@@ -408,8 +408,8 @@
       "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9bc11c49%2F4408_70826_2_132000_132000.jpg%3Ft%3D20240308145955&width=640&height=480",
       "scoreTotal": 83,
       "matchPercent": 83,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T08:44:02+09:00"
+      "registeredAt": "2026-09-16T08:44:02+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-s9zv",
@@ -440,8 +440,8 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194049%2F1%2F1%2Fbg9o.jpg&width=640&height=480",
       "scoreTotal": 79,
       "matchPercent": 79,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T09:10:45+09:00"
+      "registeredAt": "2026-09-16T09:10:45+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-gger",
@@ -472,8 +472,8 @@
       "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116146%2Frent%2F20608%2F1%2F2%2F4vik.jpg&width=640&height=480",
       "scoreTotal": 73,
       "matchPercent": 73,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T09:17:32+09:00"
+      "registeredAt": "2026-09-16T09:17:32+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-cblv",
@@ -504,8 +504,8 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1dbcdef9%2F1513_439193_1_132000_132000.jpg%3Ft%3D20260727133039&width=640&height=480",
       "scoreTotal": 81,
       "matchPercent": 81,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T09:19:44+09:00"
+      "registeredAt": "2026-09-16T09:19:44+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-34dp",
@@ -536,8 +536,8 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F0b79beee-9c6a-4785-a8e2-07e15eb18876_property_picture_3034_large.jpg&width=640&height=480",
       "scoreTotal": 86,
       "matchPercent": 86,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T20:16:24+09:00"
+      "registeredAt": "2026-09-16T20:16:24+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-0541",
@@ -568,8 +568,8 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F29479%2F1%2F2%2Fo3y8.jpg&width=640&height=480",
       "scoreTotal": 81,
       "matchPercent": 81,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T20:18:01+09:00"
+      "registeredAt": "2026-09-16T20:18:01+09:00",
+      "interestStars": 0
     },
     {
       "id": "20260916-ngdc",
@@ -600,8 +600,8 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F241f01c9-80b6-44d4-bb12-451ab2b5d080_property_picture_2348_large.jpg&width=640&height=480",
       "scoreTotal": 77,
       "matchPercent": 77,
-      "status": "気になる",
-      "registeredAt": "2026-09-16T20:19:31+09:00"
+      "registeredAt": "2026-09-16T20:19:31+09:00",
+      "interestStars": 0
     }
   ]
 }

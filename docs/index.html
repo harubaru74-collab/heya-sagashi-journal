@@ -20,13 +20,11 @@
   <div class="list-controls">
     <select id="sort-select">
       <option value="scoreTotal:desc">マッチ度が高い順</option>
+      <option value="interestStars:desc">気になる度が高い順</option>
       <option value="rentTotal:asc">家賃が安い順</option>
       <option value="commuteMinutes:asc">通勤が短い順</option>
       <option value="sizeSqm:desc">広い順</option>
     </select>
-    <label class="show-hidden-toggle">
-      <input type="checkbox" id="show-hidden-checkbox">「見送り」「掲載終了」も表示
-    </label>
   </div>
 
   <details class="filter-panel">
@@ -108,7 +106,6 @@
 
   const listEl = document.getElementById("property-list");
   const sortSelect = document.getElementById("sort-select");
-  const hiddenCheckbox = document.getElementById("show-hidden-checkbox");
   const walkSelect = document.getElementById("walk-select");
   const commuteSelect = document.getElementById("commute-select");
   const rentSelect = document.getElementById("rent-select");
@@ -129,7 +126,6 @@
   // 前回開いたときのフィルター条件を復元(端末内のみ・localStorage)
   const saved = loadSavedListFilters();
   if (saved.sort) sortSelect.value = saved.sort;
-  if (saved.includeHidden) hiddenCheckbox.checked = true;
   if (saved.maxWalkMinutes) walkSelect.value = String(saved.maxWalkMinutes);
   if (saved.maxCommuteMinutes) commuteSelect.value = String(saved.maxCommuteMinutes);
   if (saved.maxRent) rentSelect.value = String(saved.maxRent);
@@ -154,7 +150,6 @@
   function currentFilterState() {
     return {
       sort: sortSelect.value,
-      includeHidden: hiddenCheckbox.checked,
       maxWalkMinutes: walkSelect.value ? Number(walkSelect.value) : null,
       maxCommuteMinutes: commuteSelect.value ? Number(commuteSelect.value) : null,
       maxRent: rentSelect.value ? Number(rentSelect.value) : null,
@@ -168,7 +163,7 @@
     const [sortKey, sortDir] = state.sort.split(":");
     saveListFilters(state);
     renderPropertyList(listEl, null, {
-      sortKey, sortDir, includeHiddenStatuses: state.includeHidden,
+      sortKey, sortDir,
       roomFilters: state.roomFilters, roomFilterMode: state.roomFilterMode,
       maxWalkMinutes: state.maxWalkMinutes, maxCommuteMinutes: state.maxCommuteMinutes, maxRent: state.maxRent
     });
@@ -176,7 +171,6 @@
 
   function applyFilterState(state) {
     if (state.sort) sortSelect.value = state.sort;
-    hiddenCheckbox.checked = !!state.includeHidden;
     walkSelect.value = state.maxWalkMinutes ? String(state.maxWalkMinutes) : "";
     commuteSelect.value = state.maxCommuteMinutes ? String(state.maxCommuteMinutes) : "";
     rentSelect.value = state.maxRent ? String(state.maxRent) : "";
@@ -228,7 +222,6 @@
   });
 
   sortSelect.addEventListener("change", refresh);
-  hiddenCheckbox.addEventListener("change", refresh);
   walkSelect.addEventListener("change", refresh);
   commuteSelect.addEventListener("change", refresh);
   rentSelect.addEventListener("change", refresh);

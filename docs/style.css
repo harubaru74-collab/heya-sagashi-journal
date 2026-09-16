@@ -97,8 +97,6 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
   background: #fff;
   color: var(--ink);
 }
-.show-hidden-toggle { display: flex; align-items: center; gap: 4px; }
-
 .filter-panel {
   background: var(--card);
   border: 2px solid var(--border);
@@ -314,16 +312,8 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
   margin-left: 6px;
 }
 
-/* 付箋(ステッカー)風のステータスタグ */
-.sticker-tag {
-  display: inline-block;
-  background: var(--yellow);
-  padding: 3px 12px;
-  border-radius: 3px;
-  transform: rotate(3deg);
-  font-size: 0.75rem;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.08);
-}
+/* 一覧カードの「気になる度」表示(★☆) */
+.star-tag { color: var(--star); font-size: 0.85rem; letter-spacing: 1px; }
 
 /* 写真ギャラリー(メイン写真+下のサムネイルでタップ切り替え。元サイトのような一覧性) */
 .gallery-main {
@@ -467,14 +457,15 @@ header.top p.sub { color: var(--sub); font-size: 0.85rem; margin: 0; font-family
 .detail-table th { background: var(--blue-light); width: 40%; font-weight: bold; }
 .detail-table .detail-sub { display: block; font-size: 0.82rem; color: var(--sub); margin-top: 2px; }
 
-.status-select {
-  font-family: inherit;
-  font-size: 0.85rem;
-  padding: 5px 10px;
-  border-radius: 999px;
-  border: 2px solid var(--pink);
-  background: #fff;
-  color: var(--ink);
+.star-picker { display: inline-flex; gap: 2px; }
+.star-btn {
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 2px;
+  border: none;
+  background: none;
+  color: var(--star);
+  cursor: pointer;
 }
 .status-save-note { font-size: 0.75rem; color: var(--sub); margin-left: 8px; }
 

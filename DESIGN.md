@@ -318,3 +318,30 @@ base = roomQuality*0.25 + rentValue*0.25 + commuteAccess*0.20
   扱いだったが、`criteria.sizeScoring`の`minSqm`(15㎡)・`goodSqm`(18㎡)を基準に
   「15㎡未満は△(あまり良くない、オレンジ)」「15〜18㎡未満は△(普通、グレー)」
   「18㎡以上は✓(緑)」の3段階表示にした(`sizeTier_()`)
+
+## 16. 2026-09-16(9回目)の改修で対応した内容
+
+- ✅ **ステータス管理を「気になる度(星0〜3)」に完全に置き換え**: 「内見予約」
+  「内見済み」「申込済み」「契約済み」「見送り」「保留」「掲載終了」という8択の
+  進捗ステータスは廃止し、シンプルに星0〜3個で気になる度をタップして付けられる
+  仕組みに変更(デフォルトは星なし=0)。同じ星をもう一度タップすると0に戻せる
+  - `ai-concierge`側: `buildRoomPropertyRecord_`が`status`の代わりに`interestStars: 0`を
+    セットするように変更。GASのdoGetエンドポイントも`action=updateRoomStatus`から
+    `action=updateInterestStars`に変更し、`stars`パラメータ(0〜3の整数、範囲外は拒否)を
+    受け取るように(`updateRoomInterestStarsById_`・`handleInterestStarsUpdateWebRequest_`)
+  - サイト側: `criteria.json`の`statusUpdateApi`(`statusOptions`・`hiddenByDefaultStatuses`)を
+    `starUpdateApi`(`maxStars: 3`)に置き換え。`renderStatusControl`/`saveStatus_`を
+    `renderStarRating`/`saveInterestStars_`に置き換え、一覧カード・比較ページの
+    ステータス表示もすべて★☆表示(`starRatingHtml()`)に変更
+  - 「見送り」「掲載終了」を一覧からデフォルトで隠す仕組み(`hiddenByDefaultStatuses`・
+    「見送り」「掲載終了」も表示チェックボックス)は、対応する概念が無くなったため削除。
+    一覧の並び替えに「気になる度が高い順」を追加
+  - 既存の登録済み物件は`status`フィールドを削除し、全件`interestStars: 0`にリセットして
+    バックフィル(旧ステータスと気になる度は別の軸のため、意味のある自動変換はできないと
+    判断。改めて星を付け直してもらう運用とした)
+- ✅ **レーダーチャートの「家賃コスパ」キャプションに点数を追加**: これまでは実質家賃の
+  金額だけを表示していて、グラフ上の位置(75の線に近いかどうか等)からしか点数を
+  読み取れなかった。キャプションに`(◯点)`を追加し、金額と点数の両方を一目で
+  確認できるように(`buildLifeAxisCaptions`)。なお家賃コスパのスコア自体は
+  ¥75,000で正しく80点(`rentValueScore_`の"まあよし"区分どおり)であり、
+  計算にバグがあったわけではない
