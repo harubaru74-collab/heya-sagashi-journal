@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T06:05:25+09:00",
+  "updatedAt": "2026-09-17T06:29:14+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -32,7 +32,7 @@
       "exteriorImageUrl": "https://picsum.photos/seed/heya-sample-1/800/450",
       "floorPlanImageUrl": "",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-tjfk",
@@ -323,7 +323,7 @@
       "matchPercent": 32,
       "registeredAt": "2026-09-16T08:26:19+09:00",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-69bp",
@@ -885,6 +885,105 @@
       "interestStars": 0,
       "registeredAt": "2026-09-17T06:05:25+09:00",
       "archived": false
+    },
+    {
+      "id": "20260917-fqvo",
+      "isSample": false,
+      "name": "タウンハウスツクモ",
+      "town": "東大井3丁目",
+      "nearestStation": "立会川",
+      "rentTotal": 80000,
+      "effectiveRentTotal": 80000,
+      "layout": "1K",
+      "sizeSqm": 23.1,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 5,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": true,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fc1cf68a9-716a-4816-978d-5e0182dd1208_property_picture_10167_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8ec735cf-3d5d-4821-8b22-4cda40739fe1_property_picture_10167_large.jpg&width=640&height=480",
+      "scoreTotal": 63,
+      "matchPercent": 63,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-09-17T06:25:53+09:00"
+    },
+    {
+      "id": "20260917-g6qj",
+      "isSample": false,
+      "name": "パークシティ戸越",
+      "town": "戸越6丁目",
+      "nearestStation": "戸越公園",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 75000,
+      "layout": "ワンルーム",
+      "sizeSqm": 17.26,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 1,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116144%2Frent%2F20102%2F2%2F1%2F40sm.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116144%2Frent%2F20102%2F1%2F2%2Flxd0.jpg&width=640&height=480",
+      "scoreTotal": 77,
+      "matchPercent": 77,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-09-17T06:27:58+09:00"
+    },
+    {
+      "id": "20260917-jvu5",
+      "isSample": false,
+      "name": "水野ビル",
+      "town": "西中延2丁目",
+      "nearestStation": "荏原中延",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "ワンルーム",
+      "sizeSqm": 19.96,
+      "commuteMinutes": 17,
+      "walkMinutesToStation": 4,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F0f6bf3b5-bd3a-4038-8fb0-0a20999f14d4_property_picture_2944_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F447370dc-858d-4203-b060-b0c2bcf49bb2_property_picture_2944_large.jpg&width=640&height=480",
+      "scoreTotal": 84,
+      "matchPercent": 84,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-09-17T06:29:14+09:00"
     }
   ]
 }
