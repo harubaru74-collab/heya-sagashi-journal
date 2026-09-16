@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T21:17:38+09:00",
+  "updatedAt": "2026-09-17T04:52:30+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -666,6 +666,38 @@
       "matchPercent": 81,
       "interestStars": 0,
       "registeredAt": "2026-09-16T21:17:38+09:00"
+    },
+    {
+      "id": "20260917-wn3b",
+      "isSample": false,
+      "name": "賃貸マンション",
+      "town": "中央2丁目",
+      "nearestStation": "大森",
+      "rentTotal": 65000,
+      "effectiveRentTotal": 65000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.12,
+      "commuteMinutes": 22,
+      "walkMinutesToStation": 11,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F484b3e6a-648f-44b7-87bf-9b1a04b515a4_property_picture_2348_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F19df054c-3bae-4777-a4ab-ac43f0ca1920_property_picture_2348_large.jpg&width=640&height=480",
+      "scoreTotal": 73,
+      "matchPercent": 73,
+      "interestStars": 0,
+      "registeredAt": "2026-09-17T04:52:30+09:00"
     }
   ]
 }
