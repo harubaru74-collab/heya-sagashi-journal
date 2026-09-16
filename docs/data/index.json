@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T09:19:44+09:00",
+  "updatedAt": "2026-09-16T20:16:24+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -506,6 +506,38 @@
       "matchPercent": 81,
       "status": "気になる",
       "registeredAt": "2026-09-16T09:19:44+09:00"
+    },
+    {
+      "id": "20260916-34dp",
+      "isSample": false,
+      "name": "VILLA YUTAKACHO",
+      "town": "豊町6丁目",
+      "nearestStation": "中延",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "ワンルーム",
+      "sizeSqm": 13.21,
+      "commuteMinutes": 15,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fae5eb0d3-c385-4c9b-a4c2-4380412adddf_property_picture_3034_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F0b79beee-9c6a-4785-a8e2-07e15eb18876_property_picture_3034_large.jpg&width=640&height=480",
+      "scoreTotal": 86,
+      "matchPercent": 86,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T20:16:24+09:00"
     }
   ]
 }
