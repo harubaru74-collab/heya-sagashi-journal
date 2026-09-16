@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T20:19:31+09:00",
+  "updatedAt": "2026-09-16T20:32:13+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -602,6 +602,38 @@
       "matchPercent": 77,
       "registeredAt": "2026-09-16T20:19:31+09:00",
       "interestStars": 0
+    },
+    {
+      "id": "20260916-cy7c",
+      "isSample": false,
+      "name": "物件名",
+      "town": "大崎4丁目",
+      "nearestStation": "大崎",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "ワンルーム",
+      "sizeSqm": 18,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 10,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112565%2Frent%2F97307%2F2%2F2%2Foso9.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112565%2Frent%2F97307%2F1%2F1%2Fc5wt.jpg&width=640&height=480",
+      "scoreTotal": 75,
+      "matchPercent": 75,
+      "interestStars": 0,
+      "registeredAt": "2026-09-16T20:32:13+09:00"
     }
   ]
 }
