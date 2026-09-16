@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T09:10:45+09:00",
+  "updatedAt": "2026-09-16T09:17:32+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -442,6 +442,38 @@
       "matchPercent": 79,
       "status": "気になる",
       "registeredAt": "2026-09-16T09:10:45+09:00"
+    },
+    {
+      "id": "20260916-gger",
+      "isSample": false,
+      "name": "ハイツカワバタ",
+      "town": "東大井6丁目",
+      "nearestStation": "大井町",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "1K",
+      "sizeSqm": 18.23,
+      "commuteMinutes": 24,
+      "walkMinutesToStation": 6,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116146%2Frent%2F20608%2F2%2F1%2Frbi2.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116146%2Frent%2F20608%2F1%2F2%2F4vik.jpg&width=640&height=480",
+      "scoreTotal": 73,
+      "matchPercent": 73,
+      "status": "気になる",
+      "registeredAt": "2026-09-16T09:17:32+09:00"
     }
   ]
 }
