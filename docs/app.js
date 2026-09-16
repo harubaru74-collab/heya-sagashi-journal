@@ -39,9 +39,13 @@ function formatMan(n) {
   return man + "万円";
 }
 
-// 「物件名」とセットで扱う「○万円・○㎡・通勤○分」の行(一覧カード・物件詳細ページ共通)
-function titleStatsHtml(rentTotal, sizeSqm, commuteMinutes) {
-  return formatMan(rentTotal) + " ・ " + sizeSqm + "㎡ ・ 通勤" + (commuteMinutes != null ? commuteMinutes + "分" : "-");
+// 「物件名」とセットで扱う「○万円・○㎡・通勤○分」の行(一覧カード・物件詳細ページ共通)。
+// ネット無料等で実質家賃が下がる場合は「○万円(実質○万円)」の形で併記する
+function titleStatsHtml(rentTotal, sizeSqm, commuteMinutes, effectiveRentTotal) {
+  const rentPart = (effectiveRentTotal != null && effectiveRentTotal !== rentTotal)
+    ? formatMan(rentTotal) + "(実質" + formatMan(effectiveRentTotal) + ")"
+    : formatMan(rentTotal);
+  return rentPart + " ・ " + sizeSqm + "㎡ ・ 通勤" + (commuteMinutes != null ? commuteMinutes + "分" : "-");
 }
 
 // レーダーの各軸ラベルの下に添える、実際の値ベースの一言(例:「通勤アクセス」の下に「3分」)
@@ -132,7 +136,7 @@ function propertyCardHtml(p) {
         '<span class="name">' + p.name + sample + "</span>" +
         '<span class="score-badge">マッチ度 ' + p.matchPercent + "%</span>" +
       "</div>" +
-      '<div class="card-stats">' + titleStatsHtml(p.rentTotal, p.sizeSqm, p.commuteMinutes) + "</div>" +
+      '<div class="card-stats">' + titleStatsHtml(p.rentTotal, p.sizeSqm, p.commuteMinutes, p.effectiveRentTotal) + "</div>" +
       '<div class="meta">' +
         p.town + " ・ " + p.nearestStation + "駅" +
         (p.effectiveRentTotal !== p.rentTotal ? "(ネット無料のため実質-5,000円 " + formatYen(p.effectiveRentTotal) + ")" : "") +

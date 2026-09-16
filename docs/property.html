@@ -49,7 +49,7 @@
   content.innerHTML =
     '<div id="gallery"></div>' +
     "<h1>" + p.name + sample + "</h1>" +
-    '<div class="title-stats">' + titleStatsHtml(p.rent.total, p.sizeSqm, p.commute.minutes) + "</div>" +
+    '<div class="title-stats">' + titleStatsHtml(p.rent.total, p.sizeSqm, p.commute.minutes, p.rent.effectiveTotal) + "</div>" +
     '<p class="meta" style="color:#8e879c;">' + p.address + " ・ " + p.nearestStation + "駅 徒歩" + p.walkMinutesToStation + "分</p>" +
 
     '<div class="summary-box">' +
