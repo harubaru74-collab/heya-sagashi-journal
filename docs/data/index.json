@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T20:32:13+09:00",
+  "updatedAt": "2026-09-16T21:17:38+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -634,6 +634,38 @@
       "matchPercent": 75,
       "interestStars": 0,
       "registeredAt": "2026-09-16T20:32:13+09:00"
+    },
+    {
+      "id": "20260916-5za4",
+      "isSample": false,
+      "name": "グレイス高輪",
+      "town": "高輪2丁目",
+      "nearestStation": "高輪ゲートウェイ",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "ワンルーム",
+      "sizeSqm": 22.68,
+      "commuteMinutes": 13,
+      "walkMinutesToStation": 1,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F3d5089bb-8ce7-40e8-8a93-0779be1337d0_property_picture_9855_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ffa016c6b-c854-416f-9910-dddbaed7359e_property_picture_9855_large.jpg&width=640&height=480",
+      "scoreTotal": 81,
+      "matchPercent": 81,
+      "interestStars": 0,
+      "registeredAt": "2026-09-16T21:17:38+09:00"
     }
   ]
 }
