@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T06:29:14+09:00",
+  "updatedAt": "2026-09-17T09:16:29+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -984,6 +984,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-09-17T06:29:14+09:00"
+    },
+    {
+      "id": "20260917-tyrh",
+      "isSample": false,
+      "name": "ドエルイン大井町 8階",
+      "town": "大井1丁目",
+      "nearestStation": "大井町",
+      "rentTotal": 79000,
+      "effectiveRentTotal": 74000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.8,
+      "commuteMinutes": 3,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": true,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9002cde0-e563-4fc4-94fd-f60edca1492a_property_picture_10167_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fbc9fbfa9-d734-4d21-94f1-58ddc128caaa_property_picture_10167_large.jpg&width=640&height=480",
+      "scoreTotal": 84,
+      "matchPercent": 84,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-09-17T09:16:29+09:00"
     }
   ]
 }
