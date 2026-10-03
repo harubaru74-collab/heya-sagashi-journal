@@ -32,6 +32,12 @@ function formatYen(n) {
   return "¥" + Number(n).toLocaleString("ja-JP");
 }
 
+// メモのテキストを<textarea>の中身として埋め込む用(「&」「</textarea>」等で表示が
+// 壊れないようにエスケープする)
+function escapeForTextarea_(text) {
+  return (text || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 // 「万円」表記(例: 78000 → "7.8万円")
 function formatMan(n) {
   if (n === null || n === undefined) return "-";
@@ -150,6 +156,11 @@ function propertyCardHtml(p) {
       '<div class="card-thumbs">' +
         cardThumbHtml(p.exteriorImageUrl, "外観") +
         cardThumbHtml(p.floorPlanImageUrl, "間取り") +
+      "</div>" +
+      '<div class="card-memo" onclick="event.stopPropagation()">' +
+        '<textarea class="card-memo-textarea" data-id="' + p.id + '" placeholder="📝 メモ(内見メモ・気になった点など)" rows="2">' + escapeForTextarea_(p.memo) + "</textarea>" +
+        '<button type="button" class="card-memo-save-btn" data-id="' + p.id + '">保存</button>' +
+        '<span class="status-save-note card-memo-note" data-id="' + p.id + '"></span>' +
       "</div>" +
     "</a>"
   );
@@ -398,6 +409,7 @@ async function renderPropertyList(container, filterFn, opts) {
     container.innerHTML = list.map(propertyCardHtml).join("");
     restoreCompareCheckboxes();
     wireCardArchiveButtons_(container, opts);
+    wireCardMemoBoxes_(container);
   } catch (e) {
     container.innerHTML = '<p class="empty-note">読み込みエラー: ' + e.message + "</p>";
   }
@@ -439,6 +451,44 @@ function wireCardArchiveButtons_(container, opts) {
         card.remove();
       }
     });
+  });
+}
+
+// 一覧カードのメモ(自由入力テキスト)の保存ボタン。GAS経由でGitHubに反映する。
+function wireCardMemoBoxes_(container) {
+  container.querySelectorAll(".card-memo-save-btn").forEach((btn) => {
+    btn.addEventListener("click", async (ev) => {
+      ev.preventDefault();
+      ev.stopPropagation();
+      const id = btn.dataset.id;
+      const textarea = container.querySelector('.card-memo-textarea[data-id="' + CSS.escape(id) + '"]');
+      const note = container.querySelector('.card-memo-note[data-id="' + CSS.escape(id) + '"]');
+      if (!textarea) return;
+      let criteria;
+      try {
+        criteria = await loadCriteria();
+      } catch (e) {
+        return;
+      }
+      saveMemo_(criteria.starUpdateApi, id, textarea.value, note);
+    });
+  });
+}
+
+// メモをGASのWebアプリ経由でGitHubに反映する(気になる度・削除と同じtoken方式)。
+// noteが渡されていれば保存中/保存済みのメッセージを表示する
+function saveMemo_(api, id, memo, note) {
+  if (!api || !api.url) return;
+  if (note) note.textContent = "保存中…";
+  const url = api.url + "?action=updateMemo&id=" + encodeURIComponent(id) +
+    "&memo=" + encodeURIComponent(memo) + "&token=" + encodeURIComponent(api.token);
+  fetch(url, { mode: "no-cors" }).then(function () {
+    if (note) note.textContent = "保存したよ(反映まで数秒待ってね)";
+    setTimeout(function () {
+      if (note) note.textContent = "";
+    }, 4000);
+  }).catch(function () {
+    if (note) note.textContent = "保存に失敗したかも…もう一度試してみてね";
   });
 }
 
@@ -573,5 +623,26 @@ function saveArchived_(api, id, archived) {
     }, 4000);
   }).catch(function () {
     if (note) note.textContent = "保存に失敗したかも…もう一度試してみてね";
+  });
+}
+
+// -------------------------------------------------------------
+// メモ(自由入力のテキスト。内見メモや気になった点などを書き残しておける)
+// -------------------------------------------------------------
+function renderMemoBox(container, property, criteria) {
+  const api = criteria.starUpdateApi;
+  container.innerHTML =
+    '<textarea class="memo-textarea" id="memo-textarea" placeholder="📝 内見メモ・気になった点など自由にどうぞ" rows="3">' +
+      escapeForTextarea_(property.memo) +
+    "</textarea>" +
+    '<div class="memo-actions">' +
+      '<button type="button" class="memo-save-btn" id="memo-save-btn">保存</button>' +
+      '<span class="status-save-note" id="memo-save-note"></span>' +
+    "</div>";
+  if (!api || !api.url) return;
+  document.getElementById("memo-save-btn").addEventListener("click", function () {
+    const textarea = document.getElementById("memo-textarea");
+    const note = document.getElementById("memo-save-note");
+    saveMemo_(api, property.id, textarea.value, note);
   });
 }

@@ -52,6 +52,11 @@
     '<div class="title-stats">' + titleStatsHtml(p.rent.total, p.sizeSqm, p.commute.minutes, p.rent.effectiveTotal) + "</div>" +
     '<p class="meta" style="color:#8e879c;">' + p.address + " ・ " + p.nearestStation + "駅 徒歩" + p.walkMinutesToStation + "分</p>" +
 
+    '<div class="memo-box">' +
+      "<h3>📝 メモ</h3>" +
+      '<div id="memo-cell"></div>' +
+    "</div>" +
+
     '<div class="summary-box">' +
       '<div class="match">マッチ度 ' + p.score.matchPercent + "%(" + p.score.grade + ")</div>" +
       "<p>" + p.score.summary + "</p>" +
@@ -104,6 +109,7 @@
   renderFacilityList(document.getElementById("facilities"), p.surroundings && p.surroundings.facilities);
   renderStarRating(document.getElementById("star-cell"), p, criteria);
   renderArchiveButton(document.getElementById("archive-cell"), p, criteria);
+  renderMemoBox(document.getElementById("memo-cell"), p, criteria);
   drawRadarChart(document.getElementById("lifeChart"), LIFE_AXIS_LABELS, p.radar.lifeAxes, "#7fc8e8", buildLifeAxisCaptions(p));
 })();
 </script>
