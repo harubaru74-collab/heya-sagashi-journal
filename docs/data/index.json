@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:52:59+09:00",
+  "updatedAt": "2026-10-03T15:54:44+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1347,6 +1347,39 @@
       "interestStars": 1,
       "archived": false,
       "registeredAt": "2026-10-03T15:52:59+09:00"
+    },
+    {
+      "id": "20261003-v73i",
+      "isSample": false,
+      "name": "大森タウンビル",
+      "town": "大森本町1丁目",
+      "nearestStation": "平和島",
+      "rentTotal": 78000,
+      "effectiveRentTotal": 78000,
+      "layout": "ワンルーム",
+      "sizeSqm": 18.9,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 9,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": true
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ffb12437e-c8d0-46a3-b958-580840787004_property_picture_10244_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ff0759bfa-bfb1-47dc-80f5-950bd0b8804e_property_picture_10244_large.jpg&width=640&height=480",
+      "scoreTotal": 64,
+      "matchPercent": 64,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:54:44+09:00"
     }
   ]
 }
