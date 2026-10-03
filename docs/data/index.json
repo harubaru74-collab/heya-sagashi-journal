@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:06:05+09:00",
+  "updatedAt": "2026-10-03T16:06:21+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1941,6 +1941,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:06:05+09:00"
+    },
+    {
+      "id": "20261003-54ea",
+      "isSample": false,
+      "name": "第三ハイムトシマ",
+      "town": "大森西3丁目",
+      "nearestStation": "大森町",
+      "rentTotal": 70000,
+      "effectiveRentTotal": 70000,
+      "layout": "ワンルーム",
+      "sizeSqm": 28.92,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": false,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": false,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F2%2F2%2F262e.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F1%2F1%2Fbqgs.jpg&width=640&height=480",
+      "scoreTotal": 73,
+      "matchPercent": 73,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:06:21+09:00"
     }
   ]
 }
