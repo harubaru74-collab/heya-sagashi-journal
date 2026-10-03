@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:57:02+09:00",
+  "updatedAt": "2026-10-03T15:57:32+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1479,6 +1479,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T15:57:02+09:00"
+    },
+    {
+      "id": "20261003-uc55",
+      "isSample": false,
+      "name": "リーベンハイム",
+      "town": "大森北6丁目",
+      "nearestStation": "平和島",
+      "rentTotal": 72000,
+      "effectiveRentTotal": 72000,
+      "layout": "1K",
+      "sizeSqm": 23,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 5,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13257%2F2%2F1%2F87fd.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13257%2F1%2F2%2F3ngf.jpg&width=640&height=480",
+      "scoreTotal": 77,
+      "matchPercent": 77,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:57:32+09:00"
     }
   ]
 }
