@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:55:46+09:00",
+  "updatedAt": "2026-10-03T15:56:15+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1413,6 +1413,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T15:55:46+09:00"
+    },
+    {
+      "id": "20261003-76uc",
+      "isSample": false,
+      "name": "アパート",
+      "town": "大森北3丁目",
+      "nearestStation": "大森海岸",
+      "rentTotal": 69000,
+      "effectiveRentTotal": 69000,
+      "layout": "1K",
+      "sizeSqm": 20,
+      "commuteMinutes": 16,
+      "walkMinutesToStation": 10,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": true,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112564%2Frent%2F69327%2F2%2F2%2F6x61.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112564%2Frent%2F69327%2F1%2F1%2F2vgq.jpg&width=640&height=480",
+      "scoreTotal": 78,
+      "matchPercent": 78,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:56:15+09:00"
     }
   ]
 }
