@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:00:08+09:00",
+  "updatedAt": "2026-10-03T16:00:41+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1611,6 +1611,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:00:08+09:00"
+    },
+    {
+      "id": "20261003-mesq",
+      "isSample": false,
+      "name": "ドルフケンユー",
+      "town": "北馬込2丁目",
+      "nearestStation": "馬込",
+      "rentTotal": 77000,
+      "effectiveRentTotal": 77000,
+      "layout": "1K",
+      "sizeSqm": 20,
+      "commuteMinutes": 17,
+      "walkMinutesToStation": 7,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": true,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_2_132000_132000.jpg%3Ft%3D20260928183803&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_1_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+      "scoreTotal": 72,
+      "matchPercent": 72,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:00:41+09:00"
     }
   ]
 }
