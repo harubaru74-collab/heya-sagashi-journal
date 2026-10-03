@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:05:42+09:00",
+  "updatedAt": "2026-10-03T16:06:05+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1908,6 +1908,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:05:42+09:00"
+    },
+    {
+      "id": "20261003-d6on",
+      "isSample": false,
+      "name": "プリベール王大",
+      "town": "大森中1丁目",
+      "nearestStation": "大森町",
+      "rentTotal": 69000,
+      "effectiveRentTotal": 69000,
+      "layout": "1K",
+      "sizeSqm": 22.27,
+      "commuteMinutes": 24,
+      "walkMinutesToStation": 4,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13256%2F2%2F1%2Fz7cd.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13256%2F1%2F2%2F6p8h.jpg&width=640&height=480",
+      "scoreTotal": 71,
+      "matchPercent": 71,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:06:05+09:00"
     }
   ]
 }
