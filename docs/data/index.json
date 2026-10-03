@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:57:58+09:00",
+  "updatedAt": "2026-10-03T15:59:46+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1545,6 +1545,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T15:57:58+09:00"
+    },
+    {
+      "id": "20261003-mzqz",
+      "isSample": false,
+      "name": "パーク・ノヴァ大森",
+      "town": "大森東2丁目",
+      "nearestStation": "大森町",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 75000,
+      "layout": "ワンルーム",
+      "sizeSqm": 22.86,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 4,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107346%2Frent%2F204179%2F2%2F2%2Flhxb.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107346%2Frent%2F204179%2F1%2F1%2Fjjz6.jpg&width=640&height=480",
+      "scoreTotal": 79,
+      "matchPercent": 79,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:59:46+09:00"
     }
   ]
 }
