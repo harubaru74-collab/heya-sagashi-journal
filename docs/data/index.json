@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T07:36:15+09:00",
+  "updatedAt": "2026-10-04T08:36:36+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2106,6 +2106,40 @@
       "archived": false,
       "memo": "通勤19分、乗り換え１回（最寄りの中延駅まで4分）\n△収納が縦長で変わった形、6畳だけど通路あって狭め15㎡",
       "registeredAt": "2026-10-04T07:36:15+09:00"
+    },
+    {
+      "id": "20261004-grio",
+      "isSample": false,
+      "name": "ビアメゾン品川",
+      "town": "二葉1丁目",
+      "nearestStation": "下神明",
+      "rentTotal": 80000,
+      "effectiveRentTotal": 80000,
+      "layout": "1K",
+      "sizeSqm": 21.67,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F1%2F2%2F0z3b.jpg&width=640&height=480",
+      "scoreTotal": 69,
+      "matchPercent": 69,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-04T08:36:36+09:00"
     }
   ]
 }
