@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T11:48:27+09:00",
+  "updatedAt": "2026-10-03T15:32:59+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1248,6 +1248,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T11:48:27+09:00"
+    },
+    {
+      "id": "20261003-dlmi",
+      "isSample": false,
+      "name": "マンションサファイア",
+      "town": "大森西2丁目",
+      "nearestStation": "平和島",
+      "rentTotal": 82000,
+      "effectiveRentTotal": 82000,
+      "layout": "1DK",
+      "sizeSqm": 30.4,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 5,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148022%2Frent%2F21929%2F2%2F1%2Fl211.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148022%2Frent%2F21929%2F1%2F2%2Fzjv4.jpg&width=640&height=480",
+      "scoreTotal": 67,
+      "matchPercent": 67,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:32:59+09:00"
     }
   ]
 }
