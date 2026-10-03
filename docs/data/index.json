@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:05:24+09:00",
+  "updatedAt": "2026-10-03T16:05:42+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1875,6 +1875,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:05:24+09:00"
+    },
+    {
+      "id": "20261003-qokx",
+      "isSample": false,
+      "name": "物件名",
+      "town": "南品川1丁目",
+      "nearestStation": "新馬場",
+      "rentTotal": 66000,
+      "effectiveRentTotal": 66000,
+      "layout": "1K",
+      "sizeSqm": 19,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 4,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fadaba5ea-390e-4fdd-aede-be36c3372781_property_picture_2346_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F268d432a-d445-47f5-bf58-ccb505ce86ff_property_picture_2346_large.jpg&width=640&height=480",
+      "scoreTotal": 77,
+      "matchPercent": 77,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:05:42+09:00"
     }
   ]
 }
