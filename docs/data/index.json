@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:00:41+09:00",
+  "updatedAt": "2026-10-03T16:01:05+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1644,6 +1644,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:00:41+09:00"
+    },
+    {
+      "id": "20261003-bviw",
+      "isSample": false,
+      "name": "サンファスト北馬込",
+      "town": "北馬込2丁目",
+      "nearestStation": "荏原町",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 75000,
+      "layout": "ワンルーム",
+      "sizeSqm": 21,
+      "commuteMinutes": 25,
+      "walkMinutesToStation": 6,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": true,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9be1d6a7-c007-4fea-9e6f-ba2541493fc9_property_picture_2944_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7ce13170-ce93-4599-8fcd-1d575493d532_property_picture_2944_large.jpg&width=640&height=480",
+      "scoreTotal": 76,
+      "matchPercent": 76,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:01:05+09:00"
     }
   ]
 }
