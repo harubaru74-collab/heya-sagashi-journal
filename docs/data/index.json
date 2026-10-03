@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:54:44+09:00",
+  "updatedAt": "2026-10-03T15:55:46+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1380,6 +1380,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T15:54:44+09:00"
+    },
+    {
+      "id": "20261003-our5",
+      "isSample": false,
+      "name": "キャッスル大森",
+      "town": "大森北3丁目",
+      "nearestStation": "平和島",
+      "rentTotal": 69000,
+      "effectiveRentTotal": 69000,
+      "layout": "1K",
+      "sizeSqm": 18,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 8,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F2%2F1%2Fr5uw.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F1%2F2%2Ftz5b.jpg&width=640&height=480",
+      "scoreTotal": 75,
+      "matchPercent": 75,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:55:46+09:00"
     }
   ]
 }
