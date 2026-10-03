@@ -1,0 +1,152 @@
+{
+  "id": "20261003-0xwk",
+  "isSample": false,
+  "registeredAt": "2026-10-03T11:15:19+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/0819705fbe618d558594a748ff680cb16b4965ff/",
+  "images": [
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc40c7689%2F56701_369985_6_132000_132000.jpg%3Ft%3D20260112181156&width=1200&height=630"
+  ],
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc40c7689%2F56701_369985_6_132000_132000.jpg%3Ft%3D20260112181156&width=1200&height=630",
+  "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc40c7689%2F56701_369985_6_132000_132000.jpg%3Ft%3D20260112181156&width=1200&height=630",
+  "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc40c7689%2F56701_369985_10_132000_132000.jpg%3Ft%3D20260112181156&width=640&height=480",
+  "name": "高輪アサヒハイム",
+  "address": "東京都港区高輪4丁目11-32",
+  "town": "高輪4丁目",
+  "nearestStation": "品川",
+  "walkMinutesToStation": 5,
+  "rent": {
+    "base": 78000,
+    "management": 6000,
+    "total": 84000,
+    "freeInternet": false,
+    "effectiveTotal": 84000
+  },
+  "initialCostEstimate": 390000,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 78000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 78000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 85800
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 84000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 27500
+    },
+    {
+      "label": "室内清掃費",
+      "amount": 45100
+    },
+    {
+      "label": "ハイム’S CLUB2年",
+      "amount": 19800
+    },
+    {
+      "label": "消臭・除菌代",
+      "amount": 11000
+    },
+    {
+      "label": "保証会社初回保証料",
+      "amount": 78000
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 21.42,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 3,
+    "transfers": 0,
+    "route": "品川(京急本線 3分)→品川シーサイド",
+    "leisure": "品川駅からJR山手線で新宿まで約20分"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR山手線",
+      "station": "品川",
+      "walkMinutes": 5,
+      "note": "新宿まで約20分・渋谷まで約15分の主要ターミナル駅"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "高輪台",
+      "walkMinutes": 13,
+      "note": "新橋や日本橋方面へアクセスしやすい路線"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 16
+      },
+      {
+        "name": "クイーンズ伊勢丹品川店",
+        "minutes": 10
+      },
+      {
+        "name": "品川インターシティ",
+        "minutes": 13
+      },
+      {
+        "name": "ファミリーマート北品川店",
+        "minutes": 6
+      }
+    ],
+    "areaGuide": "品川駅の高輪口側に位置し、高級住宅街として知られる落ち着いた雰囲気のエリアです。全体的に治安が良く、女性の一人暮らしでも比較的安心して暮らせる環境が整っています。駅周辺には商業施設や飲食店が充実している一方で、坂道が多いという特徴があります。日常の生活利便性は高いですが、手頃な価格のスーパーがやや少ない点には留意が必要です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 45,
+      "rentValue": 26,
+      "commuteAccess": 100,
+      "stationCloseness": 100,
+      "dailyConvenience": 65,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 64,
+    "grade": "◎",
+    "matchPercent": 64,
+    "summary": "職場まで電車3分・乗り換えなしで理想的な通勤圏内",
+    "goodPoints": [
+      "品川駅徒歩5分で通勤に非常に便利",
+      "オートロックや防犯カメラなどセキュリティ面が充実",
+      "南向きで明るい室内"
+    ],
+    "concernPoints": [
+      "バストイレが一体型である点",
+      "家賃と管理費の合計が84,000円ではるかちゃんの理想上限（6.5万円〜7.5万円）を超えている点"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false
+}
