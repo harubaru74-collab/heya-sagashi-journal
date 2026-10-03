@@ -1,0 +1,185 @@
+{
+  "id": "20261003-54ea",
+  "isSample": false,
+  "registeredAt": "2026-10-03T16:06:21+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/b411a5a489b47922d07dcd996dcce77112959175/",
+  "images": [
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F2%2F2%2F262e.jpg&width=1200&height=630",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F2%2F2%2F262e.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F1%2F1%2Fbqgs.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F2%2F2%2F262e.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F2%2F5%2Fk6yx.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F21%2F4%2Fyjwv.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F3%2Ff6d1.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F6%2Fia0h.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F7%2Fc5hf.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F8%2F765z.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F9%2Fax5i.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F10%2F493z.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F11%2Fogr0.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F12%2Fq8le.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F13%2Fo2bb.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F14%2Fvf1y.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F15%2Fis0s.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F16%2F6gk6.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F1%2F1%2Fbqgs.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F2%2F5%2Fk6yx.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F21%2F4%2Fyjwv.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F3%2Ff6d1.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F6%2Fia0h.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F7%2Fc5hf.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F8%2F765z.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F9%2F9%2Fax5i.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F10%2F493z.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F11%2Fogr0.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F12%2Fq8le.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F4%2F13%2Fo2bb.jpg&width=640&height=480"
+  ],
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F2%2F2%2F262e.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F2%2F2%2F262e.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F1%2F1%2Fbqgs.jpg&width=640&height=480",
+  "name": "第三ハイムトシマ",
+  "address": "東京都大田区大森西3丁目27-10",
+  "town": "大森西3丁目",
+  "nearestStation": "大森町",
+  "walkMinutesToStation": 2,
+  "rent": {
+    "base": 67000,
+    "management": 3000,
+    "total": 70000,
+    "freeInternet": false,
+    "effectiveTotal": 70000
+  },
+  "initialCostEstimate": 362500,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 67000
+    },
+    {
+      "label": "礼金",
+      "amount": 67000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 73700
+    },
+    {
+      "label": "前家賃",
+      "amount": 70000
+    },
+    {
+      "label": "火災保険料",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 30800
+    },
+    {
+      "label": "保証会社利用料(概算)",
+      "amount": 28900
+    },
+    {
+      "label": "消火剤(概算)",
+      "amount": 12100
+    },
+    {
+      "label": "消臭抗菌施工(概算)",
+      "amount": 16500
+    },
+    {
+      "label": "虫駆除施工(概算)",
+      "amount": 16500
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 28.92,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": false,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": false,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 1,
+    "route": "大森町(京急本線 3分)→京急蒲田(京急本線快特・特急等 4分)→品川(JR京浜東北線等 5分)→品川シーサイド（※または京急線で平和島等から乗り換え、あるいは品川駅からりんかい線等）※ルートや時間帯により京急蒲田や平和島乗り換え、または直通・バス等で変動しますが、京急本線の大森町駅から品川へ出て京浜東北線等に乗り継ぐ最速ルート等で約14分",
+    "leisure": "大森町駅から京急本線で品川まで出てJR山手線に乗り換えて新宿まで約25分"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "大森町",
+      "walkMinutes": 2,
+      "note": "品川まで約10分・横浜まで約20分。下町情緒のある住宅街"
+    },
+    {
+      "line": "京急本線",
+      "station": "平和島",
+      "walkMinutes": 10,
+      "note": "特急停車駅で品川や横浜へのアクセスが便利"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "大田区立大森西図書館",
+        "minutes": 8
+      },
+      {
+        "name": "まいばすけっと大森町駅前店",
+        "minutes": 2
+      },
+      {
+        "name": "マルエツ大森町店",
+        "minutes": 4
+      },
+      {
+        "name": "ライフ大森店",
+        "minutes": 8
+      },
+      {
+        "name": "セブンイレブン京急ST大森町店",
+        "minutes": 2
+      }
+    ],
+    "areaGuide": "大田区大森西3丁目の大森町駅周辺は、活気のある商店街やスーパー（まいばすけっと、マルエツなど）が充実しており、日々の買い物に非常に便利です。平坦な道が多く歩きやすい下町情緒の残る住宅街で、人通りもあり比較的落ち着いた治安の良いエリアです。坂道も少なく、一人暮らしの生活基盤が整った暮らしやすい住環境となっています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 33,
+      "rentValue": 80,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 78,
+      "safety": 75
+    }
+  },
+  "score": {
+    "total": 73,
+    "grade": "◎◎",
+    "matchPercent": 73,
+    "summary": "家賃7万円台で駅徒歩2分、品川シーサイドまで電車約14分の好立地！",
+    "goodPoints": [
+      "家賃総額が7万円と予算内でお得",
+      "最寄り駅まで徒歩2分で通勤に便利",
+      "周辺にスーパーや図書館が揃う"
+    ],
+    "concernPoints": [
+      "バストイレが一緒のユニットバスタイプ",
+      "都市ガスではなくプロパンガス等の可能性が高くガス代が少し高めになる懸念"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false
+}
