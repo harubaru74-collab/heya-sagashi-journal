@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:10:16+09:00",
+  "updatedAt": "2026-10-04T06:44:14+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2010,6 +2010,40 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:10:16+09:00"
+    },
+    {
+      "id": "20261004-hqtj",
+      "isSample": false,
+      "name": "スカイコート品川第二",
+      "town": "南品川4丁目",
+      "nearestStation": "新馬場",
+      "rentTotal": 60000,
+      "effectiveRentTotal": 60000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.08,
+      "commuteMinutes": 15,
+      "walkMinutesToStation": 8,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": false,
+        "indoorWasher": false,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ff16afcae-412b-4af0-adba-08eeec22cbd5_property_picture_10167_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fdb43ce24-41ad-46b1-9083-44c91e917c63_property_picture_10167_large.jpg&width=640&height=480",
+      "scoreTotal": 75,
+      "matchPercent": 75,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-04T06:44:14+09:00"
     }
   ]
 }
