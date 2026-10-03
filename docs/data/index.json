@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:01:05+09:00",
+  "updatedAt": "2026-10-03T16:01:23+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1677,6 +1677,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:01:05+09:00"
+    },
+    {
+      "id": "20261003-lgbs",
+      "isSample": false,
+      "name": "品川大井町スカイレジテル 1階",
+      "town": "東大井3丁目",
+      "nearestStation": "大井町",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 75000,
+      "layout": "ワンルーム",
+      "sizeSqm": 18.87,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 7,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F127075%2Frent%2F13585%2F2%2F1%2Fqswh.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F127075%2Frent%2F13585%2F1%2F2%2Famf8.jpg&width=640&height=480",
+      "scoreTotal": 78,
+      "matchPercent": 78,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:01:23+09:00"
     }
   ]
 }
