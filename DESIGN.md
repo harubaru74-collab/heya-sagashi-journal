@@ -444,3 +444,23 @@ base = roomQuality*0.25 + rentValue*0.25 + commuteAccess*0.20
   - 「高輪アサヒハイム」は既にこの不具合の影響で外観1枚のみの状態で登録済み。
     再取得はできないので、ギャラリーをちゃんと見たい場合は同じURLで
     「いえさがし」をもう一度送り直す必要がある
+
+## 22. 2026-10-03 一覧カード・物件詳細ページに「メモ」欄を追加
+
+- ✅ **内見メモや気になった点を自由に書き残せる「メモ」欄を追加**: 一覧カードは
+  写真(外観・間取り)の下、物件詳細ページはマッチ度の上に、自由入力の
+  テキストエリア+保存ボタンを設置。気になる度・削除ボタンと同じ仕組み
+  (GAS経由・token方式)でGitHubに反映する
+  - `ai-concierge`側: `buildRoomPropertyRecord_`に`memo: ""`を初期値として追加。
+    `updateRoomMemoById_`/`handleMemoUpdateWebRequest_`を新設し、
+    `action=updateMemo&id=...&memo=...&token=...`で更新できるように
+    (最大500文字。`action=updateInterestStars`と同じ認証・実装パターン)
+  - サイト側: 一覧カード(`propertyCardHtml`)に`.card-memo`(テキストエリア+
+    保存ボタン)を追加し、`wireCardMemoBoxes_`で保存ボタンのクリックを処理。
+    物件詳細ページには`renderMemoBox`で同様のUIを設置。どちらも共通の
+    `saveMemo_`関数からGASを呼び出す(保存は明示的なボタン押下のみ。
+    入力のたびに自動送信はしない)
+  - 一覧カードのテキストエリアは`<a>`タグ(カード全体がリンク)の内側にあるため、
+    `onclick="event.stopPropagation()"`でクリック時にカードへの遷移を防いでいる
+  - 既存の登録済み物件には`memo`フィールドが無いが、空文字列として扱われ、
+    一度メモを保存した時点でそのレコードに追加される(一括でのバックフィルはしていない)
