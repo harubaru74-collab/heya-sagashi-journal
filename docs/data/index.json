@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T11:17:53+09:00",
+  "updatedAt": "2026-10-03T11:48:27+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1215,6 +1215,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T11:17:53+09:00"
+    },
+    {
+      "id": "20261003-x70t",
+      "isSample": false,
+      "name": "NEWRISE-2",
+      "town": "大森東2丁目",
+      "nearestStation": "大森町",
+      "rentTotal": 67000,
+      "effectiveRentTotal": 62000,
+      "layout": "ワンルーム",
+      "sizeSqm": 17.48,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 6,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": true
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13273%2F2%2F1%2F1cyk.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13273%2F1%2F2%2Fpdg2.jpg&width=640&height=480",
+      "scoreTotal": 86,
+      "matchPercent": 86,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T11:48:27+09:00"
     }
   ]
 }
