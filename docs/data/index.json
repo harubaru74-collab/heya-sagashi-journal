@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:03:42+09:00",
+  "updatedAt": "2026-10-03T16:04:07+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1776,6 +1776,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:03:42+09:00"
+    },
+    {
+      "id": "20261003-rgdk",
+      "isSample": false,
+      "name": "京急本線 平和島駅 徒歩2分 5階 ワンルーム",
+      "town": "大森北6丁目",
+      "nearestStation": "平和島",
+      "rentTotal": 67000,
+      "effectiveRentTotal": 67000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.1,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F473f8e72-7d7d-46af-bb03-73f6df888868_property_picture_2348_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F07bcc19e-72c6-4ba9-9874-a5527da120cd_property_picture_2348_large.jpg&width=640&height=480",
+      "scoreTotal": 77,
+      "matchPercent": 77,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:04:07+09:00"
     }
   ]
 }
