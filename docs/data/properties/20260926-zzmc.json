@@ -1,0 +1,158 @@
+{
+  "id": "20260926-zzmc",
+  "isSample": false,
+  "registeredAt": "2026-09-26T22:02:01+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/dddee7f2e917517067ace8bcbc133e0eeb1ce95f/",
+  "images": [
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc80ffcb%2F42423_114450_2_132000_132000.jpg%3Ft%3D20260914122325&width=1200&height=630"
+  ],
+  "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc80ffcb%2F42423_114450_2_132000_132000.jpg%3Ft%3D20260914122325&width=1200&height=630",
+  "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fc80ffcb%2F42423_114450_2_132000_132000.jpg%3Ft%3D20260914122325&width=1200&height=630",
+  "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fb082ecc5%2F42423_114450_1_132000_132000.jpg%3Ft%3D20260608170843&width=640&height=480",
+  "name": "トーア川崎マンション",
+  "address": "神奈川県川崎市川崎区日進町",
+  "town": "日進町",
+  "nearestStation": "八丁畷",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 70000,
+    "management": 0,
+    "total": 70000,
+    "freeInternet": false,
+    "effectiveTotal": 70000
+  },
+  "initialCostEstimate": 306500,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 70000
+    },
+    {
+      "label": "礼金",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 77000
+    },
+    {
+      "label": "前家賃",
+      "amount": 70000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代(概算)",
+      "amount": 16500
+    },
+    {
+      "label": "保証会社初回保証料",
+      "amount": 28000
+    },
+    {
+      "label": "退去時清掃費用",
+      "amount": 38500
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 28,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": false,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 24,
+    "transfers": 1,
+    "route": "八丁畷(京急本線 12分)→品川(JR京浜東北・根岸線 5分)→品川シーサイド(※品川駅から徒歩または臨海線等。または京急線で泉岳寺乗り換え都営浅草線直通等)",
+    "leisure": "八丁畷から京急本線で品川まで出てJR山手線に乗り換えて新宿まで約30分"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "八丁畷",
+      "walkMinutes": 3,
+      "note": "品川まで約12分・横浜まで約15分の京急本線各駅停車駅"
+    },
+    {
+      "line": "JR南武線",
+      "station": "川崎新町",
+      "walkMinutes": 12,
+      "note": "川崎駅方面や尻手方面へアクセス可能な南武線支線の駅"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "川崎",
+      "walkMinutes": 15,
+      "note": "東京・品川・横浜方面へ乗り換えなしでアクセス可能な主要駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "イオンスタイル品川シーサイド",
+        "minutes": 25
+      },
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 22
+      },
+      {
+        "name": "ファミリーマートなわてや八丁畷店",
+        "minutes": 2
+      },
+      {
+        "name": "まいばすけっと日進町店",
+        "minutes": 3
+      },
+      {
+        "name": "スギ薬局八丁畷店",
+        "minutes": 3
+      },
+      {
+        "name": "川崎ラ チッタデッラ",
+        "minutes": 8
+      }
+    ],
+    "areaGuide": "神奈川県川崎市川崎区日進町に位置し、最寄りの八丁畷駅から徒歩3分と抜群の駅近環境です。駅周辺には大型商業施設や映画館、スーパー、コンビニが揃っており日常の買い物は非常に便利です。一方で、周辺は繁華街に近く、夜間の騒音や治安面（浮動者の存在やゴミの散乱など）について懸念する声もあるため、一人暮らしの際は一定の防犯意識を持つことが推奨されます。フラットな地形のため移動はしやすいエリアです。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 41,
+      "rentValue": 80,
+      "commuteAccess": 68,
+      "stationCloseness": 100,
+      "dailyConvenience": 75,
+      "safety": 55
+    }
+  },
+  "score": {
+    "total": 69,
+    "grade": "◎",
+    "matchPercent": 69,
+    "summary": "通勤24分で許容範囲内ですが、バストイレ同室や洗濯機置き場共用がネックです。",
+    "goodPoints": [
+      "駅徒歩3分でアクセスが良好",
+      "洋室12.3帖のゆったりした広さ",
+      "周辺にスーパーや商業施設が充実"
+    ],
+    "concernPoints": [
+      "バストイレが3点ユニットで一体型",
+      "室内に洗濯機置き場がなく共用コインランドリー利用"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false
+}
