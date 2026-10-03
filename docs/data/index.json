@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:01:23+09:00",
+  "updatedAt": "2026-10-03T16:03:08+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1710,6 +1710,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:01:23+09:00"
+    },
+    {
+      "id": "20261003-wtlj",
+      "isSample": false,
+      "name": "エンゼルハイム",
+      "town": "東大井5丁目",
+      "nearestStation": "大井町",
+      "rentTotal": 57000,
+      "effectiveRentTotal": 57000,
+      "layout": "ワンルーム",
+      "sizeSqm": 17.8,
+      "commuteMinutes": 3,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8b6bfd81-8a62-45ee-890d-28c26a93c511_property_picture_10167_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7aa1f9f7-eec2-4c74-90d1-bcdae4cb5301_property_picture_10167_large.jpg&width=640&height=480",
+      "scoreTotal": 82,
+      "matchPercent": 82,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:03:08+09:00"
     }
   ]
 }
