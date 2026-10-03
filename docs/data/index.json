@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:59:46+09:00",
+  "updatedAt": "2026-10-03T16:00:08+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1578,6 +1578,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T15:59:46+09:00"
+    },
+    {
+      "id": "20261003-ys3g",
+      "isSample": false,
+      "name": "賃貸マンション",
+      "town": "西五反田2丁目",
+      "nearestStation": "五反田",
+      "rentTotal": 80000,
+      "effectiveRentTotal": 80000,
+      "layout": "ワンルーム",
+      "sizeSqm": 24.5,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fbf228105-64c4-4d1b-b9bc-19a6125e88ce_property_picture_2348_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2281ad19-4c49-47c0-88c0-7e851a426ff6_property_picture_2348_large.jpg&width=640&height=480",
+      "scoreTotal": 67,
+      "matchPercent": 67,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:00:08+09:00"
     }
   ]
 }
