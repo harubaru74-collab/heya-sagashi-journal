@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:03:08+09:00",
+  "updatedAt": "2026-10-03T16:03:42+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1743,6 +1743,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:03:08+09:00"
+    },
+    {
+      "id": "20261003-g6jc",
+      "isSample": false,
+      "name": "アイディ平和島",
+      "town": "大森北6丁目",
+      "nearestStation": "平和島",
+      "rentTotal": 67000,
+      "effectiveRentTotal": 67000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.1,
+      "commuteMinutes": 25,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fe81a6329-4677-46ab-8a1c-a18fdf3c9de3_property_picture_10244_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa20aff21-daea-4da5-9d1d-5e866253f95f_property_picture_10244_large.jpg&width=640&height=480",
+      "scoreTotal": 71,
+      "matchPercent": 71,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:03:42+09:00"
     }
   ]
 }
