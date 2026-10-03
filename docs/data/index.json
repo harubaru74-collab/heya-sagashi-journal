@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:57:32+09:00",
+  "updatedAt": "2026-10-03T15:57:58+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1512,6 +1512,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T15:57:32+09:00"
+    },
+    {
+      "id": "20261003-by0g",
+      "isSample": false,
+      "name": "COCOFLAT西大井",
+      "town": "二葉3丁目",
+      "nearestStation": "西大井",
+      "rentTotal": 77000,
+      "effectiveRentTotal": 72000,
+      "layout": "1K",
+      "sizeSqm": 16.58,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": false,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148017%2Frent%2F28745%2F2%2F1%2Fz1lz.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148017%2Frent%2F28745%2F1%2F2%2Ftgmb.jpg&width=640&height=480",
+      "scoreTotal": 79,
+      "matchPercent": 79,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:57:58+09:00"
     }
   ]
 }
