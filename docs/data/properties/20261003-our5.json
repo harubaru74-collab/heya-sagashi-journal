@@ -1,0 +1,187 @@
+{
+  "id": "20261003-our5",
+  "isSample": false,
+  "registeredAt": "2026-10-03T15:55:46+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/21b2833705d69a91e3211c075f9365a4edfc82a5/",
+  "images": [
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F2%2F1%2Fr5uw.jpg&width=1200&height=630",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F2%2F1%2Fr5uw.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F1%2F2%2Ftz5b.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F2%2F1%2Fr5uw.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F11%2F5%2F1gci.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F12%2F4%2F659x.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F15%2F6%2Fcg4w.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F18%2F11%2F7z1u.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F19%2F14%2Fgstd.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F10%2F8%2Funir.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F20%2F9%2Fosrk.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F3%2F49xo.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F7%2Fiyrd.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F10%2Fbjlu.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F12%2Fmny8.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F13%2Fpnhv.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F4%2F15%2Fj8mt.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F1%2F2%2Ftz5b.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F11%2F5%2F1gci.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F12%2F4%2F659x.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F15%2F6%2Fcg4w.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F18%2F11%2F7z1u.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F19%2F14%2Fgstd.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F10%2F8%2Funir.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F20%2F9%2Fosrk.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F3%2F49xo.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F7%2Fiyrd.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F10%2Fbjlu.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F12%2Fmny8.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F9%2F13%2Fpnhv.jpg&width=640&height=480"
+  ],
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F2%2F1%2Fr5uw.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F2%2F1%2Fr5uw.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F1%2F2%2Ftz5b.jpg&width=640&height=480",
+  "name": "キャッスル大森",
+  "address": "東京都大田区大森北3丁目",
+  "town": "大森北3丁目",
+  "nearestStation": "平和島",
+  "walkMinutesToStation": 8,
+  "rent": {
+    "base": 68000,
+    "management": 1000,
+    "total": 69000,
+    "freeInternet": false,
+    "effectiveTotal": 69000
+  },
+  "initialCostEstimate": 356500,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 68000
+    },
+    {
+      "label": "礼金",
+      "amount": 68000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 74800
+    },
+    {
+      "label": "前家賃",
+      "amount": 69000
+    },
+    {
+      "label": "火災保険料",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 27500
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 10000
+    },
+    {
+      "label": "24時間サポート",
+      "amount": 16500
+    },
+    {
+      "label": "月額保証料(概算)",
+      "amount": 550
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 18,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 0,
+    "route": "平和島(京急本線 快特・特急等 14分 ※日中時はエアポート快特等利用、または品川乗り換え等適宜。一般的には京急本線で品川まで出てJR等乗り換えまたは直通)→品川シーサイドは京急線沿線から青物横丁や品川乗り換えが便利ですが、最速は平和島から京急本線で品川へ出てJR京浜東北線等、あるいは青物横丁・京急線からのアクセスとなります。正確には、平和島(京急本線 6分)→品川(JR京浜東北線 3分)→大井町(りんかい線 3分)→品川シーサイド、または京急線で青物横丁に出て徒歩等。乗換案内上の最速：平和島(京急本線 3分)→京急蒲田等ではなく品川方面へ、平和島(京急本線普通/特急 4〜6分)→青物横丁(徒歩10分または乗り換え)など。直通ではないため品川等で乗り換え1回、または青物横丁下車徒歩",
+    "leisure": "平和島から京急本線で品川まで約6分、JR線に乗り換えて新宿まで約25分"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "平和島",
+      "walkMinutes": 8,
+      "note": "品川まで約10分・横浜まで約20分、特急・急行停車駅"
+    },
+    {
+      "line": "京急本線",
+      "station": "大森海岸",
+      "walkMinutes": 9,
+      "note": "品川まで約8分・普通のみ停車"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大森",
+      "walkMinutes": 12,
+      "note": "品川まで約6分・東京や横浜へ一本でアクセス可能"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "まいばすけっと平和島駅北店",
+        "minutes": 5
+      },
+      {
+        "name": "マツモトキヨシ平和島駅前店",
+        "minutes": 7
+      },
+      {
+        "name": "大田区立入新井図書館",
+        "minutes": 12
+      },
+      {
+        "name": "ローソン大森北3丁目店",
+        "minutes": 3
+      },
+      {
+        "name": "いすゞ病院",
+        "minutes": 10
+      }
+    ],
+    "areaGuide": "大田区大森北3丁目は、閑静な住宅街が広がり落ち着いた住環境です。京急本線の平和島駅が利用でき、品川や横浜方面へのアクセスが良好です。駅周辺にはスーパーやコンビニ、飲食店が充実しており日常の買い物に困りません。治安面でも比較的落ち着いており、女性の一人暮らしでも安心して過ごしやすいエリアです。坂道も少なく平坦な地形が特徴です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 43,
+      "rentValue": 80,
+      "commuteAccess": 100,
+      "stationCloseness": 85,
+      "dailyConvenience": 75,
+      "safety": 75
+    }
+  },
+  "score": {
+    "total": 75,
+    "grade": "◎◎",
+    "matchPercent": 75,
+    "summary": "職場まで電車と乗り換え含めて約20分、理想の通勤圏内で家賃も予算内です。",
+    "goodPoints": [
+      "家賃が6.8万円と手頃で予算内に収まる",
+      "平和島駅から徒歩8分と駅近で、京急本線の特急等が使えて便利",
+      "周辺にスーパーやコンビニ、図書館があり生活しやすい"
+    ],
+    "concernPoints": [
+      "バストイレが一緒で洗面所が独立していない",
+      "築年数が36年で建物がやや古い"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false
+}
