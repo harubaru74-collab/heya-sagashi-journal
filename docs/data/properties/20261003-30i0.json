@@ -1,0 +1,162 @@
+{
+  "id": "20261003-30i0",
+  "isSample": false,
+  "registeredAt": "2026-10-03T10:23:37+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/b-37012390054719/?referral_content=list_search_pr_result&iskks=1",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15165%2F15165282%2F15165282_2.jpg%3F20260924101911&width=1200&height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15165%2F15165282%2F15165282_2.jpg%3F20260924101911&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15165%2F15165282%2F15165282_2.jpg%3F20260924101911&width=1200&height=630",
+  "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15165%2F15165282%2F15165282_1.jpg%3F20260924101911&width=640&height=480",
+  "name": "リベルテ中延 2階/204",
+  "address": "東京都品川区中延4丁目18-8",
+  "town": "中延4丁目",
+  "nearestStation": "中延",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 85000,
+    "management": 3000,
+    "total": 88000,
+    "freeInternet": false,
+    "effectiveTotal": 88000
+  },
+  "initialCostEstimate": 475100,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 85000
+    },
+    {
+      "label": "礼金",
+      "amount": 85000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 93500
+    },
+    {
+      "label": "前家賃",
+      "amount": 88000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 29700
+    },
+    {
+      "label": "室内清掃費用",
+      "amount": 46200
+    },
+    {
+      "label": "ATLAS24サポート料",
+      "amount": 20000
+    },
+    {
+      "label": "エアコンクリーニング費用",
+      "amount": 12100
+    },
+    {
+      "label": "保証会社初回保証料",
+      "amount": 52800
+    },
+    {
+      "label": "安心入居サポート等(月額保証料ほか)",
+      "amount": 840
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 24.73,
+  "room": {
+    "bathToiletSeparate": true,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": true,
+    "bathroomDryer": true
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 0,
+    "route": "中延(東急大井町線 5分)→大井町(東京臨海高速鉄道りんかい線直通 9分)→品川シーサイド",
+    "leisure": "中延から東急大井町線で大井町に出てJR京浜東北線に乗り換え、品川経由で新宿まで約25〜30分"
+  },
+  "nearbyStations": [
+    {
+      "line": "東急大井町線",
+      "station": "中延",
+      "walkMinutes": 3,
+      "note": "品川シーサイドまで乗換なし約14分・自由が丘や二子玉川方面へアクセスしやすい"
+    },
+    {
+      "line": "東急池上線",
+      "station": "荏原中延",
+      "walkMinutes": 10,
+      "note": "五反田まで約5分・蒲田まで約15分、3両編成がメインの親しみやすい路線"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "中延",
+      "walkMinutes": 3,
+      "note": "新橋や日本橋など都心直通、羽田空港へもアクセスしやすい"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "東急ストアフードステーション中延店",
+        "minutes": 366
+      },
+      {
+        "name": "まいばすけっと東中延",
+        "minutes": 476
+      },
+      {
+        "name": "ファミリーマート中延駅前店",
+        "minutes": 356
+      },
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 2200
+      },
+      {
+        "name": "BIZcomfort品川シーサイド",
+        "minutes": 1700
+      }
+    ],
+    "areaGuide": "品川区中延エリアは、活気ある「中延スキップロード」などのアーケード商店街が充実しており、天候を気にせず買い物や外食を楽しめます。平坦な地形のため自転車や徒歩での移動がしやすく、日常の生活利便性が非常に高いです。住宅街は比較的落ち着いており、街灯や人通りもあるため治安面でも安心して暮らせる住環境が整っています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 80,
+      "rentValue": 0,
+      "commuteAccess": 100,
+      "stationCloseness": 100,
+      "dailyConvenience": 90,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 41,
+    "grade": "△",
+    "matchPercent": 41,
+    "summary": "家賃が予算上限を超えており、品川図書館や自習室へはやや距離があります。",
+    "goodPoints": [
+      "駅徒歩3分で複数路線が利用でき、通勤が非常に便利",
+      "浴室乾燥機や独立洗面所など室内設備が非常に充実している",
+      "周辺にアーケード商店街やスーパーがあり日常の買物が快適"
+    ],
+    "concernPoints": [
+      "家賃総額が88000円となり、はるかちゃんの絶対上限80000円を超えている",
+      "木造アパートのため階下や隣室への音の配慮が必要"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false
+}
