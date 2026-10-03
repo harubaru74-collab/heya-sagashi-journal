@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:56:15+09:00",
+  "updatedAt": "2026-10-03T15:57:02+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1446,6 +1446,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T15:56:15+09:00"
+    },
+    {
+      "id": "20261003-o9wz",
+      "isSample": false,
+      "name": "デュオメゾン西大井",
+      "town": "西大井6丁目",
+      "nearestStation": "西大井",
+      "rentTotal": 73000,
+      "effectiveRentTotal": 73000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.25,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": true
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125241%2Frent%2F139327%2F2%2F2%2Fupu0.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125241%2Frent%2F139327%2F1%2F1%2Fcwz3.jpg&width=640&height=480",
+      "scoreTotal": 82,
+      "matchPercent": 82,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:57:02+09:00"
     }
   ]
 }
