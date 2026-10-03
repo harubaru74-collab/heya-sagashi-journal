@@ -1,0 +1,190 @@
+{
+  "id": "20261003-mesq",
+  "isSample": false,
+  "registeredAt": "2026-10-03T16:00:41+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/43a5d22ef4385a55e868efb9c2313aba87847815/",
+  "images": [
+    "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_2_132000_132000.jpg%3Ft%3D20260928183803&width=1200&height=630",
+    "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_2_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_1_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_2_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_3_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_4_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_5_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_6_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_7_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_8_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_10_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_12_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_9_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_14_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_11_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_13_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_15_132000_132000.jpg%3Ft%3D20260928183803",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_1_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_3_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_4_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_5_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_6_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_7_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_8_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_10_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_12_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_9_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_14_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_11_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_13_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480"
+  ],
+  "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_2_132000_132000.jpg%3Ft%3D20260928183803&width=1200&height=630",
+  "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_2_132000_132000.jpg%3Ft%3D20260928183803&width=1200&height=630",
+  "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_1_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
+  "name": "ドルフケンユー",
+  "address": "東京都大田区北馬込2丁目",
+  "town": "北馬込2丁目",
+  "nearestStation": "馬込",
+  "walkMinutesToStation": 7,
+  "rent": {
+    "base": 75000,
+    "management": 2000,
+    "total": 77000,
+    "freeInternet": false,
+    "effectiveTotal": 77000
+  },
+  "initialCostEstimate": 384500,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 75000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 82500
+    },
+    {
+      "label": "前家賃",
+      "amount": 77000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 37500
+    },
+    {
+      "label": "鍵交換費(概算)",
+      "amount": 20000
+    },
+    {
+      "label": "室内清掃費(概算)",
+      "amount": 30000
+    },
+    {
+      "label": "火災保険料2",
+      "amount": 47500
+    },
+    {
+      "label": "その他費用(概算)",
+      "amount": 37500
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 20,
+  "room": {
+    "bathToiletSeparate": true,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": true,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 17,
+    "transfers": 1,
+    "route": "馬込(都営浅草線 3分)→五反田(JR山手線 9分)→品川(JR京浜東北線 3分)→品川シーサイド(または品川駅から徒歩約13分、あるいは五反田から大崎乗り換えりんかい線等)",
+    "leisure": "馬込駅から都営浅草線で西馬込方面または新橋・日本橋方面へアクセス可能。新宿へは五反田等経由で約25〜30分"
+  },
+  "nearbyStations": [
+    {
+      "line": "都営浅草線",
+      "station": "馬込",
+      "walkMinutes": 7,
+      "note": "品川まで約12分・新橋や日本橋方面へ一本でアクセスできる落ち着いた路線"
+    },
+    {
+      "line": "東急大井町線",
+      "station": "荏原町",
+      "walkMinutes": 7,
+      "note": "大井町や自由が丘方面へアクセスしやすく、商店街が充実している便利な路線"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "中延",
+      "walkMinutes": 14,
+      "note": "東急大井町線との乗り換えも可能で複数路線が使える駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "まいばすけっと 北馬込店",
+        "minutes": 1
+      },
+      {
+        "name": "セブンイレブン 大田区北馬込店",
+        "minutes": 4
+      },
+      {
+        "name": "大田区立馬込図書館",
+        "minutes": 7
+      },
+      {
+        "name": "セイムス大田北馬込店",
+        "minutes": 6
+      },
+      {
+        "name": "大田東馬込郵便局",
+        "minutes": 7
+      }
+    ],
+    "areaGuide": "大田区北馬込は、閑静な住宅街が広がり治安が良く、落ち着いた住環境が魅力のエリアです。駅周辺には坂道が一部見られますが、スーパーやコンビニ、ドラッグストアなどの生活必需品が揃うお店が点在しており、日常生活で不便を感じることは少ないです。治安も比較的良好で、女性の一人暮らしでも安心して過ごしやすい地域となっています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 69,
+      "rentValue": 45,
+      "commuteAccess": 92,
+      "stationCloseness": 90,
+      "dailyConvenience": 75,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 72,
+    "grade": "◎◎",
+    "matchPercent": 72,
+    "summary": "職場まで電車約17分・理想の家賃範囲内で水回り設備も充実した物件",
+    "goodPoints": [
+      "家賃総額が77000円で許容範囲内",
+      "バス・トイレ別で温水洗浄便座や独立洗面台付き",
+      "スーパーやコンビニが徒歩数分圏内で便利"
+    ],
+    "concernPoints": [
+      "浴室乾燥機やネット無料がない点"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false
+}

@@ -1,0 +1,179 @@
+{
+  "id": "20261003-wtlj",
+  "isSample": false,
+  "registeredAt": "2026-10-03T16:03:08+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/899d085a484ea30e7783e25f3b82a26730b4634e/",
+  "images": [
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8b6bfd81-8a62-45ee-890d-28c26a93c511_property_picture_10167_large.jpg&width=1200&height=630",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8b6bfd81-8a62-45ee-890d-28c26a93c511_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7aa1f9f7-eec2-4c74-90d1-bcdae4cb5301_property_picture_10167_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8b6bfd81-8a62-45ee-890d-28c26a93c511_property_picture_10167_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F05bf7d93-c2f0-423d-ad93-540c17439691_property_picture_10167_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9d329365-0d7b-415a-b776-de3c7941ec54_property_picture_10167_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7e3c75e0-936a-4794-990b-f5770b6dfd55_property_picture_10167_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F54de7f9f-1648-4f2d-8efa-bbe4fd404d58_property_picture_10167_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4715518f-c14a-4dcb-a328-c66a27c190cb_property_picture_10167_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F88bce048-ab3d-465e-8dd2-8703d6f326a5_property_picture_10167_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Faff82d41-e703-4f35-91e6-fab2c32e724f_property_picture_10167_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7006b491-be72-416a-8dcc-46ca1a5a63aa_property_picture_10167_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F72915932-1d92-483c-88a3-a7a83fea3436_property_picture_10167_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fae605d66-5b96-4932-a50a-25e17479bf99_property_picture_10167_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F41e02d77-26ae-46bb-8637-2ca28b47d0b6_property_picture_10167_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F68701865-ed92-4480-8a93-f9611c79832a_property_picture_10167_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8d0be311-b01f-41f8-8da4-9fa950db88bd_property_picture_10167_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fcf30402c-50b0-425c-b3f8-fdd81e047997_property_picture_10167_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F49089dd4-3e17-4429-aeae-23c1170c656a_property_picture_10167_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4fd8f0d4-c5b9-4afb-ad93-27269bc03785_property_picture_10167_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd5ebdabe-c077-475a-babe-8e14e62f5ac1_property_picture_10167_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7aa1f9f7-eec2-4c74-90d1-bcdae4cb5301_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F05bf7d93-c2f0-423d-ad93-540c17439691_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9d329365-0d7b-415a-b776-de3c7941ec54_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7e3c75e0-936a-4794-990b-f5770b6dfd55_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F54de7f9f-1648-4f2d-8efa-bbe4fd404d58_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4715518f-c14a-4dcb-a328-c66a27c190cb_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F88bce048-ab3d-465e-8dd2-8703d6f326a5_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Faff82d41-e703-4f35-91e6-fab2c32e724f_property_picture_10167_large.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7006b491-be72-416a-8dcc-46ca1a5a63aa_property_picture_10167_large.jpg&width=640&height=480"
+  ],
+  "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8b6bfd81-8a62-45ee-890d-28c26a93c511_property_picture_10167_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8b6bfd81-8a62-45ee-890d-28c26a93c511_property_picture_10167_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7aa1f9f7-eec2-4c74-90d1-bcdae4cb5301_property_picture_10167_large.jpg&width=640&height=480",
+  "name": "エンゼルハイム",
+  "address": "東京都品川区東大井5丁目13-9",
+  "town": "東大井5丁目",
+  "nearestStation": "大井町",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 55000,
+    "management": 2000,
+    "total": 57000,
+    "freeInternet": false,
+    "effectiveTotal": 57000
+  },
+  "initialCostEstimate": 275000,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 55000
+    },
+    {
+      "label": "礼金",
+      "amount": 55000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 55000
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 57000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 21500
+    },
+    {
+      "label": "鍵交換代(概算)",
+      "amount": 26400
+    },
+    {
+      "label": "保証会社利用料(概算)",
+      "amount": 27500
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 17.8,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 3,
+    "transfers": 0,
+    "route": "大井町(JR京浜東北・根岸線 3分)→品川シーサイド",
+    "leisure": "大井町からJR京浜東北線で東京駅まで約13分、品川駅から山手線等へ乗り換えも便利です。"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大井町",
+      "walkMinutes": 3,
+      "note": "品川まで約3分・東京まで約13分、複数路線が使えて非常に便利"
+    },
+    {
+      "line": "京急本線",
+      "station": "青物横丁",
+      "walkMinutes": 9,
+      "note": "品川まで約4分、羽田空港へアクセスしやすい路線"
+    },
+    {
+      "line": "東京臨海高速鉄道りんかい線",
+      "station": "品川シーサイド",
+      "walkMinutes": 19,
+      "note": "お台場や新宿方面へ直通運転でアクセス可能"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "西友大井町店",
+        "minutes": 2
+      },
+      {
+        "name": "アトレ大井町2",
+        "minutes": 4
+      },
+      {
+        "name": "ヤマダ電機LABI品川大井町住まいる家電館",
+        "minutes": 3
+      },
+      {
+        "name": "品川区立大井図書館",
+        "minutes": 12
+      },
+      {
+        "name": "BIZcomfort品川シーサイド(周辺エリア)",
+        "minutes": 15
+      }
+    ],
+    "areaGuide": "東京都品川区東大井に位置する大井町駅近くのエリアです。駅周辺にはアトレや西友などの大型商業施設が充実しており、日々の買い物や生活に非常に便利です。一方で、下町情緒の残る住宅街や商店街も混在しており、夜間も明るく比較的落ち着いた治安の良い雰囲気ですが、場所によっては道が狭く坂道があるという声もあります。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 35,
+      "rentValue": 100,
+      "commuteAccess": 100,
+      "stationCloseness": 100,
+      "dailyConvenience": 95,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 82,
+    "grade": "◎◎",
+    "matchPercent": 82,
+    "summary": "大井町駅から品川シーサイド駅まで電車3分・乗り換えなしの抜群の好立地です",
+    "goodPoints": [
+      "家賃総額が57000円で理想の65000円以内に収まる",
+      "大井町駅まで徒歩3分で品川シーサイド駅まで電車3分と通勤が非常に楽",
+      "西友やアトレなど平日の買い物環境や周辺施設が非常に充実している"
+    ],
+    "concernPoints": [
+      "1階の物件でバストイレ一緒の仕様であること",
+      "専有面積が17.8㎡とややコンパクトであること"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false
+}
