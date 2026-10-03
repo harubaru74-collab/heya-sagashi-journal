@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:51:18+09:00",
+  "updatedAt": "2026-10-03T15:52:59+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1314,6 +1314,39 @@
       "interestStars": 2,
       "archived": false,
       "registeredAt": "2026-10-03T15:51:18+09:00"
+    },
+    {
+      "id": "20261003-13mo",
+      "isSample": false,
+      "name": "平和島駅の賃貸アパート",
+      "town": "大森北3丁目",
+      "nearestStation": "平和島",
+      "rentTotal": 68000,
+      "effectiveRentTotal": 68000,
+      "layout": "ワンルーム",
+      "sizeSqm": 21.48,
+      "commuteMinutes": 21,
+      "walkMinutesToStation": 5,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fe5c2b03c%2F38341_361626_1_132000_132000.jpg%3Ft%3D20260905171455&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fe5c2b03c%2F38341_361626_1_132000_132000.jpg%3Ft%3D20260905171455&width=640&height=480",
+      "scoreTotal": 73,
+      "matchPercent": 73,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T15:52:59+09:00"
     }
   ]
 }
