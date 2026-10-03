@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:04:37+09:00",
+  "updatedAt": "2026-10-03T16:05:24+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -1842,6 +1842,39 @@
       "interestStars": 0,
       "archived": false,
       "registeredAt": "2026-10-03T16:04:37+09:00"
+    },
+    {
+      "id": "20261003-k8qq",
+      "isSample": false,
+      "name": "宮田アパート",
+      "town": "西品川3丁目",
+      "nearestStation": "大崎",
+      "rentTotal": 60000,
+      "effectiveRentTotal": 55000,
+      "layout": "1K",
+      "sizeSqm": 17,
+      "commuteMinutes": 10,
+      "walkMinutesToStation": 7,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F82413%2F2%2F2%2Ffx70.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F82413%2F1%2F1%2Fjxcz.jpg&width=640&height=480",
+      "scoreTotal": 83,
+      "matchPercent": 83,
+      "interestStars": 0,
+      "archived": false,
+      "registeredAt": "2026-10-03T16:05:24+09:00"
     }
   ]
 }
