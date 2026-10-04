@@ -77,6 +77,12 @@
         </select>
       </div>
       <div class="filter-group">
+        <span class="filter-group-label">最寄り駅</span>
+        <select id="station-select">
+          <option value="">指定なし</option>
+        </select>
+      </div>
+      <div class="filter-group">
         <span class="filter-group-label">お部屋の条件</span>
         <div class="room-filter-mode" id="room-filter-mode">
           <label><input type="radio" name="room-filter-mode" value="and" checked>すべて満たす(AND)</label>
@@ -128,6 +134,7 @@
   const commuteSelect = document.getElementById("commute-select");
   const rentSelect = document.getElementById("rent-select");
   const starsSelect = document.getElementById("stars-select");
+  const stationSelect = document.getElementById("station-select");
   const roomChecksEl = document.getElementById("room-filter-checks");
   const modeEl = document.getElementById("room-filter-mode");
   const filterPanel = document.querySelector(".filter-panel");
@@ -142,6 +149,17 @@
     '<label><input type="checkbox" class="room-filter-checkbox" value="' + c.key + '">' + c.label + "のみ</label>"
   ).join("");
 
+  // 最寄り駅の選択肢は固定リストではなく、登録済み物件から実際に使われている駅名を集めて作る
+  try {
+    const idx = await loadIndex();
+    const stations = Array.from(new Set((idx.properties || []).map((p) => p.nearestStation).filter(Boolean)))
+      .sort((a, b) => a.localeCompare(b, "ja"));
+    stationSelect.innerHTML = '<option value="">指定なし</option>' +
+      stations.map((s) => '<option value="' + s + '">' + s + "駅</option>").join("");
+  } catch (e) {
+    // 一覧側のrenderPropertyListがどのみちエラー表示するので、ここでは駅選択肢だけ諦める
+  }
+
   // 前回開いたときのフィルター条件を復元(端末内のみ・localStorage)
   const saved = loadSavedListFilters();
   if (saved.sort) sortSelect.value = saved.sort;
@@ -150,6 +168,7 @@
   if (saved.maxCommuteMinutes) commuteSelect.value = String(saved.maxCommuteMinutes);
   if (saved.maxRent) rentSelect.value = String(saved.maxRent);
   if (saved.minStars) starsSelect.value = String(saved.minStars);
+  if (saved.station) stationSelect.value = saved.station;
   if (saved.roomFilterMode === "or") {
     const orRadio = modeEl.querySelector('input[value="or"]');
     if (orRadio) orRadio.checked = true;
@@ -159,7 +178,7 @@
       cb.checked = saved.roomFilters.indexOf(cb.value) !== -1;
     });
   }
-  if (filterPanel && (saved.maxWalkMinutes || saved.maxCommuteMinutes || saved.maxRent || saved.minStars || (saved.roomFilters && saved.roomFilters.length))) {
+  if (filterPanel && (saved.maxWalkMinutes || saved.maxCommuteMinutes || saved.maxRent || saved.minStars || saved.station || (saved.roomFilters && saved.roomFilters.length))) {
     filterPanel.open = true;
   }
 
@@ -176,6 +195,7 @@
       maxCommuteMinutes: commuteSelect.value ? Number(commuteSelect.value) : null,
       maxRent: rentSelect.value ? Number(rentSelect.value) : null,
       minStars: starsSelect.value ? Number(starsSelect.value) : null,
+      station: stationSelect.value || null,
       roomFilters: Array.from(document.querySelectorAll(".room-filter-checkbox:checked")).map((cb) => cb.value),
       roomFilterMode: currentRoomFilterMode()
     };
@@ -189,7 +209,7 @@
       sortKey, sortDir, keyword: state.keyword, includeArchived: showArchivedCheckbox.checked,
       roomFilters: state.roomFilters, roomFilterMode: state.roomFilterMode,
       maxWalkMinutes: state.maxWalkMinutes, maxCommuteMinutes: state.maxCommuteMinutes, maxRent: state.maxRent,
-      minStars: state.minStars
+      minStars: state.minStars, station: state.station
     });
   }
 
@@ -200,6 +220,7 @@
     commuteSelect.value = state.maxCommuteMinutes ? String(state.maxCommuteMinutes) : "";
     rentSelect.value = state.maxRent ? String(state.maxRent) : "";
     starsSelect.value = state.minStars ? String(state.minStars) : "";
+    stationSelect.value = state.station || "";
     document.querySelectorAll(".room-filter-checkbox").forEach((cb) => {
       cb.checked = (state.roomFilters || []).indexOf(cb.value) !== -1;
     });
@@ -254,6 +275,7 @@
   commuteSelect.addEventListener("change", refresh);
   rentSelect.addEventListener("change", refresh);
   starsSelect.addEventListener("change", refresh);
+  stationSelect.addEventListener("change", refresh);
   roomChecksEl.addEventListener("change", refresh);
   modeEl.addEventListener("change", refresh);
   resetBtn.addEventListener("click", () => {
@@ -262,6 +284,7 @@
     commuteSelect.value = "";
     rentSelect.value = "";
     starsSelect.value = "";
+    stationSelect.value = "";
     document.querySelectorAll(".room-filter-checkbox").forEach((cb) => { cb.checked = false; });
     modeEl.querySelector('input[value="and"]').checked = true;
     refresh();

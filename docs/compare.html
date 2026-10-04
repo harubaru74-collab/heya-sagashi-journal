@@ -188,6 +188,7 @@ function compareSortValue_(p, sortKey) {
         metricRow("広さ", properties.map((p) => p.sizeSqm), true, (v) => v + "㎡") +
         metricRow("間取り", properties.map((p) => p.layout), null) +
         metricRow("通勤(" + properties[0].commute.destinationStationName + ")", properties.map((p) => p.commute.minutes), false, (v) => v + "分") +
+        metricRow("最寄り駅", properties.map((p) => p.nearestStation), null, (v) => v + "駅") +
         metricRow("最寄り駅徒歩", properties.map((p) => p.walkMinutesToStation), false, (v) => v + "分") +
         metricRow("気になる度", properties.map((p) => p.interestStars || 0), true, (v) => starRatingHtml(v)) +
         checklistRows() +

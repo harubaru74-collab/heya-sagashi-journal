@@ -357,8 +357,8 @@ function matchesKeyword_(p, keyword) {
 // opts: { sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc"),
 //         roomFilters(配列), roomFilterMode("and"|"or"、既定"and"), maxWalkMinutes(数値),
 //         maxCommuteMinutes(数値、p.commuteMinutes以下), maxRent(数値、p.effectiveRentTotal以下),
-//         minStars(数値、p.interestStars以上), keyword(文字列、物件名/町名/最寄り駅で部分一致),
-//         includeArchived(bool、既定false) }
+//         minStars(数値、p.interestStars以上), station(文字列、p.nearestStationと完全一致),
+//         keyword(文字列、物件名/町名/最寄り駅で部分一致), includeArchived(bool、既定false) }
 // 「削除」した(archived:true)物件は、はるかちゃんが積極的に消した/もう不要な物件なので、
 // 明示的にincludeArchivedを指定しない限り一覧から隠す(あとで見返せるように実体は消さない)。
 async function renderPropertyList(container, filterFn, opts) {
@@ -391,6 +391,9 @@ async function renderPropertyList(container, filterFn, opts) {
     if (opts.minStars != null) {
       list = list.filter((p) => (p.interestStars || 0) >= opts.minStars);
     }
+    if (opts.station) {
+      list = list.filter((p) => p.nearestStation === opts.station);
+    }
     const sortKey = opts.sortKey || "scoreTotal";
     const sortDir = opts.sortDir || "desc";
     list.sort((a, b) => {
@@ -402,7 +405,8 @@ async function renderPropertyList(container, filterFn, opts) {
     });
     if (list.length === 0) {
       const hasActiveFilter = (opts.roomFilters && opts.roomFilters.length) || !!opts.keyword ||
-        opts.maxWalkMinutes != null || opts.maxCommuteMinutes != null || opts.maxRent != null || opts.minStars != null;
+        opts.maxWalkMinutes != null || opts.maxCommuteMinutes != null || opts.maxRent != null ||
+        opts.minStars != null || !!opts.station;
       container.innerHTML = '<p class="empty-note">' +
         (hasActiveFilter
           ? "条件に合う物件が無いよ。フィルターを見直してみてね"
