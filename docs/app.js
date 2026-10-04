@@ -32,9 +32,9 @@ function formatYen(n) {
   return "¥" + Number(n).toLocaleString("ja-JP");
 }
 
-// メモのテキストを<textarea>の中身として埋め込む用(「&」「</textarea>」等で表示が
+// メモ等の自由入力テキストをHTMLに埋め込む用(「&」「<」「>」で表示や<textarea>が
 // 壊れないようにエスケープする)
-function escapeForTextarea_(text) {
+function escapeHtml_(text) {
   return (text || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
@@ -158,7 +158,7 @@ function propertyCardHtml(p) {
         cardThumbHtml(p.floorPlanImageUrl, "間取り") +
       "</div>" +
       '<div class="card-memo" onclick="event.stopPropagation()">' +
-        '<textarea class="card-memo-textarea" data-id="' + p.id + '" placeholder="📝 メモ(内見メモ・気になった点など)" rows="2">' + escapeForTextarea_(p.memo) + "</textarea>" +
+        '<textarea class="card-memo-textarea" data-id="' + p.id + '" placeholder="📝 メモ(内見メモ・気になった点など)" rows="2">' + escapeHtml_(p.memo) + "</textarea>" +
         '<button type="button" class="card-memo-save-btn" data-id="' + p.id + '">保存</button>' +
         '<span class="status-save-note card-memo-note" data-id="' + p.id + '"></span>' +
       "</div>" +
@@ -637,7 +637,7 @@ function renderMemoBox(container, property, criteria) {
   const api = criteria.starUpdateApi;
   container.innerHTML =
     '<textarea class="memo-textarea" id="memo-textarea" placeholder="📝 内見メモ・気になった点など自由にどうぞ" rows="3">' +
-      escapeForTextarea_(property.memo) +
+      escapeHtml_(property.memo) +
     "</textarea>" +
     '<div class="memo-actions">' +
       '<button type="button" class="memo-save-btn" id="memo-save-btn">保存</button>' +

@@ -22,26 +22,54 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
 <script src="app.js"></script>
 <script>
-const COMPARE_COLORS = ["#ff8fb8", "#7fc8e8", "#ffb400", "#8dd9a8", "#b79bff"];
+const COMPARE_COLORS = [
+  "#ff8fb8", "#7fc8e8", "#ffb400", "#8dd9a8", "#b79bff",
+  "#ff7f6b", "#5ec8c0", "#d9a05b", "#c86bb3", "#9aa5b1"
+];
+
+const COMPARE_SORT_OPTIONS = [
+  { value: "", label: "選んだ順のまま" },
+  { value: "scoreTotal:desc", label: "マッチ度が高い順" },
+  { value: "interestStars:desc", label: "気になる度が高い順" },
+  { value: "rentTotal:asc", label: "家賃(実質)が安い順" },
+  { value: "commuteMinutes:asc", label: "通勤が短い順" },
+  { value: "sizeSqm:desc", label: "広い順" }
+];
+
+// 並び替え用に、propertyオブジェクトから一覧ページのsortKeyと同じ名前で値を取り出す
+function compareSortValue_(p, sortKey) {
+  if (sortKey === "scoreTotal") return p.score.matchPercent;
+  if (sortKey === "interestStars") return p.interestStars || 0;
+  if (sortKey === "rentTotal") return p.rent.effectiveTotal;
+  if (sortKey === "commuteMinutes") return p.commute.minutes;
+  if (sortKey === "sizeSqm") return p.sizeSqm;
+  return null;
+}
 
 (async function () {
   const params = new URLSearchParams(location.search);
-  const ids = (params.get("ids") || "").split(",").map((s) => s.trim()).filter(Boolean);
+  const initialIds = (params.get("ids") || "").split(",").map((s) => s.trim()).filter(Boolean);
   const content = document.getElementById("content");
 
-  if (ids.length < 2) {
+  if (initialIds.length < 2) {
     content.innerHTML = '<p class="empty-note">一覧ページで2件以上「比較」にチェックを入れてから、もう一度開いてね</p>';
     return;
   }
 
-  let criteria, properties;
+  let criteria, loadedProperties;
   try {
     criteria = await loadCriteria();
-    properties = await Promise.all(ids.map((id) => loadProperty(id)));
+    loadedProperties = await Promise.all(initialIds.map((id) => loadProperty(id)));
   } catch (e) {
     content.innerHTML = '<p class="empty-note">読み込みに失敗したよ: ' + e.message + "</p>";
     return;
   }
+
+  // 比較から外しても他の物件の色が変わって混乱しないよう、色は最初に選んだ時点のidに固定する
+  const colorById = new Map(initialIds.map((id, i) => [id, COMPARE_COLORS[i % COMPARE_COLORS.length]]));
+  let properties = loadedProperties;
+  let chartInstance = null;
+  let currentSortValue = "";
 
   function bestIndex(values, higherIsBetter) {
     let best = 0;
@@ -81,61 +109,120 @@ const COMPARE_COLORS = ["#ff8fb8", "#7fc8e8", "#ffb400", "#8dd9a8", "#b79bff"];
     return p.exteriorImageUrl || (p.images && p.images[0]) || p.imageUrl || "";
   }
 
-  const header = "<tr><th class=\"row-label\">外観</th>" +
-    properties.map((p) => {
-      const url = photoUrl(p);
-      return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + '" referrerpolicy="no-referrer">' : "-") + "</th>";
-    }).join("") + "</tr>" +
-    "<tr><th class=\"row-label\">間取り図</th>" +
-    properties.map((p) => {
-      const url = p.floorPlanImageUrl || "";
-      return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + 'の間取り図" referrerpolicy="no-referrer">' : "-") + "</th>";
-    }).join("") + "</tr>" +
-    "<tr><th class=\"row-label\">物件名</th>" +
-    properties.map((p) => "<th><a href=\"property.html?id=" + encodeURIComponent(p.id) + "\">" + p.name + "</a></th>").join("") + "</tr>";
-
-  content.innerHTML =
-    '<div class="chart-box" style="margin:0 auto 20px;"><canvas id="compareChart"></canvas><h3>お部屋+周辺環境の比較</h3></div>' +
-    '<ul style="list-style:none;padding:0;margin:0 0 20px;text-align:center;font-size:0.82rem;">' +
-      properties.map((p, i) => '<li style="display:inline-block;margin:0 10px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' +
-        COMPARE_COLORS[i % COMPARE_COLORS.length] + ';margin-right:4px;"></span>' + p.name + "</li>").join("") +
-    "</ul>" +
-
-    '<div class="compare-table-wrap"><table class="compare-table">' +
-      header +
-      metricRow("マッチ度", properties.map((p) => p.score.matchPercent), true, (v) => v + "%") +
-      "<tr><th class=\"row-label\">マッチ度の理由</th>" +
-        properties.map((p) => '<td class="wrap-cell">' + (p.score.summary || "-") + "</td>").join("") + "</tr>" +
-      metricRow("家賃総額(実質)", properties.map((p) => p.rent.effectiveTotal), false, formatYen) +
-      metricRow("広さ", properties.map((p) => p.sizeSqm), true, (v) => v + "㎡") +
-      metricRow("間取り", properties.map((p) => p.layout), null) +
-      metricRow("通勤(" + properties[0].commute.destinationStationName + ")", properties.map((p) => p.commute.minutes), false, (v) => v + "分") +
-      metricRow("最寄り駅徒歩", properties.map((p) => p.walkMinutesToStation), false, (v) => v + "分") +
-      metricRow("気になる度", properties.map((p) => p.interestStars || 0), true, (v) => starRatingHtml(v)) +
-      checklistRows() +
-    "</table></div>";
-
-  const keys = Object.keys(LIFE_AXIS_LABELS);
-  new Chart(document.getElementById("compareChart"), {
-    type: "radar",
-    data: {
-      labels: keys.map((k) => LIFE_AXIS_LABELS[k]),
-      datasets: properties.map((p, i) => ({
-        label: p.name,
-        data: keys.map((k) => p.radar.lifeAxes[k] || 0),
-        backgroundColor: COMPARE_COLORS[i % COMPARE_COLORS.length] + "22",
-        borderColor: COMPARE_COLORS[i % COMPARE_COLORS.length],
-        borderWidth: 2,
-        pointBackgroundColor: COMPARE_COLORS[i % COMPARE_COLORS.length]
-      }))
-    },
-    options: {
-      responsive: true,
-      scales: { r: { min: 0, max: 100, ticks: { stepSize: 25, showLabelBackdrop: false, color: "#999" },
-        pointLabels: { font: { size: 11 } }, grid: { color: "#f1dbe4" }, angleLines: { color: "#f1dbe4" } } },
-      plugins: { legend: { display: false } }
+  function removeFromCompare_(id) {
+    if (properties.length <= 2) {
+      alert("比較には2件以上必要だよ。これ以上は外せないから、一覧ページからやり直してね");
+      return;
     }
-  });
+    properties = properties.filter((p) => p.id !== id);
+    history.replaceState(null, "", "compare.html?ids=" + properties.map((p) => encodeURIComponent(p.id)).join(","));
+    render();
+  }
+
+  function applySort_(sortValue) {
+    currentSortValue = sortValue;
+    if (!sortValue) {
+      // 「選んだ順のまま」:元々チェックした順番に戻す(外した物件は除く)
+      properties = initialIds.filter((id) => properties.some((p) => p.id === id))
+        .map((id) => properties.find((p) => p.id === id));
+      render();
+      return;
+    }
+    const [sortKey, sortDir] = sortValue.split(":");
+    properties = [...properties].sort((a, b) => {
+      const av = compareSortValue_(a, sortKey);
+      const bv = compareSortValue_(b, sortKey);
+      if (av == null && bv == null) return 0;
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      return sortDir === "asc" ? av - bv : bv - av;
+    });
+    render();
+  }
+
+  function render() {
+    const colors = properties.map((p) => colorById.get(p.id) || "#999");
+
+    const header = "<tr><th class=\"row-label\">外観</th>" +
+      properties.map((p) => {
+        const url = photoUrl(p);
+        return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + '" referrerpolicy="no-referrer">' : "-") + "</th>";
+      }).join("") + "</tr>" +
+      "<tr><th class=\"row-label\">間取り図</th>" +
+      properties.map((p) => {
+        const url = p.floorPlanImageUrl || "";
+        return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + 'の間取り図" referrerpolicy="no-referrer">' : "-") + "</th>";
+      }).join("") + "</tr>" +
+      "<tr><th class=\"row-label\">物件名</th>" +
+      properties.map((p) =>
+        "<th>" +
+          '<button type="button" class="compare-remove-btn" data-id="' + p.id + '" title="比較から外す">✕ 外す</button>' +
+          "<a href=\"property.html?id=" + encodeURIComponent(p.id) + "\">" + p.name + "</a>" +
+        "</th>"
+      ).join("") + "</tr>";
+
+    content.innerHTML =
+      '<div class="compare-controls">' +
+        '<span class="compare-count">' + properties.length + "件を比較中</span>" +
+        '<select id="compare-sort-select">' +
+          COMPARE_SORT_OPTIONS.map((o) =>
+            '<option value="' + o.value + '"' + (o.value === currentSortValue ? " selected" : "") + ">" + o.label + "</option>"
+          ).join("") +
+        "</select>" +
+      "</div>" +
+
+      '<div class="chart-box" style="margin:0 auto 20px;"><canvas id="compareChart"></canvas><h3>お部屋+周辺環境の比較</h3></div>' +
+      '<ul style="list-style:none;padding:0;margin:0 0 20px;text-align:center;font-size:0.82rem;">' +
+        properties.map((p, i) => '<li style="display:inline-block;margin:0 10px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' +
+          colors[i] + ';margin-right:4px;"></span>' + p.name + "</li>").join("") +
+      "</ul>" +
+
+      '<div class="compare-table-wrap"><table class="compare-table">' +
+        header +
+        metricRow("マッチ度", properties.map((p) => p.score.matchPercent), true, (v) => v + "%") +
+        "<tr><th class=\"row-label\">📝 メモ</th>" +
+          properties.map((p) => '<td class="wrap-cell">' + (p.memo ? escapeHtml_(p.memo) : "-") + "</td>").join("") + "</tr>" +
+        "<tr><th class=\"row-label\">マッチ度の理由</th>" +
+          properties.map((p) => '<td class="wrap-cell">' + (p.score.summary || "-") + "</td>").join("") + "</tr>" +
+        metricRow("家賃総額(実質)", properties.map((p) => p.rent.effectiveTotal), false, formatYen) +
+        metricRow("広さ", properties.map((p) => p.sizeSqm), true, (v) => v + "㎡") +
+        metricRow("間取り", properties.map((p) => p.layout), null) +
+        metricRow("通勤(" + properties[0].commute.destinationStationName + ")", properties.map((p) => p.commute.minutes), false, (v) => v + "分") +
+        metricRow("最寄り駅徒歩", properties.map((p) => p.walkMinutesToStation), false, (v) => v + "分") +
+        metricRow("気になる度", properties.map((p) => p.interestStars || 0), true, (v) => starRatingHtml(v)) +
+        checklistRows() +
+      "</table></div>";
+
+    content.querySelectorAll(".compare-remove-btn").forEach((btn) => {
+      btn.addEventListener("click", () => removeFromCompare_(btn.dataset.id));
+    });
+    document.getElementById("compare-sort-select").addEventListener("change", (ev) => applySort_(ev.target.value));
+
+    const keys = Object.keys(LIFE_AXIS_LABELS);
+    if (chartInstance) chartInstance.destroy();
+    chartInstance = new Chart(document.getElementById("compareChart"), {
+      type: "radar",
+      data: {
+        labels: keys.map((k) => LIFE_AXIS_LABELS[k]),
+        datasets: properties.map((p, i) => ({
+          label: p.name,
+          data: keys.map((k) => p.radar.lifeAxes[k] || 0),
+          backgroundColor: colors[i] + "22",
+          borderColor: colors[i],
+          borderWidth: 2,
+          pointBackgroundColor: colors[i]
+        }))
+      },
+      options: {
+        responsive: true,
+        scales: { r: { min: 0, max: 100, ticks: { stepSize: 25, showLabelBackdrop: false, color: "#999" },
+          pointLabels: { font: { size: 11 } }, grid: { color: "#f1dbe4" }, angleLines: { color: "#f1dbe4" } } },
+        plugins: { legend: { display: false } }
+      }
+    });
+  }
+
+  render();
 })();
 </script>
 </body>
