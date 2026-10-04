@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:10:16+09:00",
+  "updatedAt": "2026-10-04T08:36:36+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -93,7 +93,7 @@
       "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
       "floorPlanImageUrl": "",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-0xyb",
@@ -124,8 +124,9 @@
       },
       "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630",
       "floorPlanImageUrl": "",
-      "interestStars": 0,
-      "archived": false
+      "interestStars": 2,
+      "archived": false,
+      "memo": "通勤20分乗り換え１回（最寄りの戸越公園まで5分）\n△キッチンがリビング\n〇9畳で広！\nダウンライト"
     },
     {
       "id": "20260916-hxtq",
@@ -157,8 +158,9 @@
       },
       "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9c1ae398%2F13785_689620_1_132000_132000.jpg%3Ft%3D20260901170933&width=1200&height=630",
       "floorPlanImageUrl": "",
-      "interestStars": 0,
-      "archived": false
+      "interestStars": 1,
+      "archived": false,
+      "memo": "通勤26分乗り換え１回（最寄りの中目黒駅まで5分）\n△狭！しかも冷蔵庫どこ置くの？"
     },
     {
       "id": "20260916-e9vt",
@@ -191,7 +193,7 @@
       "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2Fec0e2c3f%2F13785_692075_1_132000_132000.jpg%3Ft%3D20260906174646&width=1200&height=630",
       "floorPlanImageUrl": "",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-kjh5",
@@ -223,8 +225,9 @@
       "scoreTotal": 71,
       "matchPercent": 71,
       "registeredAt": "2026-09-16T08:16:56+09:00",
-      "interestStars": 0,
-      "archived": false
+      "interestStars": 1,
+      "archived": false,
+      "memo": "通勤17分（最寄りの大井町まで15分※新馬場駅まで徒歩9分も使える）、か徒歩24分\n△洗濯機外、狭い、プロパンガス、学生寮"
     },
     {
       "id": "20260916-qrzg",
@@ -257,7 +260,7 @@
       "matchPercent": 76,
       "registeredAt": "2026-09-16T08:19:37+09:00",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-evq6",
@@ -289,7 +292,7 @@
       "scoreTotal": 80,
       "matchPercent": 80,
       "registeredAt": "2026-09-16T08:22:30+09:00",
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false
     },
     {
@@ -355,8 +358,9 @@
       "scoreTotal": 72,
       "matchPercent": 72,
       "registeredAt": "2026-09-16T08:32:39+09:00",
-      "interestStars": 0,
-      "archived": false
+      "interestStars": 1,
+      "archived": false,
+      "memo": "△通勤35分（最寄りまで12分だし、最寄りはモノレールしかない昭和島駅）"
     },
     {
       "id": "20260916-ggnt",
@@ -389,7 +393,7 @@
       "matchPercent": 82,
       "registeredAt": "2026-09-16T08:43:08+09:00",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-8tm7",
@@ -422,7 +426,7 @@
       "matchPercent": 83,
       "registeredAt": "2026-09-16T08:44:02+09:00",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-s9zv",
@@ -455,7 +459,7 @@
       "matchPercent": 79,
       "registeredAt": "2026-09-16T09:10:45+09:00",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-gger",
@@ -487,8 +491,9 @@
       "scoreTotal": 73,
       "matchPercent": 73,
       "registeredAt": "2026-09-16T09:17:32+09:00",
-      "interestStars": 0,
-      "archived": false
+      "interestStars": 3,
+      "archived": false,
+      "memo": "通勤15分（最寄りの大井町まで13分）\n〇キッチン広！IH置ける リビング7畳"
     },
     {
       "id": "20260916-cblv",
@@ -521,7 +526,7 @@
       "matchPercent": 81,
       "registeredAt": "2026-09-16T09:19:44+09:00",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-34dp",
@@ -587,7 +592,7 @@
       "matchPercent": 81,
       "registeredAt": "2026-09-16T20:18:01+09:00",
       "interestStars": 0,
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260916-ngdc",
@@ -619,8 +624,9 @@
       "scoreTotal": 77,
       "matchPercent": 77,
       "registeredAt": "2026-09-16T20:19:31+09:00",
-      "interestStars": 0,
-      "archived": false
+      "interestStars": 2,
+      "archived": false,
+      "memo": "通勤24分乗り換え１回（最寄りの中延駅まで7分）\n〇そこそこ綺麗\n△冷蔵庫が室内にくる"
     },
     {
       "id": "20260916-cy7c",
@@ -653,7 +659,8 @@
       "matchPercent": 75,
       "interestStars": 3,
       "registeredAt": "2026-09-16T20:32:13+09:00",
-      "archived": false
+      "archived": false,
+      "memo": "通勤15分（最寄りの大崎駅まで10分）\n〇綺麗 扉アーチ、敷金礼金なし、女性限定、キッチン2畳(小さめだけど)"
     },
     {
       "id": "20260916-5za4",
@@ -686,7 +693,7 @@
       "matchPercent": 81,
       "interestStars": 0,
       "registeredAt": "2026-09-16T21:17:38+09:00",
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260917-wn3b",
@@ -719,7 +726,7 @@
       "matchPercent": 73,
       "interestStars": 0,
       "registeredAt": "2026-09-17T04:52:30+09:00",
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260917-zhsm",
@@ -752,7 +759,7 @@
       "matchPercent": 76,
       "interestStars": 0,
       "registeredAt": "2026-09-17T05:32:26+09:00",
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260917-jmfx",
@@ -785,7 +792,7 @@
       "matchPercent": 78,
       "interestStars": 0,
       "registeredAt": "2026-09-17T05:48:15+09:00",
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260917-74pm",
@@ -818,7 +825,7 @@
       "matchPercent": 34,
       "interestStars": 0,
       "registeredAt": "2026-09-17T05:59:07+09:00",
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260917-vs74",
@@ -849,9 +856,10 @@
       "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F1f9661ed-e541-49cf-bd7d-18267c6b3d5d_property_picture_10244_large.jpg&width=640&height=480",
       "scoreTotal": 78,
       "matchPercent": 78,
-      "interestStars": 0,
+      "interestStars": 2,
       "registeredAt": "2026-09-17T05:59:31+09:00",
-      "archived": false
+      "archived": false,
+      "memo": "通勤25分乗り換え１回（最寄りの大森駅まで10分）\n△部屋が台形、キッチンがリビング\n〇オートロックで綺麗"
     },
     {
       "id": "20260917-5zdc",
@@ -884,7 +892,7 @@
       "matchPercent": 61,
       "interestStars": 0,
       "registeredAt": "2026-09-17T06:05:25+09:00",
-      "archived": false
+      "archived": true
     },
     {
       "id": "20260917-fqvo",
@@ -915,9 +923,10 @@
       "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8ec735cf-3d5d-4821-8b22-4cda40739fe1_property_picture_10167_large.jpg&width=640&height=480",
       "scoreTotal": 63,
       "matchPercent": 63,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-09-17T06:25:53+09:00"
+      "registeredAt": "2026-09-17T06:25:53+09:00",
+      "memo": "通勤①19分（大井町駅まで17分）②22分（立会川駅まで8分）\n△収納狭い\n〇キッチン4畳広め、バストイレ別"
     },
     {
       "id": "20260917-g6qj",
@@ -948,9 +957,10 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F116144%2Frent%2F20102%2F1%2F2%2Flxd0.jpg&width=640&height=480",
       "scoreTotal": 77,
       "matchPercent": 77,
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-09-17T06:27:58+09:00"
+      "registeredAt": "2026-09-17T06:27:58+09:00",
+      "memo": "通勤18分乗り換え１回（最寄りの戸越公園まで1分）\n△蛍光灯変えられないかも 通路大きい"
     },
     {
       "id": "20260917-jvu5",
@@ -981,9 +991,10 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F447370dc-858d-4203-b060-b0c2bcf49bb2_property_picture_2944_large.jpg&width=640&height=480",
       "scoreTotal": 84,
       "matchPercent": 84,
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-09-17T06:29:14+09:00"
+      "registeredAt": "2026-09-17T06:29:14+09:00",
+      "memo": "×通勤28分乗り換え１回（最寄りの中延駅まで11分）\n△収納狭"
     },
     {
       "id": "20260917-tyrh",
@@ -1014,9 +1025,10 @@
       "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fbc9fbfa9-d734-4d21-94f1-58ddc128caaa_property_picture_10167_large.jpg&width=640&height=480",
       "scoreTotal": 84,
       "matchPercent": 84,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-09-17T09:16:29+09:00"
+      "registeredAt": "2026-09-17T09:16:29+09:00",
+      "memo": "通勤10分（最寄りの大井町駅まで8分）\n△ロフトありだけど激狭\n"
     },
     {
       "id": "20260926-zzmc",
@@ -1048,7 +1060,7 @@
       "scoreTotal": 69,
       "matchPercent": 69,
       "interestStars": 0,
-      "archived": false,
+      "archived": true,
       "registeredAt": "2026-09-26T22:02:01+09:00"
     },
     {
@@ -1081,7 +1093,7 @@
       "scoreTotal": 41,
       "matchPercent": 41,
       "interestStars": 0,
-      "archived": false,
+      "archived": true,
       "registeredAt": "2026-10-03T10:23:37+09:00"
     },
     {
@@ -1113,9 +1125,10 @@
       "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107346%2Frent%2F204179%2F1%2F1%2Fjjz6.jpg&width=640&height=480",
       "scoreTotal": 76,
       "matchPercent": 76,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T10:51:37+09:00"
+      "registeredAt": "2026-10-03T10:51:37+09:00",
+      "memo": "通勤26分（最寄りの平和島駅まで11分）（大森町徒歩4分が最寄り）\n△キッチン赤黒でださめ\n〇7畳、オートロック"
     },
     {
       "id": "20261003-r4ry",
@@ -1146,9 +1159,10 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2281ad19-4c49-47c0-88c0-7e851a426ff6_property_picture_2348_large.jpg&width=640&height=480",
       "scoreTotal": 62,
       "matchPercent": 62,
-      "interestStars": 3,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T10:55:53+09:00"
+      "registeredAt": "2026-10-03T10:55:53+09:00",
+      "memo": "通勤20分（最寄りの五反田駅まで6分）\n△収納少ない、賃貸感\n〇10畳で広い"
     },
     {
       "id": "20261003-0xwk",
@@ -1180,7 +1194,7 @@
       "scoreTotal": 64,
       "matchPercent": 64,
       "interestStars": 0,
-      "archived": false,
+      "archived": true,
       "registeredAt": "2026-10-03T11:15:19+09:00"
     },
     {
@@ -1213,7 +1227,7 @@
       "scoreTotal": 69,
       "matchPercent": 69,
       "interestStars": 0,
-      "archived": false,
+      "archived": true,
       "registeredAt": "2026-10-03T11:17:53+09:00"
     },
     {
@@ -1245,9 +1259,10 @@
       "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13273%2F1%2F2%2Fpdg2.jpg&width=640&height=480",
       "scoreTotal": 86,
       "matchPercent": 86,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T11:48:27+09:00"
+      "registeredAt": "2026-10-03T11:48:27+09:00",
+      "memo": "通勤26分（最寄りの平和島駅まで10分\n）\nひとつの部屋に全部ある。洗濯機はトビラあり\n〇オートロック、ネット無料"
     },
     {
       "id": "20261003-dlmi",
@@ -1279,7 +1294,7 @@
       "scoreTotal": 67,
       "matchPercent": 67,
       "interestStars": 1,
-      "archived": false,
+      "archived": true,
       "registeredAt": "2026-10-03T15:32:59+09:00"
     },
     {
@@ -1312,7 +1327,7 @@
       "scoreTotal": 75,
       "matchPercent": 75,
       "interestStars": 2,
-      "archived": false,
+      "archived": true,
       "registeredAt": "2026-10-03T15:51:18+09:00"
     },
     {
@@ -1346,7 +1361,8 @@
       "matchPercent": 73,
       "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-10-03T15:52:59+09:00"
+      "registeredAt": "2026-10-03T15:52:59+09:00",
+      "memo": "通勤26分（最寄りの平和島駅まで10分）\n△外観アパート\n〇広め"
     },
     {
       "id": "20261003-v73i",
@@ -1377,9 +1393,10 @@
       "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ff0759bfa-bfb1-47dc-80f5-950bd0b8804e_property_picture_10244_large.jpg&width=640&height=480",
       "scoreTotal": 64,
       "matchPercent": 64,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T15:54:44+09:00"
+      "registeredAt": "2026-10-03T15:54:44+09:00",
+      "memo": "通勤26分（最寄りの平和島駅まで11分）\n△キッチンがリビング\n〇オートロック、クローゼット広め"
     },
     {
       "id": "20261003-our5",
@@ -1410,9 +1427,10 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148019%2Frent%2F30138%2F1%2F2%2Ftz5b.jpg&width=640&height=480",
       "scoreTotal": 75,
       "matchPercent": 75,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T15:55:46+09:00"
+      "registeredAt": "2026-10-03T15:55:46+09:00",
+      "memo": "通勤26分（最寄りの平和島駅まで10分）\n〇ロフトあり"
     },
     {
       "id": "20261003-76uc",
@@ -1443,9 +1461,10 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112564%2Frent%2F69327%2F1%2F1%2F2vgq.jpg&width=640&height=480",
       "scoreTotal": 78,
       "matchPercent": 78,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T15:56:15+09:00"
+      "registeredAt": "2026-10-03T15:56:15+09:00",
+      "memo": "通勤26分（最寄りの平和島駅まで10分）\n〇ロフトあり\n※同じ物件？ロフトとリビングがちょっと違う"
     },
     {
       "id": "20261003-o9wz",
@@ -1476,9 +1495,10 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125241%2Frent%2F139327%2F1%2F1%2Fcwz3.jpg&width=640&height=480",
       "scoreTotal": 82,
       "matchPercent": 82,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T15:57:02+09:00"
+      "registeredAt": "2026-10-03T15:57:02+09:00",
+      "memo": "通勤20分乗り換え１回（最寄りの西大井駅まで4分）\n△7畳だけど通路大きい \n〇オートロック、外観おしゃれ、内装も綺麗"
     },
     {
       "id": "20261003-uc55",
@@ -1509,9 +1529,10 @@
       "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13257%2F1%2F2%2F3ngf.jpg&width=640&height=480",
       "scoreTotal": 77,
       "matchPercent": 77,
-      "interestStars": 0,
+      "interestStars": 3,
       "archived": false,
-      "registeredAt": "2026-10-03T15:57:32+09:00"
+      "registeredAt": "2026-10-03T15:57:32+09:00",
+      "memo": "通勤22分（最寄りの平和島駅まで6分）\n〇キッチン広！IHもダイニングテーブルも頑張れば食洗機も置ける 、収納も広くてそこそこ綺麗（床白の木目）"
     },
     {
       "id": "20261003-by0g",
@@ -1542,9 +1563,10 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F148017%2Frent%2F28745%2F1%2F2%2Ftgmb.jpg&width=640&height=480",
       "scoreTotal": 79,
       "matchPercent": 79,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T15:57:58+09:00"
+      "registeredAt": "2026-10-03T15:57:58+09:00",
+      "memo": "通勤15分乗り換え１回（最寄りの西大井駅まで5分）\n△シャワーのみ湯船なし、収納は棚のみ、狭\n〇コンクリートでめっちゃ綺麗、オートロック"
     },
     {
       "id": "20261003-mzqz",
@@ -1576,7 +1598,7 @@
       "scoreTotal": 79,
       "matchPercent": 79,
       "interestStars": 0,
-      "archived": false,
+      "archived": true,
       "registeredAt": "2026-10-03T15:59:46+09:00"
     },
     {
@@ -1609,7 +1631,7 @@
       "scoreTotal": 67,
       "matchPercent": 67,
       "interestStars": 0,
-      "archived": false,
+      "archived": true,
       "registeredAt": "2026-10-03T16:00:08+09:00"
     },
     {
@@ -1641,9 +1663,10 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F1a1a4f0c%2F38341_363298_1_132000_132000.jpg%3Ft%3D20260928183803&width=640&height=480",
       "scoreTotal": 72,
       "matchPercent": 72,
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-10-03T16:00:41+09:00"
+      "registeredAt": "2026-10-03T16:00:41+09:00",
+      "memo": "通勤25分乗り換え１回（最寄り駅の原町まで8分）\n△壁紙主張強い（グレーの面と白木目の面）\n〇キッチン広、オートロック"
     },
     {
       "id": "20261003-bviw",
@@ -1674,9 +1697,10 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7ce13170-ce93-4599-8fcd-1d575493d532_property_picture_2944_large.jpg&width=640&height=480",
       "scoreTotal": 76,
       "matchPercent": 76,
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-10-03T16:01:05+09:00"
+      "registeredAt": "2026-10-03T16:01:05+09:00",
+      "memo": "通勤26分乗り換え１回（最寄りの原町駅まで6分）\n△リビングにキッチンと冷蔵庫"
     },
     {
       "id": "20261003-lgbs",
@@ -1707,9 +1731,10 @@
       "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F127075%2Frent%2F13585%2F1%2F2%2Famf8.jpg&width=640&height=480",
       "scoreTotal": 78,
       "matchPercent": 78,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T16:01:23+09:00"
+      "registeredAt": "2026-10-03T16:01:23+09:00",
+      "memo": "通勤15分（最寄りの大井町まで13分）\n△キッチンがリビング、収納狭いが上にもあり\n〇オートロック"
     },
     {
       "id": "20261003-wtlj",
@@ -1742,7 +1767,8 @@
       "matchPercent": 82,
       "interestStars": 3,
       "archived": false,
-      "registeredAt": "2026-10-03T16:03:08+09:00"
+      "registeredAt": "2026-10-03T16:03:08+09:00",
+      "memo": "りんかい線で乗り換え無し10分\n徒歩21分"
     },
     {
       "id": "20261003-g6jc",
@@ -1773,9 +1799,10 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa20aff21-daea-4da5-9d1d-5e866253f95f_property_picture_10244_large.jpg&width=640&height=480",
       "scoreTotal": 71,
       "matchPercent": 71,
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-10-03T16:03:42+09:00"
+      "registeredAt": "2026-10-03T16:03:42+09:00",
+      "memo": "通勤25分（最寄りの平和島駅まで5分）\n△ちょい狭、プロパン\n〇オートロック"
     },
     {
       "id": "20261003-rgdk",
@@ -1806,9 +1833,10 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F07bcc19e-72c6-4ba9-9874-a5527da120cd_property_picture_2348_large.jpg&width=640&height=480",
       "scoreTotal": 77,
       "matchPercent": 77,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T16:04:07+09:00"
+      "registeredAt": "2026-10-03T16:04:07+09:00",
+      "memo": "通勤22分（最寄りの平和島駅まで6分）\n△ちょい狭、プロパン\n〇オートロック\n同じ物件？\n"
     },
     {
       "id": "20261003-7hkw",
@@ -1839,9 +1867,10 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F107346%2Frent%2F205667%2F1%2F1%2F3hd9.jpg&width=640&height=480",
       "scoreTotal": 80,
       "matchPercent": 80,
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-10-03T16:04:37+09:00"
+      "registeredAt": "2026-10-03T16:04:37+09:00",
+      "memo": "通勤27分（最寄りの平和島駅まで11分）\n×平和島駅の公衆トイレの前のとこ"
     },
     {
       "id": "20261003-k8qq",
@@ -1872,9 +1901,10 @@
       "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F82413%2F1%2F1%2Fjxcz.jpg&width=640&height=480",
       "scoreTotal": 83,
       "matchPercent": 83,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T16:05:24+09:00"
+      "registeredAt": "2026-10-03T16:05:24+09:00",
+      "memo": "ちょっと壁紙いや\n収納なし！\n今回リフォームによりこちらの収納部分に洗濯機置場ができます"
     },
     {
       "id": "20261003-qokx",
@@ -1905,9 +1935,10 @@
       "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F268d432a-d445-47f5-bf58-ccb505ce86ff_property_picture_2346_large.jpg&width=640&height=480",
       "scoreTotal": 77,
       "matchPercent": 77,
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-10-03T16:05:42+09:00"
+      "registeredAt": "2026-10-03T16:05:42+09:00",
+      "memo": "徒歩でも電車でも15分\n△洗濯機外\n〇キッチン別"
     },
     {
       "id": "20261003-d6on",
@@ -1938,9 +1969,10 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100211%2Frent%2F13256%2F1%2F2%2F6p8h.jpg&width=640&height=480",
       "scoreTotal": 71,
       "matchPercent": 71,
-      "interestStars": 0,
+      "interestStars": 3,
       "archived": false,
-      "registeredAt": "2026-10-03T16:06:05+09:00"
+      "registeredAt": "2026-10-03T16:06:05+09:00",
+      "memo": "通勤27分（最寄りの平和島駅まで6分）\n〇キッチン広！4畳 ダイニングテーブル置けそう 窓大きめ\n△洗濯機外"
     },
     {
       "id": "20261003-54ea",
@@ -1971,9 +2003,10 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F111048%2Frent%2F194763%2F1%2F1%2Fbqgs.jpg&width=640&height=480",
       "scoreTotal": 73,
       "matchPercent": 73,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "registeredAt": "2026-10-03T16:06:21+09:00"
+      "registeredAt": "2026-10-03T16:06:21+09:00",
+      "memo": "通勤25分（最寄りの大森町駅まで4分）\n〇ロフトあり\n△プロパンぽい\n※まだ写真がなくてよく分からない 広すぎでは？合ってる？"
     },
     {
       "id": "20261003-bofo",
@@ -2004,9 +2037,112 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F0b79beee-9c6a-4785-a8e2-07e15eb18876_property_picture_3034_large.jpg&width=640&height=480",
       "scoreTotal": 83,
       "matchPercent": 83,
-      "interestStars": 0,
+      "interestStars": 1,
       "archived": false,
-      "registeredAt": "2026-10-03T16:10:16+09:00"
+      "registeredAt": "2026-10-03T16:10:16+09:00",
+      "memo": "通勤24分乗り換え１回（最寄りの中延駅まで7分）\n〇オートロック、築浅で綺麗\n△狭！"
+    },
+    {
+      "id": "20261004-hqtj",
+      "isSample": false,
+      "name": "スカイコート品川第二",
+      "town": "南品川4丁目",
+      "nearestStation": "新馬場",
+      "rentTotal": 60000,
+      "effectiveRentTotal": 60000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.08,
+      "commuteMinutes": 15,
+      "walkMinutesToStation": 8,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": false,
+        "indoorWasher": false,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ff16afcae-412b-4af0-adba-08eeec22cbd5_property_picture_10167_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fdb43ce24-41ad-46b1-9083-44c91e917c63_property_picture_10167_large.jpg&width=640&height=480",
+      "scoreTotal": 75,
+      "matchPercent": 75,
+      "interestStars": 0,
+      "archived": true,
+      "memo": "",
+      "registeredAt": "2026-10-04T06:44:14+09:00"
+    },
+    {
+      "id": "20261004-lsbl",
+      "isSample": false,
+      "name": "グレイスコート",
+      "town": "東中延2丁目",
+      "nearestStation": "中延",
+      "rentTotal": 64000,
+      "effectiveRentTotal": 64000,
+      "layout": "ワンルーム",
+      "sizeSqm": 15,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F91005c45%2F1513_447149_2_132000_132000.jpg%3Ft%3D20261002192940&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F91005c45%2F1513_447149_1_132000_132000.jpg%3Ft%3D20261002192940&width=640&height=480",
+      "scoreTotal": 83,
+      "matchPercent": 83,
+      "interestStars": 2,
+      "archived": false,
+      "memo": "通勤19分、乗り換え１回（最寄りの中延駅まで4分）\n△収納が縦長で変わった形、6畳だけど通路あって狭め15㎡",
+      "registeredAt": "2026-10-04T07:36:15+09:00"
+    },
+    {
+      "id": "20261004-grio",
+      "isSample": false,
+      "name": "ビアメゾン品川",
+      "town": "二葉1丁目",
+      "nearestStation": "下神明",
+      "rentTotal": 80000,
+      "effectiveRentTotal": 80000,
+      "layout": "1K",
+      "sizeSqm": 21.67,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F2%2F1%2F899h.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8092%2F1%2F2%2F0z3b.jpg&width=640&height=480",
+      "scoreTotal": 69,
+      "matchPercent": 69,
+      "interestStars": 2,
+      "archived": false,
+      "memo": "通勤①20分（大井町駅まで徒歩18分）②19分（下神明まで徒歩5分）\n〇7.5畳で綺麗\n",
+      "registeredAt": "2026-10-04T08:36:36+09:00"
     }
   ]
 }
