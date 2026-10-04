@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T08:36:36+09:00",
+  "updatedAt": "2026-10-04T17:17:22+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2143,6 +2143,40 @@
       "archived": false,
       "memo": "通勤①20分（大井町駅まで徒歩18分）②19分（下神明まで徒歩5分）\n〇7.5畳で綺麗\n",
       "registeredAt": "2026-10-04T08:36:36+09:00"
+    },
+    {
+      "id": "20261004-nwz7",
+      "isSample": false,
+      "name": "ワールドレジデンス大森 303",
+      "town": "大森北4丁目",
+      "nearestStation": "大森",
+      "rentTotal": 72000,
+      "effectiveRentTotal": 72000,
+      "layout": "ワンルーム",
+      "sizeSqm": 19.01,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 6,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F11416%2F11416738%2F11416738_2.jpg%3F20261002170802&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F11416%2F11416738%2F11416738_1.jpg%3F20261002170802&width=640&height=480",
+      "scoreTotal": 78,
+      "matchPercent": 78,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-04T17:17:22+09:00"
     }
   ]
 }
