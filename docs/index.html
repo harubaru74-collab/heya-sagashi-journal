@@ -68,6 +68,15 @@
         </select>
       </div>
       <div class="filter-group">
+        <span class="filter-group-label">気になる度</span>
+        <select id="stars-select">
+          <option value="">指定なし</option>
+          <option value="1">★1以上</option>
+          <option value="2">★2以上</option>
+          <option value="3">★3のみ</option>
+        </select>
+      </div>
+      <div class="filter-group">
         <span class="filter-group-label">お部屋の条件</span>
         <div class="room-filter-mode" id="room-filter-mode">
           <label><input type="radio" name="room-filter-mode" value="and" checked>すべて満たす(AND)</label>
@@ -118,6 +127,7 @@
   const walkSelect = document.getElementById("walk-select");
   const commuteSelect = document.getElementById("commute-select");
   const rentSelect = document.getElementById("rent-select");
+  const starsSelect = document.getElementById("stars-select");
   const roomChecksEl = document.getElementById("room-filter-checks");
   const modeEl = document.getElementById("room-filter-mode");
   const filterPanel = document.querySelector(".filter-panel");
@@ -139,6 +149,7 @@
   if (saved.maxWalkMinutes) walkSelect.value = String(saved.maxWalkMinutes);
   if (saved.maxCommuteMinutes) commuteSelect.value = String(saved.maxCommuteMinutes);
   if (saved.maxRent) rentSelect.value = String(saved.maxRent);
+  if (saved.minStars) starsSelect.value = String(saved.minStars);
   if (saved.roomFilterMode === "or") {
     const orRadio = modeEl.querySelector('input[value="or"]');
     if (orRadio) orRadio.checked = true;
@@ -148,7 +159,7 @@
       cb.checked = saved.roomFilters.indexOf(cb.value) !== -1;
     });
   }
-  if (filterPanel && (saved.maxWalkMinutes || saved.maxCommuteMinutes || saved.maxRent || (saved.roomFilters && saved.roomFilters.length))) {
+  if (filterPanel && (saved.maxWalkMinutes || saved.maxCommuteMinutes || saved.maxRent || saved.minStars || (saved.roomFilters && saved.roomFilters.length))) {
     filterPanel.open = true;
   }
 
@@ -164,6 +175,7 @@
       maxWalkMinutes: walkSelect.value ? Number(walkSelect.value) : null,
       maxCommuteMinutes: commuteSelect.value ? Number(commuteSelect.value) : null,
       maxRent: rentSelect.value ? Number(rentSelect.value) : null,
+      minStars: starsSelect.value ? Number(starsSelect.value) : null,
       roomFilters: Array.from(document.querySelectorAll(".room-filter-checkbox:checked")).map((cb) => cb.value),
       roomFilterMode: currentRoomFilterMode()
     };
@@ -176,7 +188,8 @@
     renderPropertyList(listEl, null, {
       sortKey, sortDir, keyword: state.keyword, includeArchived: showArchivedCheckbox.checked,
       roomFilters: state.roomFilters, roomFilterMode: state.roomFilterMode,
-      maxWalkMinutes: state.maxWalkMinutes, maxCommuteMinutes: state.maxCommuteMinutes, maxRent: state.maxRent
+      maxWalkMinutes: state.maxWalkMinutes, maxCommuteMinutes: state.maxCommuteMinutes, maxRent: state.maxRent,
+      minStars: state.minStars
     });
   }
 
@@ -186,6 +199,7 @@
     walkSelect.value = state.maxWalkMinutes ? String(state.maxWalkMinutes) : "";
     commuteSelect.value = state.maxCommuteMinutes ? String(state.maxCommuteMinutes) : "";
     rentSelect.value = state.maxRent ? String(state.maxRent) : "";
+    starsSelect.value = state.minStars ? String(state.minStars) : "";
     document.querySelectorAll(".room-filter-checkbox").forEach((cb) => {
       cb.checked = (state.roomFilters || []).indexOf(cb.value) !== -1;
     });
@@ -239,6 +253,7 @@
   walkSelect.addEventListener("change", refresh);
   commuteSelect.addEventListener("change", refresh);
   rentSelect.addEventListener("change", refresh);
+  starsSelect.addEventListener("change", refresh);
   roomChecksEl.addEventListener("change", refresh);
   modeEl.addEventListener("change", refresh);
   resetBtn.addEventListener("click", () => {
@@ -246,6 +261,7 @@
     walkSelect.value = "";
     commuteSelect.value = "";
     rentSelect.value = "";
+    starsSelect.value = "";
     document.querySelectorAll(".room-filter-checkbox").forEach((cb) => { cb.checked = false; });
     modeEl.querySelector('input[value="and"]').checked = true;
     refresh();
