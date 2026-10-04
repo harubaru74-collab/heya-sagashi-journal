@@ -1,0 +1,159 @@
+{
+  "id": "20261004-nwz7",
+  "isSample": false,
+  "registeredAt": "2026-10-04T17:17:22+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/b-37012120223826/?referral_content=list_search_pr_result&iskks=1",
+  "images": [
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F11416%2F11416738%2F11416738_2.jpg%3F20261002170802&width=1200&height=630"
+  ],
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F11416%2F11416738%2F11416738_2.jpg%3F20261002170802&width=1200&height=630",
+  "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F11416%2F11416738%2F11416738_2.jpg%3F20261002170802&width=1200&height=630",
+  "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F11416%2F11416738%2F11416738_1.jpg%3F20261002170802&width=640&height=480",
+  "name": "ワールドレジデンス大森 303",
+  "address": "東京都大田区大森北4丁目5-8",
+  "town": "大森北4丁目",
+  "nearestStation": "大森",
+  "walkMinutesToStation": 6,
+  "rent": {
+    "base": 67000,
+    "management": 5000,
+    "total": 72000,
+    "freeInternet": false,
+    "effectiveTotal": 72000
+  },
+  "initialCostEstimate": 475000,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 67000
+    },
+    {
+      "label": "礼金",
+      "amount": 67000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 73700
+    },
+    {
+      "label": "前家賃",
+      "amount": 72000
+    },
+    {
+      "label": "火災保険料",
+      "amount": 18000
+    },
+    {
+      "label": "鍵交換費(概算)",
+      "amount": 20000
+    },
+    {
+      "label": "保証会社利用料(概算)",
+      "amount": 36000
+    },
+    {
+      "label": "サポート24",
+      "amount": 22000
+    },
+    {
+      "label": "退去時クリーニング費用",
+      "amount": 66000
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 19.01,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 0,
+    "route": "大森(JR京浜東北・根岸線 6分)→品川(JR京浜東北・根岸線快速 5分)→品川シーサイド(※品川駅から品川シーサイド駅までは徒歩約14分、または大森駅から京浜東北線で大井町に出てりんかい線に乗り換えるルート等もあり。大井町乗り換えの場合：大森(JR京浜東北・根岸線 3分)→大井町(東京臨海高速鉄道りんかい線 3分)→品川シーサイド計6分・乗り換え1回)",
+    "leisure": "大森からJR京浜東北線で品川まで約6分、東京まで約13分。新宿へは品川等経由で約25〜30分"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大森",
+      "walkMinutes": 6,
+      "note": "品川まで6分・東京まで13分。京浜東北線が使えて都心へのアクセスが抜群"
+    },
+    {
+      "line": "京急本線",
+      "station": "大森海岸",
+      "walkMinutes": 12,
+      "note": "品川まで約5分・横浜まで約20分。快特通過だが都心や羽田へのアクセスが良好"
+    },
+    {
+      "line": "京急本線",
+      "station": "平和島",
+      "walkMinutes": 17,
+      "note": "特急や快特が停車し、品川や横浜方面へのアクセスが便利"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立南大井図書館",
+        "minutes": 10
+      },
+      {
+        "name": "まいばすけっと大森北4丁目店",
+        "minutes": 3
+      },
+      {
+        "name": "MEGAドン・キホーテ大森山王店",
+        "minutes": 6
+      },
+      {
+        "name": "サイゼリヤ 大森東口店",
+        "minutes": 5
+      },
+      {
+        "name": "ココカラファインLuz大森店",
+        "minutes": 7
+      }
+    ],
+    "areaGuide": "大森駅周辺は、駅ビルやアトレ、大型スーパー、商店街が充実しており、日常の買い物や外食に非常に便利なエリアです。住宅街に入ると比較的落ち着いた雰囲気が広がり、治安も概ね良好で女性一人暮らしでも安心して生活できます。坂道がやや多いエリアがありますが、生活利便性が高く非常に人気の高い街です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 44,
+      "rentValue": 80,
+      "commuteAccess": 100,
+      "stationCloseness": 95,
+      "dailyConvenience": 85,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 78,
+    "grade": "◎◎",
+    "matchPercent": 78,
+    "summary": "通勤25分以内で家賃も予算内ですが、バストイレ一緒の点にご注意を",
+    "goodPoints": [
+      "家賃総額が72,000円と許容範囲内",
+      "最寄り駅まで徒歩6分でアクセス良好",
+      "周辺にスーパーやドンキがあり買い物便利"
+    ],
+    "concernPoints": [
+      "バストイレが一緒（3点ユニット）",
+      "洗面所や浴室乾燥機などの設備がない"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false,
+  "memo": ""
+}
