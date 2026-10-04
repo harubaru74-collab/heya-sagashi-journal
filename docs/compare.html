@@ -46,6 +46,15 @@ function compareSortValue_(p, sortKey) {
   return null;
 }
 
+const COMPARE_WALK_OPTIONS = [5, 10, 15, 20];
+const COMPARE_COMMUTE_OPTIONS = [15, 20, 25, 30];
+const COMPARE_RENT_OPTIONS = [70000, 72000, 75000, 80000, 85000, 90000];
+const COMPARE_STARS_OPTIONS = [
+  { value: 1, label: "★1以上" },
+  { value: 2, label: "★2以上" },
+  { value: 3, label: "★3のみ" }
+];
+
 (async function () {
   const params = new URLSearchParams(location.search);
   const initialIds = (params.get("ids") || "").split(",").map((s) => s.trim()).filter(Boolean);
@@ -71,6 +80,126 @@ function compareSortValue_(p, sortKey) {
   let chartInstance = null;
   let currentSortValue = "";
 
+  // 比較中の物件だけを対象にした絞り込み(一覧ページのフィルターと同じ項目・考え方)。
+  // 比較対象そのもの(properties)は変えず、表示するかどうかだけを絞り込む
+  const filterState = { maxWalkMinutes: null, maxCommuteMinutes: null, maxRent: null, minStars: null, station: null, roomFilters: [], roomFilterMode: "and" };
+  let filterPanelOpen = false;
+  const boolConditions = (criteria.roomConditions || []).filter((c) => c.type !== "scale");
+  // 最寄り駅の選択肢は、比較に入れている物件の中で実際に使われている駅名だけに絞る
+  const compareStationOptions = Array.from(new Set(loadedProperties.map((p) => p.nearestStation).filter(Boolean)))
+    .sort((a, b) => a.localeCompare(b, "ja"));
+
+  function matchesCompareFilter_(p) {
+    if (filterState.maxWalkMinutes != null && !(p.walkMinutesToStation != null && p.walkMinutesToStation <= filterState.maxWalkMinutes)) return false;
+    if (filterState.maxCommuteMinutes != null && !(p.commute.minutes != null && p.commute.minutes <= filterState.maxCommuteMinutes)) return false;
+    if (filterState.maxRent != null && !(p.rent.effectiveTotal != null && p.rent.effectiveTotal <= filterState.maxRent)) return false;
+    if (filterState.minStars != null && (p.interestStars || 0) < filterState.minStars) return false;
+    if (filterState.station && p.nearestStation !== filterState.station) return false;
+    if (filterState.roomFilters.length) {
+      const ok = filterState.roomFilterMode === "or"
+        ? filterState.roomFilters.some((key) => p.room && p.room[key])
+        : filterState.roomFilters.every((key) => p.room && p.room[key]);
+      if (!ok) return false;
+    }
+    return true;
+  }
+
+  function buildFilterPanelHtml_() {
+    return '<details class="filter-panel" id="compare-filter-panel"' + (filterPanelOpen ? " open" : "") + '>' +
+      "<summary>🔍 比較中の物件を絞り込む</summary>" +
+      '<div class="filter-body">' +
+        '<div class="filter-group">' +
+          '<span class="filter-group-label">駅までの徒歩</span>' +
+          '<select id="cf-walk-select">' +
+            '<option value="">指定なし</option>' +
+            COMPARE_WALK_OPTIONS.map((m) => '<option value="' + m + '"' + (filterState.maxWalkMinutes === m ? " selected" : "") + ">" + m + "分以内</option>").join("") +
+          "</select>" +
+        "</div>" +
+        '<div class="filter-group">' +
+          '<span class="filter-group-label">通勤時間</span>' +
+          '<select id="cf-commute-select">' +
+            '<option value="">指定なし</option>' +
+            COMPARE_COMMUTE_OPTIONS.map((m) => '<option value="' + m + '"' + (filterState.maxCommuteMinutes === m ? " selected" : "") + ">" + m + "分以内</option>").join("") +
+          "</select>" +
+        "</div>" +
+        '<div class="filter-group">' +
+          '<span class="filter-group-label">家賃(実質)</span>' +
+          '<select id="cf-rent-select">' +
+            '<option value="">指定なし</option>' +
+            COMPARE_RENT_OPTIONS.map((y) => '<option value="' + y + '"' + (filterState.maxRent === y ? " selected" : "") + ">" + formatMan(y) + "以内</option>").join("") +
+          "</select>" +
+        "</div>" +
+        '<div class="filter-group">' +
+          '<span class="filter-group-label">気になる度</span>' +
+          '<select id="cf-stars-select">' +
+            '<option value="">指定なし</option>' +
+            COMPARE_STARS_OPTIONS.map((o) => '<option value="' + o.value + '"' + (filterState.minStars === o.value ? " selected" : "") + ">" + o.label + "</option>").join("") +
+          "</select>" +
+        "</div>" +
+        '<div class="filter-group">' +
+          '<span class="filter-group-label">最寄り駅</span>' +
+          '<select id="cf-station-select">' +
+            '<option value="">指定なし</option>' +
+            compareStationOptions.map((s) => '<option value="' + s + '"' + (filterState.station === s ? " selected" : "") + ">" + s + "駅</option>").join("") +
+          "</select>" +
+        "</div>" +
+        '<div class="filter-group">' +
+          '<span class="filter-group-label">お部屋の条件</span>' +
+          '<div class="room-filter-mode" id="cf-room-filter-mode">' +
+            '<label><input type="radio" name="cf-room-filter-mode" value="and"' + (filterState.roomFilterMode !== "or" ? " checked" : "") + ">すべて満たす(AND)</label>" +
+            '<label><input type="radio" name="cf-room-filter-mode" value="or"' + (filterState.roomFilterMode === "or" ? " checked" : "") + ">いずれか満たす(OR)</label>" +
+          "</div>" +
+          '<div id="cf-room-filter-checks" class="room-filter-checks">' +
+            boolConditions.map((c) =>
+              '<label><input type="checkbox" class="cf-room-filter-checkbox" value="' + c.key + '"' +
+                (filterState.roomFilters.indexOf(c.key) !== -1 ? " checked" : "") + ">" + c.label + "のみ</label>"
+            ).join("") +
+          "</div>" +
+        "</div>" +
+        '<button type="button" id="cf-reset-btn" class="filter-reset-btn">フィルターをリセット</button>' +
+      "</div>" +
+    "</details>";
+  }
+
+  function wireFilterPanel_() {
+    const panel = document.getElementById("compare-filter-panel");
+    panel.addEventListener("toggle", () => { filterPanelOpen = panel.open; });
+
+    function onChange() {
+      const walk = document.getElementById("cf-walk-select").value;
+      const commute = document.getElementById("cf-commute-select").value;
+      const rent = document.getElementById("cf-rent-select").value;
+      const stars = document.getElementById("cf-stars-select").value;
+      const station = document.getElementById("cf-station-select").value;
+      const mode = document.querySelector('input[name="cf-room-filter-mode"]:checked');
+      filterState.maxWalkMinutes = walk ? Number(walk) : null;
+      filterState.maxCommuteMinutes = commute ? Number(commute) : null;
+      filterState.maxRent = rent ? Number(rent) : null;
+      filterState.minStars = stars ? Number(stars) : null;
+      filterState.station = station || null;
+      filterState.roomFilterMode = mode && mode.value === "or" ? "or" : "and";
+      filterState.roomFilters = Array.from(document.querySelectorAll(".cf-room-filter-checkbox:checked")).map((cb) => cb.value);
+      filterPanelOpen = true;
+      render();
+    }
+
+    ["cf-walk-select", "cf-commute-select", "cf-rent-select", "cf-stars-select", "cf-station-select"].forEach((id) => {
+      document.getElementById(id).addEventListener("change", onChange);
+    });
+    document.querySelectorAll('input[name="cf-room-filter-mode"]').forEach((el) => el.addEventListener("change", onChange));
+    document.querySelectorAll(".cf-room-filter-checkbox").forEach((el) => el.addEventListener("change", onChange));
+    document.getElementById("cf-reset-btn").addEventListener("click", () => {
+      filterState.maxWalkMinutes = null;
+      filterState.maxCommuteMinutes = null;
+      filterState.maxRent = null;
+      filterState.minStars = null;
+      filterState.station = null;
+      filterState.roomFilters = [];
+      filterState.roomFilterMode = "and";
+      render();
+    });
+  }
+
   function bestIndex(values, higherIsBetter) {
     let best = 0;
     for (let i = 1; i < values.length; i++) {
@@ -94,9 +223,9 @@ function compareSortValue_(p, sortKey) {
       "</tr>";
   }
 
-  function checklistRows() {
+  function checklistRows(shown) {
     return (criteria.roomConditions || []).filter((cond) => cond.type !== "scale").map((cond) => {
-      const cells = properties.map((p) => {
+      const cells = shown.map((p) => {
         const has = !!(p.room && p.room[cond.key]);
         return '<td class="' + (has ? "yes" : "no") + '">' + (has ? "✓" : "×") + "</td>";
       }).join("");
@@ -141,20 +270,41 @@ function compareSortValue_(p, sortKey) {
   }
 
   function render() {
-    const colors = properties.map((p) => colorById.get(p.id) || "#999");
+    const shown = properties.filter(matchesCompareFilter_);
+    const filterPanelHtml = buildFilterPanelHtml_();
+
+    const controlsHtml =
+      '<div class="compare-controls">' +
+        '<span class="compare-count">' + shown.length + "/" + properties.length + "件を表示中</span>" +
+        '<select id="compare-sort-select">' +
+          COMPARE_SORT_OPTIONS.map((o) =>
+            '<option value="' + o.value + '"' + (o.value === currentSortValue ? " selected" : "") + ">" + o.label + "</option>"
+          ).join("") +
+        "</select>" +
+      "</div>" +
+      filterPanelHtml;
+
+    if (shown.length === 0) {
+      content.innerHTML = controlsHtml + '<p class="empty-note">絞り込み条件に合う物件が無いよ。フィルターを見直してみてね</p>';
+      document.getElementById("compare-sort-select").addEventListener("change", (ev) => applySort_(ev.target.value));
+      wireFilterPanel_();
+      return;
+    }
+
+    const colors = shown.map((p) => colorById.get(p.id) || "#999");
 
     const header = "<tr><th class=\"row-label\">外観</th>" +
-      properties.map((p) => {
+      shown.map((p) => {
         const url = photoUrl(p);
         return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + '" referrerpolicy="no-referrer">' : "-") + "</th>";
       }).join("") + "</tr>" +
       "<tr><th class=\"row-label\">間取り図</th>" +
-      properties.map((p) => {
+      shown.map((p) => {
         const url = p.floorPlanImageUrl || "";
         return "<th>" + (url ? '<img class="compare-thumb" src="' + url + '" alt="' + p.name + 'の間取り図" referrerpolicy="no-referrer">' : "-") + "</th>";
       }).join("") + "</tr>" +
       "<tr><th class=\"row-label\">物件名</th>" +
-      properties.map((p) =>
+      shown.map((p) =>
         "<th>" +
           '<button type="button" class="compare-remove-btn" data-id="' + p.id + '" title="比較から外す">✕ 外す</button>' +
           "<a href=\"property.html?id=" + encodeURIComponent(p.id) + "\">" + p.name + "</a>" +
@@ -162,42 +312,36 @@ function compareSortValue_(p, sortKey) {
       ).join("") + "</tr>";
 
     content.innerHTML =
-      '<div class="compare-controls">' +
-        '<span class="compare-count">' + properties.length + "件を比較中</span>" +
-        '<select id="compare-sort-select">' +
-          COMPARE_SORT_OPTIONS.map((o) =>
-            '<option value="' + o.value + '"' + (o.value === currentSortValue ? " selected" : "") + ">" + o.label + "</option>"
-          ).join("") +
-        "</select>" +
-      "</div>" +
+      controlsHtml +
 
       '<div class="chart-box" style="margin:0 auto 20px;"><canvas id="compareChart"></canvas><h3>お部屋+周辺環境の比較</h3></div>' +
       '<ul style="list-style:none;padding:0;margin:0 0 20px;text-align:center;font-size:0.82rem;">' +
-        properties.map((p, i) => '<li style="display:inline-block;margin:0 10px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' +
+        shown.map((p, i) => '<li style="display:inline-block;margin:0 10px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' +
           colors[i] + ';margin-right:4px;"></span>' + p.name + "</li>").join("") +
       "</ul>" +
 
       '<div class="compare-table-wrap"><table class="compare-table">' +
         header +
-        metricRow("マッチ度", properties.map((p) => p.score.matchPercent), true, (v) => v + "%") +
+        metricRow("マッチ度", shown.map((p) => p.score.matchPercent), true, (v) => v + "%") +
         "<tr><th class=\"row-label\">📝 メモ</th>" +
-          properties.map((p) => '<td class="wrap-cell">' + (p.memo ? escapeHtml_(p.memo) : "-") + "</td>").join("") + "</tr>" +
+          shown.map((p) => '<td class="wrap-cell">' + (p.memo ? escapeHtml_(p.memo) : "-") + "</td>").join("") + "</tr>" +
         "<tr><th class=\"row-label\">マッチ度の理由</th>" +
-          properties.map((p) => '<td class="wrap-cell">' + (p.score.summary || "-") + "</td>").join("") + "</tr>" +
-        metricRow("家賃総額(実質)", properties.map((p) => p.rent.effectiveTotal), false, formatYen) +
-        metricRow("広さ", properties.map((p) => p.sizeSqm), true, (v) => v + "㎡") +
-        metricRow("間取り", properties.map((p) => p.layout), null) +
-        metricRow("通勤(" + properties[0].commute.destinationStationName + ")", properties.map((p) => p.commute.minutes), false, (v) => v + "分") +
-        metricRow("最寄り駅", properties.map((p) => p.nearestStation), null, (v) => v + "駅") +
-        metricRow("最寄り駅徒歩", properties.map((p) => p.walkMinutesToStation), false, (v) => v + "分") +
-        metricRow("気になる度", properties.map((p) => p.interestStars || 0), true, (v) => starRatingHtml(v)) +
-        checklistRows() +
+          shown.map((p) => '<td class="wrap-cell">' + (p.score.summary || "-") + "</td>").join("") + "</tr>" +
+        metricRow("家賃総額(実質)", shown.map((p) => p.rent.effectiveTotal), false, formatYen) +
+        metricRow("広さ", shown.map((p) => p.sizeSqm), true, (v) => v + "㎡") +
+        metricRow("間取り", shown.map((p) => p.layout), null) +
+        metricRow("通勤(" + shown[0].commute.destinationStationName + ")", shown.map((p) => p.commute.minutes), false, (v) => v + "分") +
+        metricRow("最寄り駅", shown.map((p) => p.nearestStation), null, (v) => v + "駅") +
+        metricRow("最寄り駅徒歩", shown.map((p) => p.walkMinutesToStation), false, (v) => v + "分") +
+        metricRow("気になる度", shown.map((p) => p.interestStars || 0), true, (v) => starRatingHtml(v)) +
+        checklistRows(shown) +
       "</table></div>";
 
     content.querySelectorAll(".compare-remove-btn").forEach((btn) => {
       btn.addEventListener("click", () => removeFromCompare_(btn.dataset.id));
     });
     document.getElementById("compare-sort-select").addEventListener("change", (ev) => applySort_(ev.target.value));
+    wireFilterPanel_();
 
     const keys = Object.keys(LIFE_AXIS_LABELS);
     if (chartInstance) chartInstance.destroy();
@@ -205,7 +349,7 @@ function compareSortValue_(p, sortKey) {
       type: "radar",
       data: {
         labels: keys.map((k) => LIFE_AXIS_LABELS[k]),
-        datasets: properties.map((p, i) => ({
+        datasets: shown.map((p, i) => ({
           label: p.name,
           data: keys.map((k) => p.radar.lifeAxes[k] || 0),
           backgroundColor: colors[i] + "22",
