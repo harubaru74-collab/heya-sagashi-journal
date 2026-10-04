@@ -503,13 +503,17 @@ function saveMemo_(api, id, memo, note) {
 // -------------------------------------------------------------
 // 物件比較(チェックボックスで選んで比較ページへ)
 // -------------------------------------------------------------
-// 選択状態はこのブラウザだけのものでOKと割り切り、sessionStorageに保存する
-// (複数端末をまたいだ同期はしない。個人利用の一覧選択なのでこれで十分)
+// 選択状態はこのブラウザだけのものでOKと割り切り、localStorageに保存する
+// (複数端末をまたいだ同期はしない。個人利用の一覧選択なのでこれで十分)。
+// 以前はsessionStorageを使っていたが、スマホブラウザ(特にAndroid Chrome)では
+// バックグラウンドでタブが再生成された際にsessionStorageが消えてしまい、
+// ページを再読み込みしただけで比較のチェックが消えてしまう不具合があったため、
+// 再読み込みでも確実に残るlocalStorageに変更した。
 const COMPARE_STORAGE_KEY = "heyaSagashiCompareIds";
 
 function getCompareIds() {
   try {
-    return JSON.parse(sessionStorage.getItem(COMPARE_STORAGE_KEY) || "[]");
+    return JSON.parse(localStorage.getItem(COMPARE_STORAGE_KEY) || "[]");
   } catch (e) {
     return [];
   }
@@ -517,7 +521,7 @@ function getCompareIds() {
 
 function setCompareIds(ids) {
   try {
-    sessionStorage.setItem(COMPARE_STORAGE_KEY, JSON.stringify(ids));
+    localStorage.setItem(COMPARE_STORAGE_KEY, JSON.stringify(ids));
   } catch (e) { /* ストレージが使えない環境では諦める */ }
 }
 
