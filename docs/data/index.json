@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T08:38:41+09:00",
+  "updatedAt": "2026-10-06T08:44:20+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2211,6 +2211,40 @@
       "archived": false,
       "memo": "",
       "registeredAt": "2026-10-06T08:38:41+09:00"
+    },
+    {
+      "id": "20261006-bzon",
+      "isSample": false,
+      "name": "ハイツ五反田",
+      "town": "東五反田1丁目",
+      "nearestStation": "五反田",
+      "rentTotal": 80000,
+      "effectiveRentTotal": 80000,
+      "layout": "ワンルーム",
+      "sizeSqm": 20.75,
+      "commuteMinutes": 15,
+      "walkMinutesToStation": 3,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": false,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4a482e0d-cc03-4178-9ef1-4fc44c1f539f_property_picture_3034_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F82255dfa-6b0a-43f3-880e-9b6edad95e81_property_picture_3034_large.jpg&width=640&height=480",
+      "scoreTotal": 67,
+      "matchPercent": 67,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-06T08:44:20+09:00"
     }
   ]
 }
