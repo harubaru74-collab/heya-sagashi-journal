@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T17:17:22+09:00",
+  "updatedAt": "2026-10-06T08:38:41+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2177,6 +2177,40 @@
       "archived": false,
       "memo": "",
       "registeredAt": "2026-10-04T17:17:22+09:00"
+    },
+    {
+      "id": "20261006-2gsx",
+      "isSample": false,
+      "name": "グリーンヴィラ",
+      "town": "大森北3丁目",
+      "nearestStation": "平和島",
+      "rentTotal": 68000,
+      "effectiveRentTotal": 68000,
+      "layout": "ワンルーム",
+      "sizeSqm": 21.48,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 5,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15265%2F15265520%2F15265520_2.jpg%3F20260927170951&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15265%2F15265520%2F15265520_1.jpg%3F20260929153004&width=640&height=480",
+      "scoreTotal": 75,
+      "matchPercent": 75,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-06T08:38:41+09:00"
     }
   ]
 }
