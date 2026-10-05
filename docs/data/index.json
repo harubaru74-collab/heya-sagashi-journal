@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T08:48:15+09:00",
+  "updatedAt": "2026-10-06T08:59:29+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2347,6 +2347,40 @@
       "archived": false,
       "memo": "",
       "registeredAt": "2026-10-06T08:48:15+09:00"
+    },
+    {
+      "id": "20261006-g20o",
+      "isSample": false,
+      "name": "ワールドパレス旗の台",
+      "town": "旗の台2丁目",
+      "nearestStation": "旗の台",
+      "rentTotal": 72000,
+      "effectiveRentTotal": 72000,
+      "layout": "1DK",
+      "sizeSqm": 23.98,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 5,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fdbab79b5-ab9a-412e-ac7b-3344ed6e0728_property_picture_2944_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ff0eca0fe-b454-44f8-b447-fcab9d8f0ac6_property_picture_2944_large.jpg&width=640&height=480",
+      "scoreTotal": 80,
+      "matchPercent": 80,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-06T08:59:29+09:00"
     }
   ]
 }
