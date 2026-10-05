@@ -1,0 +1,162 @@
+{
+  "id": "20261006-hm1j",
+  "isSample": false,
+  "registeredAt": "2026-10-06T08:45:58+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/6be4c13005380fef2379d906ce666807e28979c0/",
+  "images": [
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2b55051c-7520-469c-9708-cf00850c15de_property_picture_10244_large.jpg&width=1200&height=630",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2b55051c-7520-469c-9708-cf00850c15de_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F406c6e3a-fcdf-4e02-abd2-47a85999fd7f_property_picture_10244_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2b55051c-7520-469c-9708-cf00850c15de_property_picture_10244_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F62f2de03-3eb1-48e4-a8b7-cd78f299d63e_property_picture_10244_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fce84b6bf-75cd-4d84-bb50-065be086790f_property_picture_10244_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8e039305-2677-48c6-84c3-bb4abfafbde3_property_picture_10244_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F47f5b79b-982e-4704-bf3e-d0ac938ffcab_property_picture_10244_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fce6e7216-bae9-474a-88f4-5f12334e0527_property_picture_10244_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2d86a4c7-9d21-44b9-b1b6-2eee3e70bfba_property_picture_10244_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F14aa267e-6065-44b2-aec7-ef0ead307c14_property_picture_10244_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fed5701f1-0ce5-4c3f-a832-91076a9e1e5c_property_picture_10244_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ffb8d3d19-084c-4e78-a797-94af04ab114d_property_picture_10244_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7c1beec6-6bae-4143-9671-3372d2d24be7_property_picture_10244_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F9e9f3a49-ad3e-43fb-b518-33215e0584a3_property_picture_10244_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa39bb660-d842-4eaa-9455-ae83ba2d7c55_property_picture_10244_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd8ca96fb-35cf-49c2-a3ea-365fc5949374_property_picture_10244_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F56131821-4a2d-4c19-9f86-33e4177d01e8_property_picture_10244_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fcedfe57a-2eb2-454d-bf7c-b8f624a7a0cd_property_picture_10244_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa561ebb0-eee9-4119-b4dc-04636c4e1261_property_picture_10244_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F99d1b502-2f8d-4d17-8fdd-09c2b9948e45_property_picture_10244_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F406c6e3a-fcdf-4e02-abd2-47a85999fd7f_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F62f2de03-3eb1-48e4-a8b7-cd78f299d63e_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fce84b6bf-75cd-4d84-bb50-065be086790f_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F8e039305-2677-48c6-84c3-bb4abfafbde3_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F47f5b79b-982e-4704-bf3e-d0ac938ffcab_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fce6e7216-bae9-474a-88f4-5f12334e0527_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2d86a4c7-9d21-44b9-b1b6-2eee3e70bfba_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F14aa267e-6065-44b2-aec7-ef0ead307c14_property_picture_10244_large.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fed5701f1-0ce5-4c3f-a832-91076a9e1e5c_property_picture_10244_large.jpg&width=640&height=480"
+  ],
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2b55051c-7520-469c-9708-cf00850c15de_property_picture_10244_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F2b55051c-7520-469c-9708-cf00850c15de_property_picture_10244_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F406c6e3a-fcdf-4e02-abd2-47a85999fd7f_property_picture_10244_large.jpg&width=640&height=480",
+  "name": "リュミエリーナ",
+  "address": "東京都大田区大森北3丁目35-5",
+  "town": "大森北3丁目",
+  "nearestStation": "平和島",
+  "walkMinutesToStation": 6,
+  "rent": {
+    "base": 73000,
+    "management": 0,
+    "total": 73000,
+    "freeInternet": false,
+    "effectiveTotal": 73000
+  },
+  "initialCostEstimate": 314500,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 73000
+    },
+    {
+      "label": "礼金",
+      "amount": 73000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 80300
+    },
+    {
+      "label": "前家賃",
+      "amount": 73000
+    },
+    {
+      "label": "火災保険料",
+      "amount": 15000
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 20,
+  "room": {
+    "bathToiletSeparate": true,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 0,
+    "route": "平和島(京急本線 14分)→品川シーサイド※京急本線で品川駅まで行き京急線から品川シーサイドへは徒歩または乗り換えとなりますが、乗換案内上の最速ルートとして京急本線等を利用して約14分",
+    "leisure": "平和島駅から京急本線で品川まで約10分、JR山手線等に乗り換えて新宿まで約25分"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "平和島",
+      "walkMinutes": 6,
+      "note": "品川まで約10分・横浜まで約20分の京急本線が利用可能"
+    },
+    {
+      "line": "京急本線",
+      "station": "大森海岸",
+      "walkMinutes": 11,
+      "note": "普通列車が停車する落ち着いた駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "まいばすけっと平和島駅北店",
+        "minutes": 4
+      },
+      {
+        "name": "ローソン大森北3丁目店",
+        "minutes": 5
+      },
+      {
+        "name": "芳賀医院",
+        "minutes": 5
+      },
+      {
+        "name": "大田区立大森東図書館",
+        "minutes": 15
+      }
+    ],
+    "areaGuide": "大田区大森北3丁目は、閑静な住宅街が広がり落ち着いた雰囲気のエリアです。周辺にはスーパーやコンビニ、商店街があり日々の買い物に便利で、治安も比較的良好で安心して暮らせます。坂道も少なく平坦な地形が多いため、徒歩や自転車での移動も快適です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 53,
+      "rentValue": 80,
+      "commuteAccess": 100,
+      "stationCloseness": 95,
+      "dailyConvenience": 75,
+      "safety": 80
+    }
+  },
+  "score": {
+    "total": 79,
+    "grade": "◎◎",
+    "matchPercent": 79,
+    "summary": "品川シーサイドまで電車14分・乗り換え0回で通勤しやすい立地です",
+    "goodPoints": [
+      "品川シーサイド駅まで電車で約14分とアクセス良好",
+      "家賃が許容範囲内でバス・トイレ別、2階以上",
+      "駅周辺にスーパーやコンビニが揃い買い物便利"
+    ],
+    "concernPoints": [
+      "洗面所が独立していない",
+      "ネット無料や浴室乾燥機がない"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false,
+  "memo": ""
+}
