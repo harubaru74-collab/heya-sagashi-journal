@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T09:00:07+09:00",
+  "updatedAt": "2026-10-06T22:48:25+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2415,6 +2415,40 @@
       "archived": false,
       "memo": "",
       "registeredAt": "2026-10-06T09:00:07+09:00"
+    },
+    {
+      "id": "20261006-barf",
+      "isSample": false,
+      "name": "WoodVillage旗の台",
+      "town": "旗の台4丁目",
+      "nearestStation": "荏原町",
+      "rentTotal": 77000,
+      "effectiveRentTotal": 77000,
+      "layout": "1K",
+      "sizeSqm": 22.28,
+      "commuteMinutes": 20,
+      "walkMinutesToStation": 5,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": true
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F82461%2F2%2F2%2Fxipy.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F82461%2F1%2F1%2Fpbhr.jpg&width=640&height=480",
+      "scoreTotal": 71,
+      "matchPercent": 71,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-06T22:48:25+09:00"
     }
   ]
 }
