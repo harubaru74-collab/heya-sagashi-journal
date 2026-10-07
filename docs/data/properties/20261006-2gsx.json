@@ -1,0 +1,126 @@
+{
+  "id": "20261006-2gsx",
+  "isSample": false,
+  "registeredAt": "2026-10-06T08:38:41+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/08d25bf6eb816c18c3172cbbfc80df93b4f7a022/",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15265%2F15265520%2F15265520_2.jpg%3F20260927170951&width=1200&height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15265%2F15265520%2F15265520_2.jpg%3F20260927170951&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15265%2F15265520%2F15265520_2.jpg%3F20260927170951&width=1200&height=630",
+  "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15265%2F15265520%2F15265520_1.jpg%3F20260929153004&width=640&height=480",
+  "name": "グリーンヴィラ",
+  "address": "東京都大田区大森北3丁目34-12",
+  "town": "大森北3丁目",
+  "nearestStation": "平和島",
+  "walkMinutesToStation": 5,
+  "rent": {
+    "base": 68000,
+    "management": 0,
+    "total": 68000,
+    "freeInternet": false,
+    "effectiveTotal": 68000
+  },
+  "initialCostEstimate": 314200,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 136000
+    },
+    {
+      "label": "礼金",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 74800
+    },
+    {
+      "label": "前家賃",
+      "amount": 68000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 24200
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 11200
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 21.48,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 1,
+    "route": "平和島(京急本線 快特 4分)→品川(JR京浜東北線 7分)→品川シーサイド(※品川駅から徒歩または臨海線等への乗り換え、あるいは京急線で青物横丁等経由など最速ルート)",
+    "leisure": "平和島駅から京急本線快特で品川まで出てJR山手線に乗り換え新宿まで約25分"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "平和島",
+      "walkMinutes": 5,
+      "note": "品川まで約10分・横浜まで約20分、快特や特急が停車し便利"
+    },
+    {
+      "line": "京急本線",
+      "station": "大森海岸",
+      "walkMinutes": 10,
+      "note": "品川まで約8分・普通のみ停車"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大森",
+      "walkMinutes": 16,
+      "note": "品川まで約6分・東京や横浜方面へのアクセスが良好"
+    }
+  ],
+  "surroundings": {
+    "facilities": [],
+    "areaGuide": "東京都大田区大森北3丁目は、京急本線の平和島駅から徒歩5分圏内に位置する、落ち着いた住宅街です。駅周辺にはスーパーやコンビニ、飲食店が充実しており、日常の買い物に困ることはありません。治安は比較的良好で、ファミリー層や一人暮らしにとっても住みやすいエリアです。坂道も少なく平坦な地形のため、徒歩や自転車での移動も快適です。周辺には大きな公園や図書館もあり、生活環境が整っています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 37,
+      "rentValue": 80,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 85,
+      "safety": 75
+    }
+  },
+  "score": {
+    "total": 75,
+    "grade": "◎◎",
+    "matchPercent": 75,
+    "summary": "平和島駅から品川シーサイド駅まで電車約14分で通勤でき、家賃も予算内の好条件です。",
+    "goodPoints": [
+      "家賃6.8万円で予算内に収まる",
+      "平和島駅から徒歩5分と駅近",
+      "周辺にスーパーや飲食店が充実していて便利"
+    ],
+    "concernPoints": [
+      "バストイレ一体型である点",
+      "1階の物件である点"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false,
+  "memo": ""
+}

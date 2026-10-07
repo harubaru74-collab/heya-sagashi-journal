@@ -1,0 +1,155 @@
+{
+  "id": "20261006-8paz",
+  "isSample": false,
+  "registeredAt": "2026-10-06T08:44:58+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/81a678e6d056ef8c7c7e6795b9aca9be3f2e83a9/",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15220%2F15220367%2F15220367_2.jpg%3F20260920172944&width=1200&height=630"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15220%2F15220367%2F15220367_2.jpg%3F20260920172944&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15220%2F15220367%2F15220367_2.jpg%3F20260920172944&width=1200&height=630",
+  "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15220%2F15220367%2F15220367_1.jpg%3F20260920172944&width=640&height=480",
+  "name": "賃貸アパート",
+  "address": "東京都品川区東大井3丁目",
+  "town": "東大井3丁目",
+  "nearestStation": "立会川",
+  "walkMinutesToStation": 5,
+  "rent": {
+    "base": 80000,
+    "management": 0,
+    "total": 80000,
+    "freeInternet": false,
+    "effectiveTotal": 80000
+  },
+  "initialCostEstimate": 395400,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 80000
+    },
+    {
+      "label": "礼金",
+      "amount": 80000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 88000
+    },
+    {
+      "label": "前家賃",
+      "amount": 80000
+    },
+    {
+      "label": "火災保険料",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 26400
+    },
+    {
+      "label": "室内消毒代",
+      "amount": 16500
+    },
+    {
+      "label": "アクト安心ライフ24",
+      "amount": 16500
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 23.1,
+  "room": {
+    "bathToiletSeparate": true,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": true,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 15,
+    "transfers": 1,
+    "route": "立会川(京急本線 4分)→青物横丁(徒歩 10分。または品川シーサイド駅へ徒歩または乗り換え等)",
+    "leisure": "立会川駅から京急本線で品川乗り換え、JR線利用等で新宿まで約25〜30分"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "立会川",
+      "walkMinutes": 5,
+      "note": "品川まで約10分・横浜まで約20分の京急本線が利用可能"
+    },
+    {
+      "line": "京急本線",
+      "station": "鮫洲",
+      "walkMinutes": 9,
+      "note": "都心や羽田空港へのアクセスが良好な各駅停車駅"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大井町",
+      "walkMinutes": 10,
+      "note": "品川や東京、横浜方面へ直通アクセス可能な主要駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立大井図書館",
+        "minutes": 13
+      },
+      {
+        "name": "西友 大井町店",
+        "minutes": 11
+      },
+      {
+        "name": "まいばすけっと立会川駅北店",
+        "minutes": 4
+      },
+      {
+        "name": "chocoZAP大井町",
+        "minutes": 15
+      },
+      {
+        "name": "セブン-イレブン品川南大井1丁目店",
+        "minutes": 10
+      }
+    ],
+    "areaGuide": "品川区東大井3丁目は、歴史ある商店街や下町情緒と、現代的な利便性が程よく調和した落ち着いた住宅街です。坂道は比較的少なく平坦な道が多いため移動しやすく、夜間も極端に治安が悪いエリアではないため女性の一人暮らしでも比較的安心です。大井町駅や立会川駅周辺の商業施設が利用しやすく、生活環境は非常に良好です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 63,
+      "rentValue": 37,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 75,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 70,
+    "grade": "◎◎",
+    "matchPercent": 70,
+    "summary": "家賃が予算上限超えで通勤も20分超だが駅近で生活環境は良好",
+    "goodPoints": [
+      "立会川駅から徒歩5分と駅近で複数路線が利用可能",
+      "バス・トイレ別で室内洗濯機置き場や独立洗面所など設備が充実",
+      "2024年にリフォーム済みで内装が綺麗"
+    ],
+    "concernPoints": [
+      "家賃が80,000円で理想の65,000円以内および許容の75,000円を超えている",
+      "1階の物件であり、防犯面やプライバシーの配慮が必要"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false,
+  "memo": ""
+}

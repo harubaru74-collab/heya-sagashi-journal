@@ -1,0 +1,184 @@
+{
+  "id": "20261006-bzon",
+  "isSample": false,
+  "registeredAt": "2026-10-06T08:44:20+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/d730417c105be0a765d5e6a79616bfab665e5d74/",
+  "images": [
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4a482e0d-cc03-4178-9ef1-4fc44c1f539f_property_picture_3034_large.jpg&width=1200&height=630",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4a482e0d-cc03-4178-9ef1-4fc44c1f539f_property_picture_3034_large.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F82255dfa-6b0a-43f3-880e-9b6edad95e81_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4a482e0d-cc03-4178-9ef1-4fc44c1f539f_property_picture_3034_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fea1937b9-20ff-4296-a1ba-772e4f1a1d11_property_picture_3034_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fba7b4a34-3e1f-49d5-9d2e-0ed4aed22816_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa02a951f-8b3d-4b72-bf03-180c6af04461_property_picture_3034_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F106b69d9-192f-468d-8a7c-29b3f90b4534_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4e9e4557-c646-44f5-b31f-ee7146c1cdc1_property_picture_3034_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd695158f-62f4-4a02-bc13-7f503da44088_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F3a71d4cb-b7a8-4a86-9cfc-45280eb35e6c_property_picture_3034_large.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F1dd84db2-0367-431c-a36f-8b1c8b0ab0fa_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd97d715c-a4bc-4a75-bf4f-027ee86fd914_property_picture_3034_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fe4d85800-16b7-4a12-957d-7b08d9650466_property_picture_3034_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F933e6c82-85d2-4800-a8e7-5d112458962d_property_picture_3034_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7bcf9718-162f-41a0-8bc0-9840e24baa62_property_picture_3034_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F7aa88607-1549-4bb8-9af5-dfd7c321a8c9_property_picture_3034_large.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Feb398693-0437-41fe-b0f1-cc02280ad47f_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fed3eded4-5d17-42ff-90ed-c99510bbb6da_property_picture_3034_large.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F88b23e7d-90aa-4e56-801d-13fb61947d68_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F03febe23-65e4-4425-b4d1-7b00e4c9c6c8_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fad3dce0a-140c-4257-b8de-103e46371d67_property_picture_3034_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F1b1f7df3-f27a-4320-a058-d936ad4c73a8_property_picture_3034_large.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F31dc39c5-18d2-4935-b4fd-9d4921a544b6_property_picture_3034_large.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F82255dfa-6b0a-43f3-880e-9b6edad95e81_property_picture_3034_large.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fea1937b9-20ff-4296-a1ba-772e4f1a1d11_property_picture_3034_large.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fba7b4a34-3e1f-49d5-9d2e-0ed4aed22816_property_picture_3034_large.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fa02a951f-8b3d-4b72-bf03-180c6af04461_property_picture_3034_large.jpg&width=640&height=480",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F106b69d9-192f-468d-8a7c-29b3f90b4534_property_picture_3034_large.jpg&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4e9e4557-c646-44f5-b31f-ee7146c1cdc1_property_picture_3034_large.jpg&width=640&height=480"
+  ],
+  "imageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4a482e0d-cc03-4178-9ef1-4fc44c1f539f_property_picture_3034_large.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F4a482e0d-cc03-4178-9ef1-4fc44c1f539f_property_picture_3034_large.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F82255dfa-6b0a-43f3-880e-9b6edad95e81_property_picture_3034_large.jpg&width=640&height=480",
+  "name": "ハイツ五反田",
+  "address": "東京都品川区東五反田1丁目19-8",
+  "town": "東五反田1丁目",
+  "nearestStation": "五反田",
+  "walkMinutesToStation": 3,
+  "rent": {
+    "base": 80000,
+    "management": 0,
+    "total": 80000,
+    "freeInternet": false,
+    "effectiveTotal": 80000
+  },
+  "initialCostEstimate": 395200,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 80000
+    },
+    {
+      "label": "礼金(概算)",
+      "amount": 80000
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 88000
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 80000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 27500
+    },
+    {
+      "label": "室内清掃費用",
+      "amount": 68200
+    },
+    {
+      "label": "24hあんしんサポート",
+      "amount": 16500
+    }
+  ],
+  "layout": "ワンルーム",
+  "sizeSqm": 20.75,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": false,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": true,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 15,
+    "transfers": 1,
+    "route": "五反田(JR山手線 2分)→大崎(JR湘南新宿ライン・りんかい線直通 11分)→品川シーサイド",
+    "leisure": "五反田からJR山手線で新宿まで直通約16分"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR山手線",
+      "station": "五反田",
+      "walkMinutes": 3,
+      "note": "新宿まで直通約16分・渋谷まで直通約7分の主要路線"
+    },
+    {
+      "line": "東急池上線",
+      "station": "大崎広小路",
+      "walkMinutes": 10,
+      "note": "蒲田方面へアクセス可能な各駅停車路線"
+    },
+    {
+      "line": "JR山手線",
+      "station": "大崎",
+      "walkMinutes": 11,
+      "note": "りんかい線直通で新木場方面や品川シーサイド方面へアクセスしやすい駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 24
+      },
+      {
+        "name": "マルエツ プチ 五反田店",
+        "minutes": 2
+      },
+      {
+        "name": "五反田東急スクエア",
+        "minutes": 5
+      },
+      {
+        "name": "BIZcomfort品川シーサイド",
+        "minutes": 15
+      },
+      {
+        "name": "カラオケ館 五反田店",
+        "minutes": 4
+      },
+      {
+        "name": "ジェクサー・フィットネス&スパ恵比寿(近隣ジム)",
+        "minutes": 3
+      }
+    ],
+    "areaGuide": "五反田駅周辺は、商業施設や飲食店が非常に充実しており、日常の買い物や外食に大変便利なエリアです。駅周辺は賑やかで坂道が多い特徴がありますが、大通りから一歩入ると落ち着いた住宅街も広がっています。治安面は比較的安定しており、複数路線が利用できる高い交通利便性と生活利便性を兼ね備えた住環境です。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 45,
+      "rentValue": 37,
+      "commuteAccess": 92,
+      "stationCloseness": 100,
+      "dailyConvenience": 90,
+      "safety": 75
+    }
+  },
+  "score": {
+    "total": 67,
+    "grade": "◎",
+    "matchPercent": 67,
+    "summary": "家賃が予算上限を超えており、バストイレ一緒の点も理想条件に合いません。",
+    "goodPoints": [
+      "最寄り駅まで徒歩3分とアクセス抜群",
+      "スーパーや商業施設が徒歩圏内に多数あり便利",
+      "洗面所独立や室内洗濯機置き場などの設備がある"
+    ],
+    "concernPoints": [
+      "家賃80,000円で理想の65,000円以内を超過している",
+      "バストイレが一緒の仕様である"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false,
+  "memo": ""
+}

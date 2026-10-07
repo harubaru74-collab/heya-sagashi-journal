@@ -1,0 +1,153 @@
+{
+  "id": "20261006-gacm",
+  "isSample": false,
+  "registeredAt": "2026-10-06T08:48:15+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/a4584205bb58237d2b08fff4cb6d9cd8b28cf64d/",
+  "images": [
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15289%2F15289788%2F15289788_2.jpg%3F20261003140319&width=1200&height=630"
+  ],
+  "imageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15289%2F15289788%2F15289788_2.jpg%3F20261003140319&width=1200&height=630",
+  "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15289%2F15289788%2F15289788_2.jpg%3F20261003140319&width=1200&height=630",
+  "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15289%2F15289788%2F15289788_1.jpg%3F20261003140319&width=640&height=480",
+  "name": "賃貸アパート",
+  "address": "東京都大田区大森北3丁目",
+  "town": "大森北3丁目",
+  "nearestStation": "平和島",
+  "walkMinutesToStation": 10,
+  "rent": {
+    "base": 65000,
+    "management": 3000,
+    "total": 68000,
+    "freeInternet": false,
+    "effectiveTotal": 68000
+  },
+  "initialCostEstimate": 358100,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 65000
+    },
+    {
+      "label": "礼金",
+      "amount": 65000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 71500
+    },
+    {
+      "label": "前家賃",
+      "amount": 68000
+    },
+    {
+      "label": "火災保険料",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換費用",
+      "amount": 23100
+    },
+    {
+      "label": "室内消毒代",
+      "amount": 16500
+    },
+    {
+      "label": "アイディサポート24",
+      "amount": 16500
+    },
+    {
+      "label": "初回保証料",
+      "amount": 34000
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 19.87,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": false,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": true,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 18,
+    "transfers": 1,
+    "route": "平和島(京急本線 快特・特急等 6分)→品川(JR京浜東北・根岸線 6分)→大井町(りんかい線 4分)→品川シーサイド または 京急線で京急蒲田等経由など",
+    "leisure": "平和島駅から京急本線で品川まで約7分、乗り換えなしでJR線に繋がるため新宿まで約30分"
+  },
+  "nearbyStations": [
+    {
+      "line": "京急本線",
+      "station": "平和島",
+      "walkMinutes": 10,
+      "note": "品川まで約7分・横浜まで約20分。エアポート快特以外の優等列車が停止する便利な路線"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大森",
+      "walkMinutes": 12,
+      "note": "品川まで約6分・東京まで約15分。各駅停車がメインで多方面へアクセスしやすい路線"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "オオゼキ 大森北店",
+        "minutes": 4
+      },
+      {
+        "name": "クリエイトエス・ディー大田大森北店",
+        "minutes": 4
+      },
+      {
+        "name": "ファミリーマート 大森北店",
+        "minutes": 6
+      },
+      {
+        "name": "大田区立入新井図書館",
+        "minutes": 15
+      },
+      {
+        "name": "平和の森公園",
+        "minutes": 10
+      }
+    ],
+    "areaGuide": "東京都大田区大森北3丁目は、下町情緒と利便性が共存する住宅街です。周辺には大型スーパーや商店街、コンビニが充実しており、日常の買い物に不自由しません。また、平和の森公園などの緑豊かな大型公園も近くにあり自然環境も良好です。治安面は概ね落ち着いていますが、一部に古い街並みや夜間に静かになるエリアもあるため、夜間の単独移動時は少し注意が必要です。全体として生活しやすく庶民的な人気のエリアです。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 36,
+      "rentValue": 80,
+      "commuteAccess": 92,
+      "stationCloseness": 75,
+      "dailyConvenience": 75,
+      "safety": 75
+    }
+  },
+  "score": {
+    "total": 70,
+    "grade": "◎◎",
+    "matchPercent": 70,
+    "summary": "通勤電車18分・乗り換え1回で理想の通勤圏内ですがバストイレ一体が惜しい",
+    "goodPoints": [
+      "家賃と管理費の合計が68000円で予算内",
+      "スーパーやドラッグストアが徒歩5分圏内で買い物に便利",
+      "2階以上でエアコンなどの基本設備が充実"
+    ],
+    "concernPoints": [
+      "バストイレが一体型で浴室乾燥や温水洗浄便座がない",
+      "品川区立品川図書館へは距離があり、最寄りからは少し歩く"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false,
+  "memo": ""
+}
