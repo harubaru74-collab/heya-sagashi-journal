@@ -397,10 +397,15 @@ async function renderPropertyList(container, filterFn, opts) {
     const sortKey = opts.sortKey || "scoreTotal";
     const sortDir = opts.sortDir || "desc";
     list.sort((a, b) => {
-      const av = a[sortKey], bv = b[sortKey];
+      let av = a[sortKey], bv = b[sortKey];
       if (av == null && bv == null) return 0;
       if (av == null) return 1;
       if (bv == null) return -1;
+      // registeredAtはISO日時の文字列なので、数値比較できるようDateに変換してから比べる
+      if (sortKey === "registeredAt") {
+        av = new Date(av).getTime();
+        bv = new Date(bv).getTime();
+      }
       return sortDir === "asc" ? av - bv : bv - av;
     });
     if (list.length === 0) {
