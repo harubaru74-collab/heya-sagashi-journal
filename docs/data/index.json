@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T22:48:25+09:00",
+  "updatedAt": "2026-10-08T08:59:42+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2449,6 +2449,40 @@
       "archived": false,
       "memo": "通勤26分乗り換え１回（最寄りの荏原町駅まで8分）\n△床が今と同じ感じ\n〇収納広め、7.5畳",
       "registeredAt": "2026-10-06T22:48:25+09:00"
+    },
+    {
+      "id": "20261008-ouaw",
+      "isSample": false,
+      "name": "ハイツベルグ上池台",
+      "town": "上池台1丁目",
+      "nearestStation": "長原",
+      "rentTotal": 65000,
+      "effectiveRentTotal": 65000,
+      "layout": "1K",
+      "sizeSqm": 22.41,
+      "commuteMinutes": 25,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fbfe35726e320d68746cc23136d7176f3_property_picture_728_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd9827a2c-35f0-4123-a3bf-a96e7647badf_property_picture_728_large.jpg&width=640&height=480",
+      "scoreTotal": 76,
+      "matchPercent": 76,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-08T08:59:42+09:00"
     }
   ]
 }
