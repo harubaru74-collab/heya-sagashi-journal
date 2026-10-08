@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T08:59:42+09:00",
+  "updatedAt": "2026-10-08T09:00:21+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2483,6 +2483,40 @@
       "archived": false,
       "memo": "",
       "registeredAt": "2026-10-08T08:59:42+09:00"
+    },
+    {
+      "id": "20261008-25my",
+      "isSample": false,
+      "name": "大井町タウンハウス",
+      "town": "南品川6丁目",
+      "nearestStation": "大井町",
+      "rentTotal": 79000,
+      "effectiveRentTotal": 79000,
+      "layout": "1K",
+      "sizeSqm": 20.76,
+      "commuteMinutes": 10,
+      "walkMinutesToStation": 8,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_2_132000_132000.jpg%3Ft%3D20261007103023&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_1_132000_132000.jpg%3Ft%3D20261007103023&width=640&height=480",
+      "scoreTotal": 66,
+      "matchPercent": 66,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-08T09:00:21+09:00"
     }
   ]
 }
