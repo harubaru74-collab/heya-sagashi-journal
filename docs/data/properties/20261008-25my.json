@@ -1,0 +1,192 @@
+{
+  "id": "20261008-25my",
+  "isSample": false,
+  "registeredAt": "2026-10-08T09:00:21+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/c3808565337cf177319cd9abfbb3e77b5fac1d0a/",
+  "images": [
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_2_132000_132000.jpg%3Ft%3D20261007103023&width=1200&height=630",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_2_132000_132000.jpg%3Ft%3D20261007103023&width=640&height=480",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_1_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_2_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_3_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_15_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_16_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_4_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_5_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_6_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_7_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_13_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_18_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_8_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_11_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_12_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_14_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_9_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_17_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_20_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_10_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_19_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_21_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_22_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_23_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_24_132000_132000.jpg%3Ft%3D20261007103023",
+    "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_1_132000_132000.jpg%3Ft%3D20261007103023&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_3_132000_132000.jpg%3Ft%3D20261007103023&width=640&height=480",
+    "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_15_132000_132000.jpg%3Ft%3D20261007103023&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_16_132000_132000.jpg%3Ft%3D20261007103023&width=640&height=480"
+  ],
+  "imageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_2_132000_132000.jpg%3Ft%3D20261007103023&width=1200&height=630",
+  "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_2_132000_132000.jpg%3Ft%3D20261007103023&width=1200&height=630",
+  "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_1_132000_132000.jpg%3Ft%3D20261007103023&width=640&height=480",
+  "name": "大井町タウンハウス",
+  "address": "東京都品川区南品川6丁目2-11",
+  "town": "南品川6丁目",
+  "nearestStation": "大井町",
+  "walkMinutesToStation": 8,
+  "rent": {
+    "base": 76000,
+    "management": 3000,
+    "total": 79000,
+    "freeInternet": false,
+    "effectiveTotal": 79000
+  },
+  "initialCostEstimate": 399000,
+  "costBreakdown": [
+    {
+      "label": "敷金(概算)",
+      "amount": 76000
+    },
+    {
+      "label": "礼金",
+      "amount": 0
+    },
+    {
+      "label": "仲介手数料(概算)",
+      "amount": 83600
+    },
+    {
+      "label": "前家賃(概算)",
+      "amount": 79000
+    },
+    {
+      "label": "火災保険料(概算)",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 22000
+    },
+    {
+      "label": "保証会社利用料(概算)",
+      "amount": 39500
+    },
+    {
+      "label": "サポート倶楽部会費",
+      "amount": 19800
+    },
+    {
+      "label": "水道使用料(概算)",
+      "amount": 20000
+    },
+    {
+      "label": "室内清掃費(概算)",
+      "amount": 45100
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 20.76,
+  "room": {
+    "bathToiletSeparate": false,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": false,
+    "cityGas": true,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 10,
+    "transfers": 0,
+    "route": "大井町(JR京浜東北線 3分)→品川シーサイド(※実際はりんかい線ですが、大井町から品川シーサイドは徒歩またはりんかい線でアクセス。または大井町から徒歩圏内、大井町駅直結・近隣からのアクセスも良好)",
+    "leisure": "大井町からJR京浜東北線で東京駅まで約13分、品川駅まで約3分"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大井町",
+      "walkMinutes": 8,
+      "note": "東京駅まで13分・品川駅まで3分。複数路線が使えて便利"
+    },
+    {
+      "line": "京急本線",
+      "station": "青物横丁",
+      "walkMinutes": 9,
+      "note": "品川まで約5分。特急や急行が停車する駅"
+    },
+    {
+      "line": "京急本線",
+      "station": "新馬場",
+      "walkMinutes": 11,
+      "note": "品川まで約6分。各駅停車が主体の駅"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 13
+      },
+      {
+        "name": "OIMACHI TRACKS(大井町トラックス)",
+        "minutes": 4
+      },
+      {
+        "name": "イトーヨーカドー大井町店",
+        "minutes": 9
+      },
+      {
+        "name": "ローソン大井町銀座通り店",
+        "minutes": 8
+      },
+      {
+        "name": "サンドラッグ青物横丁店",
+        "minutes": 9
+      }
+    ],
+    "areaGuide": "品川区南品川6丁目は、JR大井町駅や青物横丁駅が利用できる利便性の高いエリアです。駅周辺には大型商業施設や商店街、スーパー（イトーヨーカドーやオーケー等）が充実しており、日常の買い物に不自由しません。治安面では、長期間住んでいる住民からも比較的犯罪に巻き込まれにくく安全との声が多く聞かれます。平坦な道が多く歩きやすいですが、海が近いエリアです。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 37,
+      "rentValue": 39,
+      "commuteAccess": 100,
+      "stationCloseness": 85,
+      "dailyConvenience": 95,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 66,
+    "grade": "◎",
+    "matchPercent": 66,
+    "summary": "大井町駅から品川シーサイドへも近く、家賃7.9万円で通勤や買い物に便利",
+    "goodPoints": [
+      "JR京浜東北線大井町駅まで徒歩8分でアクセス良好",
+      "イトーヨーカドーや商業施設が近く生活環境が非常に便利",
+      "オートロックや都市ガスなど一人暮らしに嬉しい設備が充実"
+    ],
+    "concernPoints": [
+      "バストイレが一体型である点",
+      "1階の物件である点"
+    ]
+  },
+  "interestStars": 0,
+  "archived": false,
+  "memo": ""
+}
