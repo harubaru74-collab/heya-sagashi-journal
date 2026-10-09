@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T20:40:55+09:00",
+  "updatedAt": "2026-10-09T22:15:44+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -2551,6 +2551,40 @@
       "archived": false,
       "memo": "通勤徒歩9分\n△1階が自動車修理屋\n〇広め！そこそこきれい！近すぎる！",
       "registeredAt": "2026-10-08T20:40:55+09:00"
+    },
+    {
+      "id": "20261009-61cg",
+      "isSample": false,
+      "name": "デュオメゾン西大井",
+      "town": "西大井6丁目",
+      "nearestStation": "西大井",
+      "rentTotal": 73000,
+      "effectiveRentTotal": 68000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.25,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": true
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125241%2Frent%2F139327%2F2%2F2%2Fupu0.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125241%2Frent%2F139327%2F1%2F1%2Fcwz3.jpg&width=640&height=480",
+      "scoreTotal": 85,
+      "matchPercent": 85,
+      "interestStars": 0,
+      "archived": false,
+      "memo": "",
+      "registeredAt": "2026-10-09T22:15:44+09:00"
     }
   ]
 }
