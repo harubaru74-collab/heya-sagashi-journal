@@ -49,7 +49,7 @@
   content.innerHTML =
     '<div id="gallery"></div>' +
     "<h1>" + p.name + sample + "</h1>" +
-    '<div class="title-stats">' + titleStatsHtml(p.rent.total, p.sizeSqm, p.commute.minutes, p.rent.effectiveTotal) + "</div>" +
+    '<div class="title-stats">' + titleStatsHtml(p.rent.total, p.sizeSqm, p.commute.minutes) + "</div>" +
     '<p class="meta" style="color:#8e879c;">' + p.address + " ・ " + p.nearestStation + "駅 徒歩" + p.walkMinutesToStation + "分</p>" +
 
     '<div class="memo-box">' +
@@ -95,7 +95,7 @@
 
     "<table class=\"detail-table\">" +
       "<tr><th>間取り・広さ</th><td>" + p.layout + " / " + p.sizeSqm + "㎡</td></tr>" +
-      "<tr><th>家賃総額</th><td>" + formatYen(p.rent.total) + (p.rent.freeInternet ? "(ネット無料のため実質-5,000円 " + formatYen(p.rent.effectiveTotal) + ")" : "") + "</td></tr>" +
+      "<tr><th>家賃総額</th><td>" + formatYen(p.rent.total) + "</td></tr>" +
       "<tr><th>初期費用目安</th><td>" + costLine + "</td></tr>" +
       '<tr><th>気になる度</th><td id="star-cell"></td></tr>' +
       "<tr><th>元の物件URL</th><td><a href=\"" + p.sourceUrl + "\" target=\"_blank\" rel=\"noopener\">ポータルサイトで見る</a></td></tr>" +

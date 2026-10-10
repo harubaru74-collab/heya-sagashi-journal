@@ -46,12 +46,8 @@ function formatMan(n) {
 }
 
 // 「物件名」とセットで扱う「○万円・○㎡・通勤○分」の行(一覧カード・物件詳細ページ共通)。
-// ネット無料等で実質家賃が下がる場合は「○万円(実質○万円)」の形で併記する
-function titleStatsHtml(rentTotal, sizeSqm, commuteMinutes, effectiveRentTotal) {
-  const rentPart = (effectiveRentTotal != null && effectiveRentTotal !== rentTotal)
-    ? formatMan(rentTotal) + "(実質" + formatMan(effectiveRentTotal) + ")"
-    : formatMan(rentTotal);
-  return rentPart + " ・ " + sizeSqm + "㎡ ・ 通勤" + (commuteMinutes != null ? commuteMinutes + "分" : "-");
+function titleStatsHtml(rentTotal, sizeSqm, commuteMinutes) {
+  return formatMan(rentTotal) + " ・ " + sizeSqm + "㎡ ・ 通勤" + (commuteMinutes != null ? commuteMinutes + "分" : "-");
 }
 
 // レーダーの各軸ラベルの下に添える、実際の値ベースの一言(例:「通勤アクセス」の下に「3分」)
@@ -59,7 +55,7 @@ function buildLifeAxisCaptions(property) {
   const facilities = (property.surroundings && property.surroundings.facilities) || [];
   return {
     roomQuality: property.radar.lifeAxes.roomQuality + "%達成",
-    rentValue: formatYen(property.rent.effectiveTotal) + "(" + property.radar.lifeAxes.rentValue + "点)",
+    rentValue: formatYen(property.rent.total) + "(" + property.radar.lifeAxes.rentValue + "点)",
     commuteAccess: (property.commute.minutes != null ? property.commute.minutes + "分" : "-"),
     stationCloseness: (property.walkMinutesToStation != null ? property.walkMinutesToStation + "分" : "-"),
     dailyConvenience: facilities.length ? facilities.length + "件" : property.radar.lifeAxes.dailyConvenience + "点",
@@ -147,10 +143,9 @@ function propertyCardHtml(p) {
         '<span class="name">' + p.name + sample + "</span>" +
         '<span class="score-badge">マッチ度 ' + p.matchPercent + "%</span>" +
       "</div>" +
-      '<div class="card-stats">' + titleStatsHtml(p.rentTotal, p.sizeSqm, p.commuteMinutes, p.effectiveRentTotal) + "</div>" +
+      '<div class="card-stats">' + titleStatsHtml(p.rentTotal, p.sizeSqm, p.commuteMinutes) + "</div>" +
       '<div class="meta">' +
         p.town + " ・ " + p.nearestStation + "駅" +
-        (p.effectiveRentTotal !== p.rentTotal ? "(ネット無料のため実質-5,000円 " + formatYen(p.effectiveRentTotal) + ")" : "") +
         ' ・ <span class="star-tag">' + starRatingHtml(p.interestStars) + "</span>" +
       "</div>" +
       '<div class="card-thumbs">' +
@@ -356,7 +351,7 @@ function matchesKeyword_(p, keyword) {
 
 // opts: { sortKey(既定"scoreTotal"), sortDir("asc"|"desc"、既定"desc"),
 //         roomFilters(配列), roomFilterMode("and"|"or"、既定"and"), maxWalkMinutes(数値),
-//         maxCommuteMinutes(数値、p.commuteMinutes以下), maxRent(数値、p.effectiveRentTotal以下),
+//         maxCommuteMinutes(数値、p.commuteMinutes以下), maxRent(数値、p.rentTotal以下),
 //         minStars(数値、p.interestStars以上), station(文字列、p.nearestStationと完全一致),
 //         keyword(文字列、物件名/町名/最寄り駅で部分一致), includeArchived(bool、既定false) }
 // 「削除」した(archived:true)物件は、はるかちゃんが積極的に消した/もう不要な物件なので、
@@ -386,7 +381,7 @@ async function renderPropertyList(container, filterFn, opts) {
       list = list.filter((p) => p.commuteMinutes != null && p.commuteMinutes <= opts.maxCommuteMinutes);
     }
     if (opts.maxRent != null) {
-      list = list.filter((p) => p.effectiveRentTotal != null && p.effectiveRentTotal <= opts.maxRent);
+      list = list.filter((p) => p.rentTotal != null && p.rentTotal <= opts.maxRent);
     }
     if (opts.minStars != null) {
       list = list.filter((p) => (p.interestStars || 0) >= opts.minStars);

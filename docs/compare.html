@@ -31,7 +31,7 @@ const COMPARE_SORT_OPTIONS = [
   { value: "", label: "選んだ順のまま" },
   { value: "scoreTotal:desc", label: "マッチ度が高い順" },
   { value: "interestStars:desc", label: "気になる度が高い順" },
-  { value: "rentTotal:asc", label: "家賃(実質)が安い順" },
+  { value: "rentTotal:asc", label: "家賃が安い順" },
   { value: "commuteMinutes:asc", label: "通勤が短い順" },
   { value: "sizeSqm:desc", label: "広い順" }
 ];
@@ -40,7 +40,7 @@ const COMPARE_SORT_OPTIONS = [
 function compareSortValue_(p, sortKey) {
   if (sortKey === "scoreTotal") return p.score.matchPercent;
   if (sortKey === "interestStars") return p.interestStars || 0;
-  if (sortKey === "rentTotal") return p.rent.effectiveTotal;
+  if (sortKey === "rentTotal") return p.rent.total;
   if (sortKey === "commuteMinutes") return p.commute.minutes;
   if (sortKey === "sizeSqm") return p.sizeSqm;
   return null;
@@ -92,7 +92,7 @@ const COMPARE_STARS_OPTIONS = [
   function matchesCompareFilter_(p) {
     if (filterState.maxWalkMinutes != null && !(p.walkMinutesToStation != null && p.walkMinutesToStation <= filterState.maxWalkMinutes)) return false;
     if (filterState.maxCommuteMinutes != null && !(p.commute.minutes != null && p.commute.minutes <= filterState.maxCommuteMinutes)) return false;
-    if (filterState.maxRent != null && !(p.rent.effectiveTotal != null && p.rent.effectiveTotal <= filterState.maxRent)) return false;
+    if (filterState.maxRent != null && !(p.rent.total != null && p.rent.total <= filterState.maxRent)) return false;
     if (filterState.minStars != null && (p.interestStars || 0) < filterState.minStars) return false;
     if (filterState.station && p.nearestStation !== filterState.station) return false;
     if (filterState.roomFilters.length) {
@@ -123,7 +123,7 @@ const COMPARE_STARS_OPTIONS = [
           "</select>" +
         "</div>" +
         '<div class="filter-group">' +
-          '<span class="filter-group-label">家賃(実質)</span>' +
+          '<span class="filter-group-label">家賃</span>' +
           '<select id="cf-rent-select">' +
             '<option value="">指定なし</option>' +
             COMPARE_RENT_OPTIONS.map((y) => '<option value="' + y + '"' + (filterState.maxRent === y ? " selected" : "") + ">" + formatMan(y) + "以内</option>").join("") +
@@ -332,7 +332,7 @@ const COMPARE_STARS_OPTIONS = [
           shown.map((p) => '<td class="wrap-cell">' + (p.memo ? escapeHtml_(p.memo) : "-") + "</td>").join("") + "</tr>" +
         "<tr><th class=\"row-label\">マッチ度の理由</th>" +
           shown.map((p) => '<td class="wrap-cell">' + (p.score.summary || "-") + "</td>").join("") + "</tr>" +
-        metricRow("家賃総額(実質)", shown.map((p) => p.rent.effectiveTotal), false, formatYen) +
+        metricRow("家賃総額", shown.map((p) => p.rent.total), false, formatYen) +
         metricRow("広さ", shown.map((p) => p.sizeSqm), true, (v) => v + "㎡") +
         metricRow("間取り", shown.map((p) => p.layout), null) +
         metricRow("通勤(" + shown[0].commute.destinationStationName + ")", shown.map((p) => p.commute.minutes), false, (v) => v + "分") +
