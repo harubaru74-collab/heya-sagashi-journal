@@ -292,6 +292,15 @@
   });
   renderPresetList();
   refresh();
+
+  // スマホブラウザ(特にAndroid Chrome)の「戻る」操作では、ページがスクリプトを
+  // 再実行せずキャッシュ(bfcache)からそのまま復元されることがある。比較ページで
+  // 物件を外した直後に一覧へ戻ると、キャッシュされた古い表示のまま(外す前の
+  // チェック状態)になってしまうことがあったため、bfcacheからの復元時は
+  // localStorageの最新状態で一覧・チェックボックスを作り直す
+  window.addEventListener("pageshow", (ev) => {
+    if (ev.persisted) refresh();
+  });
 })();
 </script>
 </body>

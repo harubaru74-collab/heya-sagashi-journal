@@ -244,7 +244,12 @@ const COMPARE_STARS_OPTIONS = [
       return;
     }
     properties = properties.filter((p) => p.id !== id);
-    history.replaceState(null, "", "compare.html?ids=" + properties.map((p) => encodeURIComponent(p.id)).join(","));
+    const remainingIds = properties.map((p) => p.id);
+    history.replaceState(null, "", "compare.html?ids=" + remainingIds.map(encodeURIComponent).join(","));
+    // 一覧ページの「比較」チェックボックスの選択状態(localStorage)もここで合わせて
+    // 更新しておかないと、一覧ページに戻ったときに外した物件のチェックが残ったままになり、
+    // そこからもう一度「比較する」を押すと外す前の件数に戻ってしまう不具合があった
+    setCompareIds(remainingIds);
     render();
   }
 
