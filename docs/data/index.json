@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T22:48:25+09:00",
+  "updatedAt": "2026-10-10T13:34:56+09:00",
   "properties": [
     {
       "id": "sample-001",
@@ -124,7 +124,7 @@
       },
       "exteriorImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F105308%2Frent%2F8105%2F2%2F1%2F8v1q.jpg&width=1200&height=630",
       "floorPlanImageUrl": "",
-      "interestStars": 2,
+      "interestStars": 3,
       "archived": false,
       "memo": "通勤20分乗り換え１回（最寄りの戸越公園まで5分）\n△キッチンがリビング\n〇9畳で広！\nダウンライト"
     },
@@ -1461,7 +1461,7 @@
       "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112564%2Frent%2F69327%2F1%2F1%2F2vgq.jpg&width=640&height=480",
       "scoreTotal": 78,
       "matchPercent": 78,
-      "interestStars": 2,
+      "interestStars": 3,
       "archived": false,
       "registeredAt": "2026-10-03T15:56:15+09:00",
       "memo": "通勤26分（最寄りの平和島駅まで10分）\n〇ロフトあり\n※同じ物件？ロフトとリビングがちょっと違う"
@@ -1532,7 +1532,7 @@
       "interestStars": 3,
       "archived": false,
       "registeredAt": "2026-10-03T15:57:32+09:00",
-      "memo": "通勤22分（最寄りの平和島駅まで6分）\n〇キッチン広！IHもダイニングテーブルも頑張れば食洗機も置ける 、収納も広くてそこそこ綺麗（床白の木目）"
+      "memo": "通勤22分（最寄りの平和島駅まで6分）\n〇キッチン広！IHもダイニングテーブルも頑張れば食洗機も置ける 、収納も広くてそこそこ綺麗だけど年季は若干感じる（床白の木目）"
     },
     {
       "id": "20261003-by0g",
@@ -1972,7 +1972,7 @@
       "interestStars": 3,
       "archived": false,
       "registeredAt": "2026-10-03T16:06:05+09:00",
-      "memo": "通勤27分（最寄りの平和島駅まで6分）\n〇キッチン広！4畳 ダイニングテーブル置けそう 窓大きめ\n△洗濯機外"
+      "memo": "通勤27分乗り換え１回（最寄りの大森駅まで6分）\n〇キッチン広！4畳 ダイニングテーブル置けそう 窓大きめ\n△洗濯機外"
     },
     {
       "id": "20261003-54ea",
@@ -2174,7 +2174,7 @@
       "scoreTotal": 78,
       "matchPercent": 78,
       "interestStars": 0,
-      "archived": false,
+      "archived": true,
       "memo": "",
       "registeredAt": "2026-10-04T17:17:22+09:00"
     },
@@ -2207,9 +2207,9 @@
       "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15265%2F15265520%2F15265520_1.jpg%3F20260929153004&width=640&height=480",
       "scoreTotal": 75,
       "matchPercent": 75,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "memo": "",
+      "memo": "通勤24分（最寄りの平和島駅まで8分）\n△外観があまり綺麗じゃない\n〇中はそこそこ綺麗",
       "registeredAt": "2026-10-06T08:38:41+09:00"
     },
     {
@@ -2242,7 +2242,7 @@
       "scoreTotal": 67,
       "matchPercent": 67,
       "interestStars": 0,
-      "archived": false,
+      "archived": true,
       "memo": "",
       "registeredAt": "2026-10-06T08:44:20+09:00"
     },
@@ -2275,9 +2275,9 @@
       "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2FiRoom%2F15220%2F15220367%2F15220367_1.jpg%3F20260920172944&width=640&height=480",
       "scoreTotal": 70,
       "matchPercent": 70,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "memo": "",
+      "memo": "通勤19分（大井町駅まで17分）（最寄りは立会川駅5分）\n△収納狭め、キッチン赤茶色のタイル\n〇部屋はそこそこ綺麗、キッチン4畳",
       "registeredAt": "2026-10-06T08:44:58+09:00"
     },
     {
@@ -2309,9 +2309,9 @@
       "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F406c6e3a-fcdf-4e02-abd2-47a85999fd7f_property_picture_10244_large.jpg&width=640&height=480",
       "scoreTotal": 79,
       "matchPercent": 79,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "memo": "",
+      "memo": "通勤25分（平和島駅まで8分）\n△バンガローみたい\n〇クローゼットめっちゃ広い、天井高い、ロフト付き",
       "registeredAt": "2026-10-06T08:45:58+09:00"
     },
     {
@@ -2343,9 +2343,9 @@
       "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fimg-hc.s3-ap-northeast-1.amazonaws.com%2Fimg%2Froom%2F15289%2F15289788%2F15289788_1.jpg%3F20261003140319&width=640&height=480",
       "scoreTotal": 70,
       "matchPercent": 70,
-      "interestStars": 0,
+      "interestStars": 2,
       "archived": false,
-      "memo": "",
+      "memo": "通勤27分（最寄りの平和島駅まで10分） \n△内装写真なしよく分からない、洗濯機は室内で収納も一応ある\n〇",
       "registeredAt": "2026-10-06T08:48:15+09:00"
     },
     {
@@ -2377,9 +2377,9 @@
       "floorPlanImageUrl": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Ff0eca0fe-b454-44f8-b447-fcab9d8f0ac6_property_picture_2944_large.jpg&width=640&height=480",
       "scoreTotal": 80,
       "matchPercent": 80,
-      "interestStars": 0,
+      "interestStars": 3,
       "archived": false,
-      "memo": "",
+      "memo": "通勤25分乗り換え１回（旗の台駅まで7分）\n△クローゼットは狭め\n〇広い！キッチンも広くてシンク上収納も沢山",
       "registeredAt": "2026-10-06T08:59:29+09:00"
     },
     {
@@ -2411,9 +2411,9 @@
       "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F82460%2F1%2F1%2F9oat.jpg&width=640&height=480",
       "scoreTotal": 80,
       "matchPercent": 80,
-      "interestStars": 0,
+      "interestStars": 3,
       "archived": false,
-      "memo": "",
+      "memo": "通勤31分乗り換え１回（原台駅まで13分）（最寄りは原中延駅）\n△洗濯機外、2部屋が繋がってない\n〇4.5畳×2部屋、きれいめ",
       "registeredAt": "2026-10-06T09:00:07+09:00"
     },
     {
@@ -2445,10 +2445,180 @@
       "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F112562%2Frent%2F82461%2F1%2F1%2Fpbhr.jpg&width=640&height=480",
       "scoreTotal": 71,
       "matchPercent": 71,
+      "interestStars": 3,
+      "archived": false,
+      "memo": "通勤26分乗り換え１回（最寄りの荏原町駅まで8分）\n△床が今と同じ感じ\n〇収納広め、7.5畳",
+      "registeredAt": "2026-10-06T22:48:25+09:00"
+    },
+    {
+      "id": "20261008-ouaw",
+      "isSample": false,
+      "name": "ハイツベルグ上池台",
+      "town": "上池台1丁目",
+      "nearestStation": "長原",
+      "rentTotal": 65000,
+      "effectiveRentTotal": 65000,
+      "layout": "1K",
+      "sizeSqm": 22.41,
+      "commuteMinutes": 25,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fbfe35726e320d68746cc23136d7176f3_property_picture_728_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2Fd9827a2c-35f0-4123-a3bf-a96e7647badf_property_picture_728_large.jpg&width=640&height=480",
+      "scoreTotal": 76,
+      "matchPercent": 76,
+      "interestStars": 2,
+      "archived": true,
+      "memo": "通勤①27分乗り換え１回（旗の台駅まで10分）②25分乗り換え１回（長原町まで徒歩3分）\n△収納狭め\n〇そこそこ綺麗",
+      "registeredAt": "2026-10-08T08:59:42+09:00"
+    },
+    {
+      "id": "20261008-25my",
+      "isSample": false,
+      "name": "大井町タウンハウス",
+      "town": "南品川6丁目",
+      "nearestStation": "大井町",
+      "rentTotal": 79000,
+      "effectiveRentTotal": 79000,
+      "layout": "1K",
+      "sizeSqm": 20.76,
+      "commuteMinutes": 10,
+      "walkMinutesToStation": 8,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_2_132000_132000.jpg%3Ft%3D20261007103023&width=1200&height=630",
+      "floorPlanImageUrl": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F6d8a42d4%2F32056_5746949_1_132000_132000.jpg%3Ft%3D20261007103023&width=640&height=480",
+      "scoreTotal": 66,
+      "matchPercent": 66,
+      "interestStars": 3,
+      "archived": false,
+      "memo": "通勤①15分（最寄りの大井町駅まで13分）②徒歩19分\n△キッチン狭めだけど2畳\n〇7畳、床白で綺麗、外観も小綺麗なマンション、オートロック",
+      "registeredAt": "2026-10-08T09:00:21+09:00"
+    },
+    {
+      "id": "20261008-bhdm",
+      "isSample": false,
+      "name": "トーシンハイツ東品川",
+      "town": "東品川3丁目",
+      "nearestStation": "青物横丁",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 75000,
+      "layout": "1K",
+      "sizeSqm": 19.9,
+      "commuteMinutes": 4,
+      "walkMinutesToStation": 7,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": false,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F98edce04-90be-48f4-b01a-c35cd0a7755b_property_picture_10167_large.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimage.homes.renters.jp%2F694eb328-7c47-4c4c-8c44-743f8bd1cb44_property_picture_10167_large.jpg&width=640&height=480",
+      "scoreTotal": 78,
+      "matchPercent": 78,
+      "interestStars": 3,
+      "archived": false,
+      "memo": "通勤徒歩9分\n△1階が自動車修理屋\n〇広め！そこそこきれい！近すぎる！",
+      "registeredAt": "2026-10-08T20:40:55+09:00"
+    },
+    {
+      "id": "20261009-61cg",
+      "isSample": false,
+      "name": "デュオメゾン西大井",
+      "town": "西大井6丁目",
+      "nearestStation": "西大井",
+      "rentTotal": 73000,
+      "effectiveRentTotal": 68000,
+      "layout": "ワンルーム",
+      "sizeSqm": 16.25,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 2,
+      "room": {
+        "bathToiletSeparate": false,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": true,
+        "secondFloorOrAbove": true,
+        "aircon": true,
+        "separateWashstand": true,
+        "washletToilet": false,
+        "bathroomDryer": true
+      },
+      "exteriorImageUrl": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125241%2Frent%2F139327%2F2%2F2%2Fupu0.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F125241%2Frent%2F139327%2F1%2F1%2Fcwz3.jpg&width=640&height=480",
+      "scoreTotal": 85,
+      "matchPercent": 85,
       "interestStars": 0,
       "archived": false,
       "memo": "",
-      "registeredAt": "2026-10-06T22:48:25+09:00"
+      "registeredAt": "2026-10-09T22:15:44+09:00"
+    },
+    {
+      "id": "20261010-ykv4",
+      "isSample": false,
+      "name": "S-1207",
+      "town": "西大井1丁目",
+      "nearestStation": "西大井",
+      "rentTotal": 75000,
+      "effectiveRentTotal": 70000,
+      "layout": "1K",
+      "sizeSqm": 21.76,
+      "commuteMinutes": 14,
+      "walkMinutesToStation": 7,
+      "room": {
+        "bathToiletSeparate": true,
+        "loft": false,
+        "storage": true,
+        "indoorWasher": true,
+        "freeInternet": true,
+        "cityGas": true,
+        "secondFloorOrAbove": false,
+        "aircon": true,
+        "separateWashstand": false,
+        "washletToilet": false,
+        "bathroomDryer": false
+      },
+      "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F2%2F2%2Fnpg6.jpg&width=1200&height=630",
+      "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F1%2F1%2Fvrlw.jpg&width=640&height=480",
+      "scoreTotal": 79,
+      "matchPercent": 79,
+      "interestStars": 3,
+      "archived": false,
+      "memo": "通勤①18分乗り換え１回（最寄りの西大井駅まで7分）②22分（大井町駅まで10分）\n△床テカテカ\n〇バストイレ別、キッチン広い",
+      "registeredAt": "2026-10-10T13:34:56+09:00"
     }
   ]
 }

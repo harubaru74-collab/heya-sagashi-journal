@@ -1,0 +1,180 @@
+{
+  "id": "20261010-ykv4",
+  "isSample": false,
+  "registeredAt": "2026-10-10T13:34:56+09:00",
+  "sourceUrl": "https://www.homes.co.jp/chintai/room/d526703aa11f6c7f11d32101cad5fd2450e3694c/",
+  "images": [
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F2%2F2%2Fnpg6.jpg&width=1200&height=630",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F2%2F2%2Fnpg6.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F1%2F1%2Fvrlw.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F2%2F2%2Fnpg6.jpg",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F2%2F5%2Fi274.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F5%2F7%2Fucgg.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F13%2F8%2Fxzzh.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F13%2F13%2F0kbl.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F13%2F14%2F8bqy.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F13%2F15%2Ffmtd.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F13%2F16%2Fiy98.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F12%2F4%2Fyo3x.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F12%2F6%2Fvwt2.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F15%2F3%2F1fst.jpg",
+    "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F16%2F9%2F5zgg.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F18%2F11%2F92u4.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F18%2F17%2Fk4du.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F19%2F12%2Fma5s.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F19%2F18%2Fpsel.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F19%2F19%2Fc8do.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F19%2F20%2Fl46c.jpg",
+    "https://image.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F19%2F21%2Fsefr.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F19%2F22%2F0d07.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F10%2F10%2Fknj1.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F9%2F23%2Fz5xg.jpg",
+    "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F9%2F24%2F56r5.jpg",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F1%2F1%2Fvrlw.jpg&width=640&height=480",
+    "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F2%2F5%2Fi274.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F5%2F7%2Fucgg.jpg&width=640&height=480",
+    "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F13%2F8%2Fxzzh.jpg&width=640&height=480"
+  ],
+  "imageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F2%2F2%2Fnpg6.jpg&width=1200&height=630",
+  "exteriorImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F2%2F2%2Fnpg6.jpg&width=1200&height=630",
+  "floorPlanImageUrl": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F151735%2Frent%2F222%2F1%2F1%2Fvrlw.jpg&width=640&height=480",
+  "name": "S-1207",
+  "address": "東京都品川区西大井1丁目",
+  "town": "西大井1丁目",
+  "nearestStation": "西大井",
+  "walkMinutesToStation": 7,
+  "rent": {
+    "base": 73000,
+    "management": 2000,
+    "total": 75000,
+    "freeInternet": true,
+    "effectiveTotal": 70000
+  },
+  "initialCostEstimate": 367000,
+  "costBreakdown": [
+    {
+      "label": "敷金",
+      "amount": 73000
+    },
+    {
+      "label": "礼金",
+      "amount": 73000
+    },
+    {
+      "label": "仲介手数料",
+      "amount": 80300
+    },
+    {
+      "label": "前家賃",
+      "amount": 75000
+    },
+    {
+      "label": "火災保険料",
+      "amount": 15000
+    },
+    {
+      "label": "鍵交換代",
+      "amount": 20000
+    },
+    {
+      "label": "保証会社利用料",
+      "amount": 38650
+    }
+  ],
+  "layout": "1K",
+  "sizeSqm": 21.76,
+  "room": {
+    "bathToiletSeparate": true,
+    "loft": false,
+    "storage": true,
+    "indoorWasher": true,
+    "freeInternet": true,
+    "cityGas": true,
+    "secondFloorOrAbove": false,
+    "aircon": true,
+    "separateWashstand": false,
+    "washletToilet": false,
+    "bathroomDryer": false
+  },
+  "commute": {
+    "destinationStationName": "品川シーサイド駅",
+    "minutes": 14,
+    "transfers": 0,
+    "route": "西大井(JR横須賀線 6分)→品川(JR京浜東北・根岸線 4分)→大井町(JR京浜東北線 4分)→品川シーサイド または 西大井からJR横須賀線で品川へ出て乗り換え等 (※横須賀線等で西大井から武蔵小杉・大崎経由はりんかい線等への接続も良好。西大井駅から品川シーサイド駅へは、JR横須賀線で西大井から大崎駅へ出て、りんかい線に乗り換えるルートが最速約11〜14分でスームーズ)",
+    "leisure": "西大井からJR横須賀線・湘南新宿ラインで渋谷まで約9分、新宿まで約15分で一本でアクセス可能"
+  },
+  "nearbyStations": [
+    {
+      "line": "JR横須賀線",
+      "station": "西大井",
+      "walkMinutes": 7,
+      "note": "渋谷まで9分・新宿まで15分、品川まで直通5分の便利な路線"
+    },
+    {
+      "line": "JR京浜東北・根岸線",
+      "station": "大井町",
+      "walkMinutes": 15,
+      "note": "品川まで3分・東京まで13分の主要路線"
+    },
+    {
+      "line": "都営浅草線",
+      "station": "馬込",
+      "walkMinutes": 20,
+      "note": "新橋や日本橋方面へダイレクトアクセス可能な地下鉄路線"
+    }
+  ],
+  "surroundings": {
+    "facilities": [
+      {
+        "name": "品川区立大井図書館",
+        "minutes": 9
+      },
+      {
+        "name": "品川区立品川図書館",
+        "minutes": 22
+      },
+      {
+        "name": "マルエツプチ 西大井駅前店",
+        "minutes": 3
+      },
+      {
+        "name": "まいばすけっと西大井１丁目店",
+        "minutes": 3
+      },
+      {
+        "name": "ローソン ニコン本社イノベーションセンター店",
+        "minutes": 4
+      }
+    ],
+    "areaGuide": "西大井エリアは、閑静な住宅街が広がり緑も多く、治安が非常に良好で落ち着いた雰囲気が特徴です。坂道は比較的少なく平坦な道が歩きやすい環境です。駅周辺にはスーパーやコンビニ、ドラッグストアなど日常の買い物施設が揃っており、生活しやすい住環境が整っています。",
+    "note": ""
+  },
+  "radar": {
+    "lifeAxes": {
+      "roomQuality": 54,
+      "rentValue": 80,
+      "commuteAccess": 100,
+      "stationCloseness": 90,
+      "dailyConvenience": 75,
+      "safety": 85
+    }
+  },
+  "score": {
+    "total": 79,
+    "grade": "◎◎",
+    "matchPercent": 79,
+    "summary": "通勤14分・乗り換え1回で品川シーサイドへ通えて理想的ですが、1階で家賃が予算上限付近です。",
+    "goodPoints": [
+      "品川シーサイド駅まで電車で約14分と通勤に便利",
+      "インターネット無料やバス・トイレ別、南向き角部屋などの充実した設備",
+      "周辺にスーパーやコンビニ、図書館があり生活しやすい環境"
+    ],
+    "concernPoints": [
+      "1階の物件で防犯面や下階への配慮が気になる点",
+      "家賃総額が75,000円で理想予算（65,000円以内）をややオーバーしている点"
+    ]
+  },
+  "interestStars": 3,
+  "archived": false,
+  "memo": "通勤①18分乗り換え１回（最寄りの西大井駅まで7分）②22分（大井町駅まで10分）\n△床テカテカ\n〇バストイレ別、キッチン広い"
+}
